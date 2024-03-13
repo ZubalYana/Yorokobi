@@ -42,7 +42,7 @@ app.get('/admin', isLoggedIn, (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'admin'));
 })
 app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, 'login.html'));
+    res.sendFile(path.join(__dirname, 'public', 'login', 'login.html'));
 })
 
 function isLoggedIn(req, res, next) {
