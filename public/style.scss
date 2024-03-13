@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Montserrat;
+    font-family: MuseoModerno;
+}
+::selection{
+    background-color: #13161B;
+    color: #CB324D;
 }
 .wrap{
     width: 100%;
@@ -31,8 +35,34 @@
                 justify-content: space-between;
                 .header_nav_el{
                     font-size: 24px;
-                    font-weight: 600;
+                    font-weight: 500;
                     cursor: pointer;
+                }
+            }
+            .header_languageThemeCon{
+                width: 182px;
+                display: flex;
+                justify-content: space-between;
+                .header_theme{
+                    width: 67px;
+                    height: 34px;
+                    background-color: #13161B;
+                    display: flex;
+                    justify-content: flex-end;
+                    border-radius: 20px;
+                    .header_themeCircle{
+                        width: 34px;
+                        height: 34px;
+                        background-color: #CB324D;
+                        border: #13161B 3px solid;
+                        border-radius: 50%;
+                    }
+                }
+                .header_language{
+                    border: none;
+                    background-color: #CB324D;
+                    font-size: 24px;
+                    font-weight: 600;
                 }
             }
         }
@@ -43,6 +73,9 @@
             top: 0;
             left: 0;
             z-index: 1;
+            option{
+                border: none;
+            }
         }
     }
 }
