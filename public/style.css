@@ -17,6 +17,29 @@
 }
 .wrap .mainPage {
   position: relative;
+  color: #13161B;
+}
+.wrap .mainPage .header {
+  position: relative;
+  z-index: 3;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .mainPage .header .header_logo {
+  width: 169px;
+}
+.wrap .mainPage .header .header_nav {
+  width: 545px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .mainPage .header .header_nav .header_nav_el {
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
 }
 .wrap .mainPage .mainPage_background {
   width: 100%;
@@ -24,4 +47,5 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
 }/*# sourceMappingURL=style.css.map */
