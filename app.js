@@ -44,6 +44,10 @@ app.get('/admin', isLoggedIn, (req, res) => {
 app.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'login', 'login.html'));
 })
+app.get('/menu', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'menu'));
+})
+
 
 function isLoggedIn(req, res, next) {
     if (req.isAuthenticated()) {

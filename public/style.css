@@ -63,6 +63,7 @@
   display: flex;
   justify-content: flex-end;
   border-radius: 20px;
+  cursor: pointer;
 }
 .wrap .mainPage .header .header_languageThemeCon .header_theme .header_themeCircle {
   width: 34px;
