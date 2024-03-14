@@ -45,9 +45,11 @@ app.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'login', 'login.html'));
 })
 app.get('/menu', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'menu'));
+    res.sendFile(path.join(__dirname, 'public', 'menu', 'menu.html'));
 })
-
+app.get('/orders', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'orders', 'orders.html'));
+})
 
 function isLoggedIn(req, res, next) {
     if (req.isAuthenticated()) {
