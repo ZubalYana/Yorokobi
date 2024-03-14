@@ -88,4 +88,17 @@
 }
 .wrap .mainPage .mainPage_background option {
   border: none;
+}
+.wrap .mainPage .mainPage_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 200;
+  position: relative;
+}
+.wrap .mainPage .mainPage_content .mainPage_content_textPart {
+  width: 50%;
+}
+.wrap .mainPage .mainPage_content .mainPage_content_imgPart {
+  width: 50%;
 }/*# sourceMappingURL=style.css.map */

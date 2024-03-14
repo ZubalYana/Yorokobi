@@ -78,5 +78,19 @@
                 border: none;
             }
         }
+        .mainPage_content{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            z-index: 200;
+            position: relative;
+            .mainPage_content_textPart{
+                width: 50%;
+            }
+            .mainPage_content_imgPart{
+                width: 50%;
+            }
+        }
+
     }
 }
