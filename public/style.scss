@@ -84,8 +84,46 @@
             justify-content: space-between;
             z-index: 200;
             position: relative;
+            margin-top: 60px;
             .mainPage_content_textPart{
                 width: 50%;
+                height: 340px;
+                .mainPage_content_title{
+                    font-size: 64px;
+                    font-weight: 700;
+                }
+                .mainPage_content_text{
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: #ffffffbd;
+                    width: 90%;
+                }
+                .mainPage_content_buttons{
+                    width: 570px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .mainPage_content_button{
+                    width: 268px;
+                    height: 79px;
+                    background-color: #13161B;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 30px;
+                    color: #CB324D;
+                    font-size: 32px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: 0.5s ease;
+                    margin-top: 30px;
+                }
+                .mainPage_content_button:hover{
+                    background-color: #CB324D;
+                    color: #13161B;
+                    border: 3px solid #13161B;
+                    box-shadow: #13161B 3px 3px 0;
+                }
             }
             .mainPage_content_imgPart{
                 width: 50%;
