@@ -139,4 +139,22 @@
 }
 .wrap .mainPage .mainPage_content .mainPage_content_imgPart {
   width: 50%;
+  height: 340px;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.wrap .mainPage .mainPage_content .mainPage_content_imgPart .mainPage_bowlImg {
+  width: 252px;
+  position: absolute;
+  bottom: 0;
+  left: 70px;
+}
+.wrap .mainPage .mainPage_content .mainPage_content_imgPart .mainPage_sushiImg {
+  width: 420px;
+  position: absolute;
+  left: 145px;
+  bottom: 45px;
+  transition: 1s ease;
 }/*# sourceMappingURL=style.css.map */

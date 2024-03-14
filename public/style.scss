@@ -127,6 +127,23 @@
             }
             .mainPage_content_imgPart{
                 width: 50%;
+                height: 340px;
+                position: relative;
+                user-select: none;
+                .mainPage_bowlImg{
+                    width: 252px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 70px;
+                }
+                .mainPage_sushiImg{
+                    width: 420px;
+                    position: absolute;
+                    left: 145px;
+                    bottom: 45px;
+                    transition: 1s ease;
+                }
+
             }
         }
 
