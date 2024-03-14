@@ -50,6 +50,9 @@ app.get('/menu', (req, res) => {
 app.get('/orders', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'orders', 'orders.html'));
 })
+app.get('/contacts', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'contacts', 'contacts.html'));
+})
 
 function isLoggedIn(req, res, next) {
     if (req.isAuthenticated()) {
