@@ -14,3 +14,13 @@ $('.mainPage_content_imgPart_FullImg').hover(
         });
     }
 );
+
+// $('#menu').click(() => {
+//     axios.get('/menu')
+//         .then(response => {
+//             $('.wrap').html(response.data); 
+//         })
+//         .catch(error => {
+//             console.error('Error:', error);
+//         });
+// });
