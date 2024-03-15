@@ -1,0 +1,11 @@
+@media screen and (max-device-width: 430px) {
+  .wrap .screen {
+    padding: 20px;
+  }
+  .wrap .mainPage .header .header_nav {
+    display: none;
+  }
+  .wrap .mainPage .header .header_languageThemeCon {
+    display: none;
+  }
+}/*# sourceMappingURL=adaptive.css.map */
