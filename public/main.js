@@ -49,6 +49,7 @@ function changeTheme(theme){
         $('.mainPage_content_title').css('color', '#fff');
         $('.mainPage_content_button').css('background-color', '#fff');
         $('.mainPage_content_button').css('color', '#F8385A');
+        $('a').css('color', '#fff');
 
         $('#mainPage_content_menuBtn').hover(
             () => {
@@ -106,6 +107,7 @@ function changeTheme(theme){
         $('.mainPage_content_title').css('color', '#13161B');
         $('.mainPage_content_button').css('background-color', '#13161B');
         $('.mainPage_content_button').css('color', '#CB324D');
+        $('a').css('color', '#13161B');
 
         $('#mainPage_content_menuBtn').hover(
             () => {
