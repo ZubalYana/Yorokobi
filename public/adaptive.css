@@ -1,5 +1,10 @@
 @media screen and (max-device-width: 430px) {
+  .wrap {
+    width: 100%;
+    overflow-x: hidden;
+  }
   .wrap .screen {
+    width: 100%;
     padding: 20px;
   }
   .wrap .mainPage .header .header_nav {
@@ -7,5 +12,16 @@
   }
   .wrap .mainPage .header .header_languageThemeCon {
     display: none;
+  }
+  .wrap .mainPage .mainPage_content {
+    flex-direction: column-reverse;
+  }
+  .wrap .mainPage .mainPage_content .mainPage_content_imgPart .mainPage_content_imgPart_FullImg .mainPage_bowlImg {
+    width: 202px;
+    left: 0px;
+  }
+  .wrap .mainPage .mainPage_content .mainPage_content_imgPart .mainPage_content_imgPart_FullImg .mainPage_sushiImg {
+    width: 370px;
+    left: 75px;
   }
 }/*# sourceMappingURL=adaptive.css.map */

@@ -1,6 +1,9 @@
 @media screen and (max-device-width: 430px) {
     .wrap{
+        width: 100%;
+        overflow-x: hidden;
         .screen{
+            width: 100%;
             padding: 20px;
         }
         .mainPage{
@@ -11,6 +14,24 @@
                 .header_languageThemeCon{
                     display: none;
                 }
+            }
+            .mainPage_content{
+                flex-direction: column-reverse;
+                .mainPage_content_textPart{}
+                .mainPage_content_imgPart{
+                    .mainPage_content_imgPart_FullImg{
+                        .mainPage_bowlImg{
+                            width: 202px;
+                            left: 0px;
+                        }
+                        .mainPage_sushiImg{
+                            width: 370px;
+                            left: 75px;
+                        }
+                    }
+
+                }
+
             }
         }
 
