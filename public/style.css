@@ -41,9 +41,10 @@
 .wrap .mainPage .header .header_burger {
   width: 40px;
   height: 26px;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer;
 }
 .wrap .mainPage .header .header_burger .header_burgerRow {
   width: 100%;

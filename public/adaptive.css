@@ -13,6 +13,9 @@
   .wrap .mainPage .header .header_languageThemeCon {
     display: none;
   }
+  .wrap .mainPage .header .header_burger {
+    display: flex;
+  }
   .wrap .mainPage .mainPage_content {
     margin-top: -40px;
     flex-direction: column-reverse;
@@ -42,5 +45,8 @@
   .wrap .mainPage .mainPage_content .mainPage_content_imgPart .mainPage_content_imgPart_FullImg .mainPage_sushiImg {
     width: 310px;
     left: 75px;
+  }
+  .wrap .mainPage .mainPage_background {
+    height: 840px;
   }
 }/*# sourceMappingURL=adaptive.css.map */
