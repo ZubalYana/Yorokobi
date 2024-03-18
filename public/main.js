@@ -30,7 +30,6 @@ $('.header_theme').click(function(){
         changeTheme(theme);
     }
 })
-
 function changeTheme(theme){
     if(theme == 'light'){
         $('.header_theme').css('justify-content', 'flex-start');
@@ -152,13 +151,3 @@ function changeTheme(theme){
     }
 }
 changeTheme(theme);
-
-// $('#menu').click(() => {
-//     axios.get('/menu')
-//         .then(response => {
-//             $('.wrap').html(response.data); 
-//         })
-//         .catch(error => {
-//             console.error('Error:', error);
-//         });
-// });

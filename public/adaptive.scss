@@ -16,16 +16,34 @@
                 }
             }
             .mainPage_content{
+                margin-top: -40px;
                 flex-direction: column-reverse;
-                .mainPage_content_textPart{}
+                .mainPage_content_textPart{
+                    width: 100%;
+                    .mainPage_content_title{
+                        font-size: 40px;
+                    }
+                    .mainPage_content_text{
+                        font-size: 16px;
+                        margin-top: 7px;
+                    }
+                    .mainPage_content_buttons{
+                        width: 370px;
+                    }
+                    .mainPage_content_button{
+                        width: 173px;
+                        height: 63px;
+                        font-size: 24px;
+                    }
+                }
                 .mainPage_content_imgPart{
                     .mainPage_content_imgPart_FullImg{
                         .mainPage_bowlImg{
-                            width: 202px;
-                            left: 0px;
+                            width: 169px;
+                            left: 15px;
                         }
                         .mainPage_sushiImg{
-                            width: 370px;
+                            width: 310px;
                             left: 75px;
                         }
                     }

@@ -14,14 +14,33 @@
     display: none;
   }
   .wrap .mainPage .mainPage_content {
+    margin-top: -40px;
     flex-direction: column-reverse;
   }
+  .wrap .mainPage .mainPage_content .mainPage_content_textPart {
+    width: 100%;
+  }
+  .wrap .mainPage .mainPage_content .mainPage_content_textPart .mainPage_content_title {
+    font-size: 40px;
+  }
+  .wrap .mainPage .mainPage_content .mainPage_content_textPart .mainPage_content_text {
+    font-size: 16px;
+    margin-top: 7px;
+  }
+  .wrap .mainPage .mainPage_content .mainPage_content_textPart .mainPage_content_buttons {
+    width: 370px;
+  }
+  .wrap .mainPage .mainPage_content .mainPage_content_textPart .mainPage_content_button {
+    width: 173px;
+    height: 63px;
+    font-size: 24px;
+  }
   .wrap .mainPage .mainPage_content .mainPage_content_imgPart .mainPage_content_imgPart_FullImg .mainPage_bowlImg {
-    width: 202px;
-    left: 0px;
+    width: 169px;
+    left: 15px;
   }
   .wrap .mainPage .mainPage_content .mainPage_content_imgPart .mainPage_content_imgPart_FullImg .mainPage_sushiImg {
-    width: 370px;
+    width: 310px;
     left: 75px;
   }
 }/*# sourceMappingURL=adaptive.css.map */
