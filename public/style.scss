@@ -8,6 +8,23 @@
     background-color: #13161B;
     color: #CB324D;
 }
+::-webkit-scrollbar {
+    width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #13161B; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #CB324D; 
+    border-radius: 6px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #882133; 
+}
+
 .wrap{
     width: 100%;
     min-height: 100vh;
