@@ -172,3 +172,21 @@ $('#NorthAmerica').hover(
         });
     }
 );
+$('#SouthAmerica').hover(
+    () => {
+        $('#SouthAmerica').css({
+            'width': '190px',
+            'height': '270px',
+            'left': '447px',
+            'top': '179px',
+        });
+    },
+    () => {
+        $('#SouthAmerica').css({
+            'width': '160px',
+            'height': '228px',
+            'left': '447px',
+            'top': '185px',
+        });
+    }
+);
