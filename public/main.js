@@ -208,3 +208,39 @@ $('#Africa').hover(
         });
     }
 );
+$('#Eurasia').hover(
+    () => {
+        $('#Eurasia').css({
+            'width': '505px',
+            'height': '259px',
+            'left': '604px',
+            'top': '-10px',
+        });
+    },
+    () => {
+        $('#Eurasia').css({
+            'width': '475px',
+            'height': '244px',
+            'left': '613px',
+            'top': '0',
+        });
+    }
+);
+$('#Oceania').hover(
+    () => {
+        $('#Oceania').css({
+            'width': '230px',
+            'height': '231px',
+            'left': '920px',
+            'top': '184px',
+        });
+    },
+    () => {
+        $('#Oceania').css({
+            'width': '200px',
+            'height': '201px',
+            'left': '920px',
+            'top': '184px',
+        });
+    }
+);
