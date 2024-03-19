@@ -190,3 +190,21 @@ $('#SouthAmerica').hover(
         });
     }
 );
+$('#Africa').hover(
+    () => {
+        $('#Africa').css({
+            'width': '270px',
+            'height': '288px',
+            'left': '572px',
+            'top': '97px',
+        });
+    },
+    () => {
+        $('#Africa').css({
+            'width': '240px',
+            'height': '256px',
+            'left': '590px',
+            'top': '100px',
+        });
+    }
+);
