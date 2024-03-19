@@ -151,3 +151,24 @@ function changeTheme(theme){
     }
 }
 changeTheme(theme);
+
+
+//mainlands hover animation
+$('#NorthAmerica').hover(
+    () => {
+        $('#NorthAmerica').css({
+            'width': '285px',
+            'height': '256px',
+            'left': '307px',
+            'top': '-26px',
+        });
+    },
+    () => {
+        $('#NorthAmerica').css({
+            'width': '255px',
+            'height': '229px',
+            'left': '328px',
+            'top': '0',
+        });
+    }
+);

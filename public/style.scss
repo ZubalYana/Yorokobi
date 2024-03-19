@@ -199,11 +199,13 @@
             position: relative;
             .mainlandImg{
                 position: absolute;
+                transition: 0.5s ease;
             }
             #NorthAmerica{
-                width: 225px;
+                width: 255px;
                 height: 229px;
-                left: 340px;
+                left: 328px;
+                // box-shadow: 0 6px 4px #97172D;
             }
             #SouthAmerica{
                 width: 160px;

@@ -209,11 +209,12 @@
 }
 .wrap .locationPage .locationPage_worldContainer .mainlandImg {
   position: absolute;
+  transition: 0.5s ease;
 }
 .wrap .locationPage .locationPage_worldContainer #NorthAmerica {
-  width: 225px;
+  width: 255px;
   height: 229px;
-  left: 340px;
+  left: 328px;
 }
 .wrap .locationPage .locationPage_worldContainer #SouthAmerica {
   width: 160px;
