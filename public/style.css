@@ -211,10 +211,67 @@
   position: absolute;
   transition: 0.5s ease;
 }
-.wrap .locationPage .locationPage_worldContainer #NorthAmerica {
+.wrap .locationPage .locationPage_worldContainer .NorthAmericaContainer #NorthAmerica {
   width: 255px;
   height: 229px;
   left: 328px;
+}
+.wrap .locationPage .locationPage_worldContainer .NorthAmericaContainer .NorthAmericaContainer_points {
+  position: absolute;
+}
+.wrap .locationPage .locationPage_worldContainer .NorthAmericaContainer .NorthAmericaContainer_points .NorthAmericaContainer_point {
+  width: 15px;
+  position: absolute;
+  display: none;
+  transition: 0.5s ease;
+}
+.wrap .locationPage .locationPage_worldContainer .NorthAmericaContainer .NorthAmericaContainer_points #mapPoint1 {
+  top: 30px;
+  left: 373px;
+}
+.wrap .locationPage .locationPage_worldContainer .NorthAmericaContainer .NorthAmericaContainer_points #mapPoint2 {
+  top: 48px;
+  left: 385px;
+}
+.wrap .locationPage .locationPage_worldContainer .NorthAmericaContainer .NorthAmericaContainer_points #mapPoint3 {
+  top: 60px;
+  left: 398px;
+}
+.wrap .locationPage .locationPage_worldContainer .NorthAmericaContainer .NorthAmericaContainer_points #mapPoint4 {
+  top: 80px;
+  left: 377px;
+}
+.wrap .locationPage .locationPage_worldContainer .NorthAmericaContainer .NorthAmericaContainer_points #mapPoint5 {
+  top: 98px;
+  left: 365px;
+}
+.wrap .locationPage .locationPage_worldContainer .NorthAmericaContainer .NorthAmericaContainer_points #mapPoint6 {
+  top: 97px;
+  left: 410px;
+}
+.wrap .locationPage .locationPage_worldContainer .NorthAmericaContainer .NorthAmericaContainer_points #mapPoint7 {
+  top: 130px;
+  left: 384px;
+}
+.wrap .locationPage .locationPage_worldContainer .NorthAmericaContainer .NorthAmericaContainer_points #mapPoint8 {
+  top: 160px;
+  left: 392px;
+}
+.wrap .locationPage .locationPage_worldContainer .NorthAmericaContainer .NorthAmericaContainer_points #mapPoint9 {
+  top: 57px;
+  left: 470px;
+}
+.wrap .locationPage .locationPage_worldContainer .NorthAmericaContainer .NorthAmericaContainer_points #mapPoint10 {
+  top: 110px;
+  left: 450px;
+}
+.wrap .locationPage .locationPage_worldContainer .NorthAmericaContainer .NorthAmericaContainer_points #mapPoint11 {
+  top: 43px;
+  left: 530px;
+}
+.wrap .locationPage .locationPage_worldContainer .NorthAmericaContainer .NorthAmericaContainer_points #mapPoint12 {
+  top: 55px;
+  left: 545px;
 }
 .wrap .locationPage .locationPage_worldContainer #SouthAmerica {
   width: 160px;

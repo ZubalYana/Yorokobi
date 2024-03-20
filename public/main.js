@@ -162,6 +162,12 @@ $('#NorthAmerica').hover(
             'left': '307px',
             'top': '-26px',
         });
+        setTimeout(() => {
+            $('.NorthAmericaContainer_point').css({
+                'display': 'flex',
+            });
+        }, 500);
+
     },
     () => {
         $('#NorthAmerica').css({
@@ -169,6 +175,9 @@ $('#NorthAmerica').hover(
             'height': '229px',
             'left': '328px',
             'top': '0',
+        });
+        $('.NorthAmericaContainer_point').css({
+            'display': 'none',
         });
     }
 );
