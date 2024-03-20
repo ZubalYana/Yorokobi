@@ -36,6 +36,7 @@
   width: 100%;
   min-height: 100vh;
   background-color: #13161B;
+  overflow-x: hidden;
 }
 .wrap .screen {
   width: 100%;
@@ -321,6 +322,11 @@
   font-weight: 300;
   color: #fff;
 }
+.wrap .dishPage {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 .wrap .dishPage .dishPage_textContainer {
   width: 484px;
 }
@@ -358,4 +364,10 @@
   background-color: #13161B;
   color: #F73859;
   border: 2px #F73859 solid;
+}
+.wrap .dishPage .dishPage_img {
+  width: 1400px;
+  position: absolute;
+  top: -100px;
+  left: 330px;
 }/*# sourceMappingURL=style.css.map */
