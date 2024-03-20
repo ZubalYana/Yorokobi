@@ -318,4 +318,44 @@
         }
 
     }
+    .dishPage{
+        .dishPage_textContainer{
+            width: 484px;
+            .dishPage_textContainer_title{
+                font-size: 40px;
+                font-weight: 600;
+                color: #F73859;
+            }
+            .dishPage_textContainer_mainText{
+                font-size: 16px;
+                font-weight: 400;
+                color: #fff;
+            }
+            .dishPage_textContainer_btnsCon{
+                width: 370px;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 22px;
+            }
+            .dishPage_textContainer_btn{
+                width: 176px;
+                height: 56px;
+                background-color: #F73859;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #13161B;
+                border-radius: 30px;
+                font-size: 20px;
+                font-weight: 600;
+                transition: 0.3s;
+                cursor: pointer;
+            }
+            .dishPage_textContainer_btn:hover{
+                background-color: #13161B;
+                color: #F73859;
+                border: 2px #F73859 solid;
+            }
+        }
+    }
 }
