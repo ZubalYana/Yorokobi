@@ -49,6 +49,7 @@ function changeTheme(theme){
         $('.mainPage_content_button').css('background-color', '#fff');
         $('.mainPage_content_button').css('color', '#F8385A');
         $('a').css('color', '#fff');
+        $('.locationPage_statistics_desc').css('color', '#13161B');
 
         $('#mainPage_content_menuBtn').hover(
             () => {
@@ -148,6 +149,8 @@ function changeTheme(theme){
                 });
             }
         );
+        $('.locationPage_statistics_desc').css('color', '#fff')
+
     }
 }
 changeTheme(theme);
