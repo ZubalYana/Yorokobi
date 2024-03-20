@@ -227,11 +227,13 @@
   height: 256px;
   left: 590px;
   top: 100px;
+  z-index: 20;
 }
 .wrap .locationPage .locationPage_worldContainer #Eurasia {
   width: 475px;
   height: 244px;
   left: 613px;
+  z-index: 19;
 }
 .wrap .locationPage .locationPage_worldContainer #Oceania {
   width: 200px;
