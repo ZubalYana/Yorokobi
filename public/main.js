@@ -92,6 +92,11 @@ function changeTheme(theme){
         );
         $('.futer_infoCon_text_Yorokobi_text').css('color', '#13161B')
         $('.futer_infoCon_text_column_el').css('color', '#13161B')
+        $('.dishPage_textContainer_mainText').css('color', '#13161B')
+        $('.dishPage_sushiInfo_price').css('color', '#13161B')
+
+        // $('.dishPage_textContainer_btn').css('color', '#fff')
+
 
     }else{
         $('.header_theme').css('justify-content', 'flex-end');
@@ -154,7 +159,11 @@ function changeTheme(theme){
         $('.locationPage_statistics_desc').css('color', '#fff')
         $('.futer_infoCon_text_Yorokobi_text').css('color', '#fff')
         $('.futer_infoCon_text_column_el').css('color', '#fff')
+        $('.dishPage_textContainer_mainText').css('color', '#fff')
+        $('.dishPage_sushiInfo_price').css('color', '#fff')
 
+        
+        // $('.dishPage_textContainer_btn').css('color', '#13161B')
 
     }
 }
