@@ -368,6 +368,19 @@
 .wrap .dishPage .dishPage_img {
   width: 1400px;
   position: absolute;
-  top: -100px;
-  left: 330px;
+  top: -140px;
+  left: 320px;
+}
+.wrap .dishPage .dishPage_sushiInfo {
+  margin-top: 230px;
+}
+.wrap .dishPage .dishPage_sushiInfo .dishPage_sushiInfo_name {
+  font-size: 36px;
+  font-weight: 800;
+  color: #F73859;
+}
+.wrap .dishPage .dishPage_sushiInfo .dishPage_sushiInfo_price {
+  font-size: 24px;
+  font-weight: 300;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

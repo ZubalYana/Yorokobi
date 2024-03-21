@@ -201,7 +201,6 @@
             .mainlandImg{
                 position: absolute;
                 transition: 0.5s ease;
-                // box-shadow: 0px 4px 8px #97172D;
             }
             .NorthAmericaContainer{
                 #NorthAmerica{
@@ -364,8 +363,22 @@
         .dishPage_img{
             width: 1400px;
             position: absolute;
-            top: -100px;
-            left: 330px;
+            top: -140px;
+            left: 320px;
         }
+        .dishPage_sushiInfo{
+            margin-top: 230px;
+            .dishPage_sushiInfo_name{
+                font-size: 36px;
+                font-weight: 800;
+                color: #F73859;
+            }
+            .dishPage_sushiInfo_price{
+                font-size: 24px;
+                font-weight: 300;
+                color: #fff;
+            }
+        }
+
     }
 }
