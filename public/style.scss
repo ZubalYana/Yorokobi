@@ -381,4 +381,81 @@
         }
 
     }
+    .futer{
+        width: 100%;
+        min-height: 450px;
+        padding: 70px;
+        .futer_hr_container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .futer_hr{
+                width: 1059px;
+                height: 1px;
+                background-color: #F73859;
+            }
+        }
+        .futer_infoCon{
+            width: 100%;
+            display: flex;
+            .futer_infoCon_text{
+                width: 40%;
+                margin-top: 60px;
+
+                .futer_infoCon_text_columns{
+
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    .futer_infoCon_text_column{
+                        width: 195px;
+                        display: flex;
+                        flex-direction: column;
+                        .futer_infoCon_text_column_heading{
+                            font-size: 24px;
+                            font-weight: 500;
+                            color: #F73859;
+                        }
+                        .futer_infoCon_text_column_el{
+                            font-size: 16px;
+                            font-weight: 300;
+                            color: #fff;
+                        }
+                    }
+                }
+                .futer_infoCon_text_Yorokobi{
+                    margin-top: 50px;
+                    .futer_infoCon_text_Yorokobi_Logo{
+                        width: 120px;
+                    }
+                    .futer_infoCon_text_Yorokobi_text{
+                        width: 545px;
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #fff;
+                        margin-top: -5px;
+                    }
+                }
+
+            }
+            .futer_infoCon_pictures{
+                width: 50%;
+                position: relative;
+                .futer_infoCon_pictures_sushi1{
+                    position: absolute;
+                    top: 0;
+                    width: 194px;
+                    left: 200px;
+                }
+                .futer_infoCon_pictures_sushi2{
+                    width: 258px;
+                    position: absolute;
+                    bottom: -60px;
+                    left: 570px;
+                }
+            }
+        }
+
+
+    }
 }

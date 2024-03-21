@@ -383,4 +383,76 @@
   font-size: 24px;
   font-weight: 300;
   color: #fff;
+}
+.wrap .futer {
+  width: 100%;
+  min-height: 450px;
+  padding: 70px;
+}
+.wrap .futer .futer_hr_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wrap .futer .futer_hr_container .futer_hr {
+  width: 1059px;
+  height: 1px;
+  background-color: #F73859;
+}
+.wrap .futer .futer_infoCon {
+  width: 100%;
+  display: flex;
+}
+.wrap .futer .futer_infoCon .futer_infoCon_text {
+  width: 40%;
+  margin-top: 60px;
+}
+.wrap .futer .futer_infoCon .futer_infoCon_text .futer_infoCon_text_columns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .futer .futer_infoCon .futer_infoCon_text .futer_infoCon_text_columns .futer_infoCon_text_column {
+  width: 195px;
+  display: flex;
+  flex-direction: column;
+}
+.wrap .futer .futer_infoCon .futer_infoCon_text .futer_infoCon_text_columns .futer_infoCon_text_column .futer_infoCon_text_column_heading {
+  font-size: 24px;
+  font-weight: 500;
+  color: #F73859;
+}
+.wrap .futer .futer_infoCon .futer_infoCon_text .futer_infoCon_text_columns .futer_infoCon_text_column .futer_infoCon_text_column_el {
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+}
+.wrap .futer .futer_infoCon .futer_infoCon_text .futer_infoCon_text_Yorokobi {
+  margin-top: 50px;
+}
+.wrap .futer .futer_infoCon .futer_infoCon_text .futer_infoCon_text_Yorokobi .futer_infoCon_text_Yorokobi_Logo {
+  width: 120px;
+}
+.wrap .futer .futer_infoCon .futer_infoCon_text .futer_infoCon_text_Yorokobi .futer_infoCon_text_Yorokobi_text {
+  width: 545px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  margin-top: -5px;
+}
+.wrap .futer .futer_infoCon .futer_infoCon_pictures {
+  width: 50%;
+  position: relative;
+}
+.wrap .futer .futer_infoCon .futer_infoCon_pictures .futer_infoCon_pictures_sushi1 {
+  position: absolute;
+  top: 0;
+  width: 194px;
+  left: 200px;
+}
+.wrap .futer .futer_infoCon .futer_infoCon_pictures .futer_infoCon_pictures_sushi2 {
+  width: 258px;
+  position: absolute;
+  bottom: -60px;
+  left: 570px;
 }/*# sourceMappingURL=style.css.map */
