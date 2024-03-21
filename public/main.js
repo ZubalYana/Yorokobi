@@ -95,8 +95,41 @@ function changeTheme(theme){
         $('.dishPage_textContainer_mainText').css('color', '#13161B')
         $('.dishPage_sushiInfo_price').css('color', '#13161B')
 
-        // $('.dishPage_textContainer_btn').css('color', '#fff')
+        $('.dishPage_textContainer_btn').css('color', '#fff')
+        $('#dishPage_textContainer_moreInfo').hover(
+            () => {
+                $('#dishPage_textContainer_moreInfo').css({
+                    'background-color': '#fff',
+                    'color': '#FF3257',
+                    'border': '#FF3257 3px solid',
+                });
+            },
+            () => {
+                $('#dishPage_textContainer_moreInfo').css({
+                    'background-color': '#FF3257',
+                    'color': '#fff',
+                    'border': '#FF3257 3px solid',
 
+                });
+            }
+        );
+        $('#dishPage_textContainer_orderNow').hover(
+            () => {
+                $('#dishPage_textContainer_orderNow').css({
+                    'background-color': '#fff',
+                    'color': '#FF3257',
+                    'border': '#FF3257 3px solid',
+                });
+            },
+            () => {
+                $('#dishPage_textContainer_orderNow').css({
+                    'background-color': '#FF3257',
+                    'color': '#fff',
+                    'border': '#FF3257 3px solid',
+
+                });
+            }
+        );
 
     }else{
         $('.header_theme').css('justify-content', 'flex-end');
@@ -163,7 +196,41 @@ function changeTheme(theme){
         $('.dishPage_sushiInfo_price').css('color', '#fff')
 
         
-        // $('.dishPage_textContainer_btn').css('color', '#13161B')
+        $('.dishPage_textContainer_btn').css('color', '#13161B')
+        $('#dishPage_textContainer_moreInfo').hover(
+            () => {
+                $('#dishPage_textContainer_moreInfo').css({
+                    'background-color': '#13161B',
+                    'color': '#FF3257',
+                    'border': '#FF3257 3px solid',
+                });
+            },
+            () => {
+                $('#dishPage_textContainer_moreInfo').css({
+                    'background-color': '#FF3257',
+                    'color': '#13161B',
+                    'border': '#13161B 3px solid',
+
+                });
+            }
+        );
+        $('#dishPage_textContainer_orderNow').hover(
+            () => {
+                $('#dishPage_textContainer_orderNow').css({
+                    'background-color': '#13161B',
+                    'color': '#FF3257',
+                    'border': '#FF3257 3px solid',
+                });
+            },
+            () => {
+                $('#dishPage_textContainer_orderNow').css({
+                    'background-color': '#FF3257',
+                    'color': '#13161B',
+                    'border': '#FF3257 3px solid',
+
+                });
+            }
+        );
 
     }
 }
