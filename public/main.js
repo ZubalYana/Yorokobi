@@ -90,6 +90,8 @@ function changeTheme(theme){
                 });
             }
         );
+        $('.futer_infoCon_text_Yorokobi_text').css('color', '#13161B')
+        $('.futer_infoCon_text_column_el').css('color', '#13161B')
 
     }else{
         $('.header_theme').css('justify-content', 'flex-end');
@@ -150,6 +152,9 @@ function changeTheme(theme){
             }
         );
         $('.locationPage_statistics_desc').css('color', '#fff')
+        $('.futer_infoCon_text_Yorokobi_text').css('color', '#fff')
+        $('.futer_infoCon_text_column_el').css('color', '#fff')
+
 
     }
 }
