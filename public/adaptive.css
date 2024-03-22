@@ -126,4 +126,77 @@
   .wrap .dishPage .dishPage_sushiInfo .dishPage_sushiInfo_price {
     font-size: 20px;
   }
+  .wrap .futer {
+    padding: 20px;
+    height: 700px;
+    margin-top: -80px;
+  }
+  .wrap .futer .futer_hr_container {
+    width: 100%;
+  }
+  .wrap .futer .futer_infoCon {
+    flex-direction: column;
+  }
+  .wrap .futer .futer_infoCon .futer_infoCon_text {
+    width: 100%;
+  }
+  .wrap .futer .futer_infoCon .futer_infoCon_text .futer_infoCon_text_columns {
+    width: 170px;
+    position: relative;
+    width: 100%;
+    margin-top: -40px;
+  }
+  .wrap .futer .futer_infoCon .futer_infoCon_text .futer_infoCon_text_columns .futer_infoCon_text_column_Navigation .futer_infoCon_text_column_heading {
+    font-size: 20px;
+  }
+  .wrap .futer .futer_infoCon .futer_infoCon_text .futer_infoCon_text_columns .futer_infoCon_text_column_Navigation .futer_infoCon_text_column_el {
+    font-size: 14px;
+  }
+  .wrap .futer .futer_infoCon .futer_infoCon_text .futer_infoCon_text_columns .futer_infoCon_text_column_Help {
+    position: absolute;
+    left: 134px;
+  }
+  .wrap .futer .futer_infoCon .futer_infoCon_text .futer_infoCon_text_columns .futer_infoCon_text_column_Help .futer_infoCon_text_column_heading {
+    font-size: 20px;
+  }
+  .wrap .futer .futer_infoCon .futer_infoCon_text .futer_infoCon_text_columns .futer_infoCon_text_column_Help .futer_infoCon_text_column_el {
+    font-size: 14px;
+  }
+  .wrap .futer .futer_infoCon .futer_infoCon_text .futer_infoCon_text_columns .futer_infoCon_text_column_Amenities {
+    position: absolute;
+    text-align: right;
+    top: 150px;
+    right: 20px;
+  }
+  .wrap .futer .futer_infoCon .futer_infoCon_text .futer_infoCon_text_columns .futer_infoCon_text_column_Amenities .futer_infoCon_text_column_heading {
+    font-size: 20px;
+  }
+  .wrap .futer .futer_infoCon .futer_infoCon_text .futer_infoCon_text_columns .futer_infoCon_text_column_Amenities .futer_infoCon_text_column_el {
+    font-size: 14px;
+  }
+  .wrap .futer .futer_infoCon .futer_infoCon_text .futer_infoCon_text_Yorokobi {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 160px;
+  }
+  .wrap .futer .futer_infoCon .futer_infoCon_text .futer_infoCon_text_Yorokobi .futer_infoCon_text_Yorokobi_Logo {
+    transform: scale(0.7);
+    margin-left: -20px;
+  }
+  .wrap .futer .futer_infoCon .futer_infoCon_text .futer_infoCon_text_Yorokobi .futer_infoCon_text_Yorokobi_text {
+    width: 100%;
+    font-size: 10px;
+  }
+  .wrap .futer .futer_infoCon .futer_infoCon_pictures img {
+    transform: scale(0.4);
+  }
+  .wrap .futer .futer_infoCon .futer_infoCon_pictures .futer_infoCon_pictures_sushi1 {
+    left: 200px;
+    top: -436px;
+  }
+  .wrap .futer .futer_infoCon .futer_infoCon_pictures .futer_infoCon_pictures_sushi2 {
+    left: -80px;
+    top: -290px;
+  }
 }/*# sourceMappingURL=adaptive.css.map */
