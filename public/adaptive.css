@@ -92,4 +92,38 @@
   .wrap .locationPage .locationPage_statistics .locationPage_statistics_column_adapriveMargin {
     margin-top: 20px;
   }
+  .wrap .dishPage {
+    margin-top: -250px;
+  }
+  .wrap .dishPage .dishPage_textContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .wrap .dishPage .dishPage_textContainer .dishPage_textContainer_title {
+    font-size: 36px;
+  }
+  .wrap .dishPage .dishPage_textContainer .dishPage_img {
+    left: -450px;
+    transform: scale(0.5);
+    top: -400px;
+  }
+  .wrap .dishPage .dishPage_textContainer .dishPage_textContainer_mainText {
+    margin-top: 500px;
+    font-weight: 200;
+  }
+  .wrap .dishPage .dishPage_textContainer .dishPage_textContainer_btnsCon {
+    width: 100%;
+  }
+  .wrap .dishPage .dishPage_sushiInfo {
+    margin-top: -320px;
+  }
+  .wrap .dishPage .dishPage_sushiInfo .dishPage_sushiInfo_name {
+    font-size: 24px;
+  }
+  .wrap .dishPage .dishPage_sushiInfo .dishPage_sushiInfo_price {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=adaptive.css.map */
