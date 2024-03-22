@@ -1,3 +1,4 @@
+$('.NorthAmericaContainer_point').hide(0);
 //sushi hover animation
 $('.mainPage_content_imgPart_FullImg').hover(
     () => {
@@ -238,33 +239,54 @@ changeTheme(theme);
 
 
 //mainlands hover animation
-$('#NorthAmerica').hover(
-    () => {
-        $('#NorthAmerica').css({
+$('#NorthAmerica').on({
+    mouseenter: function() {
+        $(this).css({
             'width': '285px',
             'height': '256px',
             'left': '307px',
-            'top': '-26px',
+            'top': '-26px'
         });
         setTimeout(() => {
-            $('.NorthAmericaContainer_point').css({
-                'display': 'flex',
-            });
-        }, 500);
+            $('.NorthAmericaContainer_point').show(0);
 
+        }, 500);
     },
-    () => {
-        $('#NorthAmerica').css({
+    mouseleave: function() {
+        $(this).css({
             'width': '255px',
             'height': '229px',
             'left': '328px',
-            'top': '0',
+            'top': '0'
         });
-        $('.NorthAmericaContainer_point').css({
-            'display': 'none',
-        });
+        $('.NorthAmericaContainer_point').hide(0);
+
     }
-);
+});
+// $('.NorthAmericaContainer_point').on({
+//     mouseenter: function() {
+//         $('#NorthAmerica').css({
+//             'width': '285px',
+//             'height': '256px',
+//             'left': '307px',
+//             'top': '-26px'
+//         });
+//             $('.NorthAmericaContainer_point').show(0);
+
+//     },
+//     mouseleave: function() {
+//         $('#NorthAmerica').css({
+//             'width': '255px',
+//             'height': '229px',
+//             'left': '328px',
+//             'top': '0'
+//         });
+//         $('.NorthAmericaContainer_point').hide(0);
+
+//     }
+// });
+
+
 $('#SouthAmerica').hover(
     () => {
         $('#SouthAmerica').css({

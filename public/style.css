@@ -223,7 +223,7 @@
 .wrap .locationPage .locationPage_worldContainer .NorthAmericaContainer .NorthAmericaContainer_points .NorthAmericaContainer_point {
   width: 15px;
   position: absolute;
-  display: none;
+  display: flex;
   transition: 0.5s ease;
 }
 .wrap .locationPage .locationPage_worldContainer .NorthAmericaContainer .NorthAmericaContainer_points #mapPoint1 {
