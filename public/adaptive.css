@@ -49,4 +49,47 @@
   .wrap .mainPage .mainPage_background {
     height: 840px;
   }
+  .wrap .locationPage {
+    position: relative;
+    margin-top: -50px;
+  }
+  .wrap .locationPage .locationPage_title {
+    font-size: 36px;
+  }
+  .wrap .locationPage .mainlandImg {
+    transform: scale(0.5);
+  }
+  .wrap .locationPage .locationPage_worldContainer {
+    height: 300px;
+    margin-top: -30px;
+  }
+  .wrap .locationPage .locationPage_worldContainer .NorthAmericaContainer #NorthAmerica {
+    left: -74px;
+  }
+  .wrap .locationPage .locationPage_worldContainer #SouthAmerica {
+    left: 0px;
+    top: 93px;
+    left: 13px;
+  }
+  .wrap .locationPage .locationPage_worldContainer #Africa {
+    left: 0;
+    top: 45px;
+    left: 70px;
+  }
+  .wrap .locationPage .locationPage_worldContainer #Eurasia {
+    top: -5px;
+    left: 21px;
+  }
+  .wrap .locationPage .locationPage_worldContainer #Oceania {
+    left: 0;
+    top: 98px;
+    left: 241px;
+  }
+  .wrap .locationPage .locationPage_statistics {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+  .wrap .locationPage .locationPage_statistics .locationPage_statistics_column_adapriveMargin {
+    margin-top: 20px;
+  }
 }/*# sourceMappingURL=adaptive.css.map */

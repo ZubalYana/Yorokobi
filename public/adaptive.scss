@@ -58,6 +58,53 @@
                 height: 840px;
             }
         }
+        .locationPage{
+            position: relative;
+            margin-top: -50px;
+            .locationPage_title{
+                font-size: 36px;
+            }
+            .mainlandImg{
+                transform: scale(0.5);
+            }
+            .locationPage_worldContainer{
+                height: 300px;
+                margin-top: -30px;
+                .NorthAmericaContainer{
+                    #NorthAmerica{
+                        left: -74px;
+                    }
+                }
+                #SouthAmerica{
+                    left: 0px;
+                    top: 93px;
+                    left: 13px;
+                }
+                #Africa{
+                    left: 0;
+                    top: 45px;
+                    left: 70px;
+                }
+                #Eurasia{
+                    top: -5px;
+                    left: 21px;
+                }
+                #Oceania{
+                    left: 0;
+                    top: 98px;
+                    left: 241px;
+                }
+            }
+            .locationPage_statistics{
+                width: 90%;
+                flex-wrap: wrap;
+                .locationPage_statistics_column_adapriveMargin{
+                    margin-top: 20px;
+                }
+            }
+
+
+        }
 
     }
 
