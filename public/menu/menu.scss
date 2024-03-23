@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: MuseoModerno;
+}
+::selection{
+    background-color: #13161B;
+    color: #CB324D;
+}
+::-webkit-scrollbar {
+    width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #13161B; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #CB324D; 
+    border-radius: 6px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #882133; 
+}
+.wrap{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #13161B;
+    overflow-x: hidden;
+    .header{
+        position: relative;
+        z-index: 3;
+        user-select: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        .header_burger{
+            width: 40px;
+            height: 26px;
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+            .header_burgerRow{
+                width: 100%;
+                height: 4px;
+                border-radius: 20px;
+                background-color: #13161B;
+            }
+        }
+        .header_logo{
+            width: 169px;
+        }
+        .header_nav{
+            width: 545px;
+            display: flex;
+            justify-content: space-between;
+            .header_nav_el{
+                font-size: 24px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+            #orders{
+                position: relative;
+                .ordersCount{
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #F73859;
+                    color: #13161B;
+                    width: 17px;
+                    height: 17px;
+                    border-radius: 50%;
+                    font-size: 12px;
+                    font-weight: 700;
+                    top: 2px;
+                    left: 68px;
+                }
+            }
+        }
+        .header_languageThemeCon{
+            width: 182px;
+            display: flex;
+            justify-content: space-between;
+            .header_theme{
+                width: 67px;
+                height: 34px;
+                background-color: #F73859;
+                display: flex;
+                justify-content: flex-end;
+                border-radius: 20px;
+                cursor: pointer;
+                .header_themeCircle{
+                    width: 34px;
+                    height: 34px;
+                    background-color: #13161B;
+                    border: #F73859 3px solid;
+                    border-radius: 50%;
+                }
+            }
+            .header_language{
+                border: none;
+                background-color: #13161B;
+                font-size: 24px;
+                font-weight: 600;
+                color: #F73859;
+            }
+        }
+        a{
+            color: #F73859;
+            text-decoration: none;
+        }
+    }
+}
