@@ -83,6 +83,24 @@
   font-weight: 500;
   cursor: pointer;
 }
+.wrap .mainPage .header .header_nav #orders {
+  position: relative;
+}
+.wrap .mainPage .header .header_nav #orders .ordersCount {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #13161B;
+  color: #CB324D;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  top: 2px;
+  left: 68px;
+}
 .wrap .mainPage .header .header_languageThemeCon {
   width: 182px;
   display: flex;
