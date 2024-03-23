@@ -51,7 +51,6 @@ function changeTheme(theme){
         $('.mainPage_content_button').css('color', '#F8385A');
         $('a').css('color', '#fff');
         $('.locationPage_statistics_desc').css('color', '#13161B');
-
         $('#mainPage_content_menuBtn').hover(
             () => {
                 $('#mainPage_content_menuBtn').css({
@@ -95,7 +94,6 @@ function changeTheme(theme){
         $('.futer_infoCon_text_column_el').css('color', '#13161B')
         $('.dishPage_textContainer_mainText').css('color', '#13161B')
         $('.dishPage_sushiInfo_price').css('color', '#13161B')
-
         $('.dishPage_textContainer_btn').css('color', '#fff')
         $('#dishPage_textContainer_moreInfo').hover(
             () => {
@@ -131,7 +129,16 @@ function changeTheme(theme){
                 });
             }
         );
+        $('.ordersCount').css('background-color', '#fff')
+        $('.ordersCount').css('color', '#F8385A')
 
+        $('::selection').css('background-color', '#fff');
+        $('::selection').css('color', '#CB324D');
+
+        $('::-webkit-scrollbar-track').css('background-color', '#fff');
+        $('.header_burgerRow').css('background-color', '#fff')
+
+          
     }else{
         $('.header_theme').css('justify-content', 'flex-end');
         $('.wrap').css('background-color', '#13161B');
@@ -149,7 +156,6 @@ function changeTheme(theme){
         $('.mainPage_content_button').css('background-color', '#13161B');
         $('.mainPage_content_button').css('color', '#CB324D');
         $('a').css('color', '#13161B');
-
         $('#mainPage_content_menuBtn').hover(
             () => {
                 $('#mainPage_content_menuBtn').css({
@@ -195,8 +201,6 @@ function changeTheme(theme){
         $('.futer_infoCon_text_column_el').css('color', '#fff')
         $('.dishPage_textContainer_mainText').css('color', '#fff')
         $('.dishPage_sushiInfo_price').css('color', '#fff')
-
-        
         $('.dishPage_textContainer_btn').css('color', '#13161B')
         $('#dishPage_textContainer_moreInfo').hover(
             () => {
@@ -232,7 +236,17 @@ function changeTheme(theme){
                 });
             }
         );
+        $('.ordersCount').css('background-color', '#13161B')
+        $('.ordersCount').css('color', '#CB324D')
 
+
+        $('::selection').css('background-color', '#13161B')
+        $('::selection').css('color', '#CB324D')
+
+        $('::-webkit-scrollbar-track').css('background-color', '#13161B');
+        $('.header_burgerRow').css('background-color', '#13161B')
+
+        
     }
 }
 changeTheme(theme);
@@ -285,8 +299,6 @@ $('#NorthAmerica').on({
 
 //     }
 // });
-
-
 $('#SouthAmerica').hover(
     () => {
         $('#SouthAmerica').css({
