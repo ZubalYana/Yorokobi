@@ -62,6 +62,9 @@
                 font-weight: 500;
                 cursor: pointer;
             }
+            .header_nav_el:hover{
+                font-weight: 600;
+            }
             #orders{
                 position: relative;
                 .ordersCount{

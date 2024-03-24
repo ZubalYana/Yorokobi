@@ -75,6 +75,9 @@
   font-weight: 500;
   cursor: pointer;
 }
+.wrap .header .header_nav .header_nav_el:hover {
+  font-weight: 600;
+}
 .wrap .header .header_nav #orders {
   position: relative;
 }
