@@ -1,3 +1,6 @@
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+
 $('.NorthAmericaContainer_point').hide(0);
 //sushi hover animation
 $('.mainPage_content_imgPart_FullImg').hover(
@@ -371,3 +374,5 @@ $('#Oceania').hover(
         });
     }
 );
+
+// AOS.init();

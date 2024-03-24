@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="adaptive.css">
     <link href="https://fonts.googleapis.com/css?family=MuseoModerno:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js' integrity='sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 <body>
@@ -60,7 +61,7 @@
             </div>
             <img class="mainPage_background" src="./imgs/main page background.png" alt="">
         </div>
-        <div class="screen locationPage">
+        <div class="screen locationPage" data-aos="fade-up" data-aos-duration="1000">
             <div class="locationPage_title">Where are we?</div>
             <div class="locationPage_worldContainer">
                 <div class="NorthAmericaContainer">
@@ -104,7 +105,7 @@
                 </div>
             </div>
         </div>
-        <div class="screen dishPage">
+        <div class="screen dishPage" data-aos="fade-up" data-aos-duration="1000">
             
             <div class="dishPage_textContainer">
                 <div class="dishPage_textContainer_title">The best choice</div>
@@ -161,7 +162,11 @@
         </div>
     </div>
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./main.js"></script>
+
 </body>
 </html>
