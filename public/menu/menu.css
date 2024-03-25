@@ -127,4 +127,27 @@
 .wrap .header a {
   color: #F73859;
   text-decoration: none;
-}/*# sourceMappingURL=menu.css.map */
+}
+.wrap .dishesContainer {
+  width: 100%;
+  min-height: 80vh;
+  padding: 0 40px 0 40px;
+}
+.wrap .dishesContainer .dishesContainer_typeChoise {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .dishesContainer .dishesContainer_typeChoise .dishesContainer_typeChoise_item {
+  width: 211px;
+  height: 73px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px #F73859 solid;
+  font-size: 24px;
+  font-weight: 400;
+  color: #F73859;
+  cursor: pointer;
+}/*# sourceMapping
