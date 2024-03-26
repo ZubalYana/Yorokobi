@@ -203,6 +203,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-top: 9px;
 }
 .wrap .dishesContainer .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_btns .dishesContainer_sushi_btn {
   width: 126px;
@@ -221,4 +222,11 @@
   border: 1px #F73859 solid;
   background-color: #F73859;
   color: #fff;
+}
+.wrap .dishesContainer .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_rating {
+  color: #F73859;
+  width: 124px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
 }/*# sourceMappingURL=menu.css.map */

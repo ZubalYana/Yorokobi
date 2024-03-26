@@ -189,6 +189,7 @@
                     width: 100%;
                     display: flex;
                     justify-content: space-between;
+                    margin-top: 9px;
                     .dishesContainer_sushi_btn{
                         width: 126px;
                         height: 35px;
@@ -207,6 +208,13 @@
                         background-color: #F73859;
                         color: #fff;
                     }
+                }
+                .dishesContainer_sushi_rating{
+                    color: #F73859;
+                    width: 124px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 12px;
                 }
             }
         }

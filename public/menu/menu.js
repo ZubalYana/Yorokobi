@@ -135,7 +135,7 @@ for(let dish of sushiArr){
     <div class="dishesContainer_sushi_btn" id="dishInfoBtn">Info</div>
     <div class="dishesContainer_sushi_btn" id="dishOrderBtn">Order</div>
 </div>
-        <div class="dishesContainer_sushi_rating">${dish.rating}</div>
+        <div class="dishesContainer_sushi_rating"></div>
     </div>`
     )
     if(dish.availability == true){
@@ -143,5 +143,16 @@ for(let dish of sushiArr){
     }else{
         $('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>')
         $('.dishesContainer_sushi_availability').css('color', '#959595')
+    }
+    if(dish.rating == 5){
+        $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>')
+    }else if(dish.rating == 4){
+        $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>')
+    }else if(dish.rating == 3){
+        $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>')
+    }else if(dish.rating == 2){
+        $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>')
+    }else if(dish.rating == 1){
+        $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>')
     }
 }
