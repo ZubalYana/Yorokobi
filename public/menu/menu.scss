@@ -146,6 +146,11 @@
                 background-color: #F73859;
                 color: #fff;
             }
+            .dishesContainer_dishes{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+            }
         }
     }
 }

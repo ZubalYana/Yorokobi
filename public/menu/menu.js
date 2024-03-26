@@ -109,3 +109,6 @@ $('#drings').click(()=>{
         'color': '#F73859',
     })
 })
+
+
+//dishes appending

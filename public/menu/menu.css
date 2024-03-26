@@ -160,4 +160,9 @@
 .wrap .dishesContainer .dishesContainer_typeChoise #sushi {
   background-color: #F73859;
   color: #fff;
+}
+.wrap .dishesContainer .dishesContainer_typeChoise .dishesContainer_dishes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=menu.css.map */
