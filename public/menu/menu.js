@@ -130,7 +130,7 @@ for(let dish of sushiArr){
             <div class="dishesContainer_sushi_name">${dish.name}</div>
             <div class="dishesContainer_sushi_price">$${dish.price}</div>
         </div>
-        <div class="dishesContainer_sushi_availability">${dish.availability}<FontAwesomeIcon icon="fa-solid fa-check" /></div>
+        <div class="dishesContainer_sushi_availability"></div>
         <div class="dishesContainer_sushi_btns">
     <div class="dishesContainer_sushi_btn" id="dishInfoBtn">Info</div>
     <div class="dishesContainer_sushi_btn" id="dishOrderBtn">Order</div>
@@ -138,4 +138,10 @@ for(let dish of sushiArr){
         <div class="dishesContainer_sushi_rating">${dish.rating}</div>
     </div>`
     )
+    if(dish.availability == true){
+        $('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>')
+    }else{
+        $('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>')
+        $('.dishesContainer_sushi_availability').css('color', '#959595')
+    }
 }

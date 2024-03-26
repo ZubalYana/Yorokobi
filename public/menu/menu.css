@@ -194,9 +194,10 @@
   font-size: 16px;
   font-weight: 500;
   display: flex;
-  width: 133px;
-  display: flex;
-  justify-content: space-between;
+  align-items: center;
+}
+.wrap .dishesContainer .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_availability i {
+  margin-left: 7px;
 }
 .wrap .dishesContainer .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_btns {
   width: 100%;
@@ -212,5 +213,12 @@
   align-items: center;
   font-size: 16px;
   font-weight: 600;
-  border: 2px #F73859 solid;
+  border: 1px #F73859 solid;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.wrap .dishesContainer .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_btns .dishesContainer_sushi_btn:hover {
+  border: 1px #F73859 solid;
+  background-color: #F73859;
+  color: #fff;
 }/*# sourceMappingURL=menu.css.map */
