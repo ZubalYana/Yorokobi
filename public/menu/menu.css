@@ -161,7 +161,7 @@
   background-color: #F73859;
   color: #fff;
 }
-.wrap .dishesContainer .dishesContainer_typeChoise .dishesContainer_dishes {
+.wrap .dishesContainer .dishesContainer_dishes {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -169,27 +169,27 @@
   padding: 0 40px 0 40px;
   justify-content: space-between;
 }
-.wrap .dishesContainer .dishesContainer_typeChoise .dishesContainer_dishes .dishesContainer_sushi {
+.wrap .dishesContainer .dishesContainer_dishes .dishesContainer_sushi {
   width: 260px;
   color: #F73859;
 }
-.wrap .dishesContainer .dishesContainer_typeChoise .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_img {
+.wrap .dishesContainer .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_img {
   width: 260px;
 }
-.wrap .dishesContainer .dishesContainer_typeChoise .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_namePriceCon {
+.wrap .dishesContainer .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_namePriceCon {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.wrap .dishesContainer .dishesContainer_typeChoise .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_namePriceCon .dishesContainer_sushi_name {
+.wrap .dishesContainer .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_namePriceCon .dishesContainer_sushi_name {
   font-size: 24px;
   font-weight: 400;
 }
-.wrap .dishesContainer .dishesContainer_typeChoise .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_namePriceCon .dishesContainer_sushi_price {
+.wrap .dishesContainer .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_namePriceCon .dishesContainer_sushi_price {
   font-size: 20px;
   font-weight: 700;
 }
-.wrap .dishesContainer .dishesContainer_typeChoise .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_availability {
+.wrap .dishesContainer .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_availability {
   color: #fff;
   font-size: 16px;
   font-weight: 500;
@@ -197,4 +197,20 @@
   width: 133px;
   display: flex;
   justify-content: space-between;
+}
+.wrap .dishesContainer .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .dishesContainer .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_btns .dishesContainer_sushi_btn {
+  width: 126px;
+  height: 35px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px #F73859 solid;
 }/*# sourceMappingURL=menu.css.map */
