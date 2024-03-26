@@ -165,4 +165,36 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 100px;
+  padding: 0 40px 0 40px;
+  justify-content: space-between;
+}
+.wrap .dishesContainer .dishesContainer_typeChoise .dishesContainer_dishes .dishesContainer_sushi {
+  width: 260px;
+  color: #F73859;
+}
+.wrap .dishesContainer .dishesContainer_typeChoise .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_img {
+  width: 260px;
+}
+.wrap .dishesContainer .dishesContainer_typeChoise .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_namePriceCon {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .dishesContainer .dishesContainer_typeChoise .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_namePriceCon .dishesContainer_sushi_name {
+  font-size: 24px;
+  font-weight: 400;
+}
+.wrap .dishesContainer .dishesContainer_typeChoise .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_namePriceCon .dishesContainer_sushi_price {
+  font-size: 20px;
+  font-weight: 700;
+}
+.wrap .dishesContainer .dishesContainer_typeChoise .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_availability {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  width: 133px;
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=menu.css.map */

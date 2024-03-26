@@ -150,6 +150,38 @@
                 width: 100%;
                 display: flex;
                 flex-wrap: wrap;
+                margin-top: 100px;
+                padding: 0 40px 0 40px;
+                justify-content: space-between;
+                .dishesContainer_sushi{
+                    width: 260px;
+                    color: #F73859;
+                    .dishesContainer_sushi_img{
+                        width: 260px;
+                    }
+                    .dishesContainer_sushi_namePriceCon{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        .dishesContainer_sushi_name{
+                            font-size: 24px;
+                            font-weight: 400;
+                        }
+                        .dishesContainer_sushi_price{
+                            font-size: 20px;
+                            font-weight: 700;
+                        }
+                    }
+                    .dishesContainer_sushi_availability{
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: 500;
+                        display: flex;
+                        width: 133px;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
             }
         }
     }
