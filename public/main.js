@@ -134,13 +134,10 @@ function changeTheme(theme){
         );
         $('.ordersCount').css('background-color', '#fff')
         $('.ordersCount').css('color', '#F8385A')
-
         $('::selection').css('background-color', '#fff');
         $('::selection').css('color', '#CB324D');
-
         $('::-webkit-scrollbar-track').css('background-color', '#fff');
         $('.header_burgerRow').css('background-color', '#fff')
-
           
     }else{
         $('.header_theme').css('justify-content', 'flex-end');

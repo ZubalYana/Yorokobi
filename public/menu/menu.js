@@ -118,33 +118,10 @@ let sushiArr = [
         price: '7.00',
         name: 'Soho sushi',
         img: './menuImgs/image-removebg-preview (18).png',
-        availability: true,
-        rating: 5,
+        availability: false,
+        rating: 1,
     },
-    // {
-    //     id: 2,
-    //     price: '8.50',
-    //     name: 'Aoi sushi',
-    //     img: './menuImgs/image-removebg-preview (18).png',
-    //     availability: true,
-    //     rating: 5,
-    // },
-    // {
-    //     id: 3,
-    //     price: '9.20',
-    //     name: 'Mink sushi',
-    //     img: './menuImgs/image-removebg-preview (18).png',
-    //     availability: false,
-    //     rating: 4,
-    // },
-    // {
-    //     id: 3,
-    //     price: '9.20',
-    //     name: 'Hoyo sushi',
-    //     img: './menuImgs/image-removebg-preview (18).png',
-    //     availability: true,
-    //     rating: 3,
-    // },
+
 ]
 for(let dish of sushiArr){
     $('.dishesContainer_dishes').append(
