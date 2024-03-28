@@ -237,9 +237,11 @@ $('#sushi').click(()=>{
     }
 })
 $('#tempura').click(()=>{
+    $('.dishesContainer_dishes').empty();
+
         for(let dish of dishArr){
-        $('.dishesContainer_dishes').empty();
         if(dish.type == 'tempura'){
+            console.log(dish.name)
             $('.dishesContainer_dishes').append(
                 `<div class="dishesContainer_sushi">
                 <img class='dishesContainer_sushi_img' src="${dish.img}" alt="">
@@ -276,8 +278,9 @@ $('#tempura').click(()=>{
     }
 })
 $('#soba').click(()=>{
-    for(let dish of dishArr){
     $('.dishesContainer_dishes').empty();
+
+    for(let dish of dishArr){
     if(dish.type == 'soba'){
         $('.dishesContainer_dishes').append(
             `<div class="dishesContainer_sushi">
@@ -315,8 +318,9 @@ $('#soba').click(()=>{
 }
 })
 $('#ramen').click(()=>{
-    for(let dish of dishArr){
     $('.dishesContainer_dishes').empty();
+
+    for(let dish of dishArr){
     if(dish.type == 'ramen'){
         $('.dishesContainer_dishes').append(
             `<div class="dishesContainer_sushi">
@@ -354,8 +358,9 @@ $('#ramen').click(()=>{
 }
 })
 $('#drinks').click(()=>{
-    for(let dish of dishArr){
     $('.dishesContainer_dishes').empty();
+
+    for(let dish of dishArr){
     if(dish.type == 'drink'){
         $('.dishesContainer_dishes').append(
             `<div class="dishesContainer_sushi">

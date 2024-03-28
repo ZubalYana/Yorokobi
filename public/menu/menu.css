@@ -163,6 +163,7 @@
 }
 .wrap .dishesContainer .dishesContainer_dishes {
   width: 100%;
+  min-height: 200px;
   display: flex;
   flex-wrap: wrap;
   margin-top: 100px;
