@@ -149,6 +149,15 @@ let dishArr = [
         availability: true,
         rating: 5,
     },
+    {
+        id: 4,
+        type: 'drink',
+        price: '1.50',
+        name: 'Ramen Mix',
+        img: './menuImgs/ramen 1.png',
+        availability: true,
+        rating: 5,
+    },
 
 ]
 for(let dish of dishArr){
