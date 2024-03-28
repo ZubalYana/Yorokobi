@@ -126,7 +126,7 @@ let dishArr = [
         id: 2,
         type: 'tempura',
         price: '3.00',
-        name: 'Fried Tempura',
+        name: 'Salad Tempura',
         img: './menuImgs/tempura 1.png',
         availability: true,
         rating: 5,
