@@ -112,9 +112,10 @@ $('#drings').click(()=>{
 
 
 //dishes appending
-let sushiArr = [
+let dishArr = [
     {
         id: 1,
+        type: 'sushi',
         price: '7.00',
         name: 'Soho sushi',
         img: './menuImgs/image-removebg-preview (18).png',
@@ -123,22 +124,25 @@ let sushiArr = [
     },
 
 ]
-for(let dish of sushiArr){
-    $('.dishesContainer_dishes').append(
-        `<div class="dishesContainer_sushi">
-        <img class='dishesContainer_sushi_img' src="${dish.img}" alt="">
-        <div class="dishesContainer_sushi_namePriceCon">
-            <div class="dishesContainer_sushi_name">${dish.name}</div>
-            <div class="dishesContainer_sushi_price">$${dish.price}</div>
-        </div>
-        <div class="dishesContainer_sushi_availability"></div>
-        <div class="dishesContainer_sushi_btns">
-    <div class="dishesContainer_sushi_btn" id="dishInfoBtn">Info</div>
-    <div class="dishesContainer_sushi_btn" id="dishOrderBtn">Order</div>
-</div>
-        <div class="dishesContainer_sushi_rating"></div>
-    </div>`
-    )
+for(let dish of dishArr){
+    if(dish.type == 'sushi'){
+        $('.dishesContainer_dishes').append(
+            `<div class="dishesContainer_sushi">
+            <img class='dishesContainer_sushi_img' src="${dish.img}" alt="">
+            <div class="dishesContainer_sushi_namePriceCon">
+                <div class="dishesContainer_sushi_name">${dish.name}</div>
+                <div class="dishesContainer_sushi_price">$${dish.price}</div>
+            </div>
+            <div class="dishesContainer_sushi_availability"></div>
+            <div class="dishesContainer_sushi_btns">
+        <div class="dishesContainer_sushi_btn" id="dishInfoBtn">Info</div>
+        <div class="dishesContainer_sushi_btn" id="dishOrderBtn">Order</div>
+    </div>
+            <div class="dishesContainer_sushi_rating"></div>
+        </div>`
+        )
+    }
+
     if(dish.availability == true){
         $('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>')
     }else{
