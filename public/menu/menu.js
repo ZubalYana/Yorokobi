@@ -16,7 +16,7 @@ $('#sushi').click(()=>{
         'background-color': '#13161B',
         'color': '#F73859',
     })
-    $('#drings').css({
+    $('#drinks').css({
         'background-color': '#13161B',
         'color': '#F73859',
     })
@@ -38,7 +38,7 @@ $('#tempura').click(()=>{
         'background-color': '#13161B',
         'color': '#F73859',
     })
-    $('#drings').css({
+    $('#drinks').css({
         'background-color': '#13161B',
         'color': '#F73859',
     })
@@ -60,7 +60,7 @@ $('#soba').click(()=>{
         'background-color': '#13161B',
         'color': '#F73859',
     })
-    $('#drings').css({
+    $('#drinks').css({
         'background-color': '#13161B',
         'color': '#F73859',
     })
@@ -82,13 +82,13 @@ $('#ramen').click(()=>{
         'background-color': '#13161B',
         'color': '#F73859',
     })
-    $('#drings').css({
+    $('#drinks').css({
         'background-color': '#13161B',
         'color': '#F73859',
     })
 })
 $('#drinks').click(()=>{
-    $('#drings').css({
+    $('#drinks').css({
         'background-color': '#F73859',
         'color': '#fff',
     })
