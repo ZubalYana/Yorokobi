@@ -4,7 +4,7 @@ $('#sushi').click(()=>{
         'background-color': '#F73859',
         'color': '#fff',
     })
-    $('#tempura').css({
+    $('#snack').css({
         'background-color': '#13161B',
         'color': '#F73859',
     })
@@ -21,8 +21,8 @@ $('#sushi').click(()=>{
         'color': '#F73859',
     })
 })
-$('#tempura').click(()=>{
-    $('#tempura').css({
+$('#snack').click(()=>{
+    $('#snack').css({
         'background-color': '#F73859',
         'color': '#fff',
     })
@@ -52,7 +52,7 @@ $('#soba').click(()=>{
         'background-color': '#13161B',
         'color': '#F73859',
     })
-    $('#tempura').css({
+    $('#snack').css({
         'background-color': '#13161B',
         'color': '#F73859',
     })
@@ -78,7 +78,7 @@ $('#ramen').click(()=>{
         'background-color': '#13161B',
         'color': '#F73859',
     })
-    $('#tempura').css({
+    $('#snack').css({
         'background-color': '#13161B',
         'color': '#F73859',
     })
@@ -104,7 +104,7 @@ $('#drinks').click(()=>{
         'background-color': '#13161B',
         'color': '#F73859',
     })
-    $('#tempura').css({
+    $('#snack').css({
         'background-color': '#13161B',
         'color': '#F73859',
     })
@@ -124,7 +124,7 @@ let dishArr = [
     },
     {
         id: 2,
-        type: 'tempura',
+        type: 'snack',
         price: '3.00',
         name: 'Salad Tempura',
         img: './menuImgs/tempura 1.png',
@@ -236,11 +236,11 @@ $('#sushi').click(()=>{
         }
     }
 })
-$('#tempura').click(()=>{
+$('#snack').click(()=>{
     $('.dishesContainer_dishes').empty();
 
         for(let dish of dishArr){
-        if(dish.type == 'tempura'){
+        if(dish.type == 'snack'){
             console.log(dish.name)
             $('.dishesContainer_dishes').append(
                 `<div class="dishesContainer_sushi">
