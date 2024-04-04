@@ -366,69 +366,69 @@ let dishArr = [
         availability: true,
         rating: 4,
     },
-    // {
-    //     id: 48,
-    //     type: 'soba',
-    //     price: 4.99,
-    //     name: 'Zaru Soba',
-    //     img: './menuImgs/soba 9.png',
-    //     availability: true,
-    //     rating: 4,
-    // },
-    // {
-    //     id: 49,
-    //     type: 'soba',
-    //     price: 4.99,
-    //     name: 'Kake Soba',
-    //     img: './menuImgs/soba 10.png',
-    //     availability: true,
-    //     rating: 4,
-    // },
-    // {
-    //     id: 50,
-    //     type: 'soba',
-    //     price: 4.99,
-    //     name: 'Miso Soba',
-    //     img: './menuImgs/soba 11.png',
-    //     availability: true,
-    //     rating: 4,
-    // },
-    // {
-    //     id: 40,
-    //     type: 'soba',
-    //     price: 3.22,
-    //     name: 'Toshikoshi Soba',
-    //     img: './menuImgs/soba 1.2.png',
-    //     availability: true,
-    //     rating: 4,
-    // },
-    // {
-    //     id: 41,
-    //     type: 'soba',
-    //     price: 4.99,
-    //     name: 'Nanban Soba',
-    //     img: './menuImgs/soba 2.png',
-    //     availability: true,
-    //     rating: 4,
-    // },
-    // {
-    //     id: 45,
-    //     type: 'soba',
-    //     price: 4.99,
-    //     name: 'Sesame Soba',
-    //     img: './menuImgs/soba 6.png',
-    //     availability: true,
-    //     rating: 4,
-    // },
-    // {
-    //     id: 46,
-    //     type: 'soba',
-    //     price: 4.99,
-    //     name: 'Atarashi Soba',
-    //     img: './menuImgs/soba 7.png',
-    //     availability: true,
-    //     rating: 4,
-    // },
+    {
+        id: 48,
+        type: 'soba',
+        price: 4.99,
+        name: 'Zaru Soba',
+        img: './menuImgs/soba 9.png',
+        availability: true,
+        rating: 4,
+    },
+    {
+        id: 49,
+        type: 'soba',
+        price: 4.99,
+        name: 'Kake Soba',
+        img: './menuImgs/soba 10.png',
+        availability: true,
+        rating: 4,
+    },
+    {
+        id: 50,
+        type: 'soba',
+        price: 4.99,
+        name: 'Miso Soba',
+        img: './menuImgs/soba 11.png',
+        availability: true,
+        rating: 4,
+    },
+    {
+        id: 40,
+        type: 'soba',
+        price: 3.22,
+        name: 'Toshikoshi Soba',
+        img: './menuImgs/soba 1.2.png',
+        availability: true,
+        rating: 4,
+    },
+    {
+        id: 41,
+        type: 'soba',
+        price: 4.99,
+        name: 'Nanban Soba',
+        img: './menuImgs/soba 2.png',
+        availability: true,
+        rating: 4,
+    },
+    {
+        id: 45,
+        type: 'soba',
+        price: 4.99,
+        name: 'Sesame Soba',
+        img: './menuImgs/soba 6.png',
+        availability: true,
+        rating: 4,
+    },
+    {
+        id: 46,
+        type: 'soba',
+        price: 4.99,
+        name: 'Atarashi Soba',
+        img: './menuImgs/soba 7.png',
+        availability: true,
+        rating: 4,
+    },
 
 
 
@@ -516,24 +516,40 @@ $('#snack').click(()=>{
     $('.dishesContainer_dishes').empty();
 
         for(let dish of dishArr){
-        if(dish.type == 'snack'){
-            console.log(dish.name)
-            $('.dishesContainer_dishes').append(
-                `<div class="dishesContainer_sushi">
-                <img class='dishesContainer_sushi_img' src="${dish.img}" alt="">
-                <div class="dishesContainer_sushi_namePriceCon">
-                    <div class="dishesContainer_sushi_name">${dish.name}</div>
-                    <div class="dishesContainer_sushi_price">$${dish.price}</div>
-                </div>
-                <div class="dishesContainer_sushi_availability"></div>
-                <div class="dishesContainer_sushi_btns">
-            <div class="dishesContainer_sushi_btn" id="dishInfoBtn">Info</div>
-            <div class="dishesContainer_sushi_btn" id="dishOrderBtn">Order</div>
-        </div>
-                <div class="dishesContainer_sushi_rating"></div>
-            </div>`
-            )
-        }
+            if (dish.type == 'snack') {
+                let $sushiContainer = $('<div class="dishesContainer_sushi"></div>');
+                $sushiContainer.append(`
+                    <img class='dishesContainer_sushi_img' src="${dish.img}" alt="">
+                    <div class="dishesContainer_sushi_namePriceCon">
+                        <div class="dishesContainer_sushi_name">${dish.name}</div>
+                        <div class="dishesContainer_sushi_price">$${dish.price}</div>
+                    </div>
+                    <div class="dishesContainer_sushi_availability"></div>
+                    <div class="dishesContainer_sushi_btns">
+                        <div class="dishesContainer_sushi_btn" id="dishInfoBtn">Info</div>
+                        <div class="dishesContainer_sushi_btn" id="dishOrderBtn">Order</div>
+                    </div>
+                    <div class="dishesContainer_sushi_rating"></div>
+                `);
+        
+                if (dish.availability == true) {
+                    $sushiContainer.find('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>');
+                } else {
+                    $sushiContainer.find('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>').css('color', '#959595');
+                }
+        
+                let ratingHtml = '';
+                for (let i = 0; i < 5; i++) {
+                    if (i < dish.rating) {
+                        ratingHtml += '<i class="fa-solid fa-star"></i>';
+                    } else {
+                        ratingHtml += '<i class="fa-regular fa-star"></i>';
+                    }
+                }
+                $sushiContainer.find('.dishesContainer_sushi_rating').html(ratingHtml);
+        
+                $('.dishesContainer_dishes').append($sushiContainer);
+            }
 
     }
 })
