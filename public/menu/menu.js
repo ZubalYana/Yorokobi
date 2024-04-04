@@ -451,23 +451,8 @@ for(let dish of dishArr){
         </div>`
         )
     }
-    if(dish.availability == true){
-        $('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>')
-    }else{
-        $('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>')
-        $('.dishesContainer_sushi_availability').css('color', '#959595')
-    }
-    if(dish.rating == 5){
-        $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>')
-    }else if(dish.rating == 4){
-        $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>')
-    }else if(dish.rating == 3){
-        $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>')
-    }else if(dish.rating == 2){
-        $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>')
-    }else if(dish.rating == 1){
-        $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>')
-    }
+    
+
 }
 
 $('#sushi').click(()=>{
@@ -490,23 +475,7 @@ $('#sushi').click(()=>{
             </div>`
             )
         }
-        if(dish.availability == true){
-            $('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>')
-        }else{
-            $('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>')
-            $('.dishesContainer_sushi_availability').css('color', '#959595')
-        }
-        if(dish.rating == 5){
-            $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>')
-        }else if(dish.rating == 4){
-            $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>')
-        }else if(dish.rating == 3){
-            $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>')
-        }else if(dish.rating == 2){
-            $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>')
-        }else if(dish.rating == 1){
-            $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>')
-        }
+
     }
 })
 $('#snack').click(()=>{
@@ -531,23 +500,7 @@ $('#snack').click(()=>{
             </div>`
             )
         }
-        if(dish.availability == true){
-            $('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>')
-        }else{
-            $('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>')
-            $('.dishesContainer_sushi_availability').css('color', '#959595')
-        }
-        if(dish.rating == 5){
-            $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>')
-        }else if(dish.rating == 4){
-            $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>')
-        }else if(dish.rating == 3){
-            $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>')
-        }else if(dish.rating == 2){
-            $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>')
-        }else if(dish.rating == 1){
-            $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>')
-        }
+
     }
 })
 $('#soba').click(()=>{
@@ -571,23 +524,7 @@ $('#soba').click(()=>{
         </div>`
         )
     }
-    if(dish.availability == true){
-        $('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>')
-    }else{
-        $('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>')
-        $('.dishesContainer_sushi_availability').css('color', '#959595')
-    }
-    if(dish.rating == 5){
-        $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>')
-    }else if(dish.rating == 4){
-        $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>')
-    }else if(dish.rating == 3){
-        $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>')
-    }else if(dish.rating == 2){
-        $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>')
-    }else if(dish.rating == 1){
-        $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>')
-    }
+
 }
 })
 $('#ramen').click(()=>{
@@ -611,23 +548,7 @@ $('#ramen').click(()=>{
         </div>`
         )
     }
-    if(dish.availability == true){
-        $('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>')
-    }else{
-        $('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>')
-        $('.dishesContainer_sushi_availability').css('color', '#959595')
-    }
-    if(dish.rating == 5){
-        $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>')
-    }else if(dish.rating == 4){
-        $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>')
-    }else if(dish.rating == 3){
-        $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>')
-    }else if(dish.rating == 2){
-        $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>')
-    }else if(dish.rating == 1){
-        $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>')
-    }
+
 }
 })
 $('#drinks').click(()=>{
@@ -650,23 +571,6 @@ $('#drinks').click(()=>{
             <div class="dishesContainer_sushi_rating"></div>
         </div>`
         )
-    }
-    if(dish.availability == true){
-        $('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>')
-    }else{
-        $('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>')
-        $('.dishesContainer_sushi_availability').css('color', '#959595')
-    }
-    if(dish.rating == 5){
-        $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>')
-    }else if(dish.rating == 4){
-        $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>')
-    }else if(dish.rating == 3){
-        $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>')
-    }else if(dish.rating == 2){
-        $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>')
-    }else if(dish.rating == 1){
-        $('.dishesContainer_sushi_rating').html('<i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>')
     }
 }
 })
