@@ -439,33 +439,6 @@ let dishArr = [
         rating: 5,
     },
     {
-        id: 2,
-        type: 'snack',
-        price: 3.07,
-        name: 'Salad Tempura',
-        img: './menuImgs/tempura 1.png',
-        availability: true,
-        rating: 5,
-    },
-    {
-        id: 58,
-        type: 'snack',
-        price: 5.55,
-        name: 'Sashimi Mix',
-        img: './menuImgs/sashimi Mix.png',
-        availability: true,
-        rating: 5,
-    },
-    {
-        id: 59,
-        type: 'snack',
-        price: 4.22,
-        name: 'Avocado Sashimi',
-        img: './menuImgs/avocado sashimi.png',
-        availability: true,
-        rating: 5,
-    },
-    {
         id: 60,
         type: 'snack',
         price: 3.35,
@@ -501,6 +474,53 @@ let dishArr = [
         availability: true,
         rating: 5,
     },
+    {
+        id: 67,
+        type: 'snack',
+        price: 3.25,
+        name: 'Tofu',
+        img: './menuImgs/tofu.png',
+        availability: true,
+        rating: 5,
+    },
+    {
+        id: 70,
+        type: 'snack',
+        price: 1.45,
+        name: 'Kashi Pan',
+        img: './menuImgs/kashi pan.png',
+        availability: true,
+        rating: 5,
+    },
+    {
+        id: 2,
+        type: 'snack',
+        price: 3.07,
+        name: 'Salad Tempura',
+        img: './menuImgs/tempura 1.png',
+        availability: true,
+        rating: 5,
+    },
+    {
+        id: 58,
+        type: 'snack',
+        price: 5.55,
+        name: 'Sashimi Mix',
+        img: './menuImgs/sashimi Mix.png',
+        availability: true,
+        rating: 5,
+    },
+    {
+        id: 59,
+        type: 'snack',
+        price: 4.22,
+        name: 'Avocado Sashimi',
+        img: './menuImgs/avocado sashimi.png',
+        availability: true,
+        rating: 5,
+    },
+
+
     {
         id: 63,
         type: 'snack',
@@ -546,15 +566,7 @@ let dishArr = [
         availability: true,
         rating: 5,
     },
-    {
-        id: 67,
-        type: 'snack',
-        price: 3.25,
-        name: 'Tofu',
-        img: './menuImgs/tofu.png',
-        availability: true,
-        rating: 5,
-    },
+
     {
         id: 68,
         type: 'snack',
@@ -573,15 +585,7 @@ let dishArr = [
         availability: true,
         rating: 5,
     },
-    {
-        id: 70,
-        type: 'snack',
-        price: 1.45,
-        name: 'Kashi Pan',
-        img: './menuImgs/kashi pan.png',
-        availability: true,
-        rating: 5,
-    },
+
 
 
 
