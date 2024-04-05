@@ -517,7 +517,7 @@ let dishArr = [
         name: 'Avocado Sashimi',
         img: './menuImgs/avocado sashimi.png',
         availability: true,
-        rating: 5,
+        rating: 4,
     },
 
 
@@ -546,7 +546,7 @@ let dishArr = [
         name: 'Edamame',
         img: './menuImgs/edamame.png',
         availability: true,
-        rating: 5,
+        rating: 4,
     },
     {
         id: 66,
@@ -573,7 +573,7 @@ let dishArr = [
         price: 1.45,
         name: 'Miso sup',
         img: './menuImgs/miso sup.png',
-        availability: true,
+        availability: false,
         rating: 5,
     },
     {
@@ -585,11 +585,6 @@ let dishArr = [
         availability: true,
         rating: 5,
     },
-
-
-
-
-
     {
         id: 5,
         type: 'drink',
@@ -614,7 +609,7 @@ let dishArr = [
         price: 0.45,
         name: 'Strawberry Matcha Tea',
         img: './menuImgs/Strawberry Matcha Tea.png',
-        availability: true,
+        availability: false,
         rating: 5,
     },
     {
@@ -660,13 +655,8 @@ let dishArr = [
         name: 'Aloe Lemonade',
         img: './menuImgs/Aloe Lemonade.png',
         availability: true,
-        rating: 5,
+        rating: 4,
     },
-
-
-
-
-
     {
         id: 3,
         type: 'soba',
