@@ -333,7 +333,7 @@ let dishArr = [
     {
         id: 4,
         type: 'ramen',
-        price: '5.50',
+        price: 5.55,
         name: 'Special Ramen Mix',
         img: './menuImgs/ramen 1.png',
         availability: true,
@@ -342,7 +342,7 @@ let dishArr = [
     {
         id: 47,
         type: 'ramen',
-        price: '6.25',
+        price: 6.25,
         name: 'Spicy Miso Ramen',
         img: './menuImgs/ramen 2.png',
         availability: true,
@@ -351,7 +351,7 @@ let dishArr = [
     {
         id: 48,
         type: 'ramen',
-        price: '7.50',
+        price: 7.52,
         name: 'Tonkotsu Ramen',
         img: './menuImgs/ramen 3.png',
         availability: true,
@@ -360,7 +360,7 @@ let dishArr = [
     {
         id: 49,
         type: 'ramen',
-        price: '8.75',
+        price: 8.75,
         name: 'Shoyu Ramen',
         img: './menuImgs/ramen 4.png',
         availability: false,
@@ -369,7 +369,7 @@ let dishArr = [
     {
         id: 50,
         type: 'ramen',
-        price: '9.99',
+        price: 9.99,
         name: 'Vegetable Ramen',
         img: './menuImgs/ramen 5.png',
         availability: true,
@@ -378,7 +378,7 @@ let dishArr = [
     {
         id: 51,
         type: 'ramen',
-        price: '8.50',
+        price: 8.56,
         name: 'Chicken Ramen',
         img: './menuImgs/ramen 6.png',
         availability: true,
@@ -387,7 +387,7 @@ let dishArr = [
     {
         id: 52,
         type: 'ramen',
-        price: '10.99',
+        price: 10.99,
         name: 'Seafood Ramen',
         img: './menuImgs/ramen 7.png',
         availability: true,
@@ -396,7 +396,7 @@ let dishArr = [
     {
         id: 53,
         type: 'ramen',
-        price: '7.99',
+        price: 7.99,
         name: 'Beef Ramen',
         img: './menuImgs/ramen 8.png',
         availability: true,
@@ -405,7 +405,7 @@ let dishArr = [
     {
         id: 54,
         type: 'ramen',
-        price: '8.25',
+        price: 8.25,
         name: 'Kimchi Ramen',
         img: './menuImgs/ramen 9.png',
         availability: true,
@@ -414,7 +414,7 @@ let dishArr = [
     {
         id: 55,
         type: 'ramen',
-        price: '9.50',
+        price: 9.57,
         name: 'Sesame Ramen',
         img: './menuImgs/ramen 10.png',
         availability: true,
@@ -423,7 +423,7 @@ let dishArr = [
     {
         id: 56,
         type: 'ramen',
-        price: '7.75',
+        price: 7.75,
         name: 'Curry Ramen',
         img: './menuImgs/ramen 11.png',
         availability: true,
@@ -432,7 +432,7 @@ let dishArr = [
     {
         id: 57,
         type: 'ramen',
-        price: '11.25',
+        price: 11.25,
         name: 'Duck Ramen',
         img: './menuImgs/ramen 12.png',
         availability: true,
@@ -441,25 +441,51 @@ let dishArr = [
     {
         id: 2,
         type: 'snack',
-        price: '3.00',
+        price: 3.07,
         name: 'Salad Tempura',
         img: './menuImgs/tempura 1.png',
         availability: true,
         rating: 5,
     },
     {
+        id: 58,
+        type: 'snack',
+        price: 5.55,
+        name: 'Sashimi Mix',
+        img: './menuImgs/sashimi Mix.png',
+        availability: true,
+        rating: 5,
+    },
+    {
+        id: 59,
+        type: 'snack',
+        price: 4.20,
+        name: 'Avocado Sashimi',
+        img: './menuImgs/sashimi Mix.png',
+        availability: true,
+        rating: 5,
+    },
+
+
+
+
+    {
         id: 5,
         type: 'drink',
-        price: '0.70',
+        price: 0.75,
         name: 'Matcha tea',
         img: './menuImgs/drink 1.png',
         availability: true,
         rating: 5,
     },
+
+
+
+
     {
         id: 3,
         type: 'soba',
-        price: '4.20',
+        price: 4.22,
         name: 'Nature Soba',
         img: './menuImgs/soba 1.png',
         availability: true,
