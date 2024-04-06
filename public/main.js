@@ -138,7 +138,8 @@ function changeTheme(theme){
         $('::selection').css('color', '#CB324D');
         $('::-webkit-scrollbar-track').css('background-color', '#fff');
         $('.header_burgerRow').css('background-color', '#fff')
-          
+        $('.headerActivePage').css('background-color', '#fff')
+
     }else{
         $('.header_theme').css('justify-content', 'flex-end');
         $('.wrap').css('background-color', '#13161B');
@@ -246,7 +247,8 @@ function changeTheme(theme){
         $('::-webkit-scrollbar-track').css('background-color', '#13161B');
         $('.header_burgerRow').css('background-color', '#13161B')
 
-        
+        $('.headerActivePage').css('background-color', '#13161B')
+
     }
 }
 changeTheme(theme);
