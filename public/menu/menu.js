@@ -769,8 +769,6 @@ for (let dish of dishArr) {
         $('.dishesContainer_dishes').append($sushiContainer);
     }
 }
-
-
 $('#sushi').click(()=>{
     $('.dishesContainer_dishes').empty();
     for(let dish of dishArr){
