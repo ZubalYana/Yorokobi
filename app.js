@@ -8,7 +8,7 @@ const PORT = 3000;
 const path = require('path');
 const fs = require('fs');
 const users = [
-    { id: 1, username: 'admin', password: 'hello0000' },
+    { id: 1, username: 'Yorokobi Admin', password: '2024' },
 ];
 
 passport.use(new LocalStrategy((username, password, done) => {
