@@ -240,10 +240,17 @@
   position: absolute;
   transition: 0.5s ease;
 }
-.wrap .locationPage .locationPage_worldContainer .NorthAmericaContainer #NorthAmerica {
+.wrap .locationPage .locationPage_worldContainer .NorthAmericaContainer {
+  background-color: #fff;
   width: 255px;
   height: 229px;
   left: 328px;
+  position: absolute;
+}
+.wrap .locationPage .locationPage_worldContainer .NorthAmericaContainer #NorthAmerica {
+  width: 255px;
+  height: 229px;
+  position: relative;
 }
 .wrap .locationPage .locationPage_worldContainer .NorthAmericaContainer .NorthAmericaContainer_points {
   position: absolute;

@@ -279,6 +279,8 @@ $('#NorthAmerica').on({
 
     }
 });
+
+
 // $('.NorthAmericaContainer_point').on({
 //     mouseenter: function() {
 //         $('#NorthAmerica').css({

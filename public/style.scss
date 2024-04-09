@@ -231,10 +231,16 @@
                 transition: 0.5s ease;
             }
             .NorthAmericaContainer{
+                background-color: #fff;
+                width: 255px;
+                height: 229px;
+                left: 328px;
+                position: absolute;
+
                 #NorthAmerica{
                     width: 255px;
                     height: 229px;
-                    left: 328px;
+                    position: relative;
                 }
                 .NorthAmericaContainer_points{
                     position: absolute;
