@@ -255,9 +255,9 @@ changeTheme(theme);
 
 
 //mainlands hover animation
-$('#NorthAmerica').on({
+$('.NorthAmericaContainer').on({
     mouseenter: function() {
-        $(this).css({
+        $('.NorthAmericaContainer').css({
             'width': '285px',
             'height': '256px',
             'left': '307px',
@@ -269,7 +269,7 @@ $('#NorthAmerica').on({
         }, 500);
     },
     mouseleave: function() {
-        $(this).css({
+        $('.NorthAmericaContainer').css({
             'width': '255px',
             'height': '229px',
             'left': '328px',
