@@ -190,7 +190,8 @@
   justify-content: space-between;
 }
 .wrap .dishesContainer .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_namePriceCon .dishesContainer_sushi_name {
-  font-size: 24px;
+  width: 150px;
+  font-size: 20px;
   font-weight: 400;
 }
 .wrap .dishesContainer .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_namePriceCon .dishesContainer_sushi_price {
