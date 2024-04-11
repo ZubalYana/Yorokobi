@@ -1,3 +1,30 @@
+//theme changing
+let theme = localStorage.getItem('theme') || 'light';
+$('.header_theme').click(function(){
+    if(theme == 'light'){
+        theme = 'dark';
+        localStorage.setItem('theme', theme);
+        changeTheme(theme);
+
+    }else{
+        theme = 'light';
+        localStorage.setItem('theme', theme);
+        changeTheme(theme);
+    }
+})
+function changeTheme(theme){
+    if(theme == 'light'){
+        $('.header_theme').css('justify-content', 'flex-start');
+        $('.wrap').css('background-color', '#fff');
+    }else{
+        $('.header_theme').css('justify-content', 'flex-end');
+        $('.wrap').css('background-color', '#13161B');
+
+
+    }
+}
+changeTheme(theme);
+
 //type of dish clicked apperience 
 $('#sushi').click(()=>{
     $('#sushi').css({
