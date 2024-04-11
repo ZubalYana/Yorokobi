@@ -4,14 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./imgs/sushi (3).png">
-    <title>Yorokobi Orders</title>
+    <title>Yorokobi menu</title>
     <link rel="stylesheet" href="./orders.css">
+    <link href="https://fonts.googleapis.com/css?family=MuseoModerno:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js' integrity='sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==' crossorigin='anonymous'></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css' integrity='sha512-tx5+1LWHez1QiaXlAyDwzdBTfDjX07GMapQoFTS74wkcPMsI3So0KYmFe6EHZjI8+eSG0ljBlAQc3PQ5BTaZtQ==' crossorigin='anonymous'/>
+    <!-- <link rel="stylesheet" href="./menuAdaptability.css"> -->
 </head>
 <body>
-    <h1>Orders</h1>
+    <div class="wrap">
+        <div class="header">
+            <img class="header_logo" src="./menuImgs/red logo.png" alt="">
+            <div class="header_nav">
+                <a class="header_nav_el" id="homePage" href="/">Home page</a>
+                <a class="header_nav_el" id="menu" href="/menu">Menu<div class="headerActivePage"></div></a>
+                <a class="header_nav_el" id="orders" href="/orders">Orders <div class="ordersCount">0</div></a>
+                <a class="header_nav_el" id="contacts" href="/contacts">Contacts</a>
+            </div>
+            <div class="header_burger">
+                <div class="header_burgerRow"></div>
+                <div class="header_burgerRow"></div>
+                <div class="header_burgerRow"></div>
+            </div>
+            <div class="header_languageThemeCon">
+                <select class="header_language">
+                    <option value="Eng">Eng.</option>
+                    <option value="Ukr">Ukr.</option>
+                    <option value="Jap">Jap.</option>
+                    <option value="Fr">Fr.</option>
+                    <option value="It">It.</option>
+                    <option value="Por">Por.</option>
+                </select>
+                <div class="header_theme">
+                    <div class="header_themeCircle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
 
-
-    <script src="./orders.js"></script>
+    <script src="./menu.js"></script>
 </body>
 </html>
