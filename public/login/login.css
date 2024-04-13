@@ -54,4 +54,10 @@
   font-size: 40px;
   font-weight: 600;
   cursor: pointer;
+  margin-bottom: 20px;
+}
+.wrap .logginingInCon p {
+  color: #fff;
+  margin-bottom: 5px;
+  cursor: pointer;
 }/*# sourceMappingURL=login.css.map */
