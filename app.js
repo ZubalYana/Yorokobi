@@ -26,7 +26,7 @@ passport.deserializeUser((id, done) => {
     const user = users.find(u => u.id == id);
     done(null, user);
 })
-
+app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(session({ secret: 'secret-key', resave: false, saveUninitialized: false }));
 app.use(passport.initialize());
