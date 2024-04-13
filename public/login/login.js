@@ -54,7 +54,18 @@ $('button').hover(
     () => {
         $('button').css({
             'background-color': '#fff',
-
+        });
+    }
+);
+$('p').hover(
+    function(){
+        $(this).css({
+            'color': '#F73859',
+        });
+    },
+    function(){
+        $(this).css({
+            'color': '#fff',
         });
     }
 );
