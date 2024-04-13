@@ -37,11 +37,15 @@
   width: 169px;
   height: 45px;
 }
-.wrap .logginingInCon form {
+.wrap .logginingInCon .logginingInCon_contentCon {
+  width: 100%;
+  display: flex;
+}
+.wrap .logginingInCon .logginingInCon_contentCon .logginingInPopup_logginingCon form {
   display: flex;
   flex-direction: column;
 }
-.wrap .logginingInCon form input {
+.wrap .logginingInCon .logginingInCon_contentCon .logginingInPopup_logginingCon form input {
   width: 401px;
   height: 61px;
   border: #fff 1px solid;
@@ -53,7 +57,7 @@
   background-color: #13161B;
   margin-bottom: 30px;
 }
-.wrap .logginingInCon form button {
+.wrap .logginingInCon .logginingInCon_contentCon .logginingInPopup_logginingCon form button {
   width: 288px;
   height: 87px;
   border-radius: 20px;
@@ -67,7 +71,7 @@
   cursor: pointer;
   margin-bottom: 20px;
 }
-.wrap .logginingInCon p {
+.wrap .logginingInCon .logginingInCon_contentCon .logginingInPopup_logginingCon p {
   color: #fff;
   margin-bottom: 5px;
   cursor: pointer;
