@@ -79,7 +79,7 @@
 .wrap .logginingInCon .logginingInCon_contentCon .logginingInPopup_noriCon {
   position: relative;
 }
-.wrap .logginingInCon .logginingInCon_contentCon .logginingInPopup_noriCon img {
+.wrap .logginingInCon .logginingInCon_contentCon .logginingInPopup_noriCon .onigiriImg {
   width: 198px;
   position: absolute;
   cursor: pointer;
