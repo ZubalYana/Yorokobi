@@ -1,3 +1,4 @@
+//animations
 $('#onigiri1').hover(
     () => {
         $('#onigiri1').css({
@@ -29,6 +30,18 @@ $('#onigiri2').hover(
             'width': '198px',
             'top': '160px',
             'z-index': '2',
+        });
+    }
+);
+$('input').hover(
+    function(){
+        $(this).css({
+            'border': '#F73859 1px solid',
+        });
+    },
+    function(){
+        $(this).css({
+            'border': '#fff 1px solid',
         });
     }
 );
