@@ -19,12 +19,23 @@
   border: 2px #F73859 solid;
   border-radius: 40px;
   padding: 50px;
+  padding-top: 30px;
 }
-.wrap .logginingInCon h1 {
+.wrap .logginingInCon .logginingInPopup_titleLogoCon {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.wrap .logginingInCon .logginingInPopup_titleLogoCon h1 {
   font-size: 64px;
   color: #F73859;
   font-weight: 600;
-  margin-bottom: 20px;
+}
+.wrap .logginingInCon .logginingInPopup_titleLogoCon img {
+  width: 169px;
+  height: 45px;
 }
 .wrap .logginingInCon form {
   display: flex;
