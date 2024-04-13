@@ -45,3 +45,16 @@ $('input').hover(
         });
     }
 );
+$('button').hover(
+    () => {
+        $('button').css({
+            'background-color': '#F73859',
+        });
+    },
+    () => {
+        $('button').css({
+            'background-color': '#fff',
+
+        });
+    }
+);

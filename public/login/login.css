@@ -57,6 +57,7 @@
   background-color: #13161B;
   margin-bottom: 30px;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 .wrap .logginingInCon .logginingInCon_contentCon .logginingInPopup_logginingCon form button {
   width: 288px;
@@ -71,6 +72,7 @@
   font-weight: 600;
   cursor: pointer;
   margin-bottom: 20px;
+  transition: 0.3s ease;
 }
 .wrap .logginingInCon .logginingInCon_contentCon .logginingInPopup_logginingCon p {
   color: #fff;
