@@ -75,4 +75,20 @@
   color: #fff;
   margin-bottom: 5px;
   cursor: pointer;
+}
+.wrap .logginingInCon .logginingInCon_contentCon .logginingInPopup_noriCon {
+  position: relative;
+}
+.wrap .logginingInCon .logginingInCon_contentCon .logginingInPopup_noriCon img {
+  width: 198px;
+  position: absolute;
+  cursor: pointer;
+}
+.wrap .logginingInCon .logginingInCon_contentCon .logginingInPopup_noriCon #onigiri1 {
+  top: 80px;
+  left: 70px;
+}
+.wrap .logginingInCon .logginingInCon_contentCon .logginingInPopup_noriCon #onigiri2 {
+  top: 160px;
+  left: -20px;
 }/*# sourceMappingURL=login.css.map */

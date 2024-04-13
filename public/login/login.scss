@@ -77,6 +77,22 @@
                     cursor: pointer;
                 }
             }
+            .logginingInPopup_noriCon{
+                position: relative;
+                img{
+                    width: 198px;
+                    position: absolute;
+                    cursor: pointer;
+                }
+                #onigiri1{
+                    top: 80px;
+                    left: 70px;
+                }
+                #onigiri2{
+                    top: 160px;
+                    left: -20px;
+                }
+            }
         }
 
     }
