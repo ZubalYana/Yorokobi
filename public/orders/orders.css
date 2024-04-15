@@ -179,6 +179,12 @@
   font-weight: 400;
   border-radius: 20px;
   cursor: pointer;
+  transition: 0.5s ease;
+}
+.wrap .ordersContainer .order .orderBtns .orderBtn:hover {
+  background-color: #F73859;
+  color: #fff;
+  border: 1px #F73859 solid;
 }
 .wrap .ordersContainer .order .orderBtns #order_infoBtn {
   margin-right: 30px;

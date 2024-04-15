@@ -16,14 +16,14 @@ function changeTheme(theme){
     if(theme == 'light'){
         $('.header_theme').css('justify-content', 'flex-start');
         $('.wrap').css('background-color', '#fff');
-        $('.dishesContainer_typeChoise_item').css('background-color', '#fff');
+        // $('.dishesContainer_typeChoise_item').css('background-color', '#fff');
         $('.ordersCount').css('color', '#fff');
         $('select').css('background-color', '#fff');
         $('.header_themeCircle').css('background-color', '#fff');
     }else{
         $('.header_theme').css('justify-content', 'flex-end');
         $('.wrap').css('background-color', '#13161B');
-        $('.dishesContainer_typeChoise_item').css('background-color', '#13161B');
+        // $('.dishesContainer_typeChoise_item').css('background-color', '#13161B');
         $('.ordersCount').css('color', '#13161B');
         $('select').css('background-color', '#13161B');
         $('.header_themeCircle').css('background-color', '#13161B');
