@@ -37,6 +37,12 @@ app.post('/login', passport.authenticate('local', {
     failureRedirect: '/login',
     failureFlash: true
 }))
+function isLoggedIn(req, res, next) {
+    if (req.isAuthenticated()) {
+        return next();
+    }
+    res.redirect('/login');
+}
 app.get('/admin', isLoggedIn, (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'admin'));
 })
@@ -53,12 +59,6 @@ app.get('/contacts', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'contacts', 'contacts.html'));
 })
 
-function isLoggedIn(req, res, next) {
-    if (req.isAuthenticated()) {
-        return next();
-    }
-    res.redirect('/login');
-}
 
 
 app.use((err, req, res, next) => {
