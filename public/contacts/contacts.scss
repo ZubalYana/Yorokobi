@@ -202,9 +202,41 @@ body{
             height: 560px;
             border-radius: 6px;
             background-color: #F73859;
+            margin: 0 50px;
         }
         .locationAndHours{
             width: 50%;
+            h1{
+                font-size: 40px;
+                font-weight: 700;
+                color: #F73859;
+            }
+            h5{
+                font-size: 16px;
+                font-weight: 400;
+                color: #fff;
+                margin-bottom: 20px;
+            }
+            .locationAndHours_hoursAndMedia{
+                width: 100%;
+                display: flex;
+                align-items: flex-end;
+                .locationAndHours_hours{
+                    .locationAndHours_hours_daysClasification{
+                        display: flex;
+                        font-size: 16px;
+                        font-weight: 400;
+                        .locationAndHours_hours_days{
+                            color: #F73859;
+                        }
+                        .locationAndHours_hours_hours{
+                            color: #fff;
+                            margin-left: 6px;
+                        }
+                    }
+                }
+            }
+
         }
     }
 }
