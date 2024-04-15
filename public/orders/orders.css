@@ -37,6 +37,7 @@
   min-height: 100vh;
   background-color: #13161B;
   overflow-x: hidden;
+  padding: 40px;
 }
 .wrap .header {
   position: relative;
@@ -46,7 +47,6 @@
           user-select: none;
   display: flex;
   justify-content: space-between;
-  padding: 40px;
 }
 .wrap .header .header_burger {
   width: 40px;
@@ -133,4 +133,15 @@
 .wrap .header a {
   color: #F73859;
   text-decoration: none;
+}
+.wrap .ordersContainer {
+  width: 100%;
+  min-height: 75vh;
+  margin-top: 40px;
+}
+.wrap .ordersContainer .order {
+  width: 100%;
+  height: 137px;
+  border: #F73859 2px solid;
+  border-radius: 30px;
 }/*# sourceMappingURL=orders.css.map */
