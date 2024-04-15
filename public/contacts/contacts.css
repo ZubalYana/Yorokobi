@@ -133,4 +133,21 @@
 .wrap .header a {
   color: #F73859;
   text-decoration: none;
+}
+.wrap .contactsConainer {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+}
+.wrap .contactsConainer .connectionForm {
+  width: 50%;
+}
+.wrap .contactsConainer .separetiveLine {
+  width: 2px;
+  height: 560px;
+  border-radius: 6px;
+  background-color: #F73859;
+}
+.wrap .contactsConainer .locationAndHours {
+  width: 50%;
 }/*# sourceMappingURL=contacts.css.map */

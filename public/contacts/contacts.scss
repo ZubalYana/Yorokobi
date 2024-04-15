@@ -30,7 +30,6 @@
     background-color: #13161B;
     overflow-x: hidden;
     padding: 40px;
-
     .header{
         position: relative;
         z-index: 3;
@@ -122,6 +121,23 @@
         a{
             color: #F73859;
             text-decoration: none;
+        }
+    }
+    .contactsConainer{
+        width: 100%;
+        display: flex;
+        margin-top: 10px;
+        .connectionForm{
+            width: 50%;
+        }
+        .separetiveLine{
+            width: 2px;
+            height: 560px;
+            border-radius: 6px;
+            background-color: #F73859;
+        }
+        .locationAndHours{
+            width: 50%;
         }
     }
 }
