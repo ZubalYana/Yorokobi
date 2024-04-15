@@ -24,6 +24,10 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #882133; 
 }
+body{
+    overflow: hidden;
+
+}
 .wrap{
     width: 100%;
     min-height: 100vh;
