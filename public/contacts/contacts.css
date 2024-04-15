@@ -142,6 +142,63 @@
 .wrap .contactsConainer .connectionForm {
   width: 50%;
 }
+.wrap .contactsConainer .connectionForm h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #F73859;
+}
+.wrap .contactsConainer .connectionForm h5 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.wrap .contactsConainer .connectionForm .connectionForm_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 488px;
+}
+.wrap .contactsConainer .connectionForm .connectionForm_form input {
+  width: 488px;
+  height: 58px;
+  border-radius: 20px;
+  border: 2px #F73859 solid;
+  background-color: #13161B;
+  padding: 14px;
+  outline: none;
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 300;
+}
+.wrap .contactsConainer .connectionForm .connectionForm_form textarea {
+  width: 488px;
+  height: 238px;
+  border-radius: 20px;
+  border: 2px #F73859 solid;
+  background-color: #13161B;
+  padding: 14px;
+  resize: none;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+}
+.wrap .contactsConainer .connectionForm .connectionForm_form button {
+  width: 175px;
+  height: 69px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #13161B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 400;
+  cursor: pointer;
+  margin-top: -35px;
+}
 .wrap .contactsConainer .separetiveLine {
   width: 2px;
   height: 560px;
