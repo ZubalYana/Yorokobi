@@ -185,7 +185,7 @@
   font-size: 20px;
   font-weight: 300;
 }
-.wrap .contactsConainer .connectionForm .connectionForm_form button {
+.wrap .contactsConainer .connectionForm .connectionForm_form #sendBtn {
   width: 175px;
   height: 69px;
   border-radius: 20px;
@@ -198,6 +198,11 @@
   font-weight: 400;
   cursor: pointer;
   margin-top: -35px;
+  transition: 0.5s ease;
+}
+.wrap .contactsConainer .connectionForm .connectionForm_form #sendBtn:hover {
+  background-color: #F73859;
+  color: #13161B;
 }
 .wrap .contactsConainer .separetiveLine {
   width: 2px;

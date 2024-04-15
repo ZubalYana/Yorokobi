@@ -172,7 +172,7 @@
                     font-size: 20px;
                     font-weight: 300;
                 }
-                button{
+                #sendBtn{
                     width: 175px;
                     height: 69px;
                     border-radius: 20px;
@@ -185,6 +185,11 @@
                     font-weight: 400;
                     cursor: pointer;
                     margin-top: -35px;
+                    transition: 0.5s ease;
+                }
+                #sendBtn:hover{
+                    background-color: #F73859;
+                    color: #13161B;
                 }
             }
         }
