@@ -262,4 +262,22 @@ body {
 }
 .wrap .contactsConainer .locationAndHours iframe {
   margin-top: 28px;
+}
+.wrap .contactsConainer .locationAndHours button {
+  width: 100%;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #13161B;
+  color: #fff;
+  border-radius: 20px;
+  border: 2px solid #F73859;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.wrap .contactsConainer .locationAndHours button i {
+  margin-right: 15px;
 }/*# sourceMappingURL=contacts.css.map */
