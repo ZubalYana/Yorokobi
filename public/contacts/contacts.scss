@@ -221,6 +221,7 @@ body{
                 width: 100%;
                 display: flex;
                 align-items: flex-end;
+                justify-content: space-between;
                 .locationAndHours_hours{
                     .locationAndHours_hours_daysClasification{
                         display: flex;
@@ -233,6 +234,19 @@ body{
                             color: #fff;
                             margin-left: 6px;
                         }
+                    }
+                }
+                .locationAndHours_media{
+                    width: 225px;
+                    display: flex;
+                    justify-content: space-between;
+                    color: #F73859;
+                    i{
+                        font-size: 40px;
+                        transition: 0.3s ease;
+                    }
+                    i:hover{
+                        color: #fff;
                     }
                 }
             }

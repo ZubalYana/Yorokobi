@@ -233,6 +233,7 @@ body {
   width: 100%;
   display: flex;
   align-items: flex-end;
+  justify-content: space-between;
 }
 .wrap .contactsConainer .locationAndHours .locationAndHours_hoursAndMedia .locationAndHours_hours .locationAndHours_hours_daysClasification {
   display: flex;
@@ -245,4 +246,17 @@ body {
 .wrap .contactsConainer .locationAndHours .locationAndHours_hoursAndMedia .locationAndHours_hours .locationAndHours_hours_daysClasification .locationAndHours_hours_hours {
   color: #fff;
   margin-left: 6px;
+}
+.wrap .contactsConainer .locationAndHours .locationAndHours_hoursAndMedia .locationAndHours_media {
+  width: 225px;
+  display: flex;
+  justify-content: space-between;
+  color: #F73859;
+}
+.wrap .contactsConainer .locationAndHours .locationAndHours_hoursAndMedia .locationAndHours_media i {
+  font-size: 40px;
+  transition: 0.3s ease;
+}
+.wrap .contactsConainer .locationAndHours .locationAndHours_hoursAndMedia .locationAndHours_media i:hover {
+  color: #fff;
 }/*# sourceMappingURL=contacts.css.map */
