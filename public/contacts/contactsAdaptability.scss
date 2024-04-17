@@ -1,43 +1,49 @@
 @media screen and (max-device-width: 430px) {
-    .wrap{
-        width: 100%;
-        padding: 24px;
-        overflow: scroll;
-            .header{
-                .header_nav{
-                    display: none;
-                }
-                .header_languageThemeCon{
-                    display: none;
-                }
-                .header_burger{
-                    display: flex;
-                }
-            }
-            .contactsConainer{
-                flex-direction: column;
-                .connectionForm{
-                    width: 100%;
-                    h5{
-                        font-size: 16px;
-                        font-weight: 400;
-                    }
-                    .connectionForm_form{
-                        width: 381px;
-                        input{
-                            width: 381px;
-                        }
-                        textarea{
-                            width: 381px;
-                        }
-                    }
-                }
-                .separetiveLine{
-                    width: 381px;
-                    height: 2px;
-                    margin: 50px 0;
-                }
-            }
+    body{
+        overflow: auto;
 
+        .wrap{
+            width: 100%;
+            padding: 24px;
+                .header{
+                    .header_nav{
+                        display: none;
+                    }
+                    .header_languageThemeCon{
+                        display: none;
+                    }
+                    .header_burger{
+                        display: flex;
+                    }
+                }
+                .contactsConainer{
+                    flex-direction: column;
+                    .connectionForm{
+                        width: 100%;
+                        h5{
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                        .connectionForm_form{
+                            width: 381px;
+                            input{
+                                width: 381px;
+                            }
+                            textarea{
+                                width: 381px;
+                            }
+                        }
+                    }
+                    .separetiveLine{
+                        width: 381px;
+                        height: 2px;
+                        margin: 50px 0;
+                    }
+                    .locationAndHours{
+                        width: 100%;
+                    }
+                }
+        }
     }
+
  }
