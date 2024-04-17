@@ -41,6 +41,13 @@
                     }
                     .locationAndHours{
                         width: 100%;
+                        .locationAndHours_hoursAndMedia{
+                            flex-direction: column;
+                            align-items: flex-start;
+                            .locationAndHours_media{
+                                margin: 25px 0 0 0;
+                            }
+                        }
                     }
                 }
         }
