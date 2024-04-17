@@ -19,4 +19,17 @@
   .wrap .contactsConainer .connectionForm {
     width: 100%;
   }
+  .wrap .contactsConainer .connectionForm h5 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .wrap .contactsConainer .connectionForm .connectionForm_form {
+    width: 381px;
+  }
+  .wrap .contactsConainer .connectionForm .connectionForm_form input {
+    width: 381px;
+  }
+  .wrap .contactsConainer .connectionForm .connectionForm_form textarea {
+    width: 381px;
+  }
 }/*# sourceMappingURL=contactsAdaptability.css.map */
