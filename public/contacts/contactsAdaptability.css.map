@@ -1,1 +1,1 @@
-{"version":3,"sources":["contactsAdaptability.scss","contactsAdaptability.css"],"names":[],"mappings":"AAAA;EACI;IACI,WAAA;IACA,kBAAA;IACA,aAAA;ECCN;EDCc;IACI,aAAA;ECClB;EDCc;IACI,aAAA;ECClB;EDCc;IACI,aAAA;ECClB;AACF","file":"contactsAdaptability.css"}
+{"version":3,"sources":["contactsAdaptability.scss","contactsAdaptability.css"],"names":[],"mappings":"AAAA;EACI;IACI,WAAA;IACA,aAAA;IACA,gBAAA;ECCN;EDCc;IACI,aAAA;ECClB;EDCc;IACI,aAAA;ECClB;EDCc;IACI,aAAA;ECClB;EDEU;IACI,sBAAA;ECAd;EDCc;IACI,WAAA;ECClB;AACF","file":"contactsAdaptability.css"}

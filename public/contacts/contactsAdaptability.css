@@ -1,8 +1,8 @@
 @media screen and (max-device-width: 430px) {
   .wrap {
     width: 100%;
-    overflow-x: hidden;
     padding: 24px;
+    overflow: scroll;
   }
   .wrap .header .header_nav {
     display: none;
@@ -12,5 +12,11 @@
   }
   .wrap .header .header_burger {
     display: flex;
+  }
+  .wrap .contactsConainer {
+    flex-direction: column;
+  }
+  .wrap .contactsConainer .connectionForm {
+    width: 100%;
   }
 }/*# sourceMappingURL=contactsAdaptability.css.map */
