@@ -1,0 +1,17 @@
+@media screen and (max-device-width: 430px) {
+    .wrap{
+        width: 100%;
+        overflow-x: hidden;
+            .header{
+                .header_nav{
+                    display: none;
+                }
+                .header_languageThemeCon{
+                    display: none;
+                }
+                .header_burger{
+                    display: flex;
+                }
+            }
+    }
+ }
