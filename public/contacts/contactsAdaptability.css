@@ -1,0 +1,16 @@
+@media screen and (max-device-width: 430px) {
+  .wrap {
+    width: 100%;
+    overflow-x: hidden;
+    padding: 24px;
+  }
+  .wrap .header .header_nav {
+    display: none;
+  }
+  .wrap .header .header_languageThemeCon {
+    display: none;
+  }
+  .wrap .header .header_burger {
+    display: flex;
+  }
+}/*# sourceMappingURL=contactsAdaptability.css.map */
