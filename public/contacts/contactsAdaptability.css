@@ -32,4 +32,9 @@
   .wrap .contactsConainer .connectionForm .connectionForm_form textarea {
     width: 381px;
   }
+  .wrap .contactsConainer .separetiveLine {
+    width: 381px;
+    height: 2px;
+    margin: 50px 0;
+  }
 }/*# sourceMappingURL=contactsAdaptability.css.map */
