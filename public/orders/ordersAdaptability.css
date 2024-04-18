@@ -52,4 +52,27 @@
     right: 0px;
     top: 25px;
   }
+  .orderPopupsContainer .order_cancelPopup {
+    width: 382px;
+    height: 287px;
+    padding: 20px;
+  }
+  .orderPopupsContainer .order_cancelPopup h2 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .orderPopupsContainer .order_cancelPopup .order_cancelPopup_btns {
+    width: 316px;
+  }
+  .orderPopupsContainer .order_cancelPopup .order_cancelPopup_btns .order_cancelPopup_btn {
+    width: 147px;
+    height: 64px;
+    border-radius: 20px;
+    font-size: 32px;
+    font-weight: 400;
+  }
+  .orderPopupsContainer .order_cancelPopup .order_cancelPopup_additionalInfo {
+    font-size: 13px;
+    margin-top: 20px;
+  }
 }/*# sourceMappingURL=ordersAdaptability.css.map */

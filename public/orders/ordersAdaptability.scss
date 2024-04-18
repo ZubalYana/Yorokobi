@@ -56,4 +56,29 @@
                 }
             }
     }
+    .orderPopupsContainer{
+        .order_cancelPopup{
+            width: 382px;
+            height: 287px;
+            padding: 20px;
+            h2{
+                font-size: 20px;
+                font-weight: 700;
+            }
+            .order_cancelPopup_btns{
+                width: 316px;
+                .order_cancelPopup_btn{
+                    width: 147px;
+                    height: 64px;
+                    border-radius: 20px;
+                    font-size: 32px;
+                    font-weight: 400;
+                }
+            }
+            .order_cancelPopup_additionalInfo{
+                font-size: 13px;
+                margin-top: 20px;
+            }
+        }
+    }
  }
