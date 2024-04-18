@@ -27,7 +27,7 @@
 .orderPopupsContainer{
     width: 100%;
     height: 100vh;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     background-color: rgba(19, 22, 27, 0.86);
@@ -240,7 +240,7 @@
                     color: #fff;
                     border: 1px #F73859 solid;
                 }
-                #order_infoBtn{
+                .order_infoBtn{
                     margin-right: 30px;
                 }
             }
