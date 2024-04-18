@@ -92,6 +92,12 @@
   color: #fff;
   border: 1px #F73859 solid;
 }
+.orderPopupsContainer .order_cancelPopup .order_cancelPopup_additionalInfo {
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  margin-top: 30px;
+}
 
 .wrap {
   width: 100%;
