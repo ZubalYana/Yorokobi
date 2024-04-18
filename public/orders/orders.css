@@ -55,6 +55,26 @@
   font-size: 40px;
   font-weight: 700;
 }
+.orderPopupsContainer .order_cancelPopup .order_cancelPopup_btns {
+  width: 470px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.orderPopupsContainer .order_cancelPopup .order_cancelPopup_btns .order_cancelPopup_btn {
+  width: 209px;
+  height: 94px;
+  background-color: #13161B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 400;
+  color: #fff;
+  border: 1px #fff solid;
+  border-radius: 30px;
+  cursor: pointer;
+}
 
 .wrap {
   width: 100%;
