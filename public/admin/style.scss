@@ -31,8 +31,6 @@
     background-color: #13161B;
     overflow-x: hidden;
     padding: 40px;
-
-
         .header{
             position: relative;
             z-index: 3;
@@ -130,6 +128,25 @@
             a{
                 color: #F73859;
                 text-decoration: none;
+            }
+        }
+        .navChartsCon{
+            .nav{
+                margin-top: 30px;
+                .nav_el{
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: #fff;
+                    width: 200px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    cursor: pointer;
+                    i{
+                        font-size: 15px;
+                    }
+                }
             }
         }
     }
