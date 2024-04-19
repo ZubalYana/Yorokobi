@@ -153,9 +153,13 @@
   align-items: center;
   margin-bottom: 20px;
   cursor: pointer;
+  transition: 0.2s ease;
 }
 .wrap .navChartsCon .nav .nav_el i {
   font-size: 15px;
+}
+.wrap .navChartsCon .nav .nav_el:hover {
+  color: #a71f38;
 }
 .wrap .navChartsCon #activePage {
   color: #F73859;
