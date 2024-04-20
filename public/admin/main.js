@@ -1,8 +1,8 @@
   // JavaScript code for creating the line chart
   document.addEventListener('DOMContentLoaded', function () {
-    var ctx = document.getElementById('myLineChart').getContext('2d');
+    let ctx = document.getElementById('myLineChart').getContext('2d');
 
-    var myLineChart = new Chart(ctx, {
+    let myLineChart = new Chart(ctx, {
         type: 'line',
         data: {
             labels: ['January', 'February', 'March', 'April', 'May'],
