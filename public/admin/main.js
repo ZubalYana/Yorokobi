@@ -21,20 +21,19 @@
                         beginAtZero: true
                     }
                 }],
-                // xAxes: [{
-                //     ticks: {
-                //         display: false // Hide x-axis labels
-                //     }
-                // }]
             },
 
             plugins: {
-                subtitle: {
+                title: {
                     display: true,
-                    text: 'Custom Chart Subtitle'
+                    text: 'Mouth profits report',
+                    color: '#F73859',
+                    fontFamily: 'MuseoModerno',
+                    fontSize: '24px'
                 },
                 legend: {
-                    display: false 
+                    display: false,
+
                 },
             }
         }
