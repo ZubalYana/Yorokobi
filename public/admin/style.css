@@ -140,6 +140,10 @@
   color: #F73859;
   text-decoration: none;
 }
+.wrap .navChartsCon {
+  width: 100%;
+  display: flex;
+}
 .wrap .navChartsCon .nav {
   margin-top: 30px;
 }
@@ -164,7 +168,15 @@
 .wrap .navChartsCon .nav #activePage {
   color: #F73859;
 }
-.wrap .navChartsCon #profitsReport {
-  width: 366px;
-  height: 289px;
+.wrap .navChartsCon .chartsContainer {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: antiquewhite;
+}
+.wrap .navChartsCon .chartsContainer #profitsReport #myLineChart {
+  width: 650px;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
