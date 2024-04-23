@@ -44,35 +44,32 @@
 document.addEventListener('DOMContentLoaded', () => {
     const ctx = document.getElementById('myChart');
     new Chart(ctx, {
-      type: 'bar',
-      data: {
-        labels: ['Sushi', 'Soba', 'Ramen', 'Snacks', 'Drinks'],
-        datasets: [{
-          label: '# of Votes',
-          data: [12, 19, 3, 5, 2, 3],
-          borderWidth: 1
-        }]
-      },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true
+        type: 'bar',
+        data: {
+          labels: ['Sushi', 'Soba', 'Ramen', 'Snacks', 'Drinks'],
+          datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          },
+          plugins: {
+            title: {
+              display: true,
+              text: 'Mouth dishes report',
+              color: '#F73859',
+              fontFamily: 'MuseoModerno',
+              fontSize: '24px'
+            }
           }
         }
-      },
-      plugins: {
-        title: {
-            display: true,
-            text: 'Mouth dishes report',
-            color: '#F73859',
-            fontFamily: 'MuseoModerno',
-            fontSize: '24px'
-        },
-        legend: {
-            display: false,
-
-        },
-    }
-    });
+      });
+      
   });
   
