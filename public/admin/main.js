@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         data: {
           labels: ['Sushi', 'Soba', 'Ramen', 'Snacks', 'Drinks'],
           datasets: [{
-            label: '# of Votes',
+            label: 'Sales',
             data: [12, 19, 3, 5, 2],
             borderWidth: 1
           }]
