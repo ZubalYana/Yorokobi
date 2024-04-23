@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
           labels: ['Sushi', 'Soba', 'Ramen', 'Snacks', 'Drinks'],
           datasets: [{
             label: 'Sales',
-            data: [12, 19, 3, 5, 2],
+            data: [102, 74, 45, 89, 120],
             backgroundColor: [
                 '#F73859',  
               ],
