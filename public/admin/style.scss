@@ -192,5 +192,24 @@
                 background-color: #fff;
             }
         }
+        .statictics{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 120px 0 120px;
+            .statictics_el{
+                text-align: center;
+                .statictics_el_number{
+                    color: #F73859;
+                    font-size: 40px;
+                    font-weight: 700;
+                }
+                .statictics_el_text{
+                    color: #fff;
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+            }
+        }
 
     }
