@@ -66,7 +66,11 @@ document.addEventListener('DOMContentLoaded', () => {
               color: '#F73859',
               fontFamily: 'MuseoModerno',
               fontSize: '24px'
-            }
+            },
+            legend: {
+                display: false,
+
+            },
           }
         }
       });
