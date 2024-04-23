@@ -31,6 +31,8 @@
     background-color: #13161B;
     overflow-x: hidden;
     padding: 40px;
+    display: flex;
+    flex-direction: column;
         .header{
             position: relative;
             z-index: 3;
@@ -179,4 +181,16 @@
             }
 
         }
+        .separativeLine_con{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 50px 0 50px 0;
+            .separativeLine{
+                width: 80%;
+                height: 2px;
+                background-color: #fff;
+            }
+        }
+
     }
