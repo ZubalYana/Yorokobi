@@ -1,7 +1,6 @@
   //Line chart code
   document.addEventListener('DOMContentLoaded', function () {
     let ctx = document.getElementById('myLineChart').getContext('2d');
-
     let myLineChart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -43,12 +42,11 @@
 
 //Colums chart code
 document.addEventListener('DOMContentLoaded', () => {
-    // Your Chart.js code here
     const ctx = document.getElementById('myChart');
     new Chart(ctx, {
       type: 'bar',
       data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['Sushi', 'Soba', 'Ramen', 'Snacks', 'Drinks'],
         datasets: [{
           label: '# of Votes',
           data: [12, 19, 3, 5, 2, 3],
@@ -61,7 +59,20 @@ document.addEventListener('DOMContentLoaded', () => {
             beginAtZero: true
           }
         }
-      }
+      },
+      plugins: {
+        title: {
+            display: true,
+            text: 'Mouth dishes report',
+            color: '#F73859',
+            fontFamily: 'MuseoModerno',
+            fontSize: '24px'
+        },
+        legend: {
+            display: false,
+
+        },
+    }
     });
   });
   
