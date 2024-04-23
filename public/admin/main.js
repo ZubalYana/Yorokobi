@@ -1,4 +1,4 @@
-  // JavaScript code for creating the line chart
+  //Line chart code
   document.addEventListener('DOMContentLoaded', function () {
     let ctx = document.getElementById('myLineChart').getContext('2d');
 
@@ -16,11 +16,11 @@
         },
         options: {
             scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero: true
-                    }
-                }],
+                // yAxes: [{
+                //     ticks: {
+                //         beginAtZero: true
+                //     }
+                // }],
             },
 
             plugins: {
@@ -39,3 +39,29 @@
         }
     });
 });
+
+
+//Colums chart code
+document.addEventListener('DOMContentLoaded', () => {
+    // Your Chart.js code here
+    const ctx = document.getElementById('myChart');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+          label: '# of Votes',
+          data: [12, 19, 3, 5, 2, 3],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  });
+  
