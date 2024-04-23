@@ -164,11 +164,16 @@
                 align-items: flex-end;
                 justify-content: space-between;
                 #profitsReport{
-                    // width: 366px;
-                    // height: 289px;
                     margin-left: 30px;
-                    #myLineChart {
+                    #myLineChart{
                         width: 650px; 
+                        height: 100%; 
+                    }
+                }
+                #dishesReport{
+                    margin-left: 30px;
+                    #myChart{
+                        width: 450px; 
                         height: 100%; 
                     }
                 }

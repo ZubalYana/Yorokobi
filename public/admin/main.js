@@ -50,6 +50,9 @@ document.addEventListener('DOMContentLoaded', () => {
           datasets: [{
             label: 'Sales',
             data: [12, 19, 3, 5, 2],
+            backgroundColor: [
+                '#F73859',  
+              ],
             borderWidth: 1
           }]
         },

@@ -181,4 +181,11 @@
 .wrap .navChartsCon .chartsContainer #profitsReport #myLineChart {
   width: 650px;
   height: 100%;
+}
+.wrap .navChartsCon .chartsContainer #dishesReport {
+  margin-left: 30px;
+}
+.wrap .navChartsCon .chartsContainer #dishesReport #myChart {
+  width: 450px;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
