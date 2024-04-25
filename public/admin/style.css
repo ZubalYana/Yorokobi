@@ -142,14 +142,14 @@
   color: #F73859;
   text-decoration: none;
 }
-.wrap .navChartsCon {
+.wrap .navPageCon {
   width: 100%;
   display: flex;
 }
-.wrap .navChartsCon .nav {
+.wrap .navPageCon .nav {
   margin-top: 30px;
 }
-.wrap .navChartsCon .nav .nav_el {
+.wrap .navPageCon .nav .nav_el {
   font-size: 20px;
   font-weight: 300;
   color: #fff;
@@ -161,30 +161,30 @@
   cursor: pointer;
   transition: 0.2s ease;
 }
-.wrap .navChartsCon .nav .nav_el i {
+.wrap .navPageCon .nav .nav_el i {
   font-size: 15px;
 }
-.wrap .navChartsCon .nav .nav_el:hover {
+.wrap .navPageCon .nav .nav_el:hover {
   color: #a71f38;
 }
-.wrap .navChartsCon .nav #activePage {
+.wrap .navPageCon .nav #activePage {
   color: #F73859;
 }
-.wrap .navChartsCon .navFilingCon {
+.wrap .navPageCon .navFilingCon {
   margin-top: 30px;
   display: flex;
   width: 100%;
   align-items: flex-end;
   justify-content: space-between;
 }
-.wrap .navChartsCon .navFilingCon #profitsReport {
+.wrap .navPageCon .navFilingCon #profitsReport {
   margin-left: 30px;
 }
-.wrap .navChartsCon .navFilingCon #profitsReport #myLineChart {
+.wrap .navPageCon .navFilingCon #profitsReport #myLineChart {
   width: 650px;
   height: 100%;
 }
-.wrap .navChartsCon .navFilingCon #dishesReport #myChart {
+.wrap .navPageCon .navFilingCon #dishesReport #myChart {
   width: 550px;
   height: 100%;
 }
