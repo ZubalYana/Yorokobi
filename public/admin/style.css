@@ -170,21 +170,27 @@
 .wrap .navPageCon .nav #activePage {
   color: #F73859;
 }
-.wrap .navPageCon .navFilingCon {
+.wrap .navPageCon .FilingCon {
   margin-top: 30px;
   display: flex;
   width: 100%;
   align-items: flex-end;
   justify-content: space-between;
 }
-.wrap .navPageCon .navFilingCon #profitsReport {
+.wrap .navPageCon .FilingCon .charts {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.wrap .navPageCon .FilingCon .charts #profitsReport {
   margin-left: 30px;
 }
-.wrap .navPageCon .navFilingCon #profitsReport #myLineChart {
+.wrap .navPageCon .FilingCon .charts #profitsReport #myLineChart {
   width: 650px;
   height: 100%;
 }
-.wrap .navPageCon .navFilingCon #dishesReport #myChart {
+.wrap .navPageCon .FilingCon .charts #dishesReport #myChart {
   width: 550px;
   height: 100%;
 }
