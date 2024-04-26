@@ -194,6 +194,11 @@
   width: 550px;
   height: 100%;
 }
+.wrap .navPageCon .FilingCon_Orders {
+  color: #fff;
+  font-size: 32px;
+  margin-left: 30px;
+}
 .wrap .separativeLine_con {
   width: 100%;
   display: flex;
