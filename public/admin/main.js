@@ -1,5 +1,5 @@
-  //Line chart code
-  document.addEventListener('DOMContentLoaded', function () {
+//Line chart code
+document.addEventListener('DOMContentLoaded', function () {
     let ctx = document.getElementById('myLineChart').getContext('2d');
     let myLineChart = new Chart(ctx, {
         type: 'line',
@@ -78,5 +78,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
       
-  });
+});
   

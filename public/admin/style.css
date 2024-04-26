@@ -49,6 +49,7 @@
           user-select: none;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 .wrap .header .header_title {
   font-size: 40px;
