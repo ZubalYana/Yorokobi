@@ -85,6 +85,7 @@ $('#statistic').click(()=>{
   $('#dishes_availability').css('color', '#fff')
   $('#products').css('color', '#fff')
   $('#review').css('color', '#fff')
+  $('#help').css('color', '#fff')
 
 })
 $('#orders').click(()=>{
@@ -98,6 +99,7 @@ $('#orders').click(()=>{
   $('#dishes_availability').css('color', '#fff')
   $('#products').css('color', '#fff')
   $('#review').css('color', '#fff')
+  $('#help').css('color', '#fff')
 
 })
 $('#complaints').click(()=>{
@@ -111,6 +113,7 @@ $('#complaints').click(()=>{
   $('#complaints').css('color', '#F73859')
   $('#products').css('color', '#fff')
   $('#review').css('color', '#fff')
+  $('#help').css('color', '#fff')
 
 })
 $('#dishes_availability').click(()=>{
@@ -124,6 +127,7 @@ $('#dishes_availability').click(()=>{
   $('#dishes_availability').css('color', '#F73859')
   $('#products').css('color', '#fff')
   $('#review').css('color', '#fff')
+  $('#help').css('color', '#fff')
 
 
 })
@@ -138,6 +142,7 @@ $('#products').click(()=>{
   $('#dishes_availability').css('color', '#fff')
   $('#products').css('color', '#F73859')
   $('#review').css('color', '#fff')
+  $('#help').css('color', '#fff')
 
 })
 $('#review').click(()=>{
@@ -151,6 +156,22 @@ $('#review').click(()=>{
   $('#dishes_availability').css('color', '#fff')
   $('#products').css('color', '#fff')
   $('#review').css('color', '#F73859')
+  $('#help').css('color', '#fff')
+
+
+})
+$('#help').click(()=>{
+  $('.FilingCon').empty();
+  $('.FilingCon').append(
+    `<div class="FilingCon_help">Help here</div>`
+  )
+  $('#orders').css('color', '#fff')
+  $('#statistic').css('color', '#fff')
+  $('#complaints').css('color', '#fff')
+  $('#dishes_availability').css('color', '#fff')
+  $('#products').css('color', '#fff')
+  $('#review').css('color', '#fff')
+  $('#help').css('color', '#F73859')
 
 
 })

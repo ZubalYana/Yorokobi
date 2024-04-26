@@ -219,6 +219,11 @@
   font-size: 32px;
   margin-left: 30px;
 }
+.wrap .navPageCon .FilingCon_help {
+  color: #fff;
+  font-size: 32px;
+  margin-left: 30px;
+}
 .wrap .separativeLine_con {
   width: 100%;
   display: flex;
