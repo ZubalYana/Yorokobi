@@ -1,4 +1,42 @@
 //pages changing
+$('.FilingCon').append(
+  `            <div class="FilingCon_Statistics">
+  <div class="charts">
+      <div id="profitsReport">
+          <canvas id="myLineChart"></canvas>
+      </div>
+      <div id="dishesReport">
+          <canvas id="myChart"></canvas>
+        </div>
+  </div>
+  <div class="separativeLine_con">
+      <div class="separativeLine"></div>
+  </div>
+    <div class="statictics">
+      <div class="statictics_title">This mounth the restaurant has had:</div>
+      <div class="statictics_elements">
+          <div class="statictics_el">
+              <div class="statictics_el_number">163</div>
+              <div class="statictics_el_text">finished orders</div>
+          </div>
+          <div class="statictics_el">
+              <div class="statictics_el_number">73</div>
+              <div class="statictics_el_text">home deliveries</div>
+          </div>
+          <div class="statictics_el">
+              <div class="statictics_el_number">6</div>
+              <div class="statictics_el_text">complaints</div>
+          </div>
+          <div class="statictics_el">
+              <div class="statictics_el_number">52</div>
+              <div class="statictics_el_text">good reviews</div>
+          </div>
+      </div>
+
+      </div>
+</div>
+`
+)
 
 //line chart code
 document.addEventListener('DOMContentLoaded', function () {
