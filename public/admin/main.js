@@ -83,7 +83,7 @@ $('#statistic').click(()=>{
   $('#orders').css('color', '#fff')
   $('#complaints').css('color', '#fff')
   $('#dishes_availability').css('color', '#fff')
-  $('#dishes_products').css('color', '#fff')
+  $('#products').css('color', '#fff')
 })
 $('#orders').click(()=>{
   $('.FilingCon').empty();
@@ -94,7 +94,7 @@ $('#orders').click(()=>{
   $('#statistic').css('color', '#fff')
   $('#complaints').css('color', '#fff')
   $('#dishes_availability').css('color', '#fff')
-  $('#dishes_products').css('color', '#fff')
+  $('#products').css('color', '#fff')
 })
 $('#complaints').click(()=>{
   $('.FilingCon').empty();
@@ -105,7 +105,7 @@ $('#complaints').click(()=>{
   $('#statistic').css('color', '#fff')
   $('#dishes_availability').css('color', '#fff')
   $('#complaints').css('color', '#F73859')
-  $('#dishes_products').css('color', '#fff')
+  $('#products').css('color', '#fff')
 })
 $('#dishes_availability').click(()=>{
   $('.FilingCon').empty();
@@ -116,8 +116,20 @@ $('#dishes_availability').click(()=>{
   $('#statistic').css('color', '#fff')
   $('#complaints').css('color', '#fff')
   $('#dishes_availability').css('color', '#F73859')
-  $('#dishes_products').css('color', '#fff')
+  $('#products').css('color', '#fff')
 
+
+})
+$('#products').click(()=>{
+  $('.FilingCon').empty();
+  $('.FilingCon').append(
+    `<div class="FilingCon_products">Products here</div>`
+  )
+  $('#orders').css('color', '#fff')
+  $('#statistic').css('color', '#fff')
+  $('#complaints').css('color', '#fff')
+  $('#dishes_availability').css('color', '#fff')
+  $('#products').css('color', '#F73859')
 
 })
 $('#dishes_products').click(()=>{
@@ -129,7 +141,7 @@ $('#dishes_products').click(()=>{
   $('#statistic').css('color', '#fff')
   $('#complaints').css('color', '#fff')
   $('#dishes_availability').css('color', '#fff')
-  $('#dishes_products').css('color', '#F73859')
+  $('#products').css('color', '#F73859')
 
 })
 
