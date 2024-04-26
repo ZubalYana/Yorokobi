@@ -1,4 +1,6 @@
-//Line chart code
+//pages changing
+
+//line chart code
 document.addEventListener('DOMContentLoaded', function () {
     let ctx = document.getElementById('myLineChart').getContext('2d');
     let myLineChart = new Chart(ctx, {
@@ -39,8 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
-//Colums chart code
+//colums chart code
 document.addEventListener('DOMContentLoaded', () => {
     const ctx = document.getElementById('myChart');
     new Chart(ctx, {
