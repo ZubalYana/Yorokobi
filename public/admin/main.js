@@ -81,6 +81,7 @@ $('#statistic').click(()=>{
   )
   $('#statistic').css('color', '#F73859')
   $('#orders').css('color', '#fff')
+  $('#complaints').css('color', '#fff')
 
 })
 $('#orders').click(()=>{
@@ -90,9 +91,29 @@ $('#orders').click(()=>{
   )
   $('#orders').css('color', '#F73859')
   $('#statistic').css('color', '#fff')
+  $('#complaints').css('color', '#fff')
 
 })
+$('#complaints').click(()=>{
+  $('.FilingCon').empty();
+  $('.FilingCon').append(
+    `<div class="FilingCon_Complaints">Complaints here</div>`
+  )
+  $('#orders').css('color', '#fff')
+  $('#statistic').css('color', '#fff')
+  $('#complaints').css('color', '#F73859')
 
+})
+$('#complaints').click(()=>{
+  $('.FilingCon').empty();
+  $('.FilingCon').append(
+    `<div class="FilingCon_Complaints">Complaints here</div>`
+  )
+  $('#orders').css('color', '#fff')
+  $('#statistic').css('color', '#fff')
+  $('#complaints').css('color', '#F73859')
+
+})
 
 //line chart code
 document.addEventListener('DOMContentLoaded', function () {
