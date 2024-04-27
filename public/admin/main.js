@@ -117,10 +117,8 @@ $('#statistic').click(()=>{
       }
   });
 
-//colums chart code
-document.addEventListener('DOMContentLoaded', () => {
-  const ctx = document.getElementById('myChart');
-  new Chart(ctx, {
+  const ctx2 = document.getElementById('myChart');
+  new Chart(ctx2, {
       type: 'bar',
       data: {
         labels: ['Sushi', 'Soba', 'Ramen', 'Snacks', 'Drinks'],
@@ -157,7 +155,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
 });
 
-})
 $('#orders').click(()=>{
   $('.FilingCon').empty();
   $('.FilingCon').append(
