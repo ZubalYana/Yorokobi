@@ -154,11 +154,11 @@ $('#statistic').click(()=>{
     });
     
 });
-
 $('#orders').click(()=>{
   $('.FilingCon').empty();
   $('.FilingCon').append(
-    `<div class="FilingCon_Orders">Orders here</div>`
+    `<div class="FilingCon_Orders">Orders here</div>
+    <div class="ordersContainer"></div>`
   )
   $('#orders').css('color', '#F73859')
   $('#statistic').css('color', '#fff')
