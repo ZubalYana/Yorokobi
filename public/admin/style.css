@@ -195,9 +195,12 @@
   height: 100%;
 }
 .wrap .navPageCon .FilingCon_Orders {
+  margin-left: 55px;
+}
+.wrap .navPageCon .FilingCon_Orders h1 {
   color: #fff;
   font-size: 32px;
-  margin-left: 30px;
+  font-weight: 600;
 }
 .wrap .navPageCon .FilingCon_Complaints {
   color: #fff;

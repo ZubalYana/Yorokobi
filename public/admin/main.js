@@ -157,7 +157,9 @@ $('#statistic').click(()=>{
 $('#orders').click(()=>{
   $('.FilingCon').empty();
   $('.FilingCon').append(
-    `<div class="FilingCon_Orders">Orders here</div>
+    `<div class="FilingCon_Orders">
+    <h1>Recent orders</h1>
+    </div>
     <div class="ordersContainer"></div>`
   )
   $('#orders').css('color', '#F73859')
