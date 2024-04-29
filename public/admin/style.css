@@ -209,9 +209,26 @@
   border-radius: 20px;
   padding: 17px;
   margin-top: 15px;
+  display: flex;
 }
 .wrap .navPageCon .FilingCon_Orders .ordersContainer .order .order_imgCon .order_img {
   height: 60px;
+}
+.wrap .navPageCon .FilingCon_Orders .ordersContainer .order .order_basicInfo {
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+  margin-left: 20px;
+}
+.wrap .navPageCon .FilingCon_Orders .ordersContainer .order .order_basicInfo .order_dishName {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+}
+.wrap .navPageCon .FilingCon_Orders .ordersContainer .order .order_basicInfo .order_id {
+  font-size: 16px;
+  font-weight: 500;
+  color: #F73859;
 }
 .wrap .navPageCon .FilingCon_Complaints {
   color: #fff;

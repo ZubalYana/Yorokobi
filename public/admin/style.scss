@@ -201,9 +201,26 @@
                         border-radius: 20px;
                         padding: 17px;
                         margin-top: 15px;
+                        display: flex;
                         .order_imgCon{
                             .order_img{
                                 height: 60px;
+                            }
+                        }
+                        .order_basicInfo{
+                            display: flex;
+                            flex-direction: column;
+                            width: 140px;
+                            margin-left: 20px;
+                            .order_dishName{
+                                font-size: 24px;
+                                font-weight: 400;
+                                color: #fff;
+                            }
+                            .order_id{
+                                font-size: 16px;
+                                font-weight: 500;
+                                color: #F73859;
                             }
                         }
 

@@ -164,6 +164,10 @@ $('#orders').click(()=>{
     <div class="order_imgCon">
     <img src="./imgs/sushi 1.png" alt="" class="order_img">
     </div>
+    <div class="order_basicInfo">
+    <div class="order_dishName">Soho sushi</div>
+    <div class="order_id">#763291563</div>
+</div>
 
     </div>
     </div>
