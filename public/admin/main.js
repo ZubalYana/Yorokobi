@@ -160,7 +160,12 @@ $('#orders').click(()=>{
     `<div class="FilingCon_Orders">
     <h1>Recent orders:</h1>
     <div class="ordersContainer">
-    <div class="order"></div>
+    <div class="order">
+    <div class="order_imgCon">
+    <img src="./imgs/sushi 1.png" alt="" class="order_img">
+    </div>
+
+    </div>
     </div>
     </div>
 `

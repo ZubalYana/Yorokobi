@@ -210,6 +210,9 @@
   padding: 17px;
   margin-top: 15px;
 }
+.wrap .navPageCon .FilingCon_Orders .ordersContainer .order .order_imgCon .order_img {
+  height: 60px;
+}
 .wrap .navPageCon .FilingCon_Complaints {
   color: #fff;
   font-size: 32px;
