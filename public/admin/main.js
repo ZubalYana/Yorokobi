@@ -187,7 +187,7 @@ $('#orders').click(()=>{
 
     <div class="order">
     <div class="order_imgCon">
-    <img src="./imgs/sushi 1.png" alt="" class="order_img">
+    <img src="./imgs/sushi 24.png" alt="" class="order_img">
     </div>
     <div class="order_basicInfo">
     <div class="order_dishName">Soho sushi</div>
@@ -213,7 +213,7 @@ $('#orders').click(()=>{
 
     <div class="order">
     <div class="order_imgCon">
-    <img src="./imgs/sushi 1.png" alt="" class="order_img">
+    <img src="./imgs/sushi 30.png" alt="" class="order_img">
     </div>
     <div class="order_basicInfo">
     <div class="order_dishName">Soho sushi</div>
