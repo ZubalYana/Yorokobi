@@ -172,6 +172,10 @@ $('#orders').click(()=>{
 <div class="order_customerName">Alexa Tuner</div>
 <div class="order_customerPhone">+096 898 34 82</div>
 </div>
+<div class="order_typeInfo">
+<div class="order_type">In the restaurant</div>
+<div class="order_additionalType">Table №14</div>
+</div>
 
     </div>
     </div>
