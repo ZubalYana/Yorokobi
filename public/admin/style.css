@@ -212,6 +212,9 @@
   display: flex;
   align-items: center;
 }
+.wrap .navPageCon .FilingCon_Orders .ordersContainer .order .order_imgCon {
+  width: 120px;
+}
 .wrap .navPageCon .FilingCon_Orders .ordersContainer .order .order_imgCon .order_img {
   height: 60px;
 }
