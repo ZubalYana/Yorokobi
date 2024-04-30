@@ -168,6 +168,10 @@ $('#orders').click(()=>{
     <div class="order_dishName">Soho sushi</div>
     <div class="order_id">#763291563</div>
 </div>
+<div class="order_customerInfo">
+<div class="order_customerName">Alexa Tuner</div>
+<div class="order_customerPhone">+096 898 34 82</div>
+</div>
 
     </div>
     </div>
