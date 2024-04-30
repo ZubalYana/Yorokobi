@@ -202,6 +202,7 @@
                         padding: 17px;
                         margin-top: 15px;
                         display: flex;
+                        align-items: center;
                         .order_imgCon{
                             .order_img{
                                 height: 60px;
@@ -266,6 +267,38 @@
                             font-weight: 700;
                             color: #fff;
                         }
+                        // #dishStatus{
+                        //     margin-left: 70px;
+                        //     width: 142px;
+                        //     height: 44px;
+                        //     background-color: #F73859;
+                        //     font-size: 16px;
+                        //     font-weight: 400;
+                        //     color: #13161B;
+                        //     cursor: pointer;
+                        //     padding: 0 15px 0 15px;
+                        //     border: none;
+                        //     outline: none;
+                        //     border-radius: 5px;
+                        // }
+                        #dishStatus {
+                            margin-left: 70px;
+                            width: 142px;
+                            height: 44px;
+                            background-color: #F73859;
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: #13161B;
+                            cursor: pointer;
+                            padding: 0 15px 0 15px; /* Adjust padding as needed */
+                            border: none;
+                            outline: none;
+                            border-radius: 5px;
+                            background-clip: padding-box; /* Clip background to padding box */
+                        }
+                        
+                        
+                        
 
                     }
                 }

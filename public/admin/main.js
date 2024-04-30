@@ -177,7 +177,9 @@ $('#orders').click(()=>{
 <div class="order_additionalType">Table №14</div>
 </div>
 <div class="order_price">$7.00</div>
-
+<select id="dishStatus">
+    <option value="inProgress">In progress</option>
+</select>
     </div>
     </div>
     </div>
