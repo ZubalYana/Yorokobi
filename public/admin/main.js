@@ -176,6 +176,7 @@ $('#orders').click(()=>{
 <div class="order_type">In the restaurant</div>
 <div class="order_additionalType">Table №14</div>
 </div>
+<div class="order_price">$7.00</div>
 
     </div>
     </div>
