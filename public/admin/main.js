@@ -250,7 +250,9 @@ $('#orders').click(()=>{
 $('#complaints').click(()=>{
   $('.FilingCon').empty();
   $('.FilingCon').append(
-    `<div class="FilingCon_Complaints">Recent complaints</div>`
+    `<div class="FilingCon_Complaints">
+    <h1>Recent complaints</h1>
+     </div>`
   )
   $('#orders').css('color', '#fff')
   $('#statistic').css('color', '#fff')

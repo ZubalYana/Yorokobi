@@ -293,9 +293,12 @@
   background-clip: padding-box; /* Clip background to padding box */
 }
 .wrap .navPageCon .FilingCon_Complaints {
+  margin-left: 55px;
+}
+.wrap .navPageCon .FilingCon_Complaints h1 {
   color: #fff;
   font-size: 32px;
-  margin-left: 30px;
+  font-weight: 600;
 }
 .wrap .navPageCon .FilingCon_Dishes_availability {
   color: #fff;
