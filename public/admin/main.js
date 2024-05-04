@@ -38,7 +38,6 @@ $('.FilingCon').append(
 `
 )
 $('#statistic').css('color', '#F73859')
-
 $('#statistic').click(()=>{
   $('.FilingCon').empty();
   $('.FilingCon').append(
@@ -251,7 +250,7 @@ $('#orders').click(()=>{
 $('#complaints').click(()=>{
   $('.FilingCon').empty();
   $('.FilingCon').append(
-    `<div class="FilingCon_Complaints">Complaints here</div>`
+    `<div class="FilingCon_Complaints">Recent complaints</div>`
   )
   $('#orders').css('color', '#fff')
   $('#statistic').css('color', '#fff')
@@ -260,7 +259,6 @@ $('#complaints').click(()=>{
   $('#products').css('color', '#fff')
   $('#review').css('color', '#fff')
   $('#help').css('color', '#fff')
-
 })
 $('#dishes_availability').click(()=>{
   $('.FilingCon').empty();
