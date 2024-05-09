@@ -320,11 +320,12 @@
                     height: 66vh;
                     .complaint{
                         width: 300px;
-                        min-height: 170px;
+                        height: 300px;
                         border: #F73859 1px solid;
                         padding: 15px;
                         border-radius: 20px;
                         margin: 12px 15px 0 0;
+                        color: #fff;
                         .complaint_author{
                             display: flex;
                             .complaint_author_picture{
@@ -336,7 +337,6 @@
                                 .complaint_time{
                                     font-size: 12px;
                                     font-weight: 300;
-                                    color: #fff;
                                 }
                                 .complaint_name{
                                     font-size: 20px;
@@ -345,6 +345,28 @@
                                 }
                             }
                         }
+                        h5{
+                            font-size: 16px;
+                            font-weight: 400;
+                            margin: 12px 0 6px 0;
+                        }
+                        .complaint_types{
+                            width: 100%;
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
+                        .complaint_type{
+                            padding: 5px 7px 5px 7px;
+                            font-size: 14px;
+                            font-weight: 500;
+                            background-color: rgba($color: #F73859, $alpha: 0.5);
+                            border-radius: 5px;
+                            margin-right: 7px;
+                        }
+                    }
+                    .complaint_text{
+                        font-size: 12px;
+                        font-weight: 300;
                     }
                 }
 
