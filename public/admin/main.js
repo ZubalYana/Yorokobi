@@ -252,6 +252,26 @@ $('#complaints').click(()=>{
   $('.FilingCon').append(
     `<div class="FilingCon_Complaints">
     <h1>Recent complaints</h1>
+    <div class="FilingCon_ComplaintsContainer">
+    <div class="complaint">
+        <div class="complaint_author">
+            <img class="complaint_author_picture" src="./imgs/userIcon.png" alt="">
+            <div class="complaint_nameTimeCon">
+                <div class="complaint_time">3 min ago</div>
+                <div class="complaint_name">Wilder Scott</div>
+            </div>
+        </div>
+        <h5>Type of complaint:</h5>
+        <div class="complaint_types">
+            <div class="complaint_type">Service</div>
+            <div class="complaint_type">Other guests </div>
+        </div>
+        <h5>Text of complaint:</h5>
+        <div class="complaint_text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam magna velit, iaculis sed faucibus eu, auctor at magna. Aliquam vestibulum justo pulvinar enim mollis, in dapibus elit lacinia. 
+        </div>
+    </div>
+</div>
      </div>`
   )
   $('#orders').css('color', '#fff')

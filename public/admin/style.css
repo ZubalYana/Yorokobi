@@ -301,6 +301,39 @@
   font-size: 32px;
   font-weight: 600;
 }
+.wrap .navPageCon .FilingCon_Complaints .FilingCon_ComplaintsContainer {
+  width: 100%;
+  display: flex;
+  height: 66vh;
+}
+.wrap .navPageCon .FilingCon_Complaints .FilingCon_ComplaintsContainer .complaint {
+  width: 300px;
+  min-height: 170px;
+  border: #F73859 1px solid;
+  padding: 15px;
+  border-radius: 20px;
+  margin: 12px 15px 0 0;
+}
+.wrap .navPageCon .FilingCon_Complaints .FilingCon_ComplaintsContainer .complaint .complaint_author {
+  display: flex;
+}
+.wrap .navPageCon .FilingCon_Complaints .FilingCon_ComplaintsContainer .complaint .complaint_author .complaint_author_picture {
+  width: 50px;
+  height: 50px;
+}
+.wrap .navPageCon .FilingCon_Complaints .FilingCon_ComplaintsContainer .complaint .complaint_author .complaint_nameTimeCon {
+  margin-left: 6px;
+}
+.wrap .navPageCon .FilingCon_Complaints .FilingCon_ComplaintsContainer .complaint .complaint_author .complaint_nameTimeCon .complaint_time {
+  font-size: 12px;
+  font-weight: 300;
+  color: #fff;
+}
+.wrap .navPageCon .FilingCon_Complaints .FilingCon_ComplaintsContainer .complaint .complaint_author .complaint_nameTimeCon .complaint_name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #F73859;
+}
 .wrap .navPageCon .FilingCon_Dishes_availability {
   color: #fff;
   font-size: 32px;
