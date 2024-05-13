@@ -7,6 +7,13 @@ const app = express();
 const PORT = 3000;
 const path = require('path');
 const fs = require('fs');
+// const mongoose = require('mongoose')
+app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.json())
+// mongoose.connect(`mongodb+srv://root:s7vVHHEAqtPNPIUB@root.c1gqwpt.mongodb.net/?retryWrites=true&w=majority&appName=root`)
+// .then(()=>{
+//     console.log(`Connected to mongo DB`)
+// })
 const users = [
     { id: 1, username: 'Yorokobi Admin', password: '2024' },
 ];
@@ -26,9 +33,6 @@ passport.deserializeUser((id, done) => {
     const user = users.find(u => u.id == id);
     done(null, user);
 })
-///
-app.use(express.static(path.join(__dirname, "public")));
-///
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(session({ secret: 'secret-key', resave: false, saveUninitialized: false }));
 app.use(passport.initialize());
