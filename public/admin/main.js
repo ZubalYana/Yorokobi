@@ -368,6 +368,7 @@ $('#help').click(()=>{
   $('.FilingCon').empty();
   $('.FilingCon').append(
     `<div class="FilingCon_help">
+    <img class="FilingCon_help_decoration" src="./imgs/help decoration.png" alt="">
     <h1>Get help</h1>
 <div class="FilingCon_help_description">Yorokobi headquarters are always in connection to help you to deal with all kinds of difficult problems! There is how can you connects us with any questions or help requests. We are available 24 hours a day, 7 days a week!</div>
 <div class="FilingCon_help_contacts">

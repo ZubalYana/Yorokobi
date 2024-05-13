@@ -374,6 +374,14 @@
 .wrap .navPageCon .FilingCon_help {
   color: #fff;
   margin-left: 55px;
+  position: relative;
+  height: 500px;
+}
+.wrap .navPageCon .FilingCon_help .FilingCon_help_decoration {
+  width: 700px;
+  position: absolute;
+  right: -200px;
+  bottom: 0px;
 }
 .wrap .navPageCon .FilingCon_help h1 {
   font-size: 32px;
