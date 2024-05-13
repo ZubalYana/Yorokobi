@@ -383,24 +383,24 @@
   right: -200px;
   bottom: 0px;
 }
-.wrap .navPageCon .FilingCon_help h1 {
+.wrap .navPageCon .FilingCon_help .FilingCon_help_InfoCon h1 {
   font-size: 32px;
   margin-bottom: 15px;
 }
-.wrap .navPageCon .FilingCon_help .FilingCon_help_description {
+.wrap .navPageCon .FilingCon_help .FilingCon_help_InfoCon .FilingCon_help_description {
   font-size: 15px;
   font-weight: 300;
   width: 425px;
   margin-bottom: 15px;
 }
-.wrap .navPageCon .FilingCon_help .FilingCon_help_contacts .FilingCon_help_contact {
+.wrap .navPageCon .FilingCon_help .FilingCon_help_InfoCon .FilingCon_help_contacts .FilingCon_help_contact {
   display: flex;
   font-size: 16px;
   font-weight: 500;
   align-items: center;
   margin-bottom: 10px;
 }
-.wrap .navPageCon .FilingCon_help .FilingCon_help_contacts .FilingCon_help_contact i {
+.wrap .navPageCon .FilingCon_help .FilingCon_help_InfoCon .FilingCon_help_contacts .FilingCon_help_contact i {
   margin-right: 10px;
   font-size: 20px;
 }

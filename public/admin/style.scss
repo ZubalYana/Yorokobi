@@ -397,29 +397,32 @@
                     right: -200px;
                     bottom: 0px;
                 }
-                h1{
-                    font-size: 32px;
-                    margin-bottom: 15px;
-                }
-                .FilingCon_help_description{
-                    font-size: 15px;
-                    font-weight: 300;
-                    width: 425px;
-                    margin-bottom: 15px;
-                }
-                .FilingCon_help_contacts{
-                    .FilingCon_help_contact{
-                        display: flex;
-                        font-size: 16px;
-                        font-weight: 500;
-                        align-items: center;
-                        margin-bottom: 10px;
-                        i{
-                            margin-right: 10px;
-                            font-size: 20px;
+                .FilingCon_help_InfoCon{
+                    h1{
+                        font-size: 32px;
+                        margin-bottom: 15px;
+                    }
+                    .FilingCon_help_description{
+                        font-size: 15px;
+                        font-weight: 300;
+                        width: 425px;
+                        margin-bottom: 15px;
+                    }
+                    .FilingCon_help_contacts{
+                        .FilingCon_help_contact{
+                            display: flex;
+                            font-size: 16px;
+                            font-weight: 500;
+                            align-items: center;
+                            margin-bottom: 10px;
+                            i{
+                                margin-right: 10px;
+                                font-size: 20px;
+                            }
                         }
                     }
                 }
+
 
             }
 
