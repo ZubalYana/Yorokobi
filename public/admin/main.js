@@ -51,11 +51,28 @@ function animateCount(element, start, end, duration) {
   }, stepTime);
 }
 
+function startCountAnimationOnScroll() {
+  let windowHeight = $(window).height();
+  let scrollPosition = $(window).scrollTop();
+
+  $('.statictics_el').each(function() {
+      let offset = $(this).offset().top;
+      if (scrollPosition + windowHeight >= offset) {
+          let elementId = $(this).find('.statictics_el_number').attr('id');
+          let startValue = 0;
+          let endValue = parseInt($(this).find('.statictics_el_number').text());
+          let animationDuration = 2000; 
+          animateCount("#" + elementId, startValue, endValue, animationDuration);
+      }
+  });
+}
+
 $(document).ready(function() {
-  animateCount("#finishedOrdersNum", 0, 163, 2000); 
-  animateCount("#homeDeliversNum", 0, 73, 2000); 
-  animateCount("#complaintsNum", 0, 6, 2000); 
-  animateCount("#goodReviewsNum", 0, 52, 2000); 
+  startCountAnimationOnScroll();
+
+  $(window).on('scroll', function() {
+      startCountAnimationOnScroll();
+  });
 });
 
 
