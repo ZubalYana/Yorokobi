@@ -7,13 +7,15 @@ const app = express();
 const PORT = 3000;
 const path = require('path');
 const fs = require('fs');
-// const mongoose = require('mongoose')
+const mongoose = require('mongoose')
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(express.json())
-// mongoose.connect(`mongodb+srv://root:s7vVHHEAqtPNPIUB@root.c1gqwpt.mongodb.net/?retryWrites=true&w=majority&appName=root`)
-// .then(()=>{
-//     console.log(`Connected to mongo DB`)
-// })
+mongoose.connect(`mongodb+srv://root:s7vVHHEAqtPNPIUB@root.c1gqwpt.mongodb.net/?retryWrites=true&w=majority&appName=root`)
+.then(()=>{
+    console.log(`Connected to mongo DB`)
+})
+const Products = mongoose.model('Products', {name: String, amount: Number, image: String, provider: String})
+
 const users = [
     { id: 1, username: 'Yorokobi Admin', password: '2024' },
 ];
