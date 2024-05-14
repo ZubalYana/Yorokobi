@@ -415,11 +415,11 @@
   font-size: 16px;
   margin-bottom: 10px;
   align-items: center;
-  width: 170px;
+  width: 180px;
   justify-content: space-between;
 }
 .wrap .navPageCon .FilingCon_Reviews .FilingCon_reviewsContainer .review .review_starsCon .review_starsQuolity .review_starsQuolity_stars {
-  width: 100px;
+  width: 110px;
   justify-content: space-between;
   display: flex;
   color: #F73859;
