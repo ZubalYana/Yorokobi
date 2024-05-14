@@ -52,7 +52,10 @@ function animateCount(element, start, end, duration) {
 }
 
 $(document).ready(function() {
-  animateCount("#finishedOrdersNum", 0, 163, 2000); // Adjust duration as needed
+  animateCount("#finishedOrdersNum", 0, 163, 2000); 
+  animateCount("#homeDeliversNum", 0, 73, 2000); 
+  animateCount("#complaintsNum", 0, 6, 2000); 
+  animateCount("#goodReviewsNum", 0, 52, 2000); 
 });
 
 
