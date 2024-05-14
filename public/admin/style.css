@@ -366,10 +366,69 @@
   font-size: 32px;
   margin-left: 30px;
 }
-.wrap .navPageCon .FilingCon_review {
+.wrap .navPageCon .FilingCon_Reviews {
+  margin-left: 55px;
+}
+.wrap .navPageCon .FilingCon_Reviews h1 {
   color: #fff;
   font-size: 32px;
-  margin-left: 30px;
+  font-weight: 600;
+}
+.wrap .navPageCon .FilingCon_Reviews .FilingCon_reviewsContainer {
+  width: 100%;
+  display: flex;
+  height: 66vh;
+}
+.wrap .navPageCon .FilingCon_Reviews .FilingCon_reviewsContainer .review {
+  width: 320px;
+  height: 340px;
+  border: #F73859 1px solid;
+  padding: 15px;
+  border-radius: 20px;
+  margin: 12px 30px 0 0;
+  color: #fff;
+}
+.wrap .navPageCon .FilingCon_Reviews .FilingCon_reviewsContainer .review .review_author {
+  display: flex;
+}
+.wrap .navPageCon .FilingCon_Reviews .FilingCon_reviewsContainer .review .review_author .review_author_picture {
+  width: 50px;
+  height: 50px;
+}
+.wrap .navPageCon .FilingCon_Reviews .FilingCon_reviewsContainer .review .review_author .review_nameTimeCon {
+  margin-left: 6px;
+}
+.wrap .navPageCon .FilingCon_Reviews .FilingCon_reviewsContainer .review .review_author .review_nameTimeCon .review_time {
+  font-size: 12px;
+  font-weight: 300;
+}
+.wrap .navPageCon .FilingCon_Reviews .FilingCon_reviewsContainer .review .review_author .review_nameTimeCon .review_name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #F73859;
+}
+.wrap .navPageCon .FilingCon_Reviews .FilingCon_reviewsContainer .review .review_starsCon {
+  margin-top: 10px;
+}
+.wrap .navPageCon .FilingCon_Reviews .FilingCon_reviewsContainer .review .review_starsCon .review_starsQuolity {
+  display: flex;
+  font-size: 16px;
+  margin-bottom: 10px;
+  align-items: center;
+  width: 170px;
+  justify-content: space-between;
+}
+.wrap .navPageCon .FilingCon_Reviews .FilingCon_reviewsContainer .review .review_starsCon .review_starsQuolity .review_starsQuolity_stars {
+  width: 100px;
+  justify-content: space-between;
+  display: flex;
+  color: #F73859;
+  margin-left: 6px;
+  font-size: 14px;
+}
+.wrap .navPageCon .FilingCon_Reviews .FilingCon_reviewsContainer .review_text {
+  font-size: 12px;
+  font-weight: 300;
 }
 .wrap .navPageCon .FilingCon_help {
   color: #fff;
