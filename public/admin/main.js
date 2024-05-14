@@ -15,22 +15,23 @@ $('.FilingCon').append(
     <div class="statictics">
       <div class="statictics_title">This mounth the restaurant has had:</div>
       <div class="statictics_elements">
-          <div class="statictics_el">
-              <div class="statictics_el_number" id="finishedOrdersNum">163</div>
-              <div class="statictics_el_text">finished orders</div>
-          </div>
-          <div class="statictics_el">
-              <div class="statictics_el_number" id="homeDeliversNum">73</div>
-              <div class="statictics_el_text">home deliveries</div>
-          </div>
-          <div class="statictics_el">
-              <div class="statictics_el_number" id="complaintsNum">6</div>
-              <div class="statictics_el_text">complaints</div>
-          </div>
-          <div class="statictics_el">
-              <div class="statictics_el_number" id="goodReviewsNum">52</div>
-              <div class="statictics_el_text">good reviews</div>
-          </div>
+      <div class="statictics_el">
+      <div class="statictics_el_number" id="finishedOrdersNum" data-end-value="163">0</div>
+      <div class="statictics_el_text">finished orders</div>
+  </div>
+  <div class="statictics_el">
+      <div class="statictics_el_number" id="homeDeliversNum" data-end-value="73">0</div>
+      <div class="statictics_el_text">home deliveries</div>
+  </div>
+  <div class="statictics_el">
+      <div class="statictics_el_number" id="complaintsNum" data-end-value="6">0</div>
+      <div class="statictics_el_text">complaints</div>
+  </div>
+  <div class="statictics_el">
+      <div class="statictics_el_number" id="goodReviewsNum" data-end-value="52">0</div>
+      <div class="statictics_el_text">good reviews</div>
+  </div>
+  
       </div>
 
       </div>
@@ -60,7 +61,7 @@ function startCountAnimationOnScroll() {
       if (scrollPosition + windowHeight >= offset) {
           let elementId = $(this).find('.statictics_el_number').attr('id');
           let startValue = 0;
-          let endValue = parseInt($(this).find('.statictics_el_number').text());
+          let endValue = parseInt($(this).find('.statictics_el_number').data('end-value'));
           let animationDuration = 2000; 
           animateCount("#" + elementId, startValue, endValue, animationDuration);
       }
