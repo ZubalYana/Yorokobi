@@ -51,7 +51,6 @@ function animateCount(element, start, end, duration) {
       }
   }, stepTime);
 }
-
 function startCountAnimationOnScroll() {
   let windowHeight = $(window).height();
   let scrollPosition = $(window).scrollTop();
@@ -67,7 +66,6 @@ function startCountAnimationOnScroll() {
       }
   });
 }
-
 $(document).ready(function() {
   startCountAnimationOnScroll();
 
@@ -96,28 +94,66 @@ $('#statistic').click(()=>{
       <div class="statictics">
         <div class="statictics_title">This mounth the restaurant has had:</div>
         <div class="statictics_elements">
-            <div class="statictics_el">
-                <div class="statictics_el_number" id="finishedOrdersNum">163</div>
-                <div class="statictics_el_text">finished orders</div>
-            </div>
-            <div class="statictics_el">
-                <div class="statictics_el_number" id="homeDeliversNum">73</div>
-                <div class="statictics_el_text">home deliveries</div>
-            </div>
-            <div class="statictics_el">
-                <div class="statictics_el_number" id="complaintsNum">6</div>
-                <div class="statictics_el_text">complaints</div>
-            </div>
-            <div class="statictics_el">
-                <div class="statictics_el_number" id="goodReviewsNum">52</div>
-                <div class="statictics_el_text">good reviews</div>
-            </div>
+        <div class="statictics_el">
+        <div class="statictics_el_number" id="finishedOrdersNum" data-end-value="163">0</div>
+        <div class="statictics_el_text">finished orders</div>
+    </div>
+    <div class="statictics_el">
+        <div class="statictics_el_number" id="homeDeliversNum" data-end-value="73">0</div>
+        <div class="statictics_el_text">home deliveries</div>
+    </div>
+    <div class="statictics_el">
+        <div class="statictics_el_number" id="complaintsNum" data-end-value="6">0</div>
+        <div class="statictics_el_text">complaints</div>
+    </div>
+    <div class="statictics_el">
+        <div class="statictics_el_number" id="goodReviewsNum" data-end-value="52">0</div>
+        <div class="statictics_el_text">good reviews</div>
+    </div>
+    
         </div>
   
         </div>
   </div>
   `
   )
+  function animateCount(element, start, end, duration) {
+    let range = end - start;
+    let current = start;
+    let increment = end > start ? 1 : -1;
+    let stepTime = Math.abs(Math.floor(duration / range));
+    let timer = setInterval(function() {
+        current += increment;
+        $(element).text(current);
+        if (current === end) {
+            clearInterval(timer);
+        }
+    }, stepTime);
+  }
+  
+  function startCountAnimationOnScroll() {
+    let windowHeight = $(window).height();
+    let scrollPosition = $(window).scrollTop();
+  
+    $('.statictics_el').each(function() {
+        let offset = $(this).offset().top;
+        if (scrollPosition + windowHeight >= offset) {
+            let elementId = $(this).find('.statictics_el_number').attr('id');
+            let startValue = 0;
+            let endValue = parseInt($(this).find('.statictics_el_number').data('end-value'));
+            let animationDuration = 2000; 
+            animateCount("#" + elementId, startValue, endValue, animationDuration);
+        }
+    });
+  }
+  
+  $(document).ready(function() {
+    startCountAnimationOnScroll();
+  
+    $(window).on('scroll', function() {
+        startCountAnimationOnScroll();
+    });
+  });
   $('#statistic').css('color', '#F73859')
   $('#orders').css('color', '#fff')
   $('#complaints').css('color', '#fff')
