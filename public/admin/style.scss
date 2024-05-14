@@ -397,7 +397,15 @@
                     right: -200px;
                     bottom: 0px;
                 }
+                .FilingCon_help_plane{
+                    width: 0px;
+                    position: absolute;
+                    top: 205px;
+                    right: 230px;
+                    transition: 3s ease;
+                }
                 .FilingCon_help_InfoCon{
+                    display: none;
                     h1{
                         font-size: 32px;
                         margin-bottom: 15px;
