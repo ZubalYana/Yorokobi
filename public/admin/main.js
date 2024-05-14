@@ -73,8 +73,6 @@ $(document).ready(function() {
       startCountAnimationOnScroll();
   });
 });
-
-
 $('#statistic').css('color', '#F73859')
 $('#statistic').click(()=>{
   $('.FilingCon').empty();
@@ -130,11 +128,9 @@ $('#statistic').click(()=>{
         }
     }, stepTime);
   }
-  
   function startCountAnimationOnScroll() {
     let windowHeight = $(window).height();
     let scrollPosition = $(window).scrollTop();
-  
     $('.statictics_el').each(function() {
         let offset = $(this).offset().top;
         if (scrollPosition + windowHeight >= offset) {
@@ -146,7 +142,6 @@ $('#statistic').click(()=>{
         }
     });
   }
-  
   $(document).ready(function() {
     startCountAnimationOnScroll();
   
@@ -154,6 +149,7 @@ $('#statistic').click(()=>{
         startCountAnimationOnScroll();
     });
   });
+
   $('#statistic').css('color', '#F73859')
   $('#orders').css('color', '#fff')
   $('#complaints').css('color', '#fff')
