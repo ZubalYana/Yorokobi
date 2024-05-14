@@ -16,19 +16,19 @@ $('.FilingCon').append(
       <div class="statictics_title">This mounth the restaurant has had:</div>
       <div class="statictics_elements">
           <div class="statictics_el">
-              <div class="statictics_el_number">163</div>
+              <div class="statictics_el_number" id="finishedOrdersNum">163</div>
               <div class="statictics_el_text">finished orders</div>
           </div>
           <div class="statictics_el">
-              <div class="statictics_el_number">73</div>
+              <div class="statictics_el_number" id="homeDeliversNum">73</div>
               <div class="statictics_el_text">home deliveries</div>
           </div>
           <div class="statictics_el">
-              <div class="statictics_el_number">6</div>
+              <div class="statictics_el_number" id="complaintsNum">6</div>
               <div class="statictics_el_text">complaints</div>
           </div>
           <div class="statictics_el">
-              <div class="statictics_el_number">52</div>
+              <div class="statictics_el_number" id="goodReviewsNum">52</div>
               <div class="statictics_el_text">good reviews</div>
           </div>
       </div>
@@ -37,6 +37,25 @@ $('.FilingCon').append(
 </div>
 `
 )
+function animateCount(element, start, end, duration) {
+  let range = end - start;
+  let current = start;
+  let increment = end > start ? 1 : -1;
+  let stepTime = Math.abs(Math.floor(duration / range));
+  let timer = setInterval(function() {
+      current += increment;
+      $(element).text(current);
+      if (current === end) {
+          clearInterval(timer);
+      }
+  }, stepTime);
+}
+
+$(document).ready(function() {
+  animateCount("#finishedOrdersNum", 0, 163, 2000); // Adjust duration as needed
+});
+
+
 $('#statistic').css('color', '#F73859')
 $('#statistic').click(()=>{
   $('.FilingCon').empty();
