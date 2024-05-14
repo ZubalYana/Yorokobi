@@ -403,9 +403,46 @@ $('#help').click(()=>{
   $('#help').css('color', '#F73859')
 
   //house and plane animation
-  // $('.FilingCon_help_decoration').click(()=>{
-  //   $('.FilingCon_help_plane').css('width', '28px')
-  // })
+// $('.FilingCon_help_decoration').click(() => {
+//   $('.FilingCon_help_plane').css('width', '23px')
+//   setTimeout(() => {
+//     $('.FilingCon_help_plane').css('top', '230px')
+//     $('.FilingCon_help_plane').css('right', '310px')
+//     $('.FilingCon_help_plane').css('transform', 'rotate(40deg)')
+//   }, 2000);
+//   setTimeout(() => {
+//     $('.FilingCon_help_plane').css('top', '180px')
+//     $('.FilingCon_help_plane').css('right', '350px')
+//     $('.FilingCon_help_plane').css('transform', 'rotate(60deg)')
+//   }, 4000);
+//   setTimeout(() => {
+//     $('.FilingCon_help_plane').css('top', '180px')
+//     $('.FilingCon_help_plane').css('right', '350px')
+//     $('.FilingCon_help_plane').css('transform', 'rotate(-60deg)')
+//   }, 5000);
+// });
+$('.FilingCon_help_decoration').click(() => {
+  $('.FilingCon_help_plane').css('width', '23px')
+
+  $('.FilingCon_help_plane').css('top', '230px');
+  $('.FilingCon_help_plane').css('right', '310px');
+  $('.FilingCon_help_plane').css('transform', 'rotate(40deg)');
+
+  setTimeout(() => {
+    $('.FilingCon_help_plane').css('top', '180px');
+    $('.FilingCon_help_plane').css('right', '350px');
+    $('.FilingCon_help_plane').css('transform', 'rotate(60deg)');
+  }, 1000);
+
+  setTimeout(() => {
+    $('.FilingCon_help_plane').css('transform', 'rotate(-60deg)');
+  }, 1500);
+  setTimeout(() => {
+    $('.FilingCon_help_plane').css('top', '250px');
+    $('.FilingCon_help_plane').css('right', '380px');
+    $('.FilingCon_help_plane').css('transform', 'rotate(-60deg)');
+  }, 2000);
+});
 
 })
 
