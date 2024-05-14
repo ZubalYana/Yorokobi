@@ -483,6 +483,117 @@ $('#review').click(()=>{
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam magna velit, iaculis sed faucibus eu, auctor at magna. Aliquam vestibulum justo pulvinar enim mollis, in dapibus elit lacinia. 
         </div>
     </div>
+
+    <div class="review">
+        <div class="review_author">
+            <img class="review_author_picture" src="./imgs/userIcon.png" alt="">
+            <div class="review_nameTimeCon">
+                <div class="review_time">3 min ago</div>
+                <div class="review_name">Wilder Scott</div>
+            </div>
+        </div>
+        <div class="review_starsCon">
+            <div class="review_starsQuolity">
+                Service
+                <div class="review_starsQuolity_stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="review_starsQuolity">
+                Food:
+                <div class="review_starsQuolity_stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="review_starsQuolity">
+                Speed:
+                <div class="review_starsQuolity_stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="review_starsQuolity">
+                Interior:
+                <div class="review_starsQuolity_stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="review_text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam magna velit, iaculis sed faucibus eu, auctor at magna. Aliquam vestibulum justo pulvinar enim mollis, in dapibus elit lacinia. 
+        </div>
+    </div>
+
+
+    <div class="review">
+        <div class="review_author">
+            <img class="review_author_picture" src="./imgs/userIcon.png" alt="">
+            <div class="review_nameTimeCon">
+                <div class="review_time">3 min ago</div>
+                <div class="review_name">Wilder Scott</div>
+            </div>
+        </div>
+        <div class="review_starsCon">
+            <div class="review_starsQuolity">
+                Service
+                <div class="review_starsQuolity_stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="review_starsQuolity">
+                Food:
+                <div class="review_starsQuolity_stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="review_starsQuolity">
+                Speed:
+                <div class="review_starsQuolity_stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="review_starsQuolity">
+                Interior:
+                <div class="review_starsQuolity_stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="review_text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam magna velit, iaculis sed faucibus eu, auctor at magna. Aliquam vestibulum justo pulvinar enim mollis, in dapibus elit lacinia. 
+        </div>
+    </div>
     </div>
 </div>
       `
