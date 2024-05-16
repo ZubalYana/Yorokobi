@@ -410,7 +410,19 @@ $('#dishes_availability').click(()=>{
 $('#products').click(()=>{
   $('.FilingCon').empty();
   $('.FilingCon').append(
-    `<div class="FilingCon_products">Products here</div>`
+    `<div class="FilingCon_products">
+    <h1>Products here</h1>
+    <div class="productsContainer">
+    <div class="product">
+        <img class="productImg" src="./imgs/nori product.png" alt="">
+        <div class="productAmountCircle"></div>
+        <div class="productName">Nori leaves</div>
+        <div class="productAmountCon">amount:<div class="productAmount">234</div></div>
+        <div class="productProviderCon">provider:<div class="productProvider">NihonNoRiori™</div></div>
+        <button id="buyMoreProduct">Buy more</button>
+    </div>
+</div>
+    </div>`
   )
   $('#orders').css('color', '#fff')
   $('#statistic').css('color', '#fff')
