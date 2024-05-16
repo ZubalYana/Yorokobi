@@ -419,7 +419,7 @@ $('#products').click(()=>{
         <div class="productName">Nori leaves</div>
         <div class="productAmountCon">amount:<div class="productAmount">234</div></div>
         <div class="productProviderCon">provider:<div class="productProvider">NihonNoRiori™</div></div>
-        <button id="buyMoreProduct">Buy more</button>
+        <button class="buyMoreProduct">Buy more</button>
     </div>
 </div>
     </div>`
