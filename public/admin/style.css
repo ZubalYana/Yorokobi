@@ -433,6 +433,12 @@
   background-color: #13161B;
   outline: none;
   margin-top: 12px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.wrap .navPageCon .FilingCon_products .productsContainer .product .buyMoreProduct:hover {
+  background-color: #F73859;
+  color: #13161B;
 }
 .wrap .navPageCon .FilingCon_Reviews {
   margin-left: 55px;

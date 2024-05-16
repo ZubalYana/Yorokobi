@@ -445,6 +445,12 @@
                             background-color: #13161B;
                             outline: none;
                             margin-top: 12px;
+                            transition: 0.5s ease;
+                            cursor: pointer;
+                        }
+                        .buyMoreProduct:hover{
+                            background-color: #F73859;
+                            color: #13161B;
                         }
                     }
                 }
