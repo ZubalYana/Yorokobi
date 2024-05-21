@@ -383,6 +383,23 @@
                     font-size: 32px;
                     font-weight: 600;
                 }
+                .productsAvailability{
+                    width: 250px;
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 24px;
+                    font-weight: 400;
+                    color: #fff;
+                    margin: 10px 0 10px 0;
+                    user-select: none;
+                    .productsAvailable{
+                        color: #F73859;
+                        cursor: pointer;
+                    }
+                    .productsToBuy{
+                        cursor: pointer;
+                    }
+                }
                 .productsContainer{
                     width: 100%;
                     flex-wrap: wrap;

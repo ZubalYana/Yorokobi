@@ -410,10 +410,14 @@ $('#dishes_availability').click(()=>{
 $('#products').click(()=>{
   $('.FilingCon').empty();
   $('.FilingCon').append(
-    `<div class="FilingCon_products">
+    `    <div class="FilingCon_products">
     <h1>Products here</h1>
+    <div class="productsAvailability">
+        <div class="productsAvailable">Available</div>|
+        <div class="productsToBuy">To buy</div>
+    </div>
     <div class="productsContainer"></div>
-    </div>`
+</div>`
   )
   axios.get('http://localhost:3000/products')
   .then(res=>{

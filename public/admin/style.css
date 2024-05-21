@@ -369,6 +369,25 @@
   font-size: 32px;
   font-weight: 600;
 }
+.wrap .navPageCon .FilingCon_products .productsAvailability {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  margin: 10px 0 10px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.wrap .navPageCon .FilingCon_products .productsAvailability .productsAvailable {
+  color: #F73859;
+  cursor: pointer;
+}
+.wrap .navPageCon .FilingCon_products .productsAvailability .productsToBuy {
+  cursor: pointer;
+}
 .wrap .navPageCon .FilingCon_products .productsContainer {
   width: 100%;
   flex-wrap: wrap;
