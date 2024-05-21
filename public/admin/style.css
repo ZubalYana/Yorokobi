@@ -373,6 +373,7 @@
   width: 100%;
   flex-wrap: wrap;
   padding-top: 70px;
+  display: flex;
 }
 .wrap .navPageCon .FilingCon_products .productsContainer .product {
   width: 282px;
@@ -382,6 +383,7 @@
   border-radius: 20px;
   position: relative;
   color: #fff;
+  margin: 0 25px 25px 0;
 }
 .wrap .navPageCon .FilingCon_products .productsContainer .product .productImg {
   height: 103px;

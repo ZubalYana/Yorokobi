@@ -409,13 +409,17 @@ $('#dishes_availability').click(()=>{
 })
 $('#products').click(()=>{
   $('.FilingCon').empty();
+  $('.FilingCon').append(
+    `<div class="FilingCon_products">
+    <h1>Products here</h1>
+    <div class="productsContainer"></div>
+    </div>`
+  )
   axios.get('http://localhost:3000/products')
   .then(res=>{
     for(let product of res.data){
-        $('.FilingCon').append(
-            `<div class="FilingCon_products">
-            <h1>Products here</h1>
-            <div class="productsContainer">
+        $('.productsContainer').append(
+            `
             <div class="product">
                 <img class="productImg" src="./imgs/${product.image} product.png" alt="">
                 <div class="productAmountCircle"></div>
@@ -424,8 +428,7 @@ $('#products').click(()=>{
                 <div class="productProviderCon">provider:<div class="productProvider">${product.provider}</div></div>
                 <button class="buyMoreProduct">Buy more</button>
             </div>
-        </div>
-            </div>`
+            `
           )
     }
 

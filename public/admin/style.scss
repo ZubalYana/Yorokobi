@@ -387,6 +387,7 @@
                     width: 100%;
                     flex-wrap: wrap;
                     padding-top: 70px;
+                    display: flex;
                     .product{
                         width: 282px;
                         height: 220px;
@@ -395,6 +396,7 @@
                         border-radius: 20px;
                         position: relative;
                         color: #fff;
+                        margin: 0 25px 25px 0;
                         .productImg{
                             height: 103px;
                             margin-top: -70px;
