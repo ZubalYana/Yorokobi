@@ -409,21 +409,28 @@ $('#dishes_availability').click(()=>{
 })
 $('#products').click(()=>{
   $('.FilingCon').empty();
-  $('.FilingCon').append(
-    `<div class="FilingCon_products">
-    <h1>Products here</h1>
-    <div class="productsContainer">
-    <div class="product">
-        <img class="productImg" src="./imgs/nori product.png" alt="">
-        <div class="productAmountCircle"></div>
-        <div class="productName">Nori leaves</div>
-        <div class="productAmountCon">amount:<div class="productAmount">234</div></div>
-        <div class="productProviderCon">provider:<div class="productProvider">NihonNoRiori™</div></div>
-        <button class="buyMoreProduct">Buy more</button>
-    </div>
-</div>
-    </div>`
-  )
+  axios.get('http://localhost:3000/products')
+  .then(res=>{
+    for(let product of res.data){
+        $('.FilingCon').append(
+            `<div class="FilingCon_products">
+            <h1>Products here</h1>
+            <div class="productsContainer">
+            <div class="product">
+                <img class="productImg" src="./imgs/${product.image} product.png" alt="">
+                <div class="productAmountCircle"></div>
+                <div class="productName">${product.name}</div>
+                <div class="productAmountCon">amount:<div class="productAmount">${product.amount}</div></div>
+                <div class="productProviderCon">provider:<div class="productProvider">${product.provider}</div></div>
+                <button class="buyMoreProduct">Buy more</button>
+            </div>
+        </div>
+            </div>`
+          )
+    }
+
+  })
+
   $('#orders').css('color', '#fff')
   $('#statistic').css('color', '#fff')
   $('#complaints').css('color', '#fff')
