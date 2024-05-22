@@ -69,8 +69,8 @@ app.get('/contacts', (req, res) => {
 app.post('/add-products', async (req, res) => {
     console.log(req.body)
     try {
-        const { name, amount, image, provider } = req.body;
-        const products = new Products({ name, amount, image, provider });
+        const { name, amount, image, provider, availability } = req.body;
+        const products = new Products({ name, amount, image, provider, availability });
         await products.save();
         console.log(`A product created`);
         res.status(201).json(products);

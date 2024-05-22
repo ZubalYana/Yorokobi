@@ -417,23 +417,40 @@ $('#products').click(()=>{
         <div class="productsToBuy">To buy</div>
     </div>
     <div class="productsContainer"></div>
+    <div class="toBuyProductsContainer"></div>
 </div>`
   )
   axios.get('http://localhost:3000/products')
   .then(res=>{
     for(let product of res.data){
-        $('.productsContainer').append(
-            `
-            <div class="product">
-                <img class="productImg" src="./imgs/${product.image} product.png" alt="">
-                <div class="productAmountCircle"></div>
-                <div class="productName">${product.name}</div>
-                <div class="productAmountCon">amount:<div class="productAmount">${product.amount}</div></div>
-                <div class="productProviderCon">provider:<div class="productProvider">${product.provider}</div></div>
-                <button class="buyMoreProduct">Buy more</button>
-            </div>
-            `
-          )
+        if(product.availability == true){
+            $('.productsContainer').append(
+                `
+                <div class="product">
+                    <img class="productImg" src="./imgs/${product.image} product.png" alt="">
+                    <div class="productAmountCircle"></div>
+                    <div class="productName">${product.name}</div>
+                    <div class="productAmountCon">amount:<div class="productAmount">${product.amount}</div></div>
+                    <div class="productProviderCon">provider:<div class="productProvider">${product.provider}</div></div>
+                    <button class="buyMoreProduct">Buy more</button>
+                </div>
+                `
+              )
+        }else{
+            $('.toBuyProductsContainer').append(
+                `
+                <div class="product">
+                    <img class="productImg" src="./imgs/${product.image} product.png" alt="">
+                    <div class="productAmountCircle"></div>
+                    <div class="productName">${product.name}</div>
+                    <div class="productAmountCon">amount:<div class="productAmount">${product.amount}</div></div>
+                    <div class="productProviderCon">provider:<div class="productProvider">${product.provider}</div></div>
+                    <button class="buyMoreProduct">Buy more</button>
+                </div>
+                `
+              )
+        }
+
     }
 
   })

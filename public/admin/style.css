@@ -461,6 +461,79 @@
   background-color: #F73859;
   color: #13161B;
 }
+.wrap .navPageCon .FilingCon_products .toBuyProductsContainer {
+  width: 100%;
+  flex-wrap: wrap;
+  padding-top: 70px;
+  display: flex;
+}
+.wrap .navPageCon .FilingCon_products .toBuyProductsContainer .product {
+  width: 282px;
+  height: 220px;
+  padding: 15px;
+  border: #F73859 1px solid;
+  border-radius: 20px;
+  position: relative;
+  color: #fff;
+  margin: 0 25px 25px 0;
+}
+.wrap .navPageCon .FilingCon_products .toBuyProductsContainer .product .productImg {
+  height: 103px;
+  margin-top: -70px;
+}
+.wrap .navPageCon .FilingCon_products .toBuyProductsContainer .product .productAmountCircle {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(247, 56, 89, 0.76);
+  border-radius: 50%;
+  position: absolute;
+  top: 11px;
+  right: 11px;
+}
+.wrap .navPageCon .FilingCon_products .toBuyProductsContainer .product .productName {
+  font-size: 24px;
+  font-weight: 500;
+  color: #F73859;
+}
+.wrap .navPageCon .FilingCon_products .toBuyProductsContainer .product .productAmountCon {
+  display: flex;
+  font-size: 20px;
+  font-weight: 300;
+}
+.wrap .navPageCon .FilingCon_products .toBuyProductsContainer .product .productAmountCon .productAmount {
+  font-weight: 500;
+  margin-left: 5px;
+}
+.wrap .navPageCon .FilingCon_products .toBuyProductsContainer .product .productProviderCon {
+  display: flex;
+  font-size: 20px;
+  font-weight: 300;
+}
+.wrap .navPageCon .FilingCon_products .toBuyProductsContainer .product .productProviderCon .productProvider {
+  font-weight: 500;
+  margin-left: 5px;
+}
+.wrap .navPageCon .FilingCon_products .toBuyProductsContainer .product .buyMoreProduct {
+  width: 119px;
+  height: 35px;
+  border: #F73859 1px solid;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F73859;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #13161B;
+  outline: none;
+  margin-top: 12px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.wrap .navPageCon .FilingCon_products .toBuyProductsContainer .product .buyMoreProduct:hover {
+  background-color: #F73859;
+  color: #13161B;
+}
 .wrap .navPageCon .FilingCon_Reviews {
   margin-left: 55px;
 }
