@@ -420,6 +420,14 @@ $('#products').click(()=>{
     <div class="toBuyProductsContainer"></div>
 </div>`
   )
+  $('.productsAvailable').click(()=>{
+    $('.productsContainer').css('display', 'flex')
+    $('.toBuyProductsContainer').css('display', 'none')
+  })
+  $('.productsToBuy').click(()=>{
+    $('.productsContainer').css('display', 'none')
+    $('.toBuyProductsContainer').css('display', 'flex')
+  })
   axios.get('http://localhost:3000/products')
   .then(res=>{
     for(let product of res.data){

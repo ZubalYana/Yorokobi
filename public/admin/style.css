@@ -465,7 +465,7 @@
   width: 100%;
   flex-wrap: wrap;
   padding-top: 70px;
-  display: flex;
+  display: none;
 }
 .wrap .navPageCon .FilingCon_products .toBuyProductsContainer .product {
   width: 282px;
