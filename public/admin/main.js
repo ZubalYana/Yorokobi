@@ -423,10 +423,15 @@ $('#products').click(()=>{
   $('.productsAvailable').click(()=>{
     $('.productsContainer').css('display', 'flex')
     $('.toBuyProductsContainer').css('display', 'none')
+    $('.productsAvailable').css('color', '#F73859')
+    $('.productsToBuy').css('color', '#fff')
+
   })
   $('.productsToBuy').click(()=>{
     $('.productsContainer').css('display', 'none')
     $('.toBuyProductsContainer').css('display', 'flex')
+    $('.productsAvailable').css('color', '#fff')
+    $('.productsToBuy').css('color', '#F73859')
   })
   axios.get('http://localhost:3000/products')
   .then(res=>{
