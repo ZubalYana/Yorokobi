@@ -15,6 +15,7 @@ mongoose.connect(`mongodb+srv://root:s7vVHHEAqtPNPIUB@root.c1gqwpt.mongodb.net/?
     console.log(`Connected to mongo DB`)
 })
 const Products = mongoose.model('Products', {name: String, amount: Number, image: String, provider: String, availability: Boolean})
+const Dishes = mongoose.model('Dishes', {name: String, price: Number, image: String, rating: Number, availability: Boolean, type: String})
 
 const users = [
     { id: 1, username: 'Yorokobi Admin', password: '2024' },
