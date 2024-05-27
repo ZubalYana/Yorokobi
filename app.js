@@ -87,7 +87,26 @@ app.get('/products', async (req, res)=>{
         res.status(500).json({ message: err })
     }
 })
-
+app.post('/add-dishes', async (req, res) => {
+    console.log(req.body)
+    try {
+        const { name, price, image, provider, availability, type } = req.body;
+        const dishes = new Dishes({ name, price, image, provider, availability, type });
+        await dishes.save();
+        console.log(`A dish created`);
+        res.status(201).json(dishes);
+    } catch (err) {
+        res.status(500).json({ message: err })
+    }
+})
+app.get('/dishes', async (req, res)=>{
+    try {
+        const dishes = await Dishes.find();
+        res.json(dishes)
+    } catch (err) {
+        res.status(500).json({ message: err })
+    }
+})
 app.use((err, req, res, next) => {
     console.error(err);
     res.status(500).send('Something went wrong!');
