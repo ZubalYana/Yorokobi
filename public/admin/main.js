@@ -704,48 +704,23 @@ $('#help').click(()=>{
   $('#help').css('color', '#F73859')
 
   //house and plane animation
-// $('.FilingCon_help_decoration').click(() => {
-//   $('.FilingCon_help_plane').css('width', '23px')
-//   setTimeout(() => {
-//     $('.FilingCon_help_plane').css('top', '230px')
-//     $('.FilingCon_help_plane').css('right', '310px')
-//     $('.FilingCon_help_plane').css('transform', 'rotate(40deg)')
-//   }, 2000);
-//   setTimeout(() => {
-//     $('.FilingCon_help_plane').css('top', '180px')
-//     $('.FilingCon_help_plane').css('right', '350px')
-//     $('.FilingCon_help_plane').css('transform', 'rotate(60deg)')
-//   }, 4000);
-//   setTimeout(() => {
-//     $('.FilingCon_help_plane').css('top', '180px')
-//     $('.FilingCon_help_plane').css('right', '350px')
-//     $('.FilingCon_help_plane').css('transform', 'rotate(-60deg)')
-//   }, 5000);
-// });
 $('.FilingCon_help_decoration').click(() => {
-  $('.FilingCon_help_plane').css('width', '23px')
+    const plane = document.querySelector('.FilingCon_help_plane');
 
-  $('.FilingCon_help_plane').css('top', '230px');
-  $('.FilingCon_help_plane').css('right', '310px');
-  $('.FilingCon_help_plane').css('transform', 'rotate(40deg)');
+    const timeline = gsap.timeline({ repeat: -1, yoyo: true });
 
-  setTimeout(() => {
-    $('.FilingCon_help_plane').css('top', '180px');
-    $('.FilingCon_help_plane').css('right', '350px');
-    $('.FilingCon_help_plane').css('transform', 'rotate(60deg)');
-  }, 1000);
+    timeline
+        .to(plane, { duration: 2, x: 300, rotation: 45, ease: 'power1.inOut' })
+        .to(plane, { duration: 2, y: 300, rotation: -45, ease: 'power1.inOut' })
+        .to(plane, { duration: 2, x: 0, rotation: -135, ease: 'power1.inOut' })
+        .to(plane, { duration: 2, y: 0, rotation: 0, ease: 'power1.inOut' })
+        .to(plane, { duration: 3, x: 500, y: 500, rotation: 360, ease: 'power1.inOut' })
+        .to(plane, { duration: 3, x: 200, y: 200, rotation: -360, ease: 'power1.inOut' })
+        .to(plane, { duration: 4, bezier: { type: "soft", values: [{ x: 400, y: 50 }, { x: 600, y: 300 }, { x: 400, y: 600 }, { x: 200, y: 300 }, { x: 0, y: 0 }] }, rotation: 720, ease: 'power1.inOut' });
 
-  setTimeout(() => {
-    $('.FilingCon_help_plane').css('transform', 'rotate(-50deg)');
-  }, 1200);
-  setTimeout(() => {
-    $('.FilingCon_help_plane').css('top', '250px');
-    $('.FilingCon_help_plane').css('right', '380px');
-    $('.FilingCon_help_plane').css('transform', 'rotate(-60deg)');
-  }, 1600);
+});
 });
 
-})
 
 //line chart code
 document.addEventListener('DOMContentLoaded', function () {

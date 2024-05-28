@@ -623,11 +623,13 @@
                     bottom: 0px;
                 }
                 .FilingCon_help_plane{
-                    width: 0px;
+                    width: 23px;
                     position: absolute;
                     top: 205px;
                     right: 230px;
                     transition: 3s ease;
+                    background: url('path_to_your_plane_image.png') no-repeat center center;
+                    background-size: contain;
                 }
                 .FilingCon_help_InfoCon{
                     display: none;
