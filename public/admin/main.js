@@ -736,13 +736,13 @@ $('.FilingCon_help_decoration').click(() => {
   }, 1000);
 
   setTimeout(() => {
-    $('.FilingCon_help_plane').css('transform', 'rotate(-60deg)');
-  }, 1500);
+    $('.FilingCon_help_plane').css('transform', 'rotate(-50deg)');
+  }, 1200);
   setTimeout(() => {
     $('.FilingCon_help_plane').css('top', '250px');
     $('.FilingCon_help_plane').css('right', '380px');
     $('.FilingCon_help_plane').css('transform', 'rotate(-60deg)');
-  }, 2000);
+  }, 1600);
 });
 
 })
