@@ -707,17 +707,15 @@ $('#help').click(()=>{
 $('.FilingCon_help_decoration').click(() => {
     const plane = document.querySelector('.FilingCon_help_plane');
 
-    const timeline = gsap.timeline({ repeat: -1, yoyo: true });
+    const timeline = gsap.timeline();
 
     timeline
-        .to(plane, { duration: 2, x: 300, rotation: 45, ease: 'power1.inOut' })
-        .to(plane, { duration: 2, y: 300, rotation: -45, ease: 'power1.inOut' })
-        .to(plane, { duration: 2, x: 0, rotation: -135, ease: 'power1.inOut' })
-        .to(plane, { duration: 2, y: 0, rotation: 0, ease: 'power1.inOut' })
-        .to(plane, { duration: 3, x: 500, y: 500, rotation: 360, ease: 'power1.inOut' })
-        .to(plane, { duration: 3, x: 200, y: 200, rotation: -360, ease: 'power1.inOut' })
-        .to(plane, { duration: 4, bezier: { type: "soft", values: [{ x: 400, y: 50 }, { x: 600, y: 300 }, { x: 400, y: 600 }, { x: 200, y: 300 }, { x: 0, y: 0 }] }, rotation: 720, ease: 'power1.inOut' });
-
+    .to(plane, { duration: 1, x: -150, rotation: 45, ease: 'power1.inOut' })
+    .to(plane, { duration: 1, y: -60, rotation: 60, ease: 'power1.inOut' })
+    .to(plane, { duration: 1, x: -170, rotation: 45, ease: 'power1.inOut' })
+    .to(plane, { duration: 1, y: -100, rotation: 90, ease: 'power1.inOut' })
+    .to(plane, { duration: 2, bezier: { values: [{ x: -100, y: -100 }, { x: 100, y: 200 }] }, rotation: 360, ease: 'power1.inOut' })
+    .to(plane, {duration: 1, attr: {x: 100, y: 50 }, ease: "none"})
 });
 });
 
