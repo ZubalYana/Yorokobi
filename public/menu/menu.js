@@ -151,9 +151,10 @@ axios.get('http://localhost:3000/dishes')
     console.log(res.data)
     for (let dish of res.data) {
         if (dish.type == 'sushi') {
+            console.log(dish.img)
             let $sushiContainer = $('<div class="dishesContainer_sushi"></div>');
             $sushiContainer.append(`
-                <img class='dishesContainer_sushi_img' src="${dish.img}" alt="">
+                <img class='dishesContainer_sushi_img' src="${dish.image}" alt="">
                 <div class="dishesContainer_sushi_namePriceCon">
                     <div class="dishesContainer_sushi_name">${dish.name}</div>
                     <div class="dishesContainer_sushi_price">$${dish.price}</div>
