@@ -704,15 +704,15 @@ $('#help').click(()=>{
   $('#help').css('color', '#F73859')
 
   //house and plane animation
-  document.addEventListener('DOMContentLoaded', () => {
-    const plane = document.querySelector('.FilingCon_help_plane');
-    const infoCon = document.querySelector('.FilingCon_help_InfoCon');
-
-    plane.addEventListener('animationend', () => {
+    setTimeout(() => {
+        const plane = document.querySelector('.FilingCon_help_plane');
+        const infoCon = document.querySelector('.FilingCon_help_InfoCon');
         plane.style.display = 'none';
         infoCon.style.display = 'flex';
-    });
-});
+        infoCon.style.flexDirection = 'column';
+
+    }, 3000);
+
 
 });
 

@@ -628,6 +628,7 @@
 }
 .wrap .navPageCon .FilingCon_help .FilingCon_help_InfoCon {
   display: none;
+  flex-direction: column;
 }
 .wrap .navPageCon .FilingCon_help .FilingCon_help_InfoCon h1 {
   font-size: 32px;
