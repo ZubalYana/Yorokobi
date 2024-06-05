@@ -704,17 +704,16 @@ $('#help').click(()=>{
   $('#help').css('color', '#F73859')
 
   //house and plane animation
-$('.FilingCon_help_decoration').click(() => {
+  document.addEventListener('DOMContentLoaded', () => {
     const plane = document.querySelector('.FilingCon_help_plane');
+    const infoCon = document.querySelector('.FilingCon_help_InfoCon');
 
-    const timeline = gsap.timeline();
-
-    timeline
-    .to(plane, { duration: 0.5, x: -150, y: -60, rotation: -30, ease: 'power1.inOut' })
-    .to(plane, { duration: 0.5, x: -200, y: -90, rotation: 30, ease: 'power1.inOut' })
-    .to(plane, { duration: 0.5, x: -550, y: -150, rotation: 2, ease: 'power1.inOut' })
-
+    plane.addEventListener('animationend', () => {
+        plane.style.display = 'none';
+        infoCon.style.display = 'flex';
+    });
 });
+
 });
 
 

@@ -627,9 +627,16 @@
                     position: absolute;
                     top: 205px;
                     right: 230px;
-                    transition: 3s ease;
-                    background: url('path_to_your_plane_image.png') no-repeat center center;
-                    background-size: contain;
+                    animation: movePlane 3s ease-in-out;
+                    transform: rotate(30deg);
+                }
+                @keyframes movePlane {
+                    0% {
+                        transform: translate(0px, 0px) rotate(30deg);
+                    }
+                    100% {
+                        transform: translate(-800px, -120px) rotate(0deg);
+                    }
                 }
                 .FilingCon_help_InfoCon{
                     display: none;
