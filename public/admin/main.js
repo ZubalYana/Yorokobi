@@ -710,12 +710,11 @@ $('.FilingCon_help_decoration').click(() => {
     const timeline = gsap.timeline();
 
     timeline
-    .to(plane, { duration: 1, x: -150, rotation: 45, ease: 'power1.inOut' })
-    .to(plane, { duration: 1, y: -60, rotation: 60, ease: 'power1.inOut' })
-    .to(plane, { duration: 1, x: -170, rotation: 45, ease: 'power1.inOut' })
-    .to(plane, { duration: 1, y: -100, rotation: 90, ease: 'power1.inOut' })
-    .to(plane, { duration: 2, bezier: { values: [{ x: -100, y: -100 }, { x: 100, y: 200 }] }, rotation: 360, ease: 'power1.inOut' })
-    .to(plane, {duration: 1, attr: {x: 100, y: 50 }, ease: "none"})
+    .to(plane, { duration: 0.5, x: -150, rotation: 45, ease: 'power1.inOut' })
+    .to(plane, { duration: 0.5, y: -60, rotation: 60, ease: 'power1.inOut' })
+    .to(plane, { duration: 0.5, x: -170, rotation: 45, ease: 'power1.inOut' })
+    .to(plane, { duration: 0.5, y: -100, rotation: 60, ease: 'power1.inOut' })
+    
 });
 });
 
