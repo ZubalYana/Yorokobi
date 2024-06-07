@@ -91,8 +91,8 @@ app.get('/products', async (req, res)=>{
 app.post('/add-dishes', async (req, res) => {
     console.log(req.body)
     try {
-        const { name, price, image, provider, availability, type } = req.body;
-        const dishes = new Dishes({ name, price, image, provider, availability, type });
+        const { name, price, image, rating, provider, availability, type } = req.body;
+        const dishes = new Dishes({ name, price, image, rating, provider, availability, type });
         await dishes.save();
         console.log(`A dish created`);
         res.status(201).json(dishes);
