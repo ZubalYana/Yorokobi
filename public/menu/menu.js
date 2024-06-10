@@ -381,6 +381,7 @@ axios.get('http://localhost:3000/dishes')
             let dishToAdd = res.data.find(dish => dish._id === dishID);
             cartList.push(dishToAdd);
             console.log(cartList)
+            $('.ordersCount').html(cartList.length)
         })
     }
 
