@@ -1,3 +1,6 @@
+let cartList = [];
+let totalAmount = 0;
+
 //theme changing
 let theme = localStorage.getItem('theme') || 'light';
 $('.header_theme').click(function(){
@@ -389,9 +392,8 @@ axios.get('http://localhost:3000/dishes')
     })
 
     //ordering
-    let cartList = [];
-    let totalAmount = 0;
     $('.dishOrderBtn').click((e)=>{
+        alert('sdhfgodhs')
         let dishID = e.target.id;
         console.log(dishID)
         let dishToAdd = res.data.find(dish => dish._id === dishID);
