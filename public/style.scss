@@ -75,9 +75,25 @@
             }
         }
         .cookiesPopup_right{
+            width: 47%;
             position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             img{
                 position: absolute;
+            }
+            .cookieMainPart{
+                width: 250px;
+                height: 250px;
+            }
+            .cookieCrumb1{
+                width: 26px;
+                height: 26px;
+            }
+            .cookieCrumb2{
+                width: 8px;
+                height: 8px;
             }
         }
     }

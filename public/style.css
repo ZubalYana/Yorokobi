@@ -85,10 +85,26 @@
   color: #F73859;
 }
 .cookiesPopupCon .cookiesPopup .cookiesPopup_right {
+  width: 47%;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .cookiesPopupCon .cookiesPopup .cookiesPopup_right img {
   position: absolute;
+}
+.cookiesPopupCon .cookiesPopup .cookiesPopup_right .cookieMainPart {
+  width: 250px;
+  height: 250px;
+}
+.cookiesPopupCon .cookiesPopup .cookiesPopup_right .cookieCrumb1 {
+  width: 26px;
+  height: 26px;
+}
+.cookiesPopupCon .cookiesPopup .cookiesPopup_right .cookieCrumb2 {
+  width: 8px;
+  height: 8px;
 }
 
 .wrap {
