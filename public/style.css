@@ -93,6 +93,7 @@
 }
 .cookiesPopupCon .cookiesPopup .cookiesPopup_right img {
   position: absolute;
+  transition: 1s ease;
 }
 .cookiesPopupCon .cookiesPopup .cookiesPopup_right .cookieMainPart {
   width: 250px;

@@ -373,3 +373,22 @@ $('#Oceania').hover(
     }
 );
 
+
+//cookies animation
+$('.cookiesPopup_right').hover(
+    ()=>{
+        $('.cookieMainPart').css({
+            'width':'280px',
+            'height':'280px',
+            'transform':'rotate(-20deg)'
+        })
+    },
+    ()=>{
+        $('.cookieMainPart').css({
+            'width':'250px',
+            'height':'250px',
+            'transform':'rotate(0deg)'
+
+        })
+    }
+)
