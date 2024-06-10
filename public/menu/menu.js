@@ -149,7 +149,6 @@ axios.get('http://localhost:3000/dishes')
     console.log(res.data)
     for (let dish of res.data) {
         if (dish.type == 'sushi') {
-            console.log(dish.img)
             let $sushiContainer = $('<div class="dishesContainer_sushi"></div>');
             $sushiContainer.append(`
                 <img class='dishesContainer_sushi_img' src="${dish.image}" alt="">
@@ -160,7 +159,7 @@ axios.get('http://localhost:3000/dishes')
                 <div class="dishesContainer_sushi_availability"></div>
                 <div class="dishesContainer_sushi_btns">
                     <div class="dishesContainer_sushi_btn" id="dishInfoBtn">Info</div>
-                    <div class="dishesContainer_sushi_btn" id="dishOrderBtn">Order</div>
+                    <div class="dishesContainer_sushi_btn dishOrderBtn" id="${dish._id}">Order</div>
                 </div>
                 <div class="dishesContainer_sushi_rating"></div>
             `);
@@ -198,7 +197,7 @@ axios.get('http://localhost:3000/dishes')
                     <div class="dishesContainer_sushi_availability"></div>
                     <div class="dishesContainer_sushi_btns">
                         <div class="dishesContainer_sushi_btn" id="dishInfoBtn">Info</div>
-                        <div class="dishesContainer_sushi_btn" id="dishOrderBtn">Order</div>
+                        <div class="dishesContainer_sushi_btn dishOrderBtn" id="${dish._id}">Order</div>
                     </div>
                     <div class="dishesContainer_sushi_rating"></div>
                 `);
@@ -240,7 +239,7 @@ axios.get('http://localhost:3000/dishes')
                         <div class="dishesContainer_sushi_availability"></div>
                         <div class="dishesContainer_sushi_btns">
                             <div class="dishesContainer_sushi_btn" id="dishInfoBtn">Info</div>
-                            <div class="dishesContainer_sushi_btn" id="dishOrderBtn">Order</div>
+                            <div class="dishesContainer_sushi_btn dishOrderBtn" id="${dish._id}">Order</div>
                         </div>
                         <div class="dishesContainer_sushi_rating"></div>
                     `);
@@ -281,7 +280,7 @@ axios.get('http://localhost:3000/dishes')
                     <div class="dishesContainer_sushi_availability"></div>
                     <div class="dishesContainer_sushi_btns">
                         <div class="dishesContainer_sushi_btn" id="dishInfoBtn">Info</div>
-                        <div class="dishesContainer_sushi_btn" id="dishOrderBtn">Order</div>
+                        <div class="dishesContainer_sushi_btn dishOrderBtn" id="${dish._id}">Order</div>
                     </div>
                     <div class="dishesContainer_sushi_rating"></div>
                 `);
@@ -322,7 +321,7 @@ axios.get('http://localhost:3000/dishes')
                     <div class="dishesContainer_sushi_availability"></div>
                     <div class="dishesContainer_sushi_btns">
                         <div class="dishesContainer_sushi_btn" id="dishInfoBtn">Info</div>
-                        <div class="dishesContainer_sushi_btn" id="dishOrderBtn">Order</div>
+                        <div class="dishesContainer_sushi_btn dishOrderBtn" id="${dish._id}">Order</div>
                     </div>
                     <div class="dishesContainer_sushi_rating"></div>
                 `);
@@ -363,7 +362,7 @@ axios.get('http://localhost:3000/dishes')
                     <div class="dishesContainer_sushi_availability"></div>
                     <div class="dishesContainer_sushi_btns">
                         <div class="dishesContainer_sushi_btn" id="dishInfoBtn">Info</div>
-                        <div class="dishesContainer_sushi_btn" id="dishOrderBtn">Order</div>
+                        <div class="dishesContainer_sushi_btn dishOrderBtn" id="${dish._id}">Order</div>
                     </div>
                     <div class="dishesContainer_sushi_rating"></div>
                 `);
@@ -389,9 +388,16 @@ axios.get('http://localhost:3000/dishes')
     }
     })
 
-    let cartList = [];
     //ordering
-
+    let cartList = [];
+    let totalAmount = 0;
+    $('.dishOrderBtn').click((e)=>{
+        let dishID = e.target.id;
+        console.log(dishID)
+        let dishToAdd = res.data.find(dish => dish._id === dishID);
+        cartList.push(dishToAdd);
+        console.log(cartList)
+    })
 })
 
 
