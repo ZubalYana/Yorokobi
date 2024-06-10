@@ -205,13 +205,11 @@ axios.get('http://localhost:3000/dishes')
                     </div>
                     <div class="dishesContainer_sushi_rating"></div>
                 `);
-        
                 if (dish.availability == true) {
                     $sushiContainer.find('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>');
                 } else {
                     $sushiContainer.find('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>').css('color', '#959595');
                 }
-        
                 let ratingHtml = '';
                 for (let i = 0; i < 5; i++) {
                     if (i < dish.rating) {
@@ -221,16 +219,13 @@ axios.get('http://localhost:3000/dishes')
                     }
                 }
                 $sushiContainer.find('.dishesContainer_sushi_rating').html(ratingHtml);
-        
                 $('.dishesContainer_dishes').append($sushiContainer);
             }
-            
         }
         ordering()
     })
     $('#snack').click(()=>{
         $('.dishesContainer_dishes').empty();
-    
             for(let dish of res.data){
                 if (dish.type == 'snack') {
                     let $sushiContainer = $('<div class="dishesContainer_sushi"></div>');
@@ -247,13 +242,11 @@ axios.get('http://localhost:3000/dishes')
                         </div>
                         <div class="dishesContainer_sushi_rating"></div>
                     `);
-            
                     if (dish.availability == true) {
                         $sushiContainer.find('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>');
                     } else {
                         $sushiContainer.find('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>').css('color', '#959595');
                     }
-            
                     let ratingHtml = '';
                     for (let i = 0; i < 5; i++) {
                         if (i < dish.rating) {
@@ -263,16 +256,13 @@ axios.get('http://localhost:3000/dishes')
                         }
                     }
                     $sushiContainer.find('.dishesContainer_sushi_rating').html(ratingHtml);
-            
                     $('.dishesContainer_dishes').append($sushiContainer);
                 }
-    
         }
         ordering()
     })
     $('#soba').click(()=>{
         $('.dishesContainer_dishes').empty();
-    
         for(let dish of res.data){
             if (dish.type == 'soba') {
                 let $sushiContainer = $('<div class="dishesContainer_sushi"></div>');
@@ -289,13 +279,11 @@ axios.get('http://localhost:3000/dishes')
                     </div>
                     <div class="dishesContainer_sushi_rating"></div>
                 `);
-        
                 if (dish.availability == true) {
                     $sushiContainer.find('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>');
                 } else {
                     $sushiContainer.find('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>').css('color', '#959595');
                 }
-        
                 let ratingHtml = '';
                 for (let i = 0; i < 5; i++) {
                     if (i < dish.rating) {
@@ -305,16 +293,13 @@ axios.get('http://localhost:3000/dishes')
                     }
                 }
                 $sushiContainer.find('.dishesContainer_sushi_rating').html(ratingHtml);
-        
                 $('.dishesContainer_dishes').append($sushiContainer);
             }
-    
     }
     ordering()
     })
     $('#ramen').click(()=>{
         $('.dishesContainer_dishes').empty();
-    
         for(let dish of res.data){
             if (dish.type == 'ramen') {
                 let $sushiContainer = $('<div class="dishesContainer_sushi"></div>');
@@ -331,13 +316,11 @@ axios.get('http://localhost:3000/dishes')
                     </div>
                     <div class="dishesContainer_sushi_rating"></div>
                 `);
-        
                 if (dish.availability == true) {
                     $sushiContainer.find('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>');
                 } else {
                     $sushiContainer.find('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>').css('color', '#959595');
                 }
-        
                 let ratingHtml = '';
                 for (let i = 0; i < 5; i++) {
                     if (i < dish.rating) {
@@ -347,16 +330,13 @@ axios.get('http://localhost:3000/dishes')
                     }
                 }
                 $sushiContainer.find('.dishesContainer_sushi_rating').html(ratingHtml);
-        
                 $('.dishesContainer_dishes').append($sushiContainer);
             }
-    
     }
     ordering()
     })
     $('#drinks').click(()=>{
         $('.dishesContainer_dishes').empty();
-    
         for(let dish of res.data){
             if (dish.type == 'drink') {
                 let $sushiContainer = $('<div class="dishesContainer_sushi"></div>');
@@ -373,13 +353,11 @@ axios.get('http://localhost:3000/dishes')
                     </div>
                     <div class="dishesContainer_sushi_rating"></div>
                 `);
-        
                 if (dish.availability == true) {
                     $sushiContainer.find('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>');
                 } else {
                     $sushiContainer.find('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>').css('color', '#959595');
                 }
-        
                 let ratingHtml = '';
                 for (let i = 0; i < 5; i++) {
                     if (i < dish.rating) {
@@ -389,7 +367,6 @@ axios.get('http://localhost:3000/dishes')
                     }
                 }
                 $sushiContainer.find('.dishesContainer_sushi_rating').html(ratingHtml);
-        
                 $('.dishesContainer_dishes').append($sushiContainer);
             }
     }
