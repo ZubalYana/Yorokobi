@@ -41,16 +41,16 @@
         padding: 35px;
         display: flex;
         .cookiesPopup_left{
-            width: 50%; 
+            width: 53%;
             .cookiesPopup_title{
                 color: #13161B;
                 font-size: 40px;
                 font-weight: 700;
             }   
             .cookiesPopup_text{
-                font-size: 20px;
+                font-size: 18px;
                 font-weight: 300;
-                width: 544px;
+                width: 100%;
                 color: #fff;
                 margin-top: 10px;
             }      
@@ -72,6 +72,12 @@
             .cookiesPopup_accept:hover{
                 background-color: #13161B;
                 color: #F73859;
+            }
+        }
+        .cookiesPopup_right{
+            position: relative;
+            img{
+                position: absolute;
             }
         }
     }

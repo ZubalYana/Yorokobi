@@ -51,7 +51,7 @@
   display: flex;
 }
 .cookiesPopupCon .cookiesPopup .cookiesPopup_left {
-  width: 50%;
+  width: 53%;
 }
 .cookiesPopupCon .cookiesPopup .cookiesPopup_left .cookiesPopup_title {
   color: #13161B;
@@ -59,9 +59,9 @@
   font-weight: 700;
 }
 .cookiesPopupCon .cookiesPopup .cookiesPopup_left .cookiesPopup_text {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
-  width: 544px;
+  width: 100%;
   color: #fff;
   margin-top: 10px;
 }
@@ -83,6 +83,12 @@
 .cookiesPopupCon .cookiesPopup .cookiesPopup_left .cookiesPopup_accept:hover {
   background-color: #13161B;
   color: #F73859;
+}
+.cookiesPopupCon .cookiesPopup .cookiesPopup_right {
+  position: relative;
+}
+.cookiesPopupCon .cookiesPopup .cookiesPopup_right img {
+  position: absolute;
 }
 
 .wrap {
