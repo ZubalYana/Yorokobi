@@ -143,9 +143,7 @@ $('#drinks').click(()=>{
     })
 })
 
-
 //dishes appending
-
 axios.get('http://localhost:3000/dishes')
 .then(res=>{
     console.log(res.data)
@@ -390,9 +388,11 @@ axios.get('http://localhost:3000/dishes')
             }
     }
     })
-    
-})
 
+    let cartList = [];
+    //ordering
+
+})
 
 
 
