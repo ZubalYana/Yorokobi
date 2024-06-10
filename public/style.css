@@ -70,7 +70,7 @@
   font-weight: 500;
   width: 218px;
   height: 74px;
-  border: 1px #13161B solid;
+  border: 2px #13161B solid;
   border-radius: 20px;
   color: #13161B;
   display: flex;
@@ -101,14 +101,20 @@
 .cookiesPopupCon .cookiesPopup .cookiesPopup_right .cookieCrumb1 {
   width: 26px;
   height: 26px;
+  top: 240px;
+  left: 270px;
 }
 .cookiesPopupCon .cookiesPopup .cookiesPopup_right .cookieCrumb2 {
   width: 8px;
   height: 8px;
+  top: 267px;
+  left: 247px;
 }
 .cookiesPopupCon .cookiesPopup .cookiesPopup_right .cookieCrumb3 {
   width: 8px;
   height: 8px;
+  top: 225px;
+  left: 255px;
 }
 
 .wrap {
