@@ -186,6 +186,7 @@ axios.get('http://localhost:3000/dishes')
             $('.dishesContainer_dishes').append($sushiContainer);
         }
     }
+    ordering()
     $('#sushi').click(()=>{
         $('.dishesContainer_dishes').empty();
         for(let dish of res.data){
@@ -225,7 +226,7 @@ axios.get('http://localhost:3000/dishes')
             }
             
         }
-        
+        ordering()
     })
     $('#snack').click(()=>{
         $('.dishesContainer_dishes').empty();
@@ -267,6 +268,7 @@ axios.get('http://localhost:3000/dishes')
                 }
     
         }
+        ordering()
     })
     $('#soba').click(()=>{
         $('.dishesContainer_dishes').empty();
@@ -308,6 +310,7 @@ axios.get('http://localhost:3000/dishes')
             }
     
     }
+    ordering()
     })
     $('#ramen').click(()=>{
         $('.dishesContainer_dishes').empty();
@@ -349,6 +352,7 @@ axios.get('http://localhost:3000/dishes')
             }
     
     }
+    ordering()
     })
     $('#drinks').click(()=>{
         $('.dishesContainer_dishes').empty();
@@ -389,17 +393,20 @@ axios.get('http://localhost:3000/dishes')
                 $('.dishesContainer_dishes').append($sushiContainer);
             }
     }
+    ordering()
     })
 
     //ordering
-    $('.dishOrderBtn').click((e)=>{
-        alert('sdhfgodhs')
-        let dishID = e.target.id;
-        console.log(dishID)
-        let dishToAdd = res.data.find(dish => dish._id === dishID);
-        cartList.push(dishToAdd);
-        console.log(cartList)
-    })
+    function ordering(){
+        $('.dishOrderBtn').click((e)=>{
+            let dishID = e.target.id;
+            console.log(dishID)
+            let dishToAdd = res.data.find(dish => dish._id === dishID);
+            cartList.push(dishToAdd);
+            console.log(cartList)
+        })
+    }
+
 })
 
 
