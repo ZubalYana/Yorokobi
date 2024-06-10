@@ -382,13 +382,48 @@ $('.cookiesPopup_right').hover(
             'height':'280px',
             'transform':'rotate(-20deg)'
         })
+        $('.cookieCrumb1').css({
+            'width':'35px',
+            'height':'35px',
+            'top':'215px',
+            'left':'330px',
+        })
+        $('.cookieCrumb2').css({
+            'width':'13px',
+            'height':'13px',
+            'top':'290px',
+            'left':'260px',
+        })
+        $('.cookieCrumb3').css({
+            'width':'10px',
+            'height':'10px',
+            'top':'230px',
+            'left':'270px',
+        })
     },
     ()=>{
         $('.cookieMainPart').css({
             'width':'250px',
             'height':'250px',
             'transform':'rotate(0deg)'
-
+        })
+        $('.cookieCrumb1').css({
+            'width':'26px',
+            'height':'26px',
+            'top':'240px',
+            'left':'270px',
+        })
+        $('.cookieCrumb2').css({
+            'width':'8px',
+            'height':'8px',
+            'top':'267px',
+            'left':'247px',
+        })
+        $('.cookieCrumb3').css({
+            'width':'8px',
+            'height':'8px',
+            'top':'225px',
+            'left':'255px',
         })
     }
 )
