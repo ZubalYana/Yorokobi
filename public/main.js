@@ -251,7 +251,7 @@ function changeTheme(theme){
 changeTheme(theme);
 
 
-//mainlands hover animation
+//mainlands hover animations
 $('.NorthAmericaContainer').on({
     mouseenter: function() {
         $('.NorthAmericaContainer').css({
@@ -475,4 +475,9 @@ function closePopup() {
 }
 
 //burger work
-$('.header_burger').click(()=>{})
+$('.header_burger').click(()=>{
+    $('.burgerCon').css('display', 'flex')
+})
+$('.burger_xmark').click(()=>{
+    $('.burgerCon').css('display', 'none')
+})
