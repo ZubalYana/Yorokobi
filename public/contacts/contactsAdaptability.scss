@@ -1,7 +1,39 @@
 @media screen and (max-device-width: 430px) {
     body{
         overflow: auto;
-
+        .burgerCon{
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            background-color: rgba(19, 22, 27, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            padding: 20px;
+            .burger{
+                width: 100%;
+                height: 400px;
+                background-color: #F73859;
+                border-radius: 20px;
+                padding: 15px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                .burger_xmark{
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+                    font-size: 32px;
+                }
+                .burger_link{
+                    color: #13161B;
+                    font-size: 32px;
+                    font-weight: 400;
+                    text-decoration: none;
+                }
+            }
+        }
         .wrap{
             width: 100%;
             padding: 24px;
@@ -52,5 +84,6 @@
                 }
         }
     }
+
 
  }
