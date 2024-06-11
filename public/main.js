@@ -473,3 +473,6 @@ function closePopup() {
     $(".cookiesPopupCon").css('display', 'none');
     setCookie("popupClosed", "true", 365);
 }
+
+//burger work
+$('.header_burger').click(()=>{})
