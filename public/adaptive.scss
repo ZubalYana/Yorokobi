@@ -220,5 +220,38 @@
         }
 
     }
+    .cookiesPopupCon{
+        padding: 20px;
+        .cookiesPopup{
+            width: 100%;
+            flex-direction: column;
+            padding: 20px;
+            height: 500px;
+            .cookiesPopup_left{
+                width: 100%;
+                .cookiesPopup_title{
+                    font-size: 36px;
+                }
+                .cookiesPopup_text{
+                    margin-top: 0px;
+                    font-size: 16px;
+                }
+                .cookiesPopup_accept{
+                    width: 150px;
+                    height: 45px;
+                    font-size: 18px;
+                    border-radius: 10px;
+                }
+            }
+            .cookiesPopup_right{
+                width: 100%;
+                background-color: aqua;
+                .cookieMainPart{
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+    }
 
 }

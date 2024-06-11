@@ -198,4 +198,37 @@
     left: -80px;
     top: -290px;
   }
+  .cookiesPopupCon {
+    padding: 20px;
+  }
+  .cookiesPopupCon .cookiesPopup {
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+    height: 500px;
+  }
+  .cookiesPopupCon .cookiesPopup .cookiesPopup_left {
+    width: 100%;
+  }
+  .cookiesPopupCon .cookiesPopup .cookiesPopup_left .cookiesPopup_title {
+    font-size: 36px;
+  }
+  .cookiesPopupCon .cookiesPopup .cookiesPopup_left .cookiesPopup_text {
+    margin-top: 0px;
+    font-size: 16px;
+  }
+  .cookiesPopupCon .cookiesPopup .cookiesPopup_left .cookiesPopup_accept {
+    width: 150px;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+  .cookiesPopupCon .cookiesPopup .cookiesPopup_right {
+    width: 100%;
+    background-color: aqua;
+  }
+  .cookiesPopupCon .cookiesPopup .cookiesPopup_right .cookieMainPart {
+    width: 150px;
+    height: 150px;
+  }
 }/*# sourceMappingURL=adaptive.css.map */
