@@ -118,6 +118,10 @@
   left: 255px;
 }
 
+.burgerCon {
+  display: none;
+}
+
 .wrap {
   width: 100%;
   min-height: 100vh;
