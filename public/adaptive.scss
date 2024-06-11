@@ -226,7 +226,7 @@
             width: 100%;
             flex-direction: column;
             padding: 20px;
-            height: 500px;
+            min-height: 500px;
             .cookiesPopup_left{
                 width: 100%;
                 .cookiesPopup_title{
@@ -245,10 +245,29 @@
             }
             .cookiesPopup_right{
                 width: 100%;
-                background-color: aqua;
+                height: 200px;
+                margin-top: 15px;
                 .cookieMainPart{
                     width: 150px;
                     height: 150px;
+                }
+                .cookieCrumb1{
+                    width: 18px;
+                    height: 18px;
+                    top: 120px;
+                    left: 210px;
+                }
+                .cookieCrumb2{
+                    width: 5px;
+                    height: 5px;
+                    top: 135px;
+                    left: 190px;
+                }
+                .cookieCrumb3{
+                    width: 5px;
+                    height: 5px;
+                    top: 110px;
+                    left: 200px;
                 }
             }
         }
