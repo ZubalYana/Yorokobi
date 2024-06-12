@@ -288,4 +288,8 @@ body {
 .wrap .contactsConainer .locationAndHours a button:hover {
   background-color: #F73859;
   color: #fff;
+}
+
+.burgerCon {
+  display: none;
 }/*# sourceMappingURL=contacts.css.map */

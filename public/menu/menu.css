@@ -238,4 +238,8 @@
   display: flex;
   justify-content: space-between;
   margin-top: 12px;
+}
+
+.burgerCon {
+  display: none;
 }/*# sourceMappingURL=menu.css.map */
