@@ -117,467 +117,470 @@
     min-height: 100vh;
     background-color: #13161B;
     overflow-x: hidden;
-    .screen{
-        width: 100%;
-        min-height: 100vh;
-        padding: 40px;
-    }
-    .mainPage{
-        position: relative;
-        color: #13161B;
-        .header{
+    .home{
+        .screen{
+            width: 100%;
+            min-height: 100vh;
+            padding: 40px;
+        }
+        .mainPage{
             position: relative;
-            z-index: 3;
-            user-select: none;
-            display: flex;
-            justify-content: space-between;
-            
-            .header_burger{
-                width: 40px;
-                height: 26px;
-                display: none;
-                flex-direction: column;
-                justify-content: space-between;
-                cursor: pointer;
-                .header_burgerRow{
-                    width: 100%;
-                    height: 4px;
-                    border-radius: 20px;
-                    background-color: #13161B;
-                }
-            }
-            .header_logo{
-                width: 169px;
-            }
-            .header_nav{
-                width: 545px;
+            color: #13161B;
+            .header{
+                position: relative;
+                z-index: 3;
+                user-select: none;
                 display: flex;
                 justify-content: space-between;
-                .header_nav_el{
-                    font-size: 24px;
-                    font-weight: 500;
-                    cursor: pointer;
-                    transition: 0.5s ease;
-                    display: flex;
+                
+                .header_burger{
+                    width: 40px;
+                    height: 26px;
+                    display: none;
                     flex-direction: column;
-                    align-items: center;
-                    .headerActivePage{
-                        width: 40px;
-                        height: 2px;
-                        border-radius: 5px;
+                    justify-content: space-between;
+                    cursor: pointer;
+                    .header_burgerRow{
+                        width: 100%;
+                        height: 4px;
+                        border-radius: 20px;
                         background-color: #13161B;
                     }
                 }
-                #orders{
-                    position: relative;
-                    .ordersCount{
-                        position: absolute;
+                .header_logo{
+                    width: 169px;
+                }
+                .header_nav{
+                    width: 545px;
+                    display: flex;
+                    justify-content: space-between;
+                    .header_nav_el{
+                        font-size: 24px;
+                        font-weight: 500;
+                        cursor: pointer;
+                        transition: 0.5s ease;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .headerActivePage{
+                            width: 40px;
+                            height: 2px;
+                            border-radius: 5px;
+                            background-color: #13161B;
+                        }
+                    }
+                    #orders{
+                        position: relative;
+                        .ordersCount{
+                            position: absolute;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: #13161B;
+                            color: #CB324D;
+                            width: 17px;
+                            height: 17px;
+                            border-radius: 50%;
+                            font-size: 12px;
+                            font-weight: 700;
+                            top: 2px;
+                            left: 68px;
+                        }
+                    }
+                }
+                .header_languageThemeCon{
+                    width: 182px;
+                    display: flex;
+                    justify-content: space-between;
+                    .header_theme{
+                        width: 67px;
+                        height: 34px;
+                        background-color: #13161B;
+                        display: flex;
+                        justify-content: flex-end;
+                        border-radius: 20px;
+                        cursor: pointer;
+                        .header_themeCircle{
+                            width: 34px;
+                            height: 34px;
+                            background-color: #CB324D;
+                            border: #13161B 3px solid;
+                            border-radius: 50%;
+                        }
+                    }
+                    .header_language{
+                        border: none;
+                        background-color: #CB324D;
+                        font-size: 24px;
+                        font-weight: 600;
+                    }
+                }
+                a{
+                    color: #13161B;
+                    text-decoration: none;
+                }
+            }
+            .mainPage_background{
+                width: 100%;
+                height: 99%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                option{
+                    border: none;
+                }
+            }
+            .mainPage_content{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                z-index: 200;
+                position: relative;
+                margin-top: 60px;
+                .mainPage_content_textPart{
+                    width: 50%;
+                    height: 340px;
+                    .mainPage_content_title{
+                        font-size: 64px;
+                        font-weight: 700;
+                    }
+                    .mainPage_content_text{
+                        font-size: 20px;
+                        font-weight: 300;
+                        color: #ffffffbd;
+                        width: 90%;
+                    }
+                    .mainPage_content_buttons{
+                        width: 570px;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    .mainPage_content_button{
+                        width: 268px;
+                        height: 79px;
+                        background-color: #13161B;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        background-color: #13161B;
+                        border-radius: 30px;
                         color: #CB324D;
-                        width: 17px;
-                        height: 17px;
-                        border-radius: 50%;
-                        font-size: 12px;
-                        font-weight: 700;
-                        top: 2px;
-                        left: 68px;
+                        font-size: 32px;
+                        font-weight: 600;
+                        cursor: pointer;
+                        transition: 0.4s ease;
+                        margin-top: 30px;
                     }
                 }
+                .mainPage_content_imgPart{
+                    width: 50%;
+                    height: 340px;
+                    position: relative;
+                    user-select: none;
+                    .mainPage_content_imgPart_FullImg{
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        .mainPage_bowlImg{
+                            width: 252px;
+                            position: absolute;
+                            bottom: 0;
+                            left: 110px;
+                        }
+                        .mainPage_sushiImg{
+                            width: 420px;
+                            position: absolute;
+                            left: 185px;
+                            bottom: 45px;
+                            transition: 1s ease;
+                        }
+                    }
+    
+    
+                }
             }
-            .header_languageThemeCon{
-                width: 182px;
+    
+        }
+        .locationPage{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .locationPage_title{
+                font-size: 48px;
+                font-weight: 700;
+                color: #F73859;
+            }
+            .locationPage_worldContainer{
+                width: 100%;
+                height: 420px;
+                position: relative;
+                .mainlandImg{
+                    position: absolute;
+                    transition: 0.5s ease;
+                }
+                .NorthAmericaContainer{
+                    // background-color: #fff;
+                    width: 255px;
+                    height: 229px;
+                    left: 328px;
+                    position: absolute;
+                    transition: 0.5s ease;
+    
+                    #NorthAmerica{
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                    }
+                    .NorthAmericaContainer_points{
+                        position: absolute;
+                        .NorthAmericaContainer_point{
+                            width: 15px;
+                            position: absolute;
+                            display: flex;
+                            transition: 0.5s ease;
+                        }
+                        #mapPoint1{
+                            top: 30px;
+                            left: 373px;
+                        }
+                        #mapPoint2{
+                            top: 48px;
+                            left: 385px;
+                        }
+                        #mapPoint3{
+                            top: 60px;
+                            left: 398px;
+                        }
+                        #mapPoint4{
+                            top: 80px;
+                            left: 377px;
+                        }
+                        #mapPoint5{
+                            top: 98px;
+                            left: 365px;
+                        }
+                        #mapPoint6{
+                            top: 97px;
+                            left: 410px;
+                        }
+                        #mapPoint7{
+                            top: 130px;
+                            left: 384px;
+                        }
+                        #mapPoint8{
+                            top: 160px;
+                            left: 392px;
+                        }
+                        #mapPoint9{
+                            top: 57px;
+                            left: 470px;
+                        }
+                        #mapPoint10{
+                            top: 110px;
+                            left: 450px;
+                        }
+                        #mapPoint11{
+                            top: 43px;
+                            left: 530px;
+                        }
+                        #mapPoint12{
+                            top: 55px;
+                            left: 545px;
+                        }
+                    }
+                }
+    
+                #SouthAmerica{
+                    width: 160px;
+                    height: 228px;
+                    top: 185px;
+                    left: 447px;
+                }
+                #Africa{
+                    width: 240px;
+                    height: 256px;
+                    left: 590px;
+                    top: 100px;
+                    z-index: 20;
+                }
+                #Eurasia{
+                    width: 475px;
+                    height: 244px;
+                    left: 613px;
+                    z-index: 19;
+                }
+                #Oceania{
+                    width: 200px;
+                    height: 201px;
+                    left: 920px;
+                    top: 184px;
+                }
+            }
+            .locationPage_statistics{
+                width: 683px;
                 display: flex;
                 justify-content: space-between;
-                .header_theme{
-                    width: 67px;
-                    height: 34px;
-                    background-color: #13161B;
+                .locationPage_statistics_column{
+                    width: 171px;
                     display: flex;
-                    justify-content: flex-end;
-                    border-radius: 20px;
-                    cursor: pointer;
-                    .header_themeCircle{
-                        width: 34px;
-                        height: 34px;
-                        background-color: #CB324D;
-                        border: #13161B 3px solid;
-                        border-radius: 50%;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    .locationPage_statistics_num{
+                        font-size: 36px;
+                        font-weight: 500;
+                        color: #F73859;
+                    }
+                    .locationPage_statistics_desc{
+                        width: 140px;
+                        font-size: 16px;
+                        font-weight: 300;
+                        color: #fff;
                     }
                 }
-                .header_language{
-                    border: none;
-                    background-color: #CB324D;
-                    font-size: 24px;
-                    font-weight: 600;
-                }
             }
-            a{
-                color: #13161B;
-                text-decoration: none;
-            }
+    
         }
-        .mainPage_background{
-            width: 100%;
-            height: 99%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-            option{
-                border: none;
-            }
-        }
-        .mainPage_content{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            z-index: 200;
+        .dishPage{
             position: relative;
-            margin-top: 60px;
-            .mainPage_content_textPart{
-                width: 50%;
-                height: 340px;
-                .mainPage_content_title{
-                    font-size: 64px;
-                    font-weight: 700;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            .dishPage_textContainer{
+                width: 484px;
+                .dishPage_textContainer_title{
+                    font-size: 40px;
+                    font-weight: 600;
+                    color: #F73859;
                 }
-                .mainPage_content_text{
-                    font-size: 20px;
-                    font-weight: 300;
-                    color: #ffffffbd;
-                    width: 90%;
+                .dishPage_textContainer_mainText{
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #fff;
                 }
-                .mainPage_content_buttons{
-                    width: 570px;
+                .dishPage_textContainer_btnsCon{
+                    width: 370px;
                     display: flex;
                     justify-content: space-between;
+                    margin-top: 22px;
                 }
-                .mainPage_content_button{
-                    width: 268px;
-                    height: 79px;
-                    background-color: #13161B;
+                .dishPage_textContainer_btn{
+                    width: 176px;
+                    height: 56px;
+                    background-color: #F73859;
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    color: #13161B;
                     border-radius: 30px;
-                    color: #CB324D;
-                    font-size: 32px;
+                    font-size: 20px;
                     font-weight: 600;
+                    transition: 0.3s;
                     cursor: pointer;
-                    transition: 0.4s ease;
-                    margin-top: 30px;
+                }
+                .dishPage_textContainer_btn:hover{
+                    background-color: #13161B;
+                    color: #F73859;
+                    border: 2px #F73859 solid;
                 }
             }
-            .mainPage_content_imgPart{
-                width: 50%;
-                height: 340px;
-                position: relative;
-                user-select: none;
-                .mainPage_content_imgPart_FullImg{
-                    position: relative;
-                    width: 100%;
-                    height: 100%;
-                    .mainPage_bowlImg{
-                        width: 252px;
-                        position: absolute;
-                        bottom: 0;
-                        left: 110px;
-                    }
-                    .mainPage_sushiImg{
-                        width: 420px;
-                        position: absolute;
-                        left: 185px;
-                        bottom: 45px;
-                        transition: 1s ease;
-                    }
-                }
-
-
-            }
-        }
-
-    }
-    .locationPage{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .locationPage_title{
-            font-size: 48px;
-            font-weight: 700;
-            color: #F73859;
-        }
-        .locationPage_worldContainer{
-            width: 100%;
-            height: 420px;
-            position: relative;
-            .mainlandImg{
+            .dishPage_img{
+                width: 1400px;
                 position: absolute;
-                transition: 0.5s ease;
+                top: -140px;
+                left: 320px;
             }
-            .NorthAmericaContainer{
-                // background-color: #fff;
-                width: 255px;
-                height: 229px;
-                left: 328px;
-                position: absolute;
-                transition: 0.5s ease;
-
-                #NorthAmerica{
-                    width: 100%;
-                    height: 100%;
-                    position: relative;
-                }
-                .NorthAmericaContainer_points{
-                    position: absolute;
-                    .NorthAmericaContainer_point{
-                        width: 15px;
-                        position: absolute;
-                        display: flex;
-                        transition: 0.5s ease;
-                    }
-                    #mapPoint1{
-                        top: 30px;
-                        left: 373px;
-                    }
-                    #mapPoint2{
-                        top: 48px;
-                        left: 385px;
-                    }
-                    #mapPoint3{
-                        top: 60px;
-                        left: 398px;
-                    }
-                    #mapPoint4{
-                        top: 80px;
-                        left: 377px;
-                    }
-                    #mapPoint5{
-                        top: 98px;
-                        left: 365px;
-                    }
-                    #mapPoint6{
-                        top: 97px;
-                        left: 410px;
-                    }
-                    #mapPoint7{
-                        top: 130px;
-                        left: 384px;
-                    }
-                    #mapPoint8{
-                        top: 160px;
-                        left: 392px;
-                    }
-                    #mapPoint9{
-                        top: 57px;
-                        left: 470px;
-                    }
-                    #mapPoint10{
-                        top: 110px;
-                        left: 450px;
-                    }
-                    #mapPoint11{
-                        top: 43px;
-                        left: 530px;
-                    }
-                    #mapPoint12{
-                        top: 55px;
-                        left: 545px;
-                    }
-                }
-            }
-
-            #SouthAmerica{
-                width: 160px;
-                height: 228px;
-                top: 185px;
-                left: 447px;
-            }
-            #Africa{
-                width: 240px;
-                height: 256px;
-                left: 590px;
-                top: 100px;
-                z-index: 20;
-            }
-            #Eurasia{
-                width: 475px;
-                height: 244px;
-                left: 613px;
-                z-index: 19;
-            }
-            #Oceania{
-                width: 200px;
-                height: 201px;
-                left: 920px;
-                top: 184px;
-            }
-        }
-        .locationPage_statistics{
-            width: 683px;
-            display: flex;
-            justify-content: space-between;
-            .locationPage_statistics_column{
-                width: 171px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                .locationPage_statistics_num{
+            .dishPage_sushiInfo{
+                margin-top: 230px;
+                .dishPage_sushiInfo_name{
                     font-size: 36px;
-                    font-weight: 500;
+                    font-weight: 800;
                     color: #F73859;
                 }
-                .locationPage_statistics_desc{
-                    width: 140px;
-                    font-size: 16px;
+                .dishPage_sushiInfo_price{
+                    font-size: 24px;
                     font-weight: 300;
                     color: #fff;
                 }
             }
+    
         }
-
-    }
-    .dishPage{
-        position: relative;
-        overflow-x: hidden;
-        overflow-y: hidden;
-        .dishPage_textContainer{
-            width: 484px;
-            .dishPage_textContainer_title{
-                font-size: 40px;
-                font-weight: 600;
-                color: #F73859;
-            }
-            .dishPage_textContainer_mainText{
-                font-size: 16px;
-                font-weight: 400;
-                color: #fff;
-            }
-            .dishPage_textContainer_btnsCon{
-                width: 370px;
-                display: flex;
-                justify-content: space-between;
-                margin-top: 22px;
-            }
-            .dishPage_textContainer_btn{
-                width: 176px;
-                height: 56px;
-                background-color: #F73859;
+        .futer{
+            width: 100%;
+            min-height: 450px;
+            padding: 70px;
+            .futer_hr_container{
+                width: 100%;
                 display: flex;
                 justify-content: center;
-                align-items: center;
-                color: #13161B;
-                border-radius: 30px;
-                font-size: 20px;
-                font-weight: 600;
-                transition: 0.3s;
-                cursor: pointer;
+                .futer_hr{
+                    width: 1059px;
+                    height: 1px;
+                    background-color: #F73859;
+                }
             }
-            .dishPage_textContainer_btn:hover{
-                background-color: #13161B;
-                color: #F73859;
-                border: 2px #F73859 solid;
-            }
-        }
-        .dishPage_img{
-            width: 1400px;
-            position: absolute;
-            top: -140px;
-            left: 320px;
-        }
-        .dishPage_sushiInfo{
-            margin-top: 230px;
-            .dishPage_sushiInfo_name{
-                font-size: 36px;
-                font-weight: 800;
-                color: #F73859;
-            }
-            .dishPage_sushiInfo_price{
-                font-size: 24px;
-                font-weight: 300;
-                color: #fff;
-            }
-        }
-
-    }
-    .futer{
-        width: 100%;
-        min-height: 450px;
-        padding: 70px;
-        .futer_hr_container{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            .futer_hr{
-                width: 1059px;
-                height: 1px;
-                background-color: #F73859;
-            }
-        }
-        .futer_infoCon{
-            width: 100%;
-            display: flex;
-            .futer_infoCon_text{
-                width: 40%;
-                margin-top: 60px;
-
-                .futer_infoCon_text_columns{
-
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                    .futer_infoCon_text_column{
-                        width: 195px;
+            .futer_infoCon{
+                width: 100%;
+                display: flex;
+                .futer_infoCon_text{
+                    width: 40%;
+                    margin-top: 60px;
+    
+                    .futer_infoCon_text_columns{
+    
+                        width: 100%;
                         display: flex;
-                        flex-direction: column;
-                        .futer_infoCon_text_column_heading{
-                            font-size: 24px;
-                            font-weight: 500;
-                            color: #F73859;
+                        justify-content: space-between;
+                        .futer_infoCon_text_column{
+                            width: 195px;
+                            display: flex;
+                            flex-direction: column;
+                            .futer_infoCon_text_column_heading{
+                                font-size: 24px;
+                                font-weight: 500;
+                                color: #F73859;
+                            }
+                            .futer_infoCon_text_column_el{
+                                font-size: 16px;
+                                font-weight: 300;
+                                color: #fff;
+                            }
                         }
-                        .futer_infoCon_text_column_el{
-                            font-size: 16px;
-                            font-weight: 300;
+                    }
+                    .futer_infoCon_text_Yorokobi{
+                        margin-top: 50px;
+                        .futer_infoCon_text_Yorokobi_Logo{
+                            width: 120px;
+                        }
+                        .futer_infoCon_text_Yorokobi_text{
+                            width: 545px;
+                            font-size: 14px;
+                            font-weight: 400;
                             color: #fff;
+                            margin-top: -5px;
                         }
                     }
+    
                 }
-                .futer_infoCon_text_Yorokobi{
-                    margin-top: 50px;
-                    .futer_infoCon_text_Yorokobi_Logo{
-                        width: 120px;
+                .futer_infoCon_pictures{
+                    width: 50%;
+                    position: relative;
+                    .futer_infoCon_pictures_sushi1{
+                        position: absolute;
+                        top: 0;
+                        width: 194px;
+                        left: 200px;
                     }
-                    .futer_infoCon_text_Yorokobi_text{
-                        width: 545px;
-                        font-size: 14px;
-                        font-weight: 400;
-                        color: #fff;
-                        margin-top: -5px;
+                    .futer_infoCon_pictures_sushi2{
+                        width: 258px;
+                        position: absolute;
+                        bottom: -60px;
+                        left: 570px;
                     }
-                }
-
-            }
-            .futer_infoCon_pictures{
-                width: 50%;
-                position: relative;
-                .futer_infoCon_pictures_sushi1{
-                    position: absolute;
-                    top: 0;
-                    width: 194px;
-                    left: 200px;
-                }
-                .futer_infoCon_pictures_sushi2{
-                    width: 258px;
-                    position: absolute;
-                    bottom: -60px;
-                    left: 570px;
                 }
             }
+    
+    
         }
-
-
     }
+
 }
