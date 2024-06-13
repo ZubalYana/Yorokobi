@@ -620,6 +620,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #F73859;
 }
 .wrap .menu .header .header_nav .header_nav_el .headerActivePage {
   width: 40px;
@@ -781,4 +782,169 @@
   display: flex;
   justify-content: space-between;
   margin-top: 12px;
+}
+.wrap .orders .header {
+  position: relative;
+  z-index: 3;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .orders .header .header_burger {
+  width: 40px;
+  height: 26px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.wrap .orders .header .header_burger .header_burgerRow {
+  width: 100%;
+  height: 4px;
+  border-radius: 20px;
+  background-color: #F73859;
+}
+.wrap .orders .header .header_logo {
+  width: 169px;
+}
+.wrap .orders .header .header_nav {
+  width: 545px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .orders .header .header_nav .header_nav_el {
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrap .orders .header .header_nav .header_nav_el .headerActivePage {
+  width: 40px;
+  height: 2px;
+  border-radius: 5px;
+  background-color: #F73859;
+}
+.wrap .orders .header .header_nav #orders {
+  position: relative;
+}
+.wrap .orders .header .header_nav #orders .ordersCount {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F73859;
+  color: #13161B;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  top: 2px;
+  left: 68px;
+}
+.wrap .orders .header .header_languageThemeCon {
+  width: 182px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .orders .header .header_languageThemeCon .header_theme {
+  width: 67px;
+  height: 34px;
+  background-color: #F73859;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.wrap .orders .header .header_languageThemeCon .header_theme .header_themeCircle {
+  width: 34px;
+  height: 34px;
+  background-color: #13161B;
+  border: #F73859 3px solid;
+  border-radius: 50%;
+}
+.wrap .orders .header .header_languageThemeCon .header_language {
+  border: none;
+  background-color: #13161B;
+  font-size: 24px;
+  font-weight: 600;
+  color: #F73859;
+}
+.wrap .orders .header a {
+  color: #F73859;
+  text-decoration: none;
+}
+.wrap .orders .ordersContainer {
+  width: 100%;
+  min-height: 75vh;
+  margin-top: 40px;
+}
+.wrap .orders .ordersContainer .order {
+  width: 100%;
+  height: 137px;
+  border: #F73859 2px solid;
+  border-radius: 30px;
+  display: flex;
+  padding: 16px 40px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.wrap .orders .ordersContainer .order .order_name {
+  color: #F73859;
+  font-size: 40px;
+  font-weight: 600;
+  width: 255px;
+}
+.wrap .orders .ordersContainer .order .order_separetiveLine {
+  width: 3px;
+  height: 102px;
+  background-color: #F73859;
+  border-radius: 6px;
+}
+.wrap .orders .ordersContainer .order .orderBtns {
+  width: 420px;
+  display: flex;
+  justify-content: center;
+}
+.wrap .orders .ordersContainer .order .orderBtns .orderBtn {
+  width: 152px;
+  height: 72px;
+  background-color: #13161B;
+  color: #fff;
+  border: 1px #fff solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 400;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.wrap .orders .ordersContainer .order .orderBtns .orderBtn:hover {
+  background-color: #F73859;
+  color: #fff;
+  border: 1px #F73859 solid;
+}
+.wrap .orders .ordersContainer .order .orderBtns .order_infoBtn {
+  margin-right: 30px;
+}
+.wrap .orders .ordersContainer .order .order_time {
+  width: 380px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  padding: 40px;
+}
+.wrap .orders .ordersContainer .order .order_price {
+  width: 290px;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
