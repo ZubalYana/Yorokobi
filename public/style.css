@@ -580,4 +580,205 @@
   position: absolute;
   bottom: -60px;
   left: 570px;
+}
+.wrap .menu .header {
+  position: relative;
+  z-index: 3;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+.wrap .menu .header .header_burger {
+  width: 40px;
+  height: 26px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.wrap .menu .header .header_burger .header_burgerRow {
+  width: 100%;
+  height: 4px;
+  border-radius: 20px;
+  background-color: #F73859;
+}
+.wrap .menu .header .header_logo {
+  width: 169px;
+}
+.wrap .menu .header .header_nav {
+  width: 545px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .menu .header .header_nav .header_nav_el {
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrap .menu .header .header_nav .header_nav_el .headerActivePage {
+  width: 40px;
+  height: 2px;
+  border-radius: 5px;
+  background-color: #F73859;
+}
+.wrap .menu .header .header_nav #orders {
+  position: relative;
+}
+.wrap .menu .header .header_nav #orders .ordersCount {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F73859;
+  color: #13161B;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  top: 2px;
+  left: 68px;
+}
+.wrap .menu .header .header_languageThemeCon {
+  width: 182px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .menu .header .header_languageThemeCon .header_theme {
+  width: 67px;
+  height: 34px;
+  background-color: #F73859;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.wrap .menu .header .header_languageThemeCon .header_theme .header_themeCircle {
+  width: 34px;
+  height: 34px;
+  background-color: #13161B;
+  border: #F73859 3px solid;
+  border-radius: 50%;
+}
+.wrap .menu .header .header_languageThemeCon .header_language {
+  border: none;
+  background-color: #13161B;
+  font-size: 24px;
+  font-weight: 600;
+  color: #F73859;
+}
+.wrap .menu .header a {
+  color: #F73859;
+  text-decoration: none;
+}
+.wrap .menu .dishesContainer {
+  width: 100%;
+  min-height: 80vh;
+  padding: 0 40px 0 40px;
+}
+.wrap .menu .dishesContainer .dishesContainer_typeChoise {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .menu .dishesContainer .dishesContainer_typeChoise .dishesContainer_typeChoise_item {
+  width: 211px;
+  height: 73px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px #F73859 solid;
+  font-size: 24px;
+  font-weight: 400;
+  color: #F73859;
+  background-color: #13161B;
+  cursor: pointer;
+  letter-spacing: 4px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  transition: 0.5s ease;
+}
+.wrap .menu .dishesContainer .dishesContainer_typeChoise #sushi {
+  background-color: #F73859;
+  color: #fff;
+}
+.wrap .menu .dishesContainer .dishesContainer_dishes {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  padding: 0 40px 0 40px;
+  justify-content: space-between;
+}
+.wrap .menu .dishesContainer .dishesContainer_dishes .dishesContainer_sushi {
+  width: 260px;
+  color: #F73859;
+  margin: 0 40px 60px 0;
+}
+.wrap .menu .dishesContainer .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_img {
+  height: 150px;
+}
+.wrap .menu .dishesContainer .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_namePriceCon {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .menu .dishesContainer .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_namePriceCon .dishesContainer_sushi_name {
+  width: 150px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.wrap .menu .dishesContainer .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_namePriceCon .dishesContainer_sushi_price {
+  font-size: 20px;
+  font-weight: 700;
+}
+.wrap .menu .dishesContainer .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_availability {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.wrap .menu .dishesContainer .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_availability i {
+  margin-left: 7px;
+}
+.wrap .menu .dishesContainer .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 9px;
+}
+.wrap .menu .dishesContainer .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_btns .dishesContainer_sushi_btn {
+  width: 126px;
+  height: 35px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px #F73859 solid;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.wrap .menu .dishesContainer .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_btns .dishesContainer_sushi_btn:hover {
+  border: 1px #F73859 solid;
+  background-color: #F73859;
+  color: #fff;
+}
+.wrap .menu .dishesContainer .dishesContainer_dishes .dishesContainer_sushi .dishesContainer_sushi_rating {
+  color: #F73859;
+  width: 124px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
 }/*# sourceMappingURL=style.css.map */
