@@ -1,37 +1,10 @@
 $('.NorthAmericaContainer_point').hide(0);
 
 //pages changing
-$('.wrap').append(
+$('.content').append(
     `
         <div class="home">
             <div class="screen mainPage">
-                <div class="header">
-                    <img class="header_logo" src="./imgs/mian page logo.png" alt="">
-                    <div class="header_nav">
-                        <div class="header_nav_el" id="homePage" href="/">Home page <div class="headerActivePage"></div></div>
-                        <div class="header_nav_el" id="menu" href="/menu">Menu</div>
-                        <div class="header_nav_el" id="orders" href="/orders">Orders <div class="ordersCount">0</div></div>
-                        <div class="header_nav_el" id="contacts" href="/contacts">Contacts</div>
-                    </div>
-                    <div class="header_burger">
-                        <div class="header_burgerRow"></div>
-                        <div class="header_burgerRow"></div>
-                        <div class="header_burgerRow"></div>
-                    </div>
-                    <div class="header_languageThemeCon">
-                        <select class="header_language">
-                            <option value="Eng">Eng.</option>
-                            <option value="Ukr">Ukr.</option>
-                            <option value="Jap">Jap.</option>
-                            <option value="Fr">Fr.</option>
-                            <option value="It">It.</option>
-                            <option value="Por">Por.</option>
-                        </select>
-                        <div class="header_theme">
-                            <div class="header_themeCircle"></div>
-                        </div>
-                    </div>
-                </div>
                 <div class="mainPage_content">
                     <div class="mainPage_content_textPart">
                         <div class="mainPage_content_title">Did you know?</div>
