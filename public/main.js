@@ -643,7 +643,7 @@ $('#contacts').click(()=>{
     $('.wrap').append(
         `        <div class="contacts">
             <div class="header">
-                <img class="header_logo" src="./imgs/red logo.png" alt="">
+                <img class="header_logo" src="./menuImgs/red logo.png" alt="">
                 <div class="header_nav">
                         <a class="header_nav_el" id="homePage" href="/">Home page</a>
                         <div class="header_nav_el" id="menu">Menu</div>
