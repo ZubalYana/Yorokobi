@@ -783,6 +783,9 @@
   justify-content: space-between;
   margin-top: 12px;
 }
+.wrap .orders {
+  padding: 40px;
+}
 .wrap .orders .screen {
   width: 100%;
   min-height: 100vh;
