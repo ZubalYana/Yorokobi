@@ -127,41 +127,14 @@ $('.content').append(
     `
 )
 $('#menu').click(()=>{
-    $('.wrap').empty();
+    $('.content').empty();
     $('#menu').css('font-weight', '600')
     $('#homePage').css('font-weight', '400')
     $('#orders').css('font-weight', '400')
     $('#contacts').css('font-weight', '400')
-    $('.wrap').append(
-        `        <div class="menu">
-            <div class="header">
-                <img class="header_logo" src="./menuImgs/red logo.png" alt="">
-                <div class="header_nav">
-                        <a class="header_nav_el" id="homePage" href="/">Home page</a>
-                        <div class="header_nav_el" id="menu">Menu <div class="headerActivePage"></div></div>
-                        <div class="header_nav_el" id="orders">Orders <div class="ordersCount">0</div></div>
-                        <div class="header_nav_el" id="contacts">Contacts</div>
-                </div>
-                <div class="header_burger">
-                    <div class="header_burgerRow"></div>
-                    <div class="header_burgerRow"></div>
-                    <div class="header_burgerRow"></div>
-                </div>
-                <div class="header_languageThemeCon">
-                    <select class="header_language">
-                        <option value="Eng">Eng.</option>
-                        <option value="Ukr">Ukr.</option>
-                        <option value="Jap">Jap.</option>
-                        <option value="Fr">Fr.</option>
-                        <option value="It">It.</option>
-                        <option value="Por">Por.</option>
-                    </select>
-                    <div class="header_theme">
-                        <div class="header_themeCircle"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="dishesContainer">
+    $('.content').append(
+        `<div class="menu">
+                    <div class="dishesContainer">
                 <div class="dishesContainer_typeChoise">
                     <div class="dishesContainer_typeChoise_item" id="sushi">Sushi</div>
                     <div class="dishesContainer_typeChoise_item" id="soba">Soba</div>
