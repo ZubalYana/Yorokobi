@@ -164,10 +164,10 @@ $('#menu').click(()=>{
             <div class="header">
                 <img class="header_logo" src="./menuImgs/red logo.png" alt="">
                 <div class="header_nav">
-                    <a class="header_nav_el" id="homePage" href="/">Home page</a>
-                    <div class="header_nav_el" id="menu">Menu<div class="headerActivePage"></div></div>
-                    <div class="header_nav_el" id="orders">Orders <div class="ordersCount">0</div></div>
-                    <div class="header_nav_el" id="contacts">Contacts</div>
+                        <a class="header_nav_el" id="homePage" href="/">Home page</a>
+                        <div class="header_nav_el" id="menu">Menu <div class="headerActivePage"></div></div>
+                        <div class="header_nav_el" id="orders">Orders <div class="ordersCount">0</div></div>
+                        <div class="header_nav_el" id="contacts">Contacts</div>
                 </div>
                 <div class="header_burger">
                     <div class="header_burgerRow"></div>
@@ -596,14 +596,14 @@ $('#orders').click(()=>{
     $('#homePage').css('font-weight', '400')
     $('#contacts').css('font-weight', '400')
     $('.wrap').append(
-        `        <div class="orders">
+        `        <div class="orders screen">
             <div class="header">
-                <img class="header_logo" src="./imgs/red logo.png" alt="">
+                <img class="header_logo" src="./menuImgs/red logo.png" alt="">
                 <div class="header_nav">
-                    <a class="header_nav_el" id="homePage" href="/">Home page</a>
-                    <a class="header_nav_el" id="menu" href="/menu">Menu</a>
-                    <a class="header_nav_el" id="orders" href="/orders">Orders<div class="headerActivePage"></div><div class="ordersCount">0</div></a>
-                    <a class="header_nav_el" id="contacts" href="/contacts">Contacts</a>
+                        <a class="header_nav_el" id="homePage" href="/">Home page</a>
+                        <div class="header_nav_el" id="menu">Menu</div>
+                        <div class="header_nav_el" id="orders">Orders <div class="ordersCount">0</div> <div class="headerActivePage"></div></div>
+                        <div class="header_nav_el" id="contacts">Contacts</div>
                 </div>
                 <div class="header_burger">
                     <div class="header_burgerRow"></div>
@@ -626,7 +626,14 @@ $('#orders').click(()=>{
             </div>
             <div class="ordersContainer"></div>
         </div>`
-    )})
+    )
+    $('.order_cancelBtn').click(()=>{
+        $('.orderPopupsContainer').css('display', 'flex')
+    })
+    $('.cancelPopup_noBtn').click(()=>{
+        $('.orderPopupsContainer').css('display', 'none')
+    })
+})
 
 
 //sushi hover animation
