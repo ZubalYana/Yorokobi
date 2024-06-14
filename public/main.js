@@ -126,6 +126,149 @@ $('.content').append(
         </div>
     `
 )
+$('#homePage').click(()=>{
+    $('.content').empty();
+    $('#menu').css('font-weight', '400')
+    $('#homePage').css('font-weight', '600')
+    $('#orders').css('font-weight', '400')
+    $('#contacts').css('font-weight', '400')
+    $('.content').append(
+        `
+            <div class="home">
+                <div class="screen mainPage">
+                    <div class="mainPage_content">
+                        <div class="mainPage_content_textPart">
+                            <div class="mainPage_content_title">Did you know?</div>
+                            <div class="mainPage_content_text">In Japanese word「 Yorokobi 」or in original「 喜び 」actually means: pleasure, joy, delight. You exactly can quess why did we name our company this way. You can try this Yorokobi by yourself any time you want!  </div>
+                            <div class="mainPage_content_buttons">
+                                <div class="mainPage_content_button" id="mainPage_content_menuBtn">Menu</div>
+                                <div class="mainPage_content_button" id="mainPage_content_moreInfoBtn">More info</div>
+                            </div>
+                        </div>
+                        <div class="mainPage_content_imgPart">
+                            <div class="mainPage_content_imgPart_FullImg">
+                                <img class="mainPage_sushiImg" src="./imgs/main page sushi pic.png" alt="">
+                                <img class="mainPage_bowlImg" src="./imgs/main page sushi bowl.png" alt="">
+                            </div>
+        
+                        </div>
+                    </div>
+                    <img class="mainPage_background" src="./imgs/main page background.png" alt="">
+                </div>
+                <div class="screen locationPage" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="locationPage_title">Where are we?</div>
+                    <div class="locationPage_worldContainer">
+                        <div class="NorthAmericaContainer">
+                            <img class="mainlandImg" id="NorthAmerica" src="./imgs/Untitled12_20240127204359.png" alt="">
+                            <div class="NorthAmericaContainer_points">
+                                <img class="NorthAmericaContainer_point" id="mapPoint1" src="./imgs/map point.png" alt="">
+                                <img class="NorthAmericaContainer_point" id="mapPoint2" src="./imgs/map point.png" alt="">
+                                <img class="NorthAmericaContainer_point" id="mapPoint3" src="./imgs/map point.png" alt="">
+                                <img class="NorthAmericaContainer_point" id="mapPoint4" src="./imgs/map point.png" alt="">
+                                <img class="NorthAmericaContainer_point" id="mapPoint5" src="./imgs/map point.png" alt="">
+                                <img class="NorthAmericaContainer_point" id="mapPoint6" src="./imgs/map point.png" alt="">
+                                <img class="NorthAmericaContainer_point" id="mapPoint7" src="./imgs/map point.png" alt="">
+                                <img class="NorthAmericaContainer_point" id="mapPoint8" src="./imgs/map point.png" alt="">
+                                <img class="NorthAmericaContainer_point" id="mapPoint9" src="./imgs/map point.png" alt="">
+                                <img class="NorthAmericaContainer_point" id="mapPoint10" src="./imgs/map point.png" alt="">
+                                <img class="NorthAmericaContainer_point" id="mapPoint11" src="./imgs/map point.png" alt="">
+                                <img class="NorthAmericaContainer_point" id="mapPoint12" src="./imgs/map point.png" alt="">
+                            </div>
+                        </div>
+                        <img class="mainlandImg" id="SouthAmerica" src="./imgs/Untitled12_20240127204758.png" alt="">
+                        <img class="mainlandImg" id="Africa" src="./imgs/Untitled12_20240127204938.png" alt="">
+                        <img class="mainlandImg" id="Eurasia" src="./imgs/Untitled12_20240127205157.png" alt="">
+                        <img class="mainlandImg" id="Oceania" src="./imgs/Untitled12_20240127205235.png" alt="">
+                    </div>
+                    <div class="locationPage_statistics">
+                        <div class="locationPage_statistics_column">
+                            <div class="locationPage_statistics_num">129</div>
+                            <div class="locationPage_statistics_desc">Restaurants in the world</div>
+                        </div>
+                        <div class="locationPage_statistics_column">
+                            <div class="locationPage_statistics_num">1472</div>
+                            <div class="locationPage_statistics_desc">High quality employees</div>
+                        </div>
+                        <div class="locationPage_statistics_column locationPage_statistics_column_adapriveMargin">
+                            <div class="locationPage_statistics_num">15000+</div>
+                            <div class="locationPage_statistics_desc">Good reviews from customers</div>
+                        </div>
+                        <div class="locationPage_statistics_column locationPage_statistics_column_adapriveMargin">
+                            <div class="locationPage_statistics_num">100+</div>
+                            <div class="locationPage_statistics_desc">Different tasty dishes to try</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="screen dishPage" data-aos="fade-up" data-aos-duration="1000">
+                    
+                    <div class="dishPage_textContainer">
+                        <div class="dishPage_textContainer_title">The best choice</div>
+                        <img class="dishPage_img" src="./imgs/dishPage img.png" alt="">
+                        <div class="dishPage_textContainer_mainText">Craving the exquisite flavors of Japan? Indulge in our tantalizing Sushi Set, where every bite is a journey to culinary perfection! For every special or simple evening. No meter where you are and who is with you, the taste will surely improve your mood. </div>
+                        <div class="dishPage_textContainer_btnsCon">
+                            <div class="dishPage_textContainer_btn" id="dishPage_textContainer_moreInfo">More info</div>
+                            <div class="dishPage_textContainer_btn" id="dishPage_textContainer_orderNow">Order now</div>
+                        </div>
+                    </div>
+                    <div class="dishPage_sushiInfo">
+                        <div class="dishPage_sushiInfo_name">Gunkan Maki</div>
+                        <div class="dishPage_sushiInfo_price">only 7$ now</div>
+                    </div>
+                </div>
+                <div class="futer">
+                    <div class="futer_hr_container">
+                        <div class="futer_hr"></div>
+                    </div>
+                    <div class="futer_infoCon">
+                        <div class="futer_infoCon_text">
+                            <div class="futer_infoCon_text_columns">
+                                <div class="futer_infoCon_text_column futer_infoCon_text_column_Navigation">
+                                    <div class="futer_infoCon_text_column_heading">Navigation</div>
+                                    <div class="futer_infoCon_text_column_el">Home page</div>
+                                    <div class="futer_infoCon_text_column_el">Menu</div>
+                                    <div class="futer_infoCon_text_column_el">Orders</div>
+                                    <div class="futer_infoCon_text_column_el">Contacts</div>
+                                </div>
+                                <div class="futer_infoCon_text_column futer_infoCon_text_column_Help">
+                                    <div class="futer_infoCon_text_column_heading">Help</div>
+                                    <div class="futer_infoCon_text_column_el">Contacts us</div>
+                                    <div class="futer_infoCon_text_column_el">Problems</div>
+                                    <div class="futer_infoCon_text_column_el">Questions</div>
+                                    <div class="futer_infoCon_text_column_el">Support</div>
+                                </div>
+                                <div class="futer_infoCon_text_column futer_infoCon_text_column_Amenities">
+                                    <div class="futer_infoCon_text_column_heading">Amenities</div>
+                                    <div class="futer_infoCon_text_column_el">Download app</div>
+                                    <div class="futer_infoCon_text_column_el">JPS restaurants map</div>
+                                    <div class="futer_infoCon_text_column_el">Rate us</div>
+                                </div>
+                            </div>
+                            <div class="futer_infoCon_text_Yorokobi">
+                                <img class="futer_infoCon_text_Yorokobi_Logo" src="./imgs/Yorokobi red logo.png" alt="">
+                                <div class="futer_infoCon_text_Yorokobi_text">The best Japanese cuisine restaurants in the world. Try it yourself!</div>
+                            </div>
+                        </div>
+                        <div class="futer_infoCon_pictures">
+                            <img class="futer_infoCon_pictures_sushi1" src="./imgs/futer_sushi1.png" alt="">
+                            <img class="futer_infoCon_pictures_sushi2" src="./imgs/futer_sushi2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `
+    )
+    $('.header').css('background-color', '#CB324D')
+    $('.header_nav_el').css('color', '#13161B')
+    $('.header').css('padding', '40px 40px 0 40px')
+    $('.header_logo').attr('src', './imgs/mian page logo.png')
+    $('.ordersCount').css('background-color', '#13161B')
+    $('.ordersCount').css('color', '#CB324D')
+    $('select').css('background-color', '#CB324D')
+    $('select').css('color', '#13161B')
+    $('.header_theme').css('background-color', '#13161B')
+    $('.header_themeCircle').css('background-color', '#CB324D')
+    $('.header_themeCircle').css('border', '#13161B 3px solid')
+})
 $('#menu').click(()=>{
     $('.content').empty();
     $('#menu').css('font-weight', '600')
