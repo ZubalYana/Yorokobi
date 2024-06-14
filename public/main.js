@@ -691,43 +691,27 @@ axios.get('http://localhost:3000/dishes')
 
 })
 $('#orders').click(()=>{
-    $('.wrap').empty();
+    $('.content').empty();
     $('#orders').css('font-weight', '600')
     $('#menu').css('font-weight', '400')
     $('#homePage').css('font-weight', '400')
     $('#contacts').css('font-weight', '400')
-    $('.wrap').append(
+    $('.content').append(
         `        <div class="orders screen">
-            <div class="header">
-                <img class="header_logo" src="./menuImgs/red logo.png" alt="">
-                <div class="header_nav">
-                        <a class="header_nav_el" id="homePage" href="/">Home page</a>
-                        <div class="header_nav_el" id="menu">Menu</div>
-                        <div class="header_nav_el" id="orders">Orders <div class="ordersCount">0</div> <div class="headerActivePage"></div></div>
-                        <div class="header_nav_el" id="contacts">Contacts</div>
-                </div>
-                <div class="header_burger">
-                    <div class="header_burgerRow"></div>
-                    <div class="header_burgerRow"></div>
-                    <div class="header_burgerRow"></div>
-                </div>
-                <div class="header_languageThemeCon">
-                    <select class="header_language">
-                        <option value="Eng">Eng.</option>
-                        <option value="Ukr">Ukr.</option>
-                        <option value="Jap">Jap.</option>
-                        <option value="Fr">Fr.</option>
-                        <option value="It">It.</option>
-                        <option value="Por">Por.</option>
-                    </select>
-                    <div class="header_theme">
-                        <div class="header_themeCircle"></div>
-                    </div>
-                </div>
-            </div>
             <div class="ordersContainer"></div>
         </div>`
     )
+    $('.header').css('background-color', '#13161B')
+    $('.header_nav_el').css('color', '#F73859')
+    $('.header').css('padding', '40px')
+    $('.header_logo').attr('src', './menuImgs/red logo.png')
+    $('.ordersCount').css('background-color', '#F73859')
+    $('.ordersCount').css('color', '#13161B')
+    $('select').css('background-color', '#13161B')
+    $('select').css('color', '#F73859')
+    $('.header_theme').css('background-color', '#F73859')
+    $('.header_themeCircle').css('background-color', '#13161B')
+    $('.header_themeCircle').css('border', '#F73859 3px solid')
     $('.order_cancelBtn').click(()=>{
         $('.orderPopupsContainer').css('display', 'flex')
     })
@@ -736,40 +720,13 @@ $('#orders').click(()=>{
     })
 })
 $('#contacts').click(()=>{
-    $('.wrap').empty();
+    $('.content').empty();
     $('#contacts').css('font-weight', '600')
     $('#menu').css('font-weight', '400')
     $('#homePage').css('font-weight', '400')
     $('#orders').css('font-weight', '400')
-    $('.wrap').append(
+    $('.content').append(
         `        <div class="contacts">
-            <div class="header">
-                <img class="header_logo" src="./menuImgs/red logo.png" alt="">
-                <div class="header_nav">
-                        <a class="header_nav_el" id="homePage" href="/">Home page</a>
-                        <div class="header_nav_el" id="menu">Menu</div>
-                        <div class="header_nav_el" id="orders">Orders <div class="ordersCount">0</div> </div>
-                        <div class="header_nav_el" id="contacts">Contacts<div class="headerActivePage"></div></div>
-                </div>
-                <div class="header_burger">
-                    <div class="header_burgerRow"></div>
-                    <div class="header_burgerRow"></div>
-                    <div class="header_burgerRow"></div>
-                </div>
-                <div class="header_languageThemeCon">
-                    <select class="header_language">
-                        <option value="Eng">Eng.</option>
-                        <option value="Ukr">Ukr.</option>
-                        <option value="Jap">Jap.</option>
-                        <option value="Fr">Fr.</option>
-                        <option value="It">It.</option>
-                        <option value="Por">Por.</option>
-                    </select>
-                    <div class="header_theme">
-                        <div class="header_themeCircle"></div>
-                    </div>
-                </div>
-            </div>
             <div class="contactsConainer">
                 <div class="connectionForm">
                     <h1>Connection form</h1>
@@ -814,6 +771,17 @@ $('#contacts').click(()=>{
             </div>
         </div>`
     )
+    $('.header').css('background-color', '#13161B')
+    $('.header_nav_el').css('color', '#F73859')
+    $('.header').css('padding', '40px 40px 0 40px')
+    $('.header_logo').attr('src', './menuImgs/red logo.png')
+    $('.ordersCount').css('background-color', '#F73859')
+    $('.ordersCount').css('color', '#13161B')
+    $('select').css('background-color', '#13161B')
+    $('select').css('color', '#F73859')
+    $('.header_theme').css('background-color', '#F73859')
+    $('.header_themeCircle').css('background-color', '#13161B')
+    $('.header_themeCircle').css('border', '#F73859 3px solid')
     $('.order_cancelBtn').click(()=>{
         $('.orderPopupsContainer').css('display', 'flex')
     })
