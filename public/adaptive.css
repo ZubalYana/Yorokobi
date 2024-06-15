@@ -212,8 +212,11 @@
   .wrap .content .menu .dishesContainer .dishesContainer_dishes {
     margin-top: 30px;
   }
+  .wrap .content .orders {
+    padding: 0 20px !important;
+  }
   .wrap .content .orders .ordersContainer .order {
-    width: 382px;
+    width: 100%;
     height: 211px;
     border-radius: 30px;
     flex-direction: column;
