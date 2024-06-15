@@ -201,6 +201,17 @@
     left: -80px;
     top: -290px;
   }
+  .wrap .content .menu .dishesContainer .dishesContainer_typeChoise {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .wrap .content .menu .dishesContainer .dishesContainer_typeChoise .dishesContainer_typeChoise_item {
+    width: 160px;
+    margin-bottom: 25px;
+  }
+  .wrap .content .menu .dishesContainer .dishesContainer_dishes {
+    margin-top: 30px;
+  }
   .cookiesPopupCon {
     padding: 20px;
   }

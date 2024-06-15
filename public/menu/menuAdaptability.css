@@ -3,26 +3,6 @@
     width: 100%;
     overflow-x: hidden;
   }
-  .wrap .header .header_nav {
-    display: none;
-  }
-  .wrap .header .header_languageThemeCon {
-    display: none;
-  }
-  .wrap .header .header_burger {
-    display: flex;
-  }
-  .wrap .dishesContainer .dishesContainer_typeChoise {
-    width: 100%;
-    flex-wrap: wrap;
-  }
-  .wrap .dishesContainer .dishesContainer_typeChoise .dishesContainer_typeChoise_item {
-    width: 160px;
-    margin-bottom: 25px;
-  }
-  .wrap .dishesContainer .dishesContainer_dishes {
-    margin-top: 30px;
-  }
   .burgerCon {
     width: 100%;
     height: 100vh;

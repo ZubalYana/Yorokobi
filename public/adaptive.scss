@@ -223,6 +223,21 @@
         
                 }
             }
+            .menu{
+                .dishesContainer{
+                    .dishesContainer_typeChoise{
+                        width: 100%;
+                        flex-wrap: wrap;
+                        .dishesContainer_typeChoise_item{
+                            width: 160px;
+                            margin-bottom: 25px;
+                        }
+                    }
+                    .dishesContainer_dishes{
+                        margin-top: 30px;
+                    }
+                }
+            }
         }
 
 
