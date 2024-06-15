@@ -1,5 +1,6 @@
 $('.NorthAmericaContainer_point').hide(0);
-
+let cartList = [];
+let totalAmount = 0;
 //pages opening functions
 function openHomePage(){
     $('.content').empty();
@@ -179,40 +180,7 @@ function openMenuPage(){
     $('.header_themeCircle').css('border', '#F73859 3px solid')
     $('.header_burgerRow').css('background-color', '#F73859')
 
-    let cartList = [];
-let totalAmount = 0;
 
-//theme changing
-// $('.header_theme').click(function(){
-//     if(theme == 'light'){
-//         theme = 'dark';
-//         localStorage.setItem('theme', theme);
-//         changeTheme(theme);
-
-//     }else{
-//         theme = 'light';
-//         localStorage.setItem('theme', theme);
-//         changeTheme(theme);
-//     }
-// })
-// function changeTheme(theme){
-//     if(theme == 'light'){
-//         $('.header_theme').css('justify-content', 'flex-start');
-//         $('.wrap').css('background-color', '#fff');
-//         // $('.dishesContainer_typeChoise_item').css('background-color', '#fff');
-//         $('.ordersCount').css('color', '#fff');
-//         $('select').css('background-color', '#fff');
-//         $('.header_themeCircle').css('background-color', '#fff');
-//     }else{
-//         $('.header_theme').css('justify-content', 'flex-end');
-//         $('.wrap').css('background-color', '#13161B');
-//         // $('.dishesContainer_typeChoise_item').css('background-color', '#13161B');
-//         $('.ordersCount').css('color', '#13161B');
-//         $('select').css('background-color', '#13161B');
-//         $('.header_themeCircle').css('background-color', '#13161B');
-//     }
-// }
-// changeTheme(theme);
 
 //type of dish clicked apperience 
 $('#sushi').click(()=>{
@@ -597,6 +565,22 @@ function openOrdersPage(){
     $('.cancelPopup_noBtn').click(()=>{
         $('.orderPopupsContainer').css('display', 'none')
     })
+    for(let order of cartList){
+        $('.ordersContainer').append(
+            `            <div class="order">
+                <div class="order_name">${order.name}</div>
+                <div class="order_separetiveLine"></div>
+                <div class="orderBtns">
+                    <div class="orderBtn order_infoBtn">Info</div>
+                    <div class="orderBtn order_cancelBtn">Cancel</div>
+                </div>
+                <div class="order_separetiveLine"></div>
+                <div class="order_time">Will be ready and serve at: 20:08</div>
+                <div class="order_separetiveLine"></div>
+                <div class="order_price">${order.price}</div>
+            </div>`
+        )
+    }
 }
 function openContactsPage(){
     $('.content').empty();
@@ -937,7 +921,6 @@ function changeTheme(theme){
 }
 changeTheme(theme);
 
-
 //mainlands hover animations
 $('.NorthAmericaContainer').on({
     mouseenter: function() {
@@ -963,8 +946,6 @@ $('.NorthAmericaContainer').on({
 
     }
 });
-
-
 // $('.NorthAmericaContainer_point').on({
 //     mouseenter: function() {
 //         $('#NorthAmerica').css({
