@@ -785,7 +785,7 @@ $('#contacts').click(()=>{
     $('.header_themeCircle').css('background-color', '#13161B')
     $('.header_themeCircle').css('border', '#F73859 3px solid')
     $('.header_burgerRow').css('background-color', '#F73859')
-
+    $('.wrpa').css('overflow-y', 'hidden')
     $('.order_cancelBtn').click(()=>{
         $('.orderPopupsContainer').css('display', 'flex')
     })
