@@ -549,7 +549,8 @@ function openOrdersPage(){
     )
     $('.header').css('background-color', '#13161B')
     $('.header_nav_el').css('color', '#F73859')
-    $('.header').css('padding', '40px')
+    $('.header').css('padding', '40px 40px 0 40px')
+    $('.orders').css('padding', '0 40px')
     $('.header_logo').attr('src', './menuImgs/red logo.png')
     $('.ordersCount').css('background-color', '#F73859')
     $('.ordersCount').css('color', '#13161B')
@@ -559,6 +560,7 @@ function openOrdersPage(){
     $('.header_themeCircle').css('background-color', '#13161B')
     $('.header_themeCircle').css('border', '#F73859 3px solid')
     $('.header_burgerRow').css('background-color', '#F73859')
+    $('.ordersContainer').css('padding', '0px')
     $('.order_cancelBtn').click(()=>{
         $('.orderPopupsContainer').css('display', 'flex')
     })
