@@ -300,6 +300,7 @@ $('#menu').click(()=>{
     $('.header_theme').css('background-color', '#F73859')
     $('.header_themeCircle').css('background-color', '#13161B')
     $('.header_themeCircle').css('border', '#F73859 3px solid')
+    $('.header_burgerRow').css('background-color', '#F73859')
 
     let cartList = [];
 let totalAmount = 0;
