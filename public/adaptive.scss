@@ -238,6 +238,49 @@
                     }
                 }
             }
+            .orders{
+                .ordersContainer{
+                    .order{
+                        width: 382px;
+                        height: 211px;
+                        border-radius: 30px;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        padding: 18px;
+                        position: relative;
+                        .order_name{
+                            font-size: 32px;
+                            font-weight: 600;
+                            margin-bottom: 10px;
+                        }
+                        .orderBtns{
+                            width: 281px;
+                            .orderBtn{
+                                font-size: 24px;
+                                font-weight: 400;
+                                height: 61px;
+                            }
+                            margin-bottom: 15px;
+                        }
+                        .order_separetiveLine{
+                            display: none;
+                        }
+                        .order_time{
+                            font-size: 20px;
+                            font-weight: 300;
+                            padding: 0;
+                        }
+                        .order_price{
+                            font-size: 24px;
+                            font-weight: 600;
+                            position: absolute;
+                            width: 110px;
+                            right: 0px;
+                            top: 25px;
+                        }
+                    }
+                }
+            }
         }
 
 

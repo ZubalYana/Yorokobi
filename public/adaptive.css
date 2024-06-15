@@ -212,6 +212,45 @@
   .wrap .content .menu .dishesContainer .dishesContainer_dishes {
     margin-top: 30px;
   }
+  .wrap .content .orders .ordersContainer .order {
+    width: 382px;
+    height: 211px;
+    border-radius: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px;
+    position: relative;
+  }
+  .wrap .content .orders .ordersContainer .order .order_name {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .wrap .content .orders .ordersContainer .order .orderBtns {
+    width: 281px;
+    margin-bottom: 15px;
+  }
+  .wrap .content .orders .ordersContainer .order .orderBtns .orderBtn {
+    font-size: 24px;
+    font-weight: 400;
+    height: 61px;
+  }
+  .wrap .content .orders .ordersContainer .order .order_separetiveLine {
+    display: none;
+  }
+  .wrap .content .orders .ordersContainer .order .order_time {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0;
+  }
+  .wrap .content .orders .ordersContainer .order .order_price {
+    font-size: 24px;
+    font-weight: 600;
+    position: absolute;
+    width: 110px;
+    right: 0px;
+    top: 25px;
+  }
   .cookiesPopupCon {
     padding: 20px;
   }
