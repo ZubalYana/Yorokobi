@@ -3,7 +3,7 @@
         width: 100%;
         overflow-x: hidden;
         .header{
-            padding: 20px;
+            padding: 20px !important;
             .header_nav{
                 display: none;
             }
@@ -277,6 +277,43 @@
                             width: 110px;
                             right: 0px;
                             top: 25px;
+                        }
+                    }
+                }
+            }
+            .contacts{
+                padding: 20px;
+                .contactsConainer{
+                    flex-direction: column;
+                    .connectionForm{
+                        width: 100%;
+                        h5{
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                        .connectionForm_form{
+                            width: 381px;
+                            input{
+                                width: 381px;
+                            }
+                            textarea{
+                                width: 381px;
+                            }
+                        }
+                    }
+                    .separetiveLine{
+                        width: 381px;
+                        height: 2px;
+                        margin: 50px 0;
+                    }
+                    .locationAndHours{
+                        width: 100%;
+                        .locationAndHours_hoursAndMedia{
+                            flex-direction: column;
+                            align-items: flex-start;
+                            .locationAndHours_media{
+                                margin: 25px 0 0 0;
+                            }
                         }
                     }
                 }
