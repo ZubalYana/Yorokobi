@@ -1,463 +1,373 @@
 $('.NorthAmericaContainer_point').hide(0);
 
-//pages changing
-$('.content').append(
-    `
-        <div class="home">
-            <div class="screen mainPage">
-                <div class="mainPage_content">
-                    <div class="mainPage_content_textPart">
-                        <div class="mainPage_content_title">Did you know?</div>
-                        <div class="mainPage_content_text">In Japanese word「 Yorokobi 」or in original「 喜び 」actually means: pleasure, joy, delight. You exactly can quess why did we name our company this way. You can try this Yorokobi by yourself any time you want!  </div>
-                        <div class="mainPage_content_buttons">
-                            <div class="mainPage_content_button" id="mainPage_content_menuBtn">Menu</div>
-                            <div class="mainPage_content_button" id="mainPage_content_moreInfoBtn">More info</div>
+//pages opening functions
+function openHomePage(){
+    $('.content').empty();
+    $('#menu').css('font-weight', '400')
+    $('#homePage').css('font-weight', '600')
+    $('#orders').css('font-weight', '400')
+    $('#contacts').css('font-weight', '400')
+    $('.content').append(
+        `
+            <div class="home">
+                <div class="screen mainPage">
+                    <div class="mainPage_content">
+                        <div class="mainPage_content_textPart">
+                            <div class="mainPage_content_title">Did you know?</div>
+                            <div class="mainPage_content_text">In Japanese word「 Yorokobi 」or in original「 喜び 」actually means: pleasure, joy, delight. You exactly can quess why did we name our company this way. You can try this Yorokobi by yourself any time you want!  </div>
+                            <div class="mainPage_content_buttons">
+                                <div class="mainPage_content_button" id="mainPage_content_menuBtn">Menu</div>
+                                <div class="mainPage_content_button" id="mainPage_content_moreInfoBtn">More info</div>
+                            </div>
+                        </div>
+                        <div class="mainPage_content_imgPart">
+                            <div class="mainPage_content_imgPart_FullImg">
+                                <img class="mainPage_sushiImg" src="./imgs/main page sushi pic.png" alt="">
+                                <img class="mainPage_bowlImg" src="./imgs/main page sushi bowl.png" alt="">
+                            </div>
+        
                         </div>
                     </div>
-                    <div class="mainPage_content_imgPart">
-                        <div class="mainPage_content_imgPart_FullImg">
-                            <img class="mainPage_sushiImg" src="./imgs/main page sushi pic.png" alt="">
-                            <img class="mainPage_bowlImg" src="./imgs/main page sushi bowl.png" alt="">
+                    <img class="mainPage_background" src="./imgs/main page background.png" alt="">
+                </div>
+                <div class="screen locationPage" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="locationPage_title">Where are we?</div>
+                    <div class="locationPage_worldContainer">
+                        <div class="NorthAmericaContainer">
+                            <img class="mainlandImg" id="NorthAmerica" src="./imgs/Untitled12_20240127204359.png" alt="">
+                            <div class="NorthAmericaContainer_points">
+                                <img class="NorthAmericaContainer_point" id="mapPoint1" src="./imgs/map point.png" alt="">
+                                <img class="NorthAmericaContainer_point" id="mapPoint2" src="./imgs/map point.png" alt="">
+                                <img class="NorthAmericaContainer_point" id="mapPoint3" src="./imgs/map point.png" alt="">
+                                <img class="NorthAmericaContainer_point" id="mapPoint4" src="./imgs/map point.png" alt="">
+                                <img class="NorthAmericaContainer_point" id="mapPoint5" src="./imgs/map point.png" alt="">
+                                <img class="NorthAmericaContainer_point" id="mapPoint6" src="./imgs/map point.png" alt="">
+                                <img class="NorthAmericaContainer_point" id="mapPoint7" src="./imgs/map point.png" alt="">
+                                <img class="NorthAmericaContainer_point" id="mapPoint8" src="./imgs/map point.png" alt="">
+                                <img class="NorthAmericaContainer_point" id="mapPoint9" src="./imgs/map point.png" alt="">
+                                <img class="NorthAmericaContainer_point" id="mapPoint10" src="./imgs/map point.png" alt="">
+                                <img class="NorthAmericaContainer_point" id="mapPoint11" src="./imgs/map point.png" alt="">
+                                <img class="NorthAmericaContainer_point" id="mapPoint12" src="./imgs/map point.png" alt="">
+                            </div>
                         </div>
-    
+                        <img class="mainlandImg" id="SouthAmerica" src="./imgs/Untitled12_20240127204758.png" alt="">
+                        <img class="mainlandImg" id="Africa" src="./imgs/Untitled12_20240127204938.png" alt="">
+                        <img class="mainlandImg" id="Eurasia" src="./imgs/Untitled12_20240127205157.png" alt="">
+                        <img class="mainlandImg" id="Oceania" src="./imgs/Untitled12_20240127205235.png" alt="">
+                    </div>
+                    <div class="locationPage_statistics">
+                        <div class="locationPage_statistics_column">
+                            <div class="locationPage_statistics_num">129</div>
+                            <div class="locationPage_statistics_desc">Restaurants in the world</div>
+                        </div>
+                        <div class="locationPage_statistics_column">
+                            <div class="locationPage_statistics_num">1472</div>
+                            <div class="locationPage_statistics_desc">High quality employees</div>
+                        </div>
+                        <div class="locationPage_statistics_column locationPage_statistics_column_adapriveMargin">
+                            <div class="locationPage_statistics_num">15000+</div>
+                            <div class="locationPage_statistics_desc">Good reviews from customers</div>
+                        </div>
+                        <div class="locationPage_statistics_column locationPage_statistics_column_adapriveMargin">
+                            <div class="locationPage_statistics_num">100+</div>
+                            <div class="locationPage_statistics_desc">Different tasty dishes to try</div>
+                        </div>
                     </div>
                 </div>
-                <img class="mainPage_background" src="./imgs/main page background.png" alt="">
+                <div class="screen dishPage" data-aos="fade-up" data-aos-duration="1000">
+                    
+                    <div class="dishPage_textContainer">
+                        <div class="dishPage_textContainer_title">The best choice</div>
+                        <img class="dishPage_img" src="./imgs/dishPage img.png" alt="">
+                        <div class="dishPage_textContainer_mainText">Craving the exquisite flavors of Japan? Indulge in our tantalizing Sushi Set, where every bite is a journey to culinary perfection! For every special or simple evening. No meter where you are and who is with you, the taste will surely improve your mood. </div>
+                        <div class="dishPage_textContainer_btnsCon">
+                            <div class="dishPage_textContainer_btn" id="dishPage_textContainer_moreInfo">More info</div>
+                            <div class="dishPage_textContainer_btn" id="dishPage_textContainer_orderNow">Order now</div>
+                        </div>
+                    </div>
+                    <div class="dishPage_sushiInfo">
+                        <div class="dishPage_sushiInfo_name">Gunkan Maki</div>
+                        <div class="dishPage_sushiInfo_price">only 7$ now</div>
+                    </div>
+                </div>
+                <div class="futer">
+                    <div class="futer_hr_container">
+                        <div class="futer_hr"></div>
+                    </div>
+                    <div class="futer_infoCon">
+                        <div class="futer_infoCon_text">
+                            <div class="futer_infoCon_text_columns">
+                                <div class="futer_infoCon_text_column futer_infoCon_text_column_Navigation">
+                                    <div class="futer_infoCon_text_column_heading">Navigation</div>
+                                    <div class="futer_infoCon_text_column_el">Home page</div>
+                                    <div class="futer_infoCon_text_column_el">Menu</div>
+                                    <div class="futer_infoCon_text_column_el">Orders</div>
+                                    <div class="futer_infoCon_text_column_el">Contacts</div>
+                                </div>
+                                <div class="futer_infoCon_text_column futer_infoCon_text_column_Help">
+                                    <div class="futer_infoCon_text_column_heading">Help</div>
+                                    <div class="futer_infoCon_text_column_el">Contacts us</div>
+                                    <div class="futer_infoCon_text_column_el">Problems</div>
+                                    <div class="futer_infoCon_text_column_el">Questions</div>
+                                    <div class="futer_infoCon_text_column_el">Support</div>
+                                </div>
+                                <div class="futer_infoCon_text_column futer_infoCon_text_column_Amenities">
+                                    <div class="futer_infoCon_text_column_heading">Amenities</div>
+                                    <div class="futer_infoCon_text_column_el">Download app</div>
+                                    <div class="futer_infoCon_text_column_el">JPS restaurants map</div>
+                                    <div class="futer_infoCon_text_column_el">Rate us</div>
+                                </div>
+                            </div>
+                            <div class="futer_infoCon_text_Yorokobi">
+                                <img class="futer_infoCon_text_Yorokobi_Logo" src="./imgs/Yorokobi red logo.png" alt="">
+                                <div class="futer_infoCon_text_Yorokobi_text">The best Japanese cuisine restaurants in the world. Try it yourself!</div>
+                            </div>
+                        </div>
+                        <div class="futer_infoCon_pictures">
+                            <img class="futer_infoCon_pictures_sushi1" src="./imgs/futer_sushi1.png" alt="">
+                            <img class="futer_infoCon_pictures_sushi2" src="./imgs/futer_sushi2.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="screen locationPage" data-aos="fade-up" data-aos-duration="1000">
-                <div class="locationPage_title">Where are we?</div>
-                <div class="locationPage_worldContainer">
-                    <div class="NorthAmericaContainer">
-                        <img class="mainlandImg" id="NorthAmerica" src="./imgs/Untitled12_20240127204359.png" alt="">
-                        <div class="NorthAmericaContainer_points">
-                            <img class="NorthAmericaContainer_point" id="mapPoint1" src="./imgs/map point.png" alt="">
-                            <img class="NorthAmericaContainer_point" id="mapPoint2" src="./imgs/map point.png" alt="">
-                            <img class="NorthAmericaContainer_point" id="mapPoint3" src="./imgs/map point.png" alt="">
-                            <img class="NorthAmericaContainer_point" id="mapPoint4" src="./imgs/map point.png" alt="">
-                            <img class="NorthAmericaContainer_point" id="mapPoint5" src="./imgs/map point.png" alt="">
-                            <img class="NorthAmericaContainer_point" id="mapPoint6" src="./imgs/map point.png" alt="">
-                            <img class="NorthAmericaContainer_point" id="mapPoint7" src="./imgs/map point.png" alt="">
-                            <img class="NorthAmericaContainer_point" id="mapPoint8" src="./imgs/map point.png" alt="">
-                            <img class="NorthAmericaContainer_point" id="mapPoint9" src="./imgs/map point.png" alt="">
-                            <img class="NorthAmericaContainer_point" id="mapPoint10" src="./imgs/map point.png" alt="">
-                            <img class="NorthAmericaContainer_point" id="mapPoint11" src="./imgs/map point.png" alt="">
-                            <img class="NorthAmericaContainer_point" id="mapPoint12" src="./imgs/map point.png" alt="">
-                        </div>
-                    </div>
-                    <img class="mainlandImg" id="SouthAmerica" src="./imgs/Untitled12_20240127204758.png" alt="">
-                    <img class="mainlandImg" id="Africa" src="./imgs/Untitled12_20240127204938.png" alt="">
-                    <img class="mainlandImg" id="Eurasia" src="./imgs/Untitled12_20240127205157.png" alt="">
-                    <img class="mainlandImg" id="Oceania" src="./imgs/Untitled12_20240127205235.png" alt="">
+        `
+    )
+    $('.header').css('background-color', '#CB324D')
+    $('.header_nav_el').css('color', '#13161B')
+    $('.header').css('padding', '40px 40px 0 40px')
+    $('.header_logo').attr('src', './imgs/mian page logo.png')
+    $('.ordersCount').css('background-color', '#13161B')
+    $('.ordersCount').css('color', '#CB324D')
+    $('select').css('background-color', '#CB324D')
+    $('select').css('color', '#13161B')
+    $('.header_theme').css('background-color', '#13161B')
+    $('.header_themeCircle').css('background-color', '#CB324D')
+    $('.header_themeCircle').css('border', '#13161B 3px solid')
+}
+function openMenuPage(){
+    $('.content').empty();
+    $('#menu').css('font-weight', '600')
+    $('#homePage').css('font-weight', '400')
+    $('#orders').css('font-weight', '400')
+    $('#contacts').css('font-weight', '400')
+    $('.content').append(
+        `<div class="menu">
+                    <div class="dishesContainer">
+                <div class="dishesContainer_typeChoise">
+                    <div class="dishesContainer_typeChoise_item" id="sushi">Sushi</div>
+                    <div class="dishesContainer_typeChoise_item" id="soba">Soba</div>
+                    <div class="dishesContainer_typeChoise_item" id="ramen">Ramen</div>
+                    <div class="dishesContainer_typeChoise_item" id="snack">Snacks</div>
+                    <div class="dishesContainer_typeChoise_item" id="drinks">Drings</div>
                 </div>
-                <div class="locationPage_statistics">
-                    <div class="locationPage_statistics_column">
-                        <div class="locationPage_statistics_num">129</div>
-                        <div class="locationPage_statistics_desc">Restaurants in the world</div>
-                    </div>
-                    <div class="locationPage_statistics_column">
-                        <div class="locationPage_statistics_num">1472</div>
-                        <div class="locationPage_statistics_desc">High quality employees</div>
-                    </div>
-                    <div class="locationPage_statistics_column locationPage_statistics_column_adapriveMargin">
-                        <div class="locationPage_statistics_num">15000+</div>
-                        <div class="locationPage_statistics_desc">Good reviews from customers</div>
-                    </div>
-                    <div class="locationPage_statistics_column locationPage_statistics_column_adapriveMargin">
-                        <div class="locationPage_statistics_num">100+</div>
-                        <div class="locationPage_statistics_desc">Different tasty dishes to try</div>
-                    </div>
-                </div>
+                <div class="dishesContainer_dishes"></div>
             </div>
-            <div class="screen dishPage" data-aos="fade-up" data-aos-duration="1000">
-                
-                <div class="dishPage_textContainer">
-                    <div class="dishPage_textContainer_title">The best choice</div>
-                    <img class="dishPage_img" src="./imgs/dishPage img.png" alt="">
-                    <div class="dishPage_textContainer_mainText">Craving the exquisite flavors of Japan? Indulge in our tantalizing Sushi Set, where every bite is a journey to culinary perfection! For every special or simple evening. No meter where you are and who is with you, the taste will surely improve your mood. </div>
-                    <div class="dishPage_textContainer_btnsCon">
-                        <div class="dishPage_textContainer_btn" id="dishPage_textContainer_moreInfo">More info</div>
-                        <div class="dishPage_textContainer_btn" id="dishPage_textContainer_orderNow">Order now</div>
-                    </div>
-                </div>
-                <div class="dishPage_sushiInfo">
-                    <div class="dishPage_sushiInfo_name">Gunkan Maki</div>
-                    <div class="dishPage_sushiInfo_price">only 7$ now</div>
-                </div>
-            </div>
-            <div class="futer">
-                <div class="futer_hr_container">
-                    <div class="futer_hr"></div>
-                </div>
-                <div class="futer_infoCon">
-                    <div class="futer_infoCon_text">
-                        <div class="futer_infoCon_text_columns">
-                            <div class="futer_infoCon_text_column futer_infoCon_text_column_Navigation">
-                                <div class="futer_infoCon_text_column_heading">Navigation</div>
-                                <div class="futer_infoCon_text_column_el">Home page</div>
-                                <div class="futer_infoCon_text_column_el">Menu</div>
-                                <div class="futer_infoCon_text_column_el">Orders</div>
-                                <div class="futer_infoCon_text_column_el">Contacts</div>
-                            </div>
-                            <div class="futer_infoCon_text_column futer_infoCon_text_column_Help">
-                                <div class="futer_infoCon_text_column_heading">Help</div>
-                                <div class="futer_infoCon_text_column_el">Contacts us</div>
-                                <div class="futer_infoCon_text_column_el">Problems</div>
-                                <div class="futer_infoCon_text_column_el">Questions</div>
-                                <div class="futer_infoCon_text_column_el">Support</div>
-                            </div>
-                            <div class="futer_infoCon_text_column futer_infoCon_text_column_Amenities">
-                                <div class="futer_infoCon_text_column_heading">Amenities</div>
-                                <div class="futer_infoCon_text_column_el">Download app</div>
-                                <div class="futer_infoCon_text_column_el">JPS restaurants map</div>
-                                <div class="futer_infoCon_text_column_el">Rate us</div>
-                            </div>
-                        </div>
-                        <div class="futer_infoCon_text_Yorokobi">
-                            <img class="futer_infoCon_text_Yorokobi_Logo" src="./imgs/Yorokobi red logo.png" alt="">
-                            <div class="futer_infoCon_text_Yorokobi_text">The best Japanese cuisine restaurants in the world. Try it yourself!</div>
-                        </div>
-                    </div>
-                    <div class="futer_infoCon_pictures">
-                        <img class="futer_infoCon_pictures_sushi1" src="./imgs/futer_sushi1.png" alt="">
-                        <img class="futer_infoCon_pictures_sushi2" src="./imgs/futer_sushi2.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    `
-)
-$('#homePage').click(()=>{
-    function openHomePage(){
-        $('.content').empty();
-        $('#menu').css('font-weight', '400')
-        $('#homePage').css('font-weight', '600')
-        $('#orders').css('font-weight', '400')
-        $('#contacts').css('font-weight', '400')
-        $('.content').append(
-            `
-                <div class="home">
-                    <div class="screen mainPage">
-                        <div class="mainPage_content">
-                            <div class="mainPage_content_textPart">
-                                <div class="mainPage_content_title">Did you know?</div>
-                                <div class="mainPage_content_text">In Japanese word「 Yorokobi 」or in original「 喜び 」actually means: pleasure, joy, delight. You exactly can quess why did we name our company this way. You can try this Yorokobi by yourself any time you want!  </div>
-                                <div class="mainPage_content_buttons">
-                                    <div class="mainPage_content_button" id="mainPage_content_menuBtn">Menu</div>
-                                    <div class="mainPage_content_button" id="mainPage_content_moreInfoBtn">More info</div>
-                                </div>
-                            </div>
-                            <div class="mainPage_content_imgPart">
-                                <div class="mainPage_content_imgPart_FullImg">
-                                    <img class="mainPage_sushiImg" src="./imgs/main page sushi pic.png" alt="">
-                                    <img class="mainPage_bowlImg" src="./imgs/main page sushi bowl.png" alt="">
-                                </div>
-            
-                            </div>
-                        </div>
-                        <img class="mainPage_background" src="./imgs/main page background.png" alt="">
-                    </div>
-                    <div class="screen locationPage" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="locationPage_title">Where are we?</div>
-                        <div class="locationPage_worldContainer">
-                            <div class="NorthAmericaContainer">
-                                <img class="mainlandImg" id="NorthAmerica" src="./imgs/Untitled12_20240127204359.png" alt="">
-                                <div class="NorthAmericaContainer_points">
-                                    <img class="NorthAmericaContainer_point" id="mapPoint1" src="./imgs/map point.png" alt="">
-                                    <img class="NorthAmericaContainer_point" id="mapPoint2" src="./imgs/map point.png" alt="">
-                                    <img class="NorthAmericaContainer_point" id="mapPoint3" src="./imgs/map point.png" alt="">
-                                    <img class="NorthAmericaContainer_point" id="mapPoint4" src="./imgs/map point.png" alt="">
-                                    <img class="NorthAmericaContainer_point" id="mapPoint5" src="./imgs/map point.png" alt="">
-                                    <img class="NorthAmericaContainer_point" id="mapPoint6" src="./imgs/map point.png" alt="">
-                                    <img class="NorthAmericaContainer_point" id="mapPoint7" src="./imgs/map point.png" alt="">
-                                    <img class="NorthAmericaContainer_point" id="mapPoint8" src="./imgs/map point.png" alt="">
-                                    <img class="NorthAmericaContainer_point" id="mapPoint9" src="./imgs/map point.png" alt="">
-                                    <img class="NorthAmericaContainer_point" id="mapPoint10" src="./imgs/map point.png" alt="">
-                                    <img class="NorthAmericaContainer_point" id="mapPoint11" src="./imgs/map point.png" alt="">
-                                    <img class="NorthAmericaContainer_point" id="mapPoint12" src="./imgs/map point.png" alt="">
-                                </div>
-                            </div>
-                            <img class="mainlandImg" id="SouthAmerica" src="./imgs/Untitled12_20240127204758.png" alt="">
-                            <img class="mainlandImg" id="Africa" src="./imgs/Untitled12_20240127204938.png" alt="">
-                            <img class="mainlandImg" id="Eurasia" src="./imgs/Untitled12_20240127205157.png" alt="">
-                            <img class="mainlandImg" id="Oceania" src="./imgs/Untitled12_20240127205235.png" alt="">
-                        </div>
-                        <div class="locationPage_statistics">
-                            <div class="locationPage_statistics_column">
-                                <div class="locationPage_statistics_num">129</div>
-                                <div class="locationPage_statistics_desc">Restaurants in the world</div>
-                            </div>
-                            <div class="locationPage_statistics_column">
-                                <div class="locationPage_statistics_num">1472</div>
-                                <div class="locationPage_statistics_desc">High quality employees</div>
-                            </div>
-                            <div class="locationPage_statistics_column locationPage_statistics_column_adapriveMargin">
-                                <div class="locationPage_statistics_num">15000+</div>
-                                <div class="locationPage_statistics_desc">Good reviews from customers</div>
-                            </div>
-                            <div class="locationPage_statistics_column locationPage_statistics_column_adapriveMargin">
-                                <div class="locationPage_statistics_num">100+</div>
-                                <div class="locationPage_statistics_desc">Different tasty dishes to try</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="screen dishPage" data-aos="fade-up" data-aos-duration="1000">
-                        
-                        <div class="dishPage_textContainer">
-                            <div class="dishPage_textContainer_title">The best choice</div>
-                            <img class="dishPage_img" src="./imgs/dishPage img.png" alt="">
-                            <div class="dishPage_textContainer_mainText">Craving the exquisite flavors of Japan? Indulge in our tantalizing Sushi Set, where every bite is a journey to culinary perfection! For every special or simple evening. No meter where you are and who is with you, the taste will surely improve your mood. </div>
-                            <div class="dishPage_textContainer_btnsCon">
-                                <div class="dishPage_textContainer_btn" id="dishPage_textContainer_moreInfo">More info</div>
-                                <div class="dishPage_textContainer_btn" id="dishPage_textContainer_orderNow">Order now</div>
-                            </div>
-                        </div>
-                        <div class="dishPage_sushiInfo">
-                            <div class="dishPage_sushiInfo_name">Gunkan Maki</div>
-                            <div class="dishPage_sushiInfo_price">only 7$ now</div>
-                        </div>
-                    </div>
-                    <div class="futer">
-                        <div class="futer_hr_container">
-                            <div class="futer_hr"></div>
-                        </div>
-                        <div class="futer_infoCon">
-                            <div class="futer_infoCon_text">
-                                <div class="futer_infoCon_text_columns">
-                                    <div class="futer_infoCon_text_column futer_infoCon_text_column_Navigation">
-                                        <div class="futer_infoCon_text_column_heading">Navigation</div>
-                                        <div class="futer_infoCon_text_column_el">Home page</div>
-                                        <div class="futer_infoCon_text_column_el">Menu</div>
-                                        <div class="futer_infoCon_text_column_el">Orders</div>
-                                        <div class="futer_infoCon_text_column_el">Contacts</div>
-                                    </div>
-                                    <div class="futer_infoCon_text_column futer_infoCon_text_column_Help">
-                                        <div class="futer_infoCon_text_column_heading">Help</div>
-                                        <div class="futer_infoCon_text_column_el">Contacts us</div>
-                                        <div class="futer_infoCon_text_column_el">Problems</div>
-                                        <div class="futer_infoCon_text_column_el">Questions</div>
-                                        <div class="futer_infoCon_text_column_el">Support</div>
-                                    </div>
-                                    <div class="futer_infoCon_text_column futer_infoCon_text_column_Amenities">
-                                        <div class="futer_infoCon_text_column_heading">Amenities</div>
-                                        <div class="futer_infoCon_text_column_el">Download app</div>
-                                        <div class="futer_infoCon_text_column_el">JPS restaurants map</div>
-                                        <div class="futer_infoCon_text_column_el">Rate us</div>
-                                    </div>
-                                </div>
-                                <div class="futer_infoCon_text_Yorokobi">
-                                    <img class="futer_infoCon_text_Yorokobi_Logo" src="./imgs/Yorokobi red logo.png" alt="">
-                                    <div class="futer_infoCon_text_Yorokobi_text">The best Japanese cuisine restaurants in the world. Try it yourself!</div>
-                                </div>
-                            </div>
-                            <div class="futer_infoCon_pictures">
-                                <img class="futer_infoCon_pictures_sushi1" src="./imgs/futer_sushi1.png" alt="">
-                                <img class="futer_infoCon_pictures_sushi2" src="./imgs/futer_sushi2.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            `
-        )
-        $('.header').css('background-color', '#CB324D')
-        $('.header_nav_el').css('color', '#13161B')
-        $('.header').css('padding', '40px 40px 0 40px')
-        $('.header_logo').attr('src', './imgs/mian page logo.png')
-        $('.ordersCount').css('background-color', '#13161B')
-        $('.ordersCount').css('color', '#CB324D')
-        $('select').css('background-color', '#CB324D')
-        $('select').css('color', '#13161B')
-        $('.header_theme').css('background-color', '#13161B')
-        $('.header_themeCircle').css('background-color', '#CB324D')
-        $('.header_themeCircle').css('border', '#13161B 3px solid')
-    }
-    openHomePage()
+        </div>`
+    )
+    $('.header').css('background-color', '#13161B')
+    $('.header_nav_el').css('color', '#F73859')
+    $('.header').css('padding', '40px')
+    $('.header_logo').attr('src', './menuImgs/red logo.png')
+    $('.ordersCount').css('background-color', '#F73859')
+    $('.ordersCount').css('color', '#13161B')
+    $('select').css('background-color', '#13161B')
+    $('select').css('color', '#F73859')
+    $('.header_theme').css('background-color', '#F73859')
+    $('.header_themeCircle').css('background-color', '#13161B')
+    $('.header_themeCircle').css('border', '#F73859 3px solid')
+    $('.header_burgerRow').css('background-color', '#F73859')
+
+    let cartList = [];
+let totalAmount = 0;
+
+//theme changing
+// $('.header_theme').click(function(){
+//     if(theme == 'light'){
+//         theme = 'dark';
+//         localStorage.setItem('theme', theme);
+//         changeTheme(theme);
+
+//     }else{
+//         theme = 'light';
+//         localStorage.setItem('theme', theme);
+//         changeTheme(theme);
+//     }
+// })
+// function changeTheme(theme){
+//     if(theme == 'light'){
+//         $('.header_theme').css('justify-content', 'flex-start');
+//         $('.wrap').css('background-color', '#fff');
+//         // $('.dishesContainer_typeChoise_item').css('background-color', '#fff');
+//         $('.ordersCount').css('color', '#fff');
+//         $('select').css('background-color', '#fff');
+//         $('.header_themeCircle').css('background-color', '#fff');
+//     }else{
+//         $('.header_theme').css('justify-content', 'flex-end');
+//         $('.wrap').css('background-color', '#13161B');
+//         // $('.dishesContainer_typeChoise_item').css('background-color', '#13161B');
+//         $('.ordersCount').css('color', '#13161B');
+//         $('select').css('background-color', '#13161B');
+//         $('.header_themeCircle').css('background-color', '#13161B');
+//     }
+// }
+// changeTheme(theme);
+
+//type of dish clicked apperience 
+$('#sushi').click(()=>{
+    $('#sushi').css({
+        'background-color': '#F73859',
+        'color': '#fff',
+    })
+    $('#snack').css({
+        'background-color': '#13161B',
+        'color': '#F73859',
+    })
+    $('#soba').css({
+        'background-color': '#13161B',
+        'color': '#F73859',
+    })
+    $('#ramen').css({
+        'background-color': '#13161B',
+        'color': '#F73859',
+    })
+    $('#drinks').css({
+        'background-color': '#13161B',
+        'color': '#F73859',
+    })
 })
-$('#menu').click(()=>{
-    function openMenuPage(){
-        $('.content').empty();
-        $('#menu').css('font-weight', '600')
-        $('#homePage').css('font-weight', '400')
-        $('#orders').css('font-weight', '400')
-        $('#contacts').css('font-weight', '400')
-        $('.content').append(
-            `<div class="menu">
-                        <div class="dishesContainer">
-                    <div class="dishesContainer_typeChoise">
-                        <div class="dishesContainer_typeChoise_item" id="sushi">Sushi</div>
-                        <div class="dishesContainer_typeChoise_item" id="soba">Soba</div>
-                        <div class="dishesContainer_typeChoise_item" id="ramen">Ramen</div>
-                        <div class="dishesContainer_typeChoise_item" id="snack">Snacks</div>
-                        <div class="dishesContainer_typeChoise_item" id="drinks">Drings</div>
-                    </div>
-                    <div class="dishesContainer_dishes"></div>
+$('#snack').click(()=>{
+    $('#snack').css({
+        'background-color': '#F73859',
+        'color': '#fff',
+    })
+    $('#sushi').css({
+        'background-color': '#13161B',
+        'color': '#F73859',
+    })
+    $('#soba').css({
+        'background-color': '#13161B',
+        'color': '#F73859',
+    })
+    $('#ramen').css({
+        'background-color': '#13161B',
+        'color': '#F73859',
+    })
+    $('#drinks').css({
+        'background-color': '#13161B',
+        'color': '#F73859',
+    })
+})
+$('#soba').click(()=>{
+    $('#soba').css({
+        'background-color': '#F73859',
+        'color': '#fff',
+    })
+    $('#sushi').css({
+        'background-color': '#13161B',
+        'color': '#F73859',
+    })
+    $('#snack').css({
+        'background-color': '#13161B',
+        'color': '#F73859',
+    })
+    $('#ramen').css({
+        'background-color': '#13161B',
+        'color': '#F73859',
+    })
+    $('#drinks').css({
+        'background-color': '#13161B',
+        'color': '#F73859',
+    })
+})
+$('#ramen').click(()=>{
+    $('#ramen').css({
+        'background-color': '#F73859',
+        'color': '#fff',
+    })
+    $('#sushi').css({
+        'background-color': '#13161B',
+        'color': '#F73859',
+    })
+    $('#soba').css({
+        'background-color': '#13161B',
+        'color': '#F73859',
+    })
+    $('#snack').css({
+        'background-color': '#13161B',
+        'color': '#F73859',
+    })
+    $('#drinks').css({
+        'background-color': '#13161B',
+        'color': '#F73859',
+    })
+})
+$('#drinks').click(()=>{
+    $('#drinks').css({
+        'background-color': '#F73859',
+        'color': '#fff',
+    })
+    $('#sushi').css({
+        'background-color': '#13161B',
+        'color': '#F73859',
+    })
+    $('#soba').css({
+        'background-color': '#13161B',
+        'color': '#F73859',
+    })
+    $('#ramen').css({
+        'background-color': '#13161B',
+        'color': '#F73859',
+    })
+    $('#snack').css({
+        'background-color': '#13161B',
+        'color': '#F73859',
+    })
+})
+
+//dishes appending
+axios.get('http://localhost:3000/dishes')
+.then(res=>{
+    console.log(res.data)
+    for (let dish of res.data) {
+        if (dish.type == 'sushi') {
+            let $sushiContainer = $('<div class="dishesContainer_sushi"></div>');
+            $sushiContainer.append(`
+                <img class='dishesContainer_sushi_img' src="${dish.image}" alt="">
+                <div class="dishesContainer_sushi_namePriceCon">
+                    <div class="dishesContainer_sushi_name">${dish.name}</div>
+                    <div class="dishesContainer_sushi_price">$${dish.price}</div>
                 </div>
-            </div>`
-        )
-        $('.header').css('background-color', '#13161B')
-        $('.header_nav_el').css('color', '#F73859')
-        $('.header').css('padding', '40px')
-        $('.header_logo').attr('src', './menuImgs/red logo.png')
-        $('.ordersCount').css('background-color', '#F73859')
-        $('.ordersCount').css('color', '#13161B')
-        $('select').css('background-color', '#13161B')
-        $('select').css('color', '#F73859')
-        $('.header_theme').css('background-color', '#F73859')
-        $('.header_themeCircle').css('background-color', '#13161B')
-        $('.header_themeCircle').css('border', '#F73859 3px solid')
-        $('.header_burgerRow').css('background-color', '#F73859')
+                <div class="dishesContainer_sushi_availability"></div>
+                <div class="dishesContainer_sushi_btns">
+                    <div class="dishesContainer_sushi_btn" id="dishInfoBtn">Info</div>
+                    <div class="dishesContainer_sushi_btn dishOrderBtn" id="${dish._id}">Order</div>
+                </div>
+                <div class="dishesContainer_sushi_rating"></div>
+            `);
     
-        let cartList = [];
-    let totalAmount = 0;
+            if (dish.availability == true) {
+                $sushiContainer.find('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>');
+            } else {
+                $sushiContainer.find('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>').css('color', '#959595');
+            }
     
-    //theme changing
-    // $('.header_theme').click(function(){
-    //     if(theme == 'light'){
-    //         theme = 'dark';
-    //         localStorage.setItem('theme', theme);
-    //         changeTheme(theme);
+            let ratingHtml = '';
+            for (let i = 0; i < 5; i++) {
+                if (i < dish.rating) {
+                    ratingHtml += '<i class="fa-solid fa-star"></i>';
+                } else {
+                    ratingHtml += '<i class="fa-regular fa-star"></i>';
+                }
+            }
+            $sushiContainer.find('.dishesContainer_sushi_rating').html(ratingHtml);
     
-    //     }else{
-    //         theme = 'light';
-    //         localStorage.setItem('theme', theme);
-    //         changeTheme(theme);
-    //     }
-    // })
-    // function changeTheme(theme){
-    //     if(theme == 'light'){
-    //         $('.header_theme').css('justify-content', 'flex-start');
-    //         $('.wrap').css('background-color', '#fff');
-    //         // $('.dishesContainer_typeChoise_item').css('background-color', '#fff');
-    //         $('.ordersCount').css('color', '#fff');
-    //         $('select').css('background-color', '#fff');
-    //         $('.header_themeCircle').css('background-color', '#fff');
-    //     }else{
-    //         $('.header_theme').css('justify-content', 'flex-end');
-    //         $('.wrap').css('background-color', '#13161B');
-    //         // $('.dishesContainer_typeChoise_item').css('background-color', '#13161B');
-    //         $('.ordersCount').css('color', '#13161B');
-    //         $('select').css('background-color', '#13161B');
-    //         $('.header_themeCircle').css('background-color', '#13161B');
-    //     }
-    // }
-    // changeTheme(theme);
-    
-    //type of dish clicked apperience 
+            $('.dishesContainer_dishes').append($sushiContainer);
+        }
+    }
+    ordering()
     $('#sushi').click(()=>{
-        $('#sushi').css({
-            'background-color': '#F73859',
-            'color': '#fff',
-        })
-        $('#snack').css({
-            'background-color': '#13161B',
-            'color': '#F73859',
-        })
-        $('#soba').css({
-            'background-color': '#13161B',
-            'color': '#F73859',
-        })
-        $('#ramen').css({
-            'background-color': '#13161B',
-            'color': '#F73859',
-        })
-        $('#drinks').css({
-            'background-color': '#13161B',
-            'color': '#F73859',
-        })
-    })
-    $('#snack').click(()=>{
-        $('#snack').css({
-            'background-color': '#F73859',
-            'color': '#fff',
-        })
-        $('#sushi').css({
-            'background-color': '#13161B',
-            'color': '#F73859',
-        })
-        $('#soba').css({
-            'background-color': '#13161B',
-            'color': '#F73859',
-        })
-        $('#ramen').css({
-            'background-color': '#13161B',
-            'color': '#F73859',
-        })
-        $('#drinks').css({
-            'background-color': '#13161B',
-            'color': '#F73859',
-        })
-    })
-    $('#soba').click(()=>{
-        $('#soba').css({
-            'background-color': '#F73859',
-            'color': '#fff',
-        })
-        $('#sushi').css({
-            'background-color': '#13161B',
-            'color': '#F73859',
-        })
-        $('#snack').css({
-            'background-color': '#13161B',
-            'color': '#F73859',
-        })
-        $('#ramen').css({
-            'background-color': '#13161B',
-            'color': '#F73859',
-        })
-        $('#drinks').css({
-            'background-color': '#13161B',
-            'color': '#F73859',
-        })
-    })
-    $('#ramen').click(()=>{
-        $('#ramen').css({
-            'background-color': '#F73859',
-            'color': '#fff',
-        })
-        $('#sushi').css({
-            'background-color': '#13161B',
-            'color': '#F73859',
-        })
-        $('#soba').css({
-            'background-color': '#13161B',
-            'color': '#F73859',
-        })
-        $('#snack').css({
-            'background-color': '#13161B',
-            'color': '#F73859',
-        })
-        $('#drinks').css({
-            'background-color': '#13161B',
-            'color': '#F73859',
-        })
-    })
-    $('#drinks').click(()=>{
-        $('#drinks').css({
-            'background-color': '#F73859',
-            'color': '#fff',
-        })
-        $('#sushi').css({
-            'background-color': '#13161B',
-            'color': '#F73859',
-        })
-        $('#soba').css({
-            'background-color': '#13161B',
-            'color': '#F73859',
-        })
-        $('#ramen').css({
-            'background-color': '#13161B',
-            'color': '#F73859',
-        })
-        $('#snack').css({
-            'background-color': '#13161B',
-            'color': '#F73859',
-        })
-    })
-    
-    //dishes appending
-    axios.get('http://localhost:3000/dishes')
-    .then(res=>{
-        console.log(res.data)
-        for (let dish of res.data) {
+        $('.dishesContainer_dishes').empty();
+        for(let dish of res.data){
             if (dish.type == 'sushi') {
                 let $sushiContainer = $('<div class="dishesContainer_sushi"></div>');
                 $sushiContainer.append(`
@@ -473,13 +383,11 @@ $('#menu').click(()=>{
                     </div>
                     <div class="dishesContainer_sushi_rating"></div>
                 `);
-        
                 if (dish.availability == true) {
                     $sushiContainer.find('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>');
                 } else {
                     $sushiContainer.find('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>').css('color', '#959595');
                 }
-        
                 let ratingHtml = '';
                 for (let i = 0; i < 5; i++) {
                     if (i < dish.rating) {
@@ -489,320 +397,290 @@ $('#menu').click(()=>{
                     }
                 }
                 $sushiContainer.find('.dishesContainer_sushi_rating').html(ratingHtml);
-        
                 $('.dishesContainer_dishes').append($sushiContainer);
             }
         }
         ordering()
-        $('#sushi').click(()=>{
-            $('.dishesContainer_dishes').empty();
-            for(let dish of res.data){
-                if (dish.type == 'sushi') {
-                    let $sushiContainer = $('<div class="dishesContainer_sushi"></div>');
-                    $sushiContainer.append(`
-                        <img class='dishesContainer_sushi_img' src="${dish.image}" alt="">
-                        <div class="dishesContainer_sushi_namePriceCon">
-                            <div class="dishesContainer_sushi_name">${dish.name}</div>
-                            <div class="dishesContainer_sushi_price">$${dish.price}</div>
-                        </div>
-                        <div class="dishesContainer_sushi_availability"></div>
-                        <div class="dishesContainer_sushi_btns">
-                            <div class="dishesContainer_sushi_btn" id="dishInfoBtn">Info</div>
-                            <div class="dishesContainer_sushi_btn dishOrderBtn" id="${dish._id}">Order</div>
-                        </div>
-                        <div class="dishesContainer_sushi_rating"></div>
-                    `);
-                    if (dish.availability == true) {
-                        $sushiContainer.find('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>');
-                    } else {
-                        $sushiContainer.find('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>').css('color', '#959595');
-                    }
-                    let ratingHtml = '';
-                    for (let i = 0; i < 5; i++) {
-                        if (i < dish.rating) {
-                            ratingHtml += '<i class="fa-solid fa-star"></i>';
-                        } else {
-                            ratingHtml += '<i class="fa-regular fa-star"></i>';
-                        }
-                    }
-                    $sushiContainer.find('.dishesContainer_sushi_rating').html(ratingHtml);
-                    $('.dishesContainer_dishes').append($sushiContainer);
-                }
-            }
-            ordering()
-        })
-        $('#snack').click(()=>{
-            $('.dishesContainer_dishes').empty();
-                for(let dish of res.data){
-                    if (dish.type == 'snack') {
-                        let $sushiContainer = $('<div class="dishesContainer_sushi"></div>');
-                        $sushiContainer.append(`
-                            <img class='dishesContainer_sushi_img' src="${dish.image}" alt="">
-                            <div class="dishesContainer_sushi_namePriceCon">
-                                <div class="dishesContainer_sushi_name">${dish.name}</div>
-                                <div class="dishesContainer_sushi_price">$${dish.price}</div>
-                            </div>
-                            <div class="dishesContainer_sushi_availability"></div>
-                            <div class="dishesContainer_sushi_btns">
-                                <div class="dishesContainer_sushi_btn" id="dishInfoBtn">Info</div>
-                                <div class="dishesContainer_sushi_btn dishOrderBtn" id="${dish._id}">Order</div>
-                            </div>
-                            <div class="dishesContainer_sushi_rating"></div>
-                        `);
-                        if (dish.availability == true) {
-                            $sushiContainer.find('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>');
-                        } else {
-                            $sushiContainer.find('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>').css('color', '#959595');
-                        }
-                        let ratingHtml = '';
-                        for (let i = 0; i < 5; i++) {
-                            if (i < dish.rating) {
-                                ratingHtml += '<i class="fa-solid fa-star"></i>';
-                            } else {
-                                ratingHtml += '<i class="fa-regular fa-star"></i>';
-                            }
-                        }
-                        $sushiContainer.find('.dishesContainer_sushi_rating').html(ratingHtml);
-                        $('.dishesContainer_dishes').append($sushiContainer);
-                    }
-            }
-            ordering()
-        })
-        $('#soba').click(()=>{
-            $('.dishesContainer_dishes').empty();
-            for(let dish of res.data){
-                if (dish.type == 'soba') {
-                    let $sushiContainer = $('<div class="dishesContainer_sushi"></div>');
-                    $sushiContainer.append(`
-                        <img class='dishesContainer_sushi_img' src="${dish.image}" alt="">
-                        <div class="dishesContainer_sushi_namePriceCon">
-                            <div class="dishesContainer_sushi_name">${dish.name}</div>
-                            <div class="dishesContainer_sushi_price">$${dish.price}</div>
-                        </div>
-                        <div class="dishesContainer_sushi_availability"></div>
-                        <div class="dishesContainer_sushi_btns">
-                            <div class="dishesContainer_sushi_btn" id="dishInfoBtn">Info</div>
-                            <div class="dishesContainer_sushi_btn dishOrderBtn" id="${dish._id}">Order</div>
-                        </div>
-                        <div class="dishesContainer_sushi_rating"></div>
-                    `);
-                    if (dish.availability == true) {
-                        $sushiContainer.find('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>');
-                    } else {
-                        $sushiContainer.find('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>').css('color', '#959595');
-                    }
-                    let ratingHtml = '';
-                    for (let i = 0; i < 5; i++) {
-                        if (i < dish.rating) {
-                            ratingHtml += '<i class="fa-solid fa-star"></i>';
-                        } else {
-                            ratingHtml += '<i class="fa-regular fa-star"></i>';
-                        }
-                    }
-                    $sushiContainer.find('.dishesContainer_sushi_rating').html(ratingHtml);
-                    $('.dishesContainer_dishes').append($sushiContainer);
-                }
-        }
-        ordering()
-        })
-        $('#ramen').click(()=>{
-            $('.dishesContainer_dishes').empty();
-            for(let dish of res.data){
-                if (dish.type == 'ramen') {
-                    let $sushiContainer = $('<div class="dishesContainer_sushi"></div>');
-                    $sushiContainer.append(`
-                        <img class='dishesContainer_sushi_img' src="${dish.image}" alt="">
-                        <div class="dishesContainer_sushi_namePriceCon">
-                            <div class="dishesContainer_sushi_name">${dish.name}</div>
-                            <div class="dishesContainer_sushi_price">$${dish.price}</div>
-                        </div>
-                        <div class="dishesContainer_sushi_availability"></div>
-                        <div class="dishesContainer_sushi_btns">
-                            <div class="dishesContainer_sushi_btn" id="dishInfoBtn">Info</div>
-                            <div class="dishesContainer_sushi_btn dishOrderBtn" id="${dish._id}">Order</div>
-                        </div>
-                        <div class="dishesContainer_sushi_rating"></div>
-                    `);
-                    if (dish.availability == true) {
-                        $sushiContainer.find('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>');
-                    } else {
-                        $sushiContainer.find('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>').css('color', '#959595');
-                    }
-                    let ratingHtml = '';
-                    for (let i = 0; i < 5; i++) {
-                        if (i < dish.rating) {
-                            ratingHtml += '<i class="fa-solid fa-star"></i>';
-                        } else {
-                            ratingHtml += '<i class="fa-regular fa-star"></i>';
-                        }
-                    }
-                    $sushiContainer.find('.dishesContainer_sushi_rating').html(ratingHtml);
-                    $('.dishesContainer_dishes').append($sushiContainer);
-                }
-        }
-        ordering()
-        })
-        $('#drinks').click(()=>{
-            $('.dishesContainer_dishes').empty();
-            for(let dish of res.data){
-                if (dish.type == 'drink') {
-                    let $sushiContainer = $('<div class="dishesContainer_sushi"></div>');
-                    $sushiContainer.append(`
-                        <img class='dishesContainer_sushi_img' src="${dish.image}" alt="">
-                        <div class="dishesContainer_sushi_namePriceCon">
-                            <div class="dishesContainer_sushi_name">${dish.name}</div>
-                            <div class="dishesContainer_sushi_price">$${dish.price}</div>
-                        </div>
-                        <div class="dishesContainer_sushi_availability"></div>
-                        <div class="dishesContainer_sushi_btns">
-                            <div class="dishesContainer_sushi_btn" id="dishInfoBtn">Info</div>
-                            <div class="dishesContainer_sushi_btn dishOrderBtn" id="${dish._id}">Order</div>
-                        </div>
-                        <div class="dishesContainer_sushi_rating"></div>
-                    `);
-                    if (dish.availability == true) {
-                        $sushiContainer.find('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>');
-                    } else {
-                        $sushiContainer.find('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>').css('color', '#959595');
-                    }
-                    let ratingHtml = '';
-                    for (let i = 0; i < 5; i++) {
-                        if (i < dish.rating) {
-                            ratingHtml += '<i class="fa-solid fa-star"></i>';
-                        } else {
-                            ratingHtml += '<i class="fa-regular fa-star"></i>';
-                        }
-                    }
-                    $sushiContainer.find('.dishesContainer_sushi_rating').html(ratingHtml);
-                    $('.dishesContainer_dishes').append($sushiContainer);
-                }
-        }
-        ordering()
-        })
-    
-        //ordering
-        function ordering(){
-            $('.dishOrderBtn').click((e)=>{
-                let dishID = e.target.id;
-                console.log(dishID)
-                let dishToAdd = res.data.find(dish => dish._id === dishID);
-                cartList.push(dishToAdd);
-                console.log(cartList)
-                $('.ordersCount').html(cartList.length)
-            })
-        }
-    
     })
-    
+    $('#snack').click(()=>{
+        $('.dishesContainer_dishes').empty();
+            for(let dish of res.data){
+                if (dish.type == 'snack') {
+                    let $sushiContainer = $('<div class="dishesContainer_sushi"></div>');
+                    $sushiContainer.append(`
+                        <img class='dishesContainer_sushi_img' src="${dish.image}" alt="">
+                        <div class="dishesContainer_sushi_namePriceCon">
+                            <div class="dishesContainer_sushi_name">${dish.name}</div>
+                            <div class="dishesContainer_sushi_price">$${dish.price}</div>
+                        </div>
+                        <div class="dishesContainer_sushi_availability"></div>
+                        <div class="dishesContainer_sushi_btns">
+                            <div class="dishesContainer_sushi_btn" id="dishInfoBtn">Info</div>
+                            <div class="dishesContainer_sushi_btn dishOrderBtn" id="${dish._id}">Order</div>
+                        </div>
+                        <div class="dishesContainer_sushi_rating"></div>
+                    `);
+                    if (dish.availability == true) {
+                        $sushiContainer.find('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>');
+                    } else {
+                        $sushiContainer.find('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>').css('color', '#959595');
+                    }
+                    let ratingHtml = '';
+                    for (let i = 0; i < 5; i++) {
+                        if (i < dish.rating) {
+                            ratingHtml += '<i class="fa-solid fa-star"></i>';
+                        } else {
+                            ratingHtml += '<i class="fa-regular fa-star"></i>';
+                        }
+                    }
+                    $sushiContainer.find('.dishesContainer_sushi_rating').html(ratingHtml);
+                    $('.dishesContainer_dishes').append($sushiContainer);
+                }
+        }
+        ordering()
+    })
+    $('#soba').click(()=>{
+        $('.dishesContainer_dishes').empty();
+        for(let dish of res.data){
+            if (dish.type == 'soba') {
+                let $sushiContainer = $('<div class="dishesContainer_sushi"></div>');
+                $sushiContainer.append(`
+                    <img class='dishesContainer_sushi_img' src="${dish.image}" alt="">
+                    <div class="dishesContainer_sushi_namePriceCon">
+                        <div class="dishesContainer_sushi_name">${dish.name}</div>
+                        <div class="dishesContainer_sushi_price">$${dish.price}</div>
+                    </div>
+                    <div class="dishesContainer_sushi_availability"></div>
+                    <div class="dishesContainer_sushi_btns">
+                        <div class="dishesContainer_sushi_btn" id="dishInfoBtn">Info</div>
+                        <div class="dishesContainer_sushi_btn dishOrderBtn" id="${dish._id}">Order</div>
+                    </div>
+                    <div class="dishesContainer_sushi_rating"></div>
+                `);
+                if (dish.availability == true) {
+                    $sushiContainer.find('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>');
+                } else {
+                    $sushiContainer.find('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>').css('color', '#959595');
+                }
+                let ratingHtml = '';
+                for (let i = 0; i < 5; i++) {
+                    if (i < dish.rating) {
+                        ratingHtml += '<i class="fa-solid fa-star"></i>';
+                    } else {
+                        ratingHtml += '<i class="fa-regular fa-star"></i>';
+                    }
+                }
+                $sushiContainer.find('.dishesContainer_sushi_rating').html(ratingHtml);
+                $('.dishesContainer_dishes').append($sushiContainer);
+            }
     }
+    ordering()
+    })
+    $('#ramen').click(()=>{
+        $('.dishesContainer_dishes').empty();
+        for(let dish of res.data){
+            if (dish.type == 'ramen') {
+                let $sushiContainer = $('<div class="dishesContainer_sushi"></div>');
+                $sushiContainer.append(`
+                    <img class='dishesContainer_sushi_img' src="${dish.image}" alt="">
+                    <div class="dishesContainer_sushi_namePriceCon">
+                        <div class="dishesContainer_sushi_name">${dish.name}</div>
+                        <div class="dishesContainer_sushi_price">$${dish.price}</div>
+                    </div>
+                    <div class="dishesContainer_sushi_availability"></div>
+                    <div class="dishesContainer_sushi_btns">
+                        <div class="dishesContainer_sushi_btn" id="dishInfoBtn">Info</div>
+                        <div class="dishesContainer_sushi_btn dishOrderBtn" id="${dish._id}">Order</div>
+                    </div>
+                    <div class="dishesContainer_sushi_rating"></div>
+                `);
+                if (dish.availability == true) {
+                    $sushiContainer.find('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>');
+                } else {
+                    $sushiContainer.find('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>').css('color', '#959595');
+                }
+                let ratingHtml = '';
+                for (let i = 0; i < 5; i++) {
+                    if (i < dish.rating) {
+                        ratingHtml += '<i class="fa-solid fa-star"></i>';
+                    } else {
+                        ratingHtml += '<i class="fa-regular fa-star"></i>';
+                    }
+                }
+                $sushiContainer.find('.dishesContainer_sushi_rating').html(ratingHtml);
+                $('.dishesContainer_dishes').append($sushiContainer);
+            }
+    }
+    ordering()
+    })
+    $('#drinks').click(()=>{
+        $('.dishesContainer_dishes').empty();
+        for(let dish of res.data){
+            if (dish.type == 'drink') {
+                let $sushiContainer = $('<div class="dishesContainer_sushi"></div>');
+                $sushiContainer.append(`
+                    <img class='dishesContainer_sushi_img' src="${dish.image}" alt="">
+                    <div class="dishesContainer_sushi_namePriceCon">
+                        <div class="dishesContainer_sushi_name">${dish.name}</div>
+                        <div class="dishesContainer_sushi_price">$${dish.price}</div>
+                    </div>
+                    <div class="dishesContainer_sushi_availability"></div>
+                    <div class="dishesContainer_sushi_btns">
+                        <div class="dishesContainer_sushi_btn" id="dishInfoBtn">Info</div>
+                        <div class="dishesContainer_sushi_btn dishOrderBtn" id="${dish._id}">Order</div>
+                    </div>
+                    <div class="dishesContainer_sushi_rating"></div>
+                `);
+                if (dish.availability == true) {
+                    $sushiContainer.find('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>');
+                } else {
+                    $sushiContainer.find('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>').css('color', '#959595');
+                }
+                let ratingHtml = '';
+                for (let i = 0; i < 5; i++) {
+                    if (i < dish.rating) {
+                        ratingHtml += '<i class="fa-solid fa-star"></i>';
+                    } else {
+                        ratingHtml += '<i class="fa-regular fa-star"></i>';
+                    }
+                }
+                $sushiContainer.find('.dishesContainer_sushi_rating').html(ratingHtml);
+                $('.dishesContainer_dishes').append($sushiContainer);
+            }
+    }
+    ordering()
+    })
+
+    //ordering
+    function ordering(){
+        $('.dishOrderBtn').click((e)=>{
+            let dishID = e.target.id;
+            console.log(dishID)
+            let dishToAdd = res.data.find(dish => dish._id === dishID);
+            cartList.push(dishToAdd);
+            console.log(cartList)
+            $('.ordersCount').html(cartList.length)
+        })
+    }
+
+})
+
+}
+function openOrdersPage(){
+    $('.content').empty();
+    $('#orders').css('font-weight', '600')
+    $('#menu').css('font-weight', '400')
+    $('#homePage').css('font-weight', '400')
+    $('#contacts').css('font-weight', '400')
+    $('.content').append(
+        `        <div class="orders screen">
+            <div class="ordersContainer"></div>
+        </div>`
+    )
+    $('.header').css('background-color', '#13161B')
+    $('.header_nav_el').css('color', '#F73859')
+    $('.header').css('padding', '40px')
+    $('.header_logo').attr('src', './menuImgs/red logo.png')
+    $('.ordersCount').css('background-color', '#F73859')
+    $('.ordersCount').css('color', '#13161B')
+    $('select').css('background-color', '#13161B')
+    $('select').css('color', '#F73859')
+    $('.header_theme').css('background-color', '#F73859')
+    $('.header_themeCircle').css('background-color', '#13161B')
+    $('.header_themeCircle').css('border', '#F73859 3px solid')
+    $('.header_burgerRow').css('background-color', '#F73859')
+    $('.order_cancelBtn').click(()=>{
+        $('.orderPopupsContainer').css('display', 'flex')
+    })
+    $('.cancelPopup_noBtn').click(()=>{
+        $('.orderPopupsContainer').css('display', 'none')
+    })
+}
+function openContactsPage(){
+    $('.content').empty();
+    $('#contacts').css('font-weight', '600')
+    $('#menu').css('font-weight', '400')
+    $('#homePage').css('font-weight', '400')
+    $('#orders').css('font-weight', '400')
+    $('.content').append(
+        `        <div class="contacts">
+            <div class="contactsConainer">
+                <div class="connectionForm">
+                    <h1>Connection form</h1>
+                    <h5>Requests? Comments? Feedback? Email us today!</h5>
+                    <div class="connectionForm_form">
+                        <input type="text" id="name" placeholder="Name*">
+                        <input type="text" id="email" placeholder="Email address*">
+                        <textarea id="message" cols="30" rows="10" placeholder="Message*"></textarea>
+                        <div id="sendBtn" >Send</div>
+                    </div>
+    
+                </div>
+                <div class="separetiveLine"></div>
+                <div class="locationAndHours">
+                    <h1>Location & hours</h1>
+                    <h5>Nearest address:  240 E. Front. Lviv, 81010</h5>
+                    <div class="locationAndHours_hoursAndMedia">
+                        <div class="locationAndHours_hours">
+                            <div class="locationAndHours_hours_daysClasification">
+                                <div class="locationAndHours_hours_days">Monday till Friday:</div>
+                                <div class="locationAndHours_hours_hours">8 a.m. - 10 p.m.</div>
+                            </div>
+                            <div class="locationAndHours_hours_daysClasification">
+                                <div class="locationAndHours_hours_days">Saturday:</div>
+                                <div class="locationAndHours_hours_hours">8 a.m. - 9 p.m.</div>
+                            </div>
+                            <div class="locationAndHours_hours_daysClasification">
+                                <div class="locationAndHours_hours_days">Sunday:</div>
+                                <div class="locationAndHours_hours_hours">9 a.m. - 7 p.m.</div>
+                            </div>
+                        </div>
+                        <div class="locationAndHours_media">
+                            <i class="fa-brands fa-telegram"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2572.4311979919994!2d24.03364412371528!3d49.85314431266445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add0fb0b51967%3A0xc322dd8d8b30c48!2z0J3QvtCy0LAg0J_QvtGI0YLQsCDihJY2MA!5e0!3m2!1suk!2sua!4v1713295269704!5m2!1suk!2sua" width="100%" height="232" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a href="https://www.google.com/maps?ll=49.852927,24.035403&z=15&t=m&hl=uk&gl=UA&mapclient=embed&cid=878815286662466632" target="_blank" ><button><i class="fa-solid fa-location-dot"></i>Open in Google Maps</button></a>
+                </div>
+            </div>
+        </div>`
+    )
+    $('.header').css('background-color', '#13161B')
+    $('.header_nav_el').css('color', '#F73859')
+    $('.header').css('padding', '40px 40px 0 40px')
+    $('.header_logo').attr('src', './menuImgs/red logo.png')
+    $('.ordersCount').css('background-color', '#F73859')
+    $('.ordersCount').css('color', '#13161B')
+    $('select').css('background-color', '#13161B')
+    $('select').css('color', '#F73859')
+    $('.header_theme').css('background-color', '#F73859')
+    $('.header_themeCircle').css('background-color', '#13161B')
+    $('.header_themeCircle').css('border', '#F73859 3px solid')
+    $('.header_burgerRow').css('background-color', '#F73859')
+    $('.wrpa').css('overflow-y', 'hidden')
+    $('.order_cancelBtn').click(()=>{
+        $('.orderPopupsContainer').css('display', 'flex')
+    })
+    $('.cancelPopup_noBtn').click(()=>{
+        $('.orderPopupsContainer').css('display', 'none')
+    })
+}
+openHomePage()
+
+//pages changing
+$('#homePage').click(()=>{
+    openHomePage()
+})
+$('#menu').click(()=>{
     openMenuPage()
 })
 $('#orders').click(()=>{
-    function openOrdersPage(){
-        $('.content').empty();
-        $('#orders').css('font-weight', '600')
-        $('#menu').css('font-weight', '400')
-        $('#homePage').css('font-weight', '400')
-        $('#contacts').css('font-weight', '400')
-        $('.content').append(
-            `        <div class="orders screen">
-                <div class="ordersContainer"></div>
-            </div>`
-        )
-        $('.header').css('background-color', '#13161B')
-        $('.header_nav_el').css('color', '#F73859')
-        $('.header').css('padding', '40px')
-        $('.header_logo').attr('src', './menuImgs/red logo.png')
-        $('.ordersCount').css('background-color', '#F73859')
-        $('.ordersCount').css('color', '#13161B')
-        $('select').css('background-color', '#13161B')
-        $('select').css('color', '#F73859')
-        $('.header_theme').css('background-color', '#F73859')
-        $('.header_themeCircle').css('background-color', '#13161B')
-        $('.header_themeCircle').css('border', '#F73859 3px solid')
-        $('.header_burgerRow').css('background-color', '#F73859')
-        $('.order_cancelBtn').click(()=>{
-            $('.orderPopupsContainer').css('display', 'flex')
-        })
-        $('.cancelPopup_noBtn').click(()=>{
-            $('.orderPopupsContainer').css('display', 'none')
-        })
-    }
     openOrdersPage()
 })
 $('#contacts').click(()=>{
-    function openContactsPage(){
-        $('.content').empty();
-        $('#contacts').css('font-weight', '600')
-        $('#menu').css('font-weight', '400')
-        $('#homePage').css('font-weight', '400')
-        $('#orders').css('font-weight', '400')
-        $('.content').append(
-            `        <div class="contacts">
-                <div class="contactsConainer">
-                    <div class="connectionForm">
-                        <h1>Connection form</h1>
-                        <h5>Requests? Comments? Feedback? Email us today!</h5>
-                        <div class="connectionForm_form">
-                            <input type="text" id="name" placeholder="Name*">
-                            <input type="text" id="email" placeholder="Email address*">
-                            <textarea id="message" cols="30" rows="10" placeholder="Message*"></textarea>
-                            <div id="sendBtn" >Send</div>
-                        </div>
-        
-                    </div>
-                    <div class="separetiveLine"></div>
-                    <div class="locationAndHours">
-                        <h1>Location & hours</h1>
-                        <h5>Nearest address:  240 E. Front. Lviv, 81010</h5>
-                        <div class="locationAndHours_hoursAndMedia">
-                            <div class="locationAndHours_hours">
-                                <div class="locationAndHours_hours_daysClasification">
-                                    <div class="locationAndHours_hours_days">Monday till Friday:</div>
-                                    <div class="locationAndHours_hours_hours">8 a.m. - 10 p.m.</div>
-                                </div>
-                                <div class="locationAndHours_hours_daysClasification">
-                                    <div class="locationAndHours_hours_days">Saturday:</div>
-                                    <div class="locationAndHours_hours_hours">8 a.m. - 9 p.m.</div>
-                                </div>
-                                <div class="locationAndHours_hours_daysClasification">
-                                    <div class="locationAndHours_hours_days">Sunday:</div>
-                                    <div class="locationAndHours_hours_hours">9 a.m. - 7 p.m.</div>
-                                </div>
-                            </div>
-                            <div class="locationAndHours_media">
-                                <i class="fa-brands fa-telegram"></i>
-                                <i class="fa-brands fa-facebook"></i>
-                                <i class="fa-brands fa-instagram"></i>
-                                <i class="fa-brands fa-x-twitter"></i>
-                            </div>
-                        </div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2572.4311979919994!2d24.03364412371528!3d49.85314431266445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add0fb0b51967%3A0xc322dd8d8b30c48!2z0J3QvtCy0LAg0J_QvtGI0YLQsCDihJY2MA!5e0!3m2!1suk!2sua!4v1713295269704!5m2!1suk!2sua" width="100%" height="232" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <a href="https://www.google.com/maps?ll=49.852927,24.035403&z=15&t=m&hl=uk&gl=UA&mapclient=embed&cid=878815286662466632" target="_blank" ><button><i class="fa-solid fa-location-dot"></i>Open in Google Maps</button></a>
-                    </div>
-                </div>
-            </div>`
-        )
-        $('.header').css('background-color', '#13161B')
-        $('.header_nav_el').css('color', '#F73859')
-        $('.header').css('padding', '40px 40px 0 40px')
-        $('.header_logo').attr('src', './menuImgs/red logo.png')
-        $('.ordersCount').css('background-color', '#F73859')
-        $('.ordersCount').css('color', '#13161B')
-        $('select').css('background-color', '#13161B')
-        $('select').css('color', '#F73859')
-        $('.header_theme').css('background-color', '#F73859')
-        $('.header_themeCircle').css('background-color', '#13161B')
-        $('.header_themeCircle').css('border', '#F73859 3px solid')
-        $('.header_burgerRow').css('background-color', '#F73859')
-        $('.wrpa').css('overflow-y', 'hidden')
-        $('.order_cancelBtn').click(()=>{
-            $('.orderPopupsContainer').css('display', 'flex')
-        })
-        $('.cancelPopup_noBtn').click(()=>{
-            $('.orderPopupsContainer').css('display', 'none')
-        })
-    }
     openContactsPage()
 })
 
@@ -1287,4 +1165,16 @@ $('.header_burger').click(()=>{
 })
 $('.burger_xmark').click(()=>{
     $('.burgerCon').css('display', 'none')
+})
+$('#burger_homePage').click(()=>{
+    openHomePage();
+})
+$('#burger_menu').click(()=>{
+    openMenuPage()
+})
+$('#burger_orders').click(()=>{
+    openOrdersPage();
+})
+$('#burger_contacts').click(()=>{
+    openContactsPage();
 })
