@@ -3,6 +3,9 @@
     width: 100%;
     overflow-x: hidden;
   }
+  .wrap .header {
+    padding: 20px;
+  }
   .wrap .header .header_nav {
     display: none;
   }
