@@ -1170,13 +1170,17 @@ $('.burger_xmark').click(()=>{
 })
 $('#burger_homePage').click(()=>{
     openHomePage();
+    $('.burgerCon').css('display', 'none')
 })
 $('#burger_menu').click(()=>{
     openMenuPage()
+    $('.burgerCon').css('display', 'none')
 })
 $('#burger_orders').click(()=>{
     openOrdersPage();
+    $('.burgerCon').css('display', 'none')
 })
 $('#burger_contacts').click(()=>{
     openContactsPage();
+    $('.burgerCon').css('display', 'none')
 })
