@@ -8,6 +8,7 @@ const PORT = 3000;
 const path = require('path');
 const fs = require('fs');
 const mongoose = require('mongoose')
+app.use(express.static(__dirname + '/public'));
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(express.json())
 mongoose.connect(`mongodb+srv://root:s7vVHHEAqtPNPIUB@root.c1gqwpt.mongodb.net/?retryWrites=true&w=majority&appName=root`)
