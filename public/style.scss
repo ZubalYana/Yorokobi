@@ -893,76 +893,86 @@
                 text-decoration: none;
             }
         }
-        .ordersContainer{
-            width: 100%;
-            min-height: 75vh;
-            margin-top: 40px;
-            .order{
+        .leftPart{
+            width: 50%;
+            h3{
+                color: #fff;
+                font-size: 36px;
+                font-weight: 600;
+                margin-top: 20px;
+            }
+            .ordersContainer{
                 width: 100%;
-                height: 137px;
-                border: #F73859 2px solid;
-                border-radius: 30px;
-                display: flex;
-                padding: 16px 40px;
-                align-items: center;
-                margin-bottom: 50px;
-                .order_name{
-                    color: #F73859;
-                    font-size: 40px;
-                    font-weight: 600;
-                    width: 255px;
-                }
-                .order_separetiveLine{
-                    width: 3px;
-                    height: 102px;
-                    background-color: #F73859;
-                    border-radius: 6px;
-                }
-                .orderBtns{
-                    width: 420px;
+                height: 70vh;
+                margin-top: 40px;
+                .order{
+                    width: 100%;
+                    height: 100px;
+                    border: #F73859 2px solid;
+                    border-radius: 30px;
                     display: flex;
-                    justify-content: center;
-                    .orderBtn{
-                        width: 152px;
-                        height: 72px;
-                        background-color: #13161B;
-                        color: #fff;
-                        border: 1px #fff solid;
+                    padding: 16px 40px;
+                    align-items: center;
+                    margin-bottom: 50px;
+                    .order_name{
+                        color: #F73859;
+                        font-size: 20px;
+                        font-weight: 600;
+                        width: 100px;
+                    }
+                    .order_separetiveLine{
+                        width: 3px;
+                        height: 102px;
+                        background-color: #F73859;
+                        border-radius: 6px;
+                    }
+                    .orderBtns{
+                        width: 430px;
                         display: flex;
                         justify-content: center;
-                        align-items: center;
-                        font-size: 32px;
-                        font-weight: 400;
-                        border-radius: 20px;
-                        cursor: pointer;
-                        transition: 0.5s ease;
+                        .orderBtn{
+                            width: 80px;
+                            height: 55px;
+                            background-color: #13161B;
+                            color: #fff;
+                            border: 1px #fff solid;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 20px;
+                            font-weight: 400;
+                            border-radius: 20px;
+                            cursor: pointer;
+                            transition: 0.5s ease;
+                        }
+                        .orderBtn:hover{
+                            background-color: #F73859;
+                            color: #fff;
+                            border: 1px #F73859 solid;
+                        }
+                        .order_infoBtn{
+                            margin-right: 30px;
+                        }
                     }
-                    .orderBtn:hover{
-                        background-color: #F73859;
+                    .order_time{
+                        width: 380px;
                         color: #fff;
-                        border: 1px #F73859 solid;
+                        font-size: 24px;
+                        font-weight: 300;
+                        padding: 40px;
                     }
-                    .order_infoBtn{
-                        margin-right: 30px;
+                    .order_price{
+                        width: 290px;
+                        display: flex;
+                        justify-content: center;
+                        font-size: 40px;
+                        font-weight: 600;
+                        color: #fff;
                     }
-                }
-                .order_time{
-                    width: 380px;
-                    color: #fff;
-                    font-size: 24px;
-                    font-weight: 300;
-                    padding: 40px;
-                }
-                .order_price{
-                    width: 290px;
-                    display: flex;
-                    justify-content: center;
-                    font-size: 40px;
-                    font-weight: 600;
-                    color: #fff;
                 }
             }
         }
+
     }
     .contacts{
         padding: 0px 40px 40px 40px;
