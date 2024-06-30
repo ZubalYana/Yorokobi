@@ -585,8 +585,6 @@ function openOrdersPage(){
                     <div class="orderBtn order_cancelBtn">Cancel</div>
                 </div>
                 <div class="order_separetiveLine"></div>
-                <div class="order_time">Will be ready and serve at: 20:08</div>
-                <div class="order_separetiveLine"></div>
                 <div class="order_price">$${order.price}</div>
             </div>`
         )
