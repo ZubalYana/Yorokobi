@@ -543,9 +543,17 @@ function openOrdersPage(){
     $('#homePage').css('font-weight', '400')
     $('#contacts').css('font-weight', '400')
     $('.content').append(
-        `        <div class="orders screen">
-            <div class="ordersContainer"></div>
-        </div>`
+        `
+        <div class="orders screen">
+    <div class="leftPart">
+        <h3>You selected:</h3>
+        <div class="ordersContainer"></div>
+    </div>
+    <div class="rightPart">
+        <h3>Comfirm order:</h3>
+    </div>
+</div>
+        `
     )
     $('.header').css('background-color', '#13161B')
     $('.header_nav_el').css('color', '#F73859')
