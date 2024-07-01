@@ -903,17 +903,18 @@
             }
             .ordersContainer{
                 width: 100%;
-                height: 70vh;
+                height: 65vh;
                 margin-top: 40px;
+                overflow-y: auto;
                 .order{
-                    width: 100%;
+                    width: 96%;
                     height: 100px;
                     border: #F73859 2px solid;
                     border-radius: 30px;
                     display: flex;
                     padding: 16px 40px;
                     align-items: center;
-                    margin-bottom: 50px;
+                    margin-bottom: 20px;
                     .order_name{
                         color: #F73859;
                         font-size: 24px;
