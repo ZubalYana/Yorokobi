@@ -551,6 +551,27 @@ function openOrdersPage(){
     </div>
     <div class="rightPart">
         <h3>Comfirm order:</h3>
+                            <div class="paymentContainer">
+                        <h3 id="chosenDishesCount"></h3>
+                        <h3 id="totalAmount"></h3>
+                        <h2>Buy just in 1 click! Pay with:</h2>
+                        <div class="paymentMethods">
+                            <img class="paymentMethod" src="./imgs/google-pay.png" alt="">
+                            <img class="paymentMethod" src="./imgs/apple-pay.png" alt="">
+                        </div>
+                        <h2>Or enter your data:</h2>
+                        <div class="inputsContainer">
+                            <input type="text" id="userName" placeholder="Name" class="payment_input">
+                            <input type="text" id="userPhone" placeholder="Phone" class="payment_input">
+                        </div>
+                        <input type="text" placeholder="Card Number" class="payment_input">
+                        <div class="inputsContainer">
+                            <input type="text" id="expiryDate" placeholder="Expiry Date" class="payment_input">
+                            <input type="text" id="securityCode" placeholder="Security Code" class="payment_input">
+                        </div>
+                        <input type="text" placeholder="Message" id="userMessage" class="payment_input">
+                        <div id="buyBtn">Buy now</div>
+                    </div>
     </div>
 </div>
         `
