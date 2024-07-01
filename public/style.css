@@ -789,6 +789,7 @@
 }
 .wrap .orders {
   padding: 40px;
+  display: flex;
 }
 .wrap .orders .screen {
   width: 100%;
@@ -970,6 +971,15 @@
   font-size: 28px;
   font-weight: 600;
   color: #fff;
+}
+.wrap .orders .rightPart {
+  width: 50%;
+}
+.wrap .orders .rightPart h3 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 20px;
 }
 .wrap .contacts {
   padding: 0px 40px 40px 40px;

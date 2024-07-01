@@ -794,6 +794,7 @@
     }
     .orders{
         padding: 40px;
+        display: flex;
         .screen{
             width: 100%;
             min-height: 100vh;
@@ -971,6 +972,15 @@
                         color: #fff;
                     }
                 }
+            }
+        }
+        .rightPart{
+            width: 50%;
+            h3{
+                color: #fff;
+                font-size: 36px;
+                font-weight: 600;
+                margin-top: 20px;
             }
         }
 
