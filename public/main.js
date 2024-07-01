@@ -556,8 +556,11 @@ function openOrdersPage(){
                         <h3 id="totalAmount"></h3>
                         <h2>Buy just in 1 click! Pay with:</h2>
                         <div class="paymentMethods">
-                            <img class="paymentMethod" src="./imgs/google-pay.png" alt="">
-                            <img class="paymentMethod" src="./imgs/apple-pay.png" alt="">
+                            <div class="paymentMethod_con"><img class="paymentMethod" src="./imgs/google-pay.png" alt="">
+</div>
+<div class="paymentMethod_con"><img class="paymentMethod" src="./imgs/apple-pay.png" alt="">
+</div>
+                            
                         </div>
                         <h2>Or enter your data:</h2>
                         <div class="inputsContainer">

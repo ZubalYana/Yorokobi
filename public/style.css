@@ -1002,7 +1002,11 @@
   justify-content: space-between;
   margin: 10px 0 15px 0;
 }
-.wrap .orders .rightPart .paymentContainer .paymentMethods .paymentMethod {
+.wrap .orders .rightPart .paymentContainer .paymentMethods .paymentMethod_con {
+  padding: 3px 5px;
+  background-color: #fff;
+}
+.wrap .orders .rightPart .paymentContainer .paymentMethods .paymentMethod_con .paymentMethod {
   width: 60px;
   cursor: pointer;
 }

@@ -1001,10 +1001,16 @@
                     display: flex;
                     justify-content: space-between;
                     margin: 10px 0 15px 0;
-                    .paymentMethod{
-                        width: 60px;
-                        cursor: pointer;
+                    .paymentMethod_con{
+                        padding: 3px 5px;
+                        background-color: #fff;
+
+                        .paymentMethod{
+                            width: 60px;
+                            cursor: pointer;
+                        }
                     }
+
                 }
                 .inputsContainer{
                     width: 100%;
