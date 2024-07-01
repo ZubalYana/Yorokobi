@@ -997,13 +997,16 @@
                     margin-top: 15px;
                 }
                 .paymentMethods{
-                    width: 40%;
+                    width: 30%;
                     display: flex;
                     justify-content: space-between;
                     margin: 10px 0 15px 0;
                     .paymentMethod_con{
-                        padding: 3px 5px;
+                        padding: 5px 7px;
                         background-color: #fff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
 
                         .paymentMethod{
                             width: 60px;
