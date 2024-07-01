@@ -795,6 +795,7 @@
     .orders{
         padding: 40px;
         display: flex;
+        justify-content: space-between;
         .screen{
             width: 100%;
             min-height: 100vh;
@@ -975,7 +976,7 @@
             }
         }
         .rightPart{
-            width: 50%;
+            width: 45%;
             h3{
                 color: #fff;
                 font-size: 36px;
@@ -994,7 +995,6 @@
                     font-size: 16px;
                     font-weight: 400;
                     color: #ffffff;
-                    margin-top: 15px;
                 }
                 .paymentMethods{
                     width: 30%;

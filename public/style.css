@@ -790,6 +790,7 @@
 .wrap .orders {
   padding: 40px;
   display: flex;
+  justify-content: space-between;
 }
 .wrap .orders .screen {
   width: 100%;
@@ -973,7 +974,7 @@
   color: #fff;
 }
 .wrap .orders .rightPart {
-  width: 50%;
+  width: 45%;
 }
 .wrap .orders .rightPart h3 {
   color: #fff;
@@ -994,7 +995,6 @@
   font-size: 16px;
   font-weight: 400;
   color: #ffffff;
-  margin-top: 15px;
 }
 .wrap .orders .rightPart .paymentContainer .paymentMethods {
   width: 30%;
