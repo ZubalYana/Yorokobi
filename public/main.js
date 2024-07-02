@@ -617,7 +617,7 @@ function openOrdersPage(){
     //ordering
 $('#buyBtn').click(() => {
     let data = {
-        list: cartlist,
+        list: cartList,
         name: $('#userName').val(),
         phone: $('#userPhone').val(),
         message: $('#userMessage').val(),
@@ -626,7 +626,7 @@ $('#buyBtn').click(() => {
     axios.post('/new-order', data)
         .then(res => {
             console.log(`Order data was sended`);
-                cartlist = [];
+                cartList = [];
                 renderCart()
                 $('.payment_input').val('')
         })
