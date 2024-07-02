@@ -109,6 +109,21 @@ app.get('/dishes', async (req, res)=>{
         res.status(500).json({ message: err })
     }
 })
+app.post('/new-order', async (req, res) => {
+    try {
+        let { list, name, phone, message } = req.body;
+        const order = new Orders({ list, name, phone, status: false, message });
+        await order.save();
+        console.log('New order saved');
+        res.status(201).json(order);
+        //telegram bot 
+        // await bot.sendMessage(1132590035, `You have a new order! Come and see: https://daunku.onrender.com/admin/`);
+        // console.log('Telegram message sent');
+
+    } catch (err) {
+        res.status(500).json({ message: err });
+    }
+})
 app.use((err, req, res, next) => {
     console.error(err);
     res.status(500).send('Something went wrong!');
