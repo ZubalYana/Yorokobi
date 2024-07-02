@@ -613,6 +613,24 @@ function openOrdersPage(){
             </div>`
         )
     }
+
+    //ordering
+$('#buyBtn').click(() => {
+    let data = {
+        list: cartlist,
+        name: $('#userName').val(),
+        phone: $('#userPhone').val(),
+        message: $('#userMessage').val(),
+    };
+    console.log(data);
+    axios.post('/new-order', data)
+        .then(res => {
+            console.log(`Order data was sended`);
+                cartlist = [];
+                renderCart()
+                $('.payment_input').val('')
+        })
+})
 }
 function openContactsPage(){
     $('.content').empty();
