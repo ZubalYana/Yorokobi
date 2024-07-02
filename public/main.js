@@ -627,7 +627,6 @@ $('#buyBtn').click(() => {
         .then(res => {
             console.log(`Order data was sended`);
                 cartList = [];
-                renderCart()
                 $('.payment_input').val('')
         })
 })
