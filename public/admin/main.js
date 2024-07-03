@@ -232,60 +232,6 @@ $('#orders').click(()=>{
     <h1>Recent orders:</h1>
     <div class="ordersContainer">
     <div class="order">
-    <div class="order_imgCon">
-    <img src="./imgs/sushi 1.png" alt="" class="order_img">
-    </div>
-    <div class="order_basicInfo">
-    <div class="order_dishName">Soho sushi</div>
-    <div class="order_id">#763291563</div>
-</div>
-<div class="order_customerInfo">
-<div class="order_customerName">Alexa Tuner</div>
-<div class="order_customerPhone">+096 898 34 82</div>
-</div>
-<div class="order_typeInfo">
-<div class="order_type">In the restaurant</div>
-<div class="order_additionalType">Table №14</div>
-</div>
-<div class="order_price">$7.00</div>
-<select id="dishStatus">
-    <option value="inProgress">In progress</option>
-    <option value="accepted">Accepted </option>
-    <option value="canceled">Canceled</option>
-
-</select>
-    </div>
-
-    <div class="order">
-    <div class="order_imgCon">
-    <img src="./imgs/sushi 18.png" alt="" class="order_img">
-    </div>
-    <div class="order_basicInfo">
-    <div class="order_dishName">Soho sushi</div>
-    <div class="order_id">#763291563</div>
-</div>
-<div class="order_customerInfo">
-<div class="order_customerName">Alexa Tuner</div>
-<div class="order_customerPhone">+096 898 34 82</div>
-</div>
-<div class="order_typeInfo">
-<div class="order_type">In the restaurant</div>
-<div class="order_additionalType">Table №14</div>
-</div>
-<div class="order_price">$7.00</div>
-<select id="dishStatus">
-    <option value="inProgress">In progress</option>
-    <option value="accepted">Accepted </option>
-    <option value="canceled">Canceled</option>
-
-</select>
-    </div>
-
-
-    <div class="order">
-    <div class="order_imgCon">
-    <img src="./imgs/sushi 30.png" alt="" class="order_img">
-    </div>
     <div class="order_basicInfo">
     <div class="order_dishName">Soho sushi</div>
     <div class="order_id">#763291563</div>
