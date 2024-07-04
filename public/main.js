@@ -421,6 +421,8 @@ $('.order').on('click', '.order_cancelBtn', function(e) {
         }
     }
     saveCartToCookie();
+    $('.ordersCount').html(cartList.length);
+
 });
 }
 function openContactsPage(){
