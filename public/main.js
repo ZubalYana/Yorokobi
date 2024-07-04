@@ -522,16 +522,17 @@ axios.get('http://localhost:3000/dishes')
     })
 
     //ordering
-    function ordering(){
-        $('.dishOrderBtn').click((e)=>{
-            let dishID = e.target.id;
-            console.log(dishID)
-            let dishToAdd = res.data.find(dish => dish._id === dishID);
-            cartList.push(dishToAdd);
-            console.log(cartList)
-            $('.ordersCount').html(cartList.length)
-        })
-    }
+    // function ordering(){
+    //     $('.dishOrderBtn').click((e)=>{
+    //         let dishID = e.target.id;
+    //         console.log(dishID)
+    //         let dishToAdd = res.data.find(dish => dish._id === dishID);
+    //         cartList.push(dishToAdd);
+    //         console.log(cartList)
+    //         $('.ordersCount').html(cartList.length)
+    //         saveCartToCookie();
+    //     })
+    // }
 
 })
 
@@ -1146,56 +1147,6 @@ $('.cookiesPopup_right').hover(
 )
 
 //cookies popup functionality
-$(document).ready(function() {
-    checkPopupCookie();
-});
-function setCookie(cname, cvalue, exdays) {
-    const d = new Date();
-    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-    const expires = "expires=" + d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-function getCookie(cname) {
-    const name = cname + "=";
-    const decodedCookie = decodeURIComponent(document.cookie);
-    const ca = decodedCookie.split(';');
-    for (let i = 0; i < ca.length; i++) {
-        let c = ca[i];
-        while (c.charAt(0) === ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) === 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
-}
-function checkPopupCookie() {
-    const popupClosed = getCookie("popupClosed");
-    if (popupClosed === "true") {
-        console.log("Popup cookie detected. Closing popup.");
-        $(".cookiesPopupCon").css('display', 'none');
-    } else {
-        console.log("No popup cookie detected. Showing popup.");
-        $(".cookiesPopupCon").css('display', 'flex');
-        
-        $(".cookiesPopup_accept").click(function() {
-            console.log("Accept cookies button clicked.");
-            closePopup();
-        });
-    }
-}
-function closePopup() {
-    console.log("Closing popup and setting cookie.");
-    $(".cookiesPopupCon").css('display', 'none');
-    setCookie("popupClosed", "true", 365);
-}
-//cookies functionality 
-$(document).ready(function() {
-    checkPopupCookie();
-    loadCartFromCookie();
-});
-
 // Function to save the cart list to a cookie
 function saveCartToCookie() {
     const cartlistString = JSON.stringify(cartList);
@@ -1208,6 +1159,7 @@ function loadCartFromCookie() {
     if (cartlistString) {
         cartList = JSON.parse(cartlistString);
     }
+    $('.ordersCount').html(cartList.length);  // Update the cart count display
 }
 
 // Function to set a cookie
@@ -1215,7 +1167,7 @@ function setCookie(cname, cvalue, exdays) {
     const d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
     const expires = "expires=" + d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    document.cookie = `${cname}=${cvalue};${expires};path=/`;
 }
 
 // Function to get a cookie
@@ -1224,10 +1176,7 @@ function getCookie(cname) {
     const decodedCookie = decodeURIComponent(document.cookie);
     const ca = decodedCookie.split(';');
     for (let i = 0; i < ca.length; i++) {
-        let c = ca[i];
-        while (c.charAt(0) === ' ') {
-            c = c.substring(1);
-        }
+        let c = ca[i].trim();
         if (c.indexOf(name) === 0) {
             return c.substring(name.length, c.length);
         }
@@ -1235,6 +1184,47 @@ function getCookie(cname) {
     return "";
 }
 
+// Ordering function
+function ordering(dishes) {
+    $('.dishOrderBtn').click((e) => {
+        let dishID = e.target.id;
+        let dishToAdd = dishes.find(dish => dish._id === dishID);
+        cartList.push(dishToAdd);
+        $('.ordersCount').html(cartList.length);
+        saveCartToCookie();
+    });
+}
+
+// Cookies popup functionality
+$(document).ready(function() {
+    checkPopupCookie();
+    loadCartFromCookie();
+});
+
+// Function to check and handle the popup cookie
+function checkPopupCookie() {
+    const popupClosed = getCookie("popupClosed");
+    if (popupClosed === "true") {
+        $(".cookiesPopupCon").css('display', 'none');
+    } else {
+        $(".cookiesPopupCon").css('display', 'flex');
+        $(".cookiesPopup_accept").click(function() {
+            closePopup();
+        });
+    }
+}
+
+// Function to close the popup and set the cookie
+function closePopup() {
+    $(".cookiesPopupCon").css('display', 'none');
+    setCookie("popupClosed", "true", 365);
+}
+
+// Initial call to load the cart and set up the page
+$(document).ready(function() {
+    checkPopupCookie();
+    loadCartFromCookie();
+});
 //burger work
 $('.header_burger').click(()=>{
     $('.burgerCon').css('display', 'flex')
