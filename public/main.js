@@ -268,14 +268,12 @@ $(document).ready(function () {
     checkPopupCookie();
     loadCartFromCookie();
 });
-
 function setCookie(cname, cvalue, exdays) {
     const d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
     const expires = "expires=" + d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
-
 function getCookie(cname) {
     const name = cname + "=";
     const decodedCookie = decodeURIComponent(document.cookie);
@@ -291,7 +289,6 @@ function getCookie(cname) {
     }
     return "";
 }
-
 function checkPopupCookie() {
     const popupClosed = getCookie("popupClosed");
     if (popupClosed === "true") {
@@ -303,19 +300,14 @@ function checkPopupCookie() {
         });
     }
 }
-
 function closePopup() {
     $(".cookiesPopupCon").css('display', 'none');
     setCookie("popupClosed", "true", 365);
 }
-
-// Function to save the cart list to a cookie
 function saveCartToCookie() {
     const cartlistString = JSON.stringify(cartList);
     setCookie('cartList', cartlistString, 365);
 }
-
-// Function to load the cart list from a cookie
 function loadCartFromCookie() {
     const cartlistString = getCookie('cartList');
     if (cartlistString) {
@@ -323,7 +315,6 @@ function loadCartFromCookie() {
         $('.ordersCount').html(cartList.length);
     }
 }
-
 function openOrdersPage(){
     $('.content').empty();
     $('#orders').css('font-weight', '600')
