@@ -1190,6 +1190,50 @@ function closePopup() {
     $(".cookiesPopupCon").css('display', 'none');
     setCookie("popupClosed", "true", 365);
 }
+//cookies functionality 
+$(document).ready(function() {
+    checkPopupCookie();
+    loadCartFromCookie();
+});
+
+// Function to save the cart list to a cookie
+function saveCartToCookie() {
+    const cartlistString = JSON.stringify(cartList);
+    setCookie('cartList', cartlistString, 365);
+}
+
+// Function to load the cart list from a cookie
+function loadCartFromCookie() {
+    const cartlistString = getCookie('cartList');
+    if (cartlistString) {
+        cartList = JSON.parse(cartlistString);
+    }
+}
+
+// Function to set a cookie
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+// Function to get a cookie
+function getCookie(cname) {
+    const name = cname + "=";
+    const decodedCookie = decodeURIComponent(document.cookie);
+    const ca = decodedCookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) === ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) === 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
 
 //burger work
 $('.header_burger').click(()=>{
