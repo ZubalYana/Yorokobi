@@ -147,200 +147,59 @@ function openHomePage(){
     $('.header_burgerRow').css('background-color', '#13161B')
 
 }
-function openMenuPage(){
+function openMenuPage() {
     $('.content').empty();
-    $('#menu').css('font-weight', '600')
-    $('#homePage').css('font-weight', '400')
-    $('#orders').css('font-weight', '400')
-    $('#contacts').css('font-weight', '400')
-    $('.content').append(
-        `<div class="menu">
-                    <div class="dishesContainer">
+    $('#menu').css('font-weight', '600');
+    $('#homePage').css('font-weight', '400');
+    $('#orders').css('font-weight', '400');
+    $('#contacts').css('font-weight', '400');
+    $('.content').append(`
+        <div class="menu">
+            <div class="dishesContainer">
                 <div class="dishesContainer_typeChoise">
                     <div class="dishesContainer_typeChoise_item" id="sushi">Sushi</div>
                     <div class="dishesContainer_typeChoise_item" id="soba">Soba</div>
                     <div class="dishesContainer_typeChoise_item" id="ramen">Ramen</div>
                     <div class="dishesContainer_typeChoise_item" id="snack">Snacks</div>
-                    <div class="dishesContainer_typeChoise_item" id="drinks">Drings</div>
+                    <div class="dishesContainer_typeChoise_item" id="drinks">Drinks</div>
                 </div>
                 <div class="dishesContainer_dishes"></div>
             </div>
-        </div>`
-    )
-    $('.header').css('background-color', '#13161B')
-    $('.header_nav_el').css('color', '#F73859')
-    $('.header').css('padding', '40px')
-    $('.header_logo').attr('src', './menuImgs/red logo.png')
-    $('.ordersCount').css('background-color', '#F73859')
-    $('.ordersCount').css('color', '#13161B')
-    $('select').css('background-color', '#13161B')
-    $('select').css('color', '#F73859')
-    $('.header_theme').css('background-color', '#F73859')
-    $('.header_themeCircle').css('background-color', '#13161B')
-    $('.header_themeCircle').css('border', '#F73859 3px solid')
-    $('.header_burgerRow').css('background-color', '#F73859')
+        </div>
+    `);
 
+    $('.header').css('background-color', '#13161B');
+    $('.header_nav_el').css('color', '#F73859');
+    $('.header').css('padding', '40px');
+    $('.header_logo').attr('src', './menuImgs/red logo.png');
+    $('.ordersCount').css('background-color', '#F73859');
+    $('.ordersCount').css('color', '#13161B');
+    $('select').css('background-color', '#13161B');
+    $('select').css('color', '#F73859');
+    $('.header_theme').css('background-color', '#F73859');
+    $('.header_themeCircle').css('background-color', '#13161B');
+    $('.header_themeCircle').css('border', '#F73859 3px solid');
+    $('.header_burgerRow').css('background-color', '#F73859');
 
+    function handleTypeClick(type) {
+        $('.dishesContainer_typeChoise_item').css({
+            'background-color': '#13161B',
+            'color': '#F73859'
+        });
+        $(`#${type}`).css({
+            'background-color': '#F73859',
+            'color': '#fff'
+        });
 
-//type of dish clicked apperience 
-$('#sushi').click(()=>{
-    $('#sushi').css({
-        'background-color': '#F73859',
-        'color': '#fff',
-    })
-    $('#snack').css({
-        'background-color': '#13161B',
-        'color': '#F73859',
-    })
-    $('#soba').css({
-        'background-color': '#13161B',
-        'color': '#F73859',
-    })
-    $('#ramen').css({
-        'background-color': '#13161B',
-        'color': '#F73859',
-    })
-    $('#drinks').css({
-        'background-color': '#13161B',
-        'color': '#F73859',
-    })
-})
-$('#snack').click(()=>{
-    $('#snack').css({
-        'background-color': '#F73859',
-        'color': '#fff',
-    })
-    $('#sushi').css({
-        'background-color': '#13161B',
-        'color': '#F73859',
-    })
-    $('#soba').css({
-        'background-color': '#13161B',
-        'color': '#F73859',
-    })
-    $('#ramen').css({
-        'background-color': '#13161B',
-        'color': '#F73859',
-    })
-    $('#drinks').css({
-        'background-color': '#13161B',
-        'color': '#F73859',
-    })
-})
-$('#soba').click(()=>{
-    $('#soba').css({
-        'background-color': '#F73859',
-        'color': '#fff',
-    })
-    $('#sushi').css({
-        'background-color': '#13161B',
-        'color': '#F73859',
-    })
-    $('#snack').css({
-        'background-color': '#13161B',
-        'color': '#F73859',
-    })
-    $('#ramen').css({
-        'background-color': '#13161B',
-        'color': '#F73859',
-    })
-    $('#drinks').css({
-        'background-color': '#13161B',
-        'color': '#F73859',
-    })
-})
-$('#ramen').click(()=>{
-    $('#ramen').css({
-        'background-color': '#F73859',
-        'color': '#fff',
-    })
-    $('#sushi').css({
-        'background-color': '#13161B',
-        'color': '#F73859',
-    })
-    $('#soba').css({
-        'background-color': '#13161B',
-        'color': '#F73859',
-    })
-    $('#snack').css({
-        'background-color': '#13161B',
-        'color': '#F73859',
-    })
-    $('#drinks').css({
-        'background-color': '#13161B',
-        'color': '#F73859',
-    })
-})
-$('#drinks').click(()=>{
-    $('#drinks').css({
-        'background-color': '#F73859',
-        'color': '#fff',
-    })
-    $('#sushi').css({
-        'background-color': '#13161B',
-        'color': '#F73859',
-    })
-    $('#soba').css({
-        'background-color': '#13161B',
-        'color': '#F73859',
-    })
-    $('#ramen').css({
-        'background-color': '#13161B',
-        'color': '#F73859',
-    })
-    $('#snack').css({
-        'background-color': '#13161B',
-        'color': '#F73859',
-    })
-})
-
-//dishes appending
-axios.get('http://localhost:3000/dishes')
-.then(res=>{
-    console.log(res.data)
-    for (let dish of res.data) {
-        if (dish.type == 'sushi') {
-            let $sushiContainer = $('<div class="dishesContainer_sushi"></div>');
-            $sushiContainer.append(`
-                <img class='dishesContainer_sushi_img' src="${dish.image}" alt="">
-                <div class="dishesContainer_sushi_namePriceCon">
-                    <div class="dishesContainer_sushi_name">${dish.name}</div>
-                    <div class="dishesContainer_sushi_price">$${dish.price}</div>
-                </div>
-                <div class="dishesContainer_sushi_availability"></div>
-                <div class="dishesContainer_sushi_btns">
-                    <div class="dishesContainer_sushi_btn" id="dishInfoBtn">Info</div>
-                    <div class="dishesContainer_sushi_btn dishOrderBtn" id="${dish._id}">Order</div>
-                </div>
-                <div class="dishesContainer_sushi_rating"></div>
-            `);
-    
-            if (dish.availability == true) {
-                $sushiContainer.find('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>');
-            } else {
-                $sushiContainer.find('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>').css('color', '#959595');
-            }
-    
-            let ratingHtml = '';
-            for (let i = 0; i < 5; i++) {
-                if (i < dish.rating) {
-                    ratingHtml += '<i class="fa-solid fa-star"></i>';
-                } else {
-                    ratingHtml += '<i class="fa-regular fa-star"></i>';
-                }
-            }
-            $sushiContainer.find('.dishesContainer_sushi_rating').html(ratingHtml);
-    
-            $('.dishesContainer_dishes').append($sushiContainer);
-        }
+        renderDishesByType(type);
     }
-    ordering()
-    $('#sushi').click(()=>{
+
+    function renderDishesByType(type) {
         $('.dishesContainer_dishes').empty();
-        for(let dish of res.data){
-            if (dish.type == 'sushi') {
-                let $sushiContainer = $('<div class="dishesContainer_sushi"></div>');
-                $sushiContainer.append(`
+        for (let dish of dishes) {
+            if (dish.type === type) {
+                let $dishContainer = $('<div class="dishesContainer_sushi"></div>');
+                $dishContainer.append(`
                     <img class='dishesContainer_sushi_img' src="${dish.image}" alt="">
                     <div class="dishesContainer_sushi_namePriceCon">
                         <div class="dishesContainer_sushi_name">${dish.name}</div>
@@ -353,11 +212,13 @@ axios.get('http://localhost:3000/dishes')
                     </div>
                     <div class="dishesContainer_sushi_rating"></div>
                 `);
-                if (dish.availability == true) {
-                    $sushiContainer.find('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>');
+
+                if (dish.availability) {
+                    $dishContainer.find('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>');
                 } else {
-                    $sushiContainer.find('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>').css('color', '#959595');
+                    $dishContainer.find('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>').css('color', '#959595');
                 }
+
                 let ratingHtml = '';
                 for (let i = 0; i < 5; i++) {
                     if (i < dish.rating) {
@@ -366,177 +227,103 @@ axios.get('http://localhost:3000/dishes')
                         ratingHtml += '<i class="fa-regular fa-star"></i>';
                     }
                 }
-                $sushiContainer.find('.dishesContainer_sushi_rating').html(ratingHtml);
-                $('.dishesContainer_dishes').append($sushiContainer);
+                $dishContainer.find('.dishesContainer_sushi_rating').html(ratingHtml);
+                $('.dishesContainer_dishes').append($dishContainer);
             }
         }
-        ordering()
-    })
-    $('#snack').click(()=>{
-        $('.dishesContainer_dishes').empty();
-            for(let dish of res.data){
-                if (dish.type == 'snack') {
-                    let $sushiContainer = $('<div class="dishesContainer_sushi"></div>');
-                    $sushiContainer.append(`
-                        <img class='dishesContainer_sushi_img' src="${dish.image}" alt="">
-                        <div class="dishesContainer_sushi_namePriceCon">
-                            <div class="dishesContainer_sushi_name">${dish.name}</div>
-                            <div class="dishesContainer_sushi_price">$${dish.price}</div>
-                        </div>
-                        <div class="dishesContainer_sushi_availability"></div>
-                        <div class="dishesContainer_sushi_btns">
-                            <div class="dishesContainer_sushi_btn" id="dishInfoBtn">Info</div>
-                            <div class="dishesContainer_sushi_btn dishOrderBtn" id="${dish._id}">Order</div>
-                        </div>
-                        <div class="dishesContainer_sushi_rating"></div>
-                    `);
-                    if (dish.availability == true) {
-                        $sushiContainer.find('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>');
-                    } else {
-                        $sushiContainer.find('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>').css('color', '#959595');
-                    }
-                    let ratingHtml = '';
-                    for (let i = 0; i < 5; i++) {
-                        if (i < dish.rating) {
-                            ratingHtml += '<i class="fa-solid fa-star"></i>';
-                        } else {
-                            ratingHtml += '<i class="fa-regular fa-star"></i>';
-                        }
-                    }
-                    $sushiContainer.find('.dishesContainer_sushi_rating').html(ratingHtml);
-                    $('.dishesContainer_dishes').append($sushiContainer);
-                }
-        }
-        ordering()
-    })
-    $('#soba').click(()=>{
-        $('.dishesContainer_dishes').empty();
-        for(let dish of res.data){
-            if (dish.type == 'soba') {
-                let $sushiContainer = $('<div class="dishesContainer_sushi"></div>');
-                $sushiContainer.append(`
-                    <img class='dishesContainer_sushi_img' src="${dish.image}" alt="">
-                    <div class="dishesContainer_sushi_namePriceCon">
-                        <div class="dishesContainer_sushi_name">${dish.name}</div>
-                        <div class="dishesContainer_sushi_price">$${dish.price}</div>
-                    </div>
-                    <div class="dishesContainer_sushi_availability"></div>
-                    <div class="dishesContainer_sushi_btns">
-                        <div class="dishesContainer_sushi_btn" id="dishInfoBtn">Info</div>
-                        <div class="dishesContainer_sushi_btn dishOrderBtn" id="${dish._id}">Order</div>
-                    </div>
-                    <div class="dishesContainer_sushi_rating"></div>
-                `);
-                if (dish.availability == true) {
-                    $sushiContainer.find('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>');
-                } else {
-                    $sushiContainer.find('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>').css('color', '#959595');
-                }
-                let ratingHtml = '';
-                for (let i = 0; i < 5; i++) {
-                    if (i < dish.rating) {
-                        ratingHtml += '<i class="fa-solid fa-star"></i>';
-                    } else {
-                        ratingHtml += '<i class="fa-regular fa-star"></i>';
-                    }
-                }
-                $sushiContainer.find('.dishesContainer_sushi_rating').html(ratingHtml);
-                $('.dishesContainer_dishes').append($sushiContainer);
-            }
+        ordering(dishes);
     }
-    ordering()
-    })
-    $('#ramen').click(()=>{
-        $('.dishesContainer_dishes').empty();
-        for(let dish of res.data){
-            if (dish.type == 'ramen') {
-                let $sushiContainer = $('<div class="dishesContainer_sushi"></div>');
-                $sushiContainer.append(`
-                    <img class='dishesContainer_sushi_img' src="${dish.image}" alt="">
-                    <div class="dishesContainer_sushi_namePriceCon">
-                        <div class="dishesContainer_sushi_name">${dish.name}</div>
-                        <div class="dishesContainer_sushi_price">$${dish.price}</div>
-                    </div>
-                    <div class="dishesContainer_sushi_availability"></div>
-                    <div class="dishesContainer_sushi_btns">
-                        <div class="dishesContainer_sushi_btn" id="dishInfoBtn">Info</div>
-                        <div class="dishesContainer_sushi_btn dishOrderBtn" id="${dish._id}">Order</div>
-                    </div>
-                    <div class="dishesContainer_sushi_rating"></div>
-                `);
-                if (dish.availability == true) {
-                    $sushiContainer.find('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>');
-                } else {
-                    $sushiContainer.find('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>').css('color', '#959595');
-                }
-                let ratingHtml = '';
-                for (let i = 0; i < 5; i++) {
-                    if (i < dish.rating) {
-                        ratingHtml += '<i class="fa-solid fa-star"></i>';
-                    } else {
-                        ratingHtml += '<i class="fa-regular fa-star"></i>';
-                    }
-                }
-                $sushiContainer.find('.dishesContainer_sushi_rating').html(ratingHtml);
-                $('.dishesContainer_dishes').append($sushiContainer);
-            }
-    }
-    ordering()
-    })
-    $('#drinks').click(()=>{
-        $('.dishesContainer_dishes').empty();
-        for(let dish of res.data){
-            if (dish.type == 'drink') {
-                let $sushiContainer = $('<div class="dishesContainer_sushi"></div>');
-                $sushiContainer.append(`
-                    <img class='dishesContainer_sushi_img' src="${dish.image}" alt="">
-                    <div class="dishesContainer_sushi_namePriceCon">
-                        <div class="dishesContainer_sushi_name">${dish.name}</div>
-                        <div class="dishesContainer_sushi_price">$${dish.price}</div>
-                    </div>
-                    <div class="dishesContainer_sushi_availability"></div>
-                    <div class="dishesContainer_sushi_btns">
-                        <div class="dishesContainer_sushi_btn" id="dishInfoBtn">Info</div>
-                        <div class="dishesContainer_sushi_btn dishOrderBtn" id="${dish._id}">Order</div>
-                    </div>
-                    <div class="dishesContainer_sushi_rating"></div>
-                `);
-                if (dish.availability == true) {
-                    $sushiContainer.find('.dishesContainer_sushi_availability').html('Available now <i class="fa-solid fa-check"></i>');
-                } else {
-                    $sushiContainer.find('.dishesContainer_sushi_availability').html('Not available now <i class="fa-solid fa-xmark"></i>').css('color', '#959595');
-                }
-                let ratingHtml = '';
-                for (let i = 0; i < 5; i++) {
-                    if (i < dish.rating) {
-                        ratingHtml += '<i class="fa-solid fa-star"></i>';
-                    } else {
-                        ratingHtml += '<i class="fa-regular fa-star"></i>';
-                    }
-                }
-                $sushiContainer.find('.dishesContainer_sushi_rating').html(ratingHtml);
-                $('.dishesContainer_dishes').append($sushiContainer);
-            }
-    }
-    ordering()
-    })
 
-    //ordering
-    // function ordering(){
-    //     $('.dishOrderBtn').click((e)=>{
-    //         let dishID = e.target.id;
-    //         console.log(dishID)
-    //         let dishToAdd = res.data.find(dish => dish._id === dishID);
-    //         cartList.push(dishToAdd);
-    //         console.log(cartList)
-    //         $('.ordersCount').html(cartList.length)
-    //         saveCartToCookie();
-    //     })
-    // }
+    axios.get('http://localhost:3000/dishes')
+        .then(res => {
+            dishes = res.data;
+            renderDishesByType('sushi');
 
-})
-
+            $('#sushi').click(() => handleTypeClick('sushi'));
+            $('#snack').click(() => handleTypeClick('snack'));
+            $('#soba').click(() => handleTypeClick('soba'));
+            $('#ramen').click(() => handleTypeClick('ramen'));
+            $('#drinks').click(() => handleTypeClick('drinks'));
+        })
+        .catch(error => {
+            console.error("Error fetching dishes:", error);
+        });
 }
+
+// Ordering function
+function ordering(dishes) {
+    $('.dishOrderBtn').click((e) => {
+        let dishID = e.target.id;
+        let dishToAdd = dishes.find(dish => dish._id === dishID);
+        if (dishToAdd) {
+            cartList.push(dishToAdd);
+            $('.ordersCount').html(cartList.length);
+            saveCartToCookie();
+        }
+    });
+}
+
+// Cookies popup functionality
+$(document).ready(function () {
+    checkPopupCookie();
+    loadCartFromCookie();
+});
+
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    const name = cname + "=";
+    const decodedCookie = decodeURIComponent(document.cookie);
+    const ca = decodedCookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) === ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) === 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function checkPopupCookie() {
+    const popupClosed = getCookie("popupClosed");
+    if (popupClosed === "true") {
+        $(".cookiesPopupCon").css('display', 'none');
+    } else {
+        $(".cookiesPopupCon").css('display', 'flex');
+        $(".cookiesPopup_accept").click(function () {
+            closePopup();
+        });
+    }
+}
+
+function closePopup() {
+    $(".cookiesPopupCon").css('display', 'none');
+    setCookie("popupClosed", "true", 365);
+}
+
+// Function to save the cart list to a cookie
+function saveCartToCookie() {
+    const cartlistString = JSON.stringify(cartList);
+    setCookie('cartList', cartlistString, 365);
+}
+
+// Function to load the cart list from a cookie
+function loadCartFromCookie() {
+    const cartlistString = getCookie('cartList');
+    if (cartlistString) {
+        cartList = JSON.parse(cartlistString);
+        $('.ordersCount').html(cartList.length);
+    }
+}
+
 function openOrdersPage(){
     $('.content').empty();
     $('#orders').css('font-weight', '600')
@@ -1146,85 +933,85 @@ $('.cookiesPopup_right').hover(
     }
 )
 
-//cookies popup functionality
-// Function to save the cart list to a cookie
-function saveCartToCookie() {
-    const cartlistString = JSON.stringify(cartList);
-    setCookie('cartList', cartlistString, 365);
-}
+// //cookies popup functionality
+// // Function to save the cart list to a cookie
+// function saveCartToCookie() {
+//     const cartlistString = JSON.stringify(cartList);
+//     setCookie('cartList', cartlistString, 365);
+// }
 
-// Function to load the cart list from a cookie
-function loadCartFromCookie() {
-    const cartlistString = getCookie('cartList');
-    if (cartlistString) {
-        cartList = JSON.parse(cartlistString);
-    }
-    $('.ordersCount').html(cartList.length);  // Update the cart count display
-}
+// // Function to load the cart list from a cookie
+// function loadCartFromCookie() {
+//     const cartlistString = getCookie('cartList');
+//     if (cartlistString) {
+//         cartList = JSON.parse(cartlistString);
+//     }
+//     $('.ordersCount').html(cartList.length);  // Update the cart count display
+// }
 
-// Function to set a cookie
-function setCookie(cname, cvalue, exdays) {
-    const d = new Date();
-    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-    const expires = "expires=" + d.toUTCString();
-    document.cookie = `${cname}=${cvalue};${expires};path=/`;
-}
+// // Function to set a cookie
+// function setCookie(cname, cvalue, exdays) {
+//     const d = new Date();
+//     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+//     const expires = "expires=" + d.toUTCString();
+//     document.cookie = `${cname}=${cvalue};${expires};path=/`;
+// }
 
-// Function to get a cookie
-function getCookie(cname) {
-    const name = cname + "=";
-    const decodedCookie = decodeURIComponent(document.cookie);
-    const ca = decodedCookie.split(';');
-    for (let i = 0; i < ca.length; i++) {
-        let c = ca[i].trim();
-        if (c.indexOf(name) === 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
-}
+// // Function to get a cookie
+// function getCookie(cname) {
+//     const name = cname + "=";
+//     const decodedCookie = decodeURIComponent(document.cookie);
+//     const ca = decodedCookie.split(';');
+//     for (let i = 0; i < ca.length; i++) {
+//         let c = ca[i].trim();
+//         if (c.indexOf(name) === 0) {
+//             return c.substring(name.length, c.length);
+//         }
+//     }
+//     return "";
+// }
 
-// Ordering function
-function ordering(dishes) {
-    $('.dishOrderBtn').click((e) => {
-        let dishID = e.target.id;
-        let dishToAdd = dishes.find(dish => dish._id === dishID);
-        cartList.push(dishToAdd);
-        $('.ordersCount').html(cartList.length);
-        saveCartToCookie();
-    });
-}
+// // Ordering function
+// function ordering(dishes) {
+//     $('.dishOrderBtn').click((e) => {
+//         let dishID = e.target.id;
+//         let dishToAdd = dishes.find(dish => dish._id === dishID);
+//         cartList.push(dishToAdd);
+//         $('.ordersCount').html(cartList.length);
+//         saveCartToCookie();
+//     });
+// }
 
-// Cookies popup functionality
-$(document).ready(function() {
-    checkPopupCookie();
-    loadCartFromCookie();
-});
+// // Cookies popup functionality
+// $(document).ready(function() {
+//     checkPopupCookie();
+//     loadCartFromCookie();
+// });
 
-// Function to check and handle the popup cookie
-function checkPopupCookie() {
-    const popupClosed = getCookie("popupClosed");
-    if (popupClosed === "true") {
-        $(".cookiesPopupCon").css('display', 'none');
-    } else {
-        $(".cookiesPopupCon").css('display', 'flex');
-        $(".cookiesPopup_accept").click(function() {
-            closePopup();
-        });
-    }
-}
+// // Function to check and handle the popup cookie
+// function checkPopupCookie() {
+//     const popupClosed = getCookie("popupClosed");
+//     if (popupClosed === "true") {
+//         $(".cookiesPopupCon").css('display', 'none');
+//     } else {
+//         $(".cookiesPopupCon").css('display', 'flex');
+//         $(".cookiesPopup_accept").click(function() {
+//             closePopup();
+//         });
+//     }
+// }
 
-// Function to close the popup and set the cookie
-function closePopup() {
-    $(".cookiesPopupCon").css('display', 'none');
-    setCookie("popupClosed", "true", 365);
-}
+// // Function to close the popup and set the cookie
+// function closePopup() {
+//     $(".cookiesPopupCon").css('display', 'none');
+//     setCookie("popupClosed", "true", 365);
+// }
 
-// Initial call to load the cart and set up the page
-$(document).ready(function() {
-    checkPopupCookie();
-    loadCartFromCookie();
-});
+// // Initial call to load the cart and set up the page
+// $(document).ready(function() {
+//     checkPopupCookie();
+//     loadCartFromCookie();
+// });
 //burger work
 $('.header_burger').click(()=>{
     $('.burgerCon').css('display', 'flex')
