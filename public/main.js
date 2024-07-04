@@ -262,7 +262,19 @@ function ordering(dishes) {
         }
     });
 }
-
+$('.order').on('click', '.chosenPlant_bottom', function(e) {
+    e.stopPropagation();
+    let ID = e.target.id;
+    if (ID.substring(0, 14) === 'deleteFromCart') {
+        let plantID = ID.substring(14);
+        let index = cartlist.findIndex(plant => plant._id === plantID);
+        if (index !== -1) {
+            cartlist.splice(index, 1);
+            renderCart();
+        }
+    }
+    saveCartToCookie();
+});
 // Cookies popup functionality
 $(document).ready(function () {
     checkPopupCookie();
@@ -924,85 +936,6 @@ $('.cookiesPopup_right').hover(
     }
 )
 
-// //cookies popup functionality
-// // Function to save the cart list to a cookie
-// function saveCartToCookie() {
-//     const cartlistString = JSON.stringify(cartList);
-//     setCookie('cartList', cartlistString, 365);
-// }
-
-// // Function to load the cart list from a cookie
-// function loadCartFromCookie() {
-//     const cartlistString = getCookie('cartList');
-//     if (cartlistString) {
-//         cartList = JSON.parse(cartlistString);
-//     }
-//     $('.ordersCount').html(cartList.length);  // Update the cart count display
-// }
-
-// // Function to set a cookie
-// function setCookie(cname, cvalue, exdays) {
-//     const d = new Date();
-//     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-//     const expires = "expires=" + d.toUTCString();
-//     document.cookie = `${cname}=${cvalue};${expires};path=/`;
-// }
-
-// // Function to get a cookie
-// function getCookie(cname) {
-//     const name = cname + "=";
-//     const decodedCookie = decodeURIComponent(document.cookie);
-//     const ca = decodedCookie.split(';');
-//     for (let i = 0; i < ca.length; i++) {
-//         let c = ca[i].trim();
-//         if (c.indexOf(name) === 0) {
-//             return c.substring(name.length, c.length);
-//         }
-//     }
-//     return "";
-// }
-
-// // Ordering function
-// function ordering(dishes) {
-//     $('.dishOrderBtn').click((e) => {
-//         let dishID = e.target.id;
-//         let dishToAdd = dishes.find(dish => dish._id === dishID);
-//         cartList.push(dishToAdd);
-//         $('.ordersCount').html(cartList.length);
-//         saveCartToCookie();
-//     });
-// }
-
-// // Cookies popup functionality
-// $(document).ready(function() {
-//     checkPopupCookie();
-//     loadCartFromCookie();
-// });
-
-// // Function to check and handle the popup cookie
-// function checkPopupCookie() {
-//     const popupClosed = getCookie("popupClosed");
-//     if (popupClosed === "true") {
-//         $(".cookiesPopupCon").css('display', 'none');
-//     } else {
-//         $(".cookiesPopupCon").css('display', 'flex');
-//         $(".cookiesPopup_accept").click(function() {
-//             closePopup();
-//         });
-//     }
-// }
-
-// // Function to close the popup and set the cookie
-// function closePopup() {
-//     $(".cookiesPopupCon").css('display', 'none');
-//     setCookie("popupClosed", "true", 365);
-// }
-
-// // Initial call to load the cart and set up the page
-// $(document).ready(function() {
-//     checkPopupCookie();
-//     loadCartFromCookie();
-// });
 //burger work
 $('.header_burger').click(()=>{
     $('.burgerCon').css('display', 'flex')
