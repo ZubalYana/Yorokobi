@@ -262,19 +262,7 @@ function ordering(dishes) {
         }
     });
 }
-$('.order').on('click', '.chosenPlant_bottom', function(e) {
-    e.stopPropagation();
-    let ID = e.target.id;
-    if (ID.substring(0, 14) === 'deleteFromCart') {
-        let plantID = ID.substring(14);
-        let index = cartlist.findIndex(plant => plant._id === plantID);
-        if (index !== -1) {
-            cartlist.splice(index, 1);
-            renderCart();
-        }
-    }
-    saveCartToCookie();
-});
+
 // Cookies popup functionality
 $(document).ready(function () {
     checkPopupCookie();
@@ -397,7 +385,7 @@ function openOrdersPage(){
                 <div class="order_separetiveLine"></div>
                 <div class="orderBtns">
                     <div class="orderBtn order_infoBtn">Info</div>
-                    <div class="orderBtn order_cancelBtn">Cancel</div>
+                    <div class="orderBtn order_cancelBtn" id="deleteFromCart${order._id}">Cancel</div>
                 </div>
                 <div class="order_separetiveLine"></div>
                 <div class="order_price">$${order.price}</div>
@@ -421,6 +409,19 @@ $('#buyBtn').click(() => {
                 $('.payment_input').val('')
         })
 })
+$('.order').on('click', '.order_cancelBtn', function(e) {
+    e.stopPropagation();
+    let ID = e.target.id;
+    if (ID.substring(0, 14) === 'deleteFromCart') {
+        let orderID = ID.substring(14);
+        let index = cartList.findIndex(order => order._id === orderID);
+        if (index !== -1) {
+            cartList.splice(index, 1);
+            openOrdersPage()
+        }
+    }
+    saveCartToCookie();
+});
 }
 function openContactsPage(){
     $('.content').empty();
