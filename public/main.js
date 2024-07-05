@@ -243,7 +243,7 @@ function openMenuPage() {
             $('#snack').click(() => handleTypeClick('snack'));
             $('#soba').click(() => handleTypeClick('soba'));
             $('#ramen').click(() => handleTypeClick('ramen'));
-            $('#drinks').click(() => handleTypeClick('drinks'));
+            $('#drinks').click(() => handleTypeClick('drink'));
         })
         .catch(error => {
             console.error("Error fetching dishes:", error);
