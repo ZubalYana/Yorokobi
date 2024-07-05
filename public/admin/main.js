@@ -749,5 +749,8 @@ document.addEventListener('DOMContentLoaded', () => {
 //get orders
 function getOrders(){
     axios.get('http://localhost:3000/orders')
-
+    .then(res=>{
+        console.log(res.data)
+    })
 }
+getOrders()
