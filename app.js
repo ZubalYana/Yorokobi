@@ -124,6 +124,14 @@ app.post('/new-order', async (req, res) => {
         res.status(500).json({ message: err });
     }
 })
+app.get('/orders', async (req, res) => {
+    try {
+        const orders = await Orders.find();
+        res.json(orders);
+    } catch (err) {
+        res.status(500).json({ message: err });
+    }
+})
 app.use((err, req, res, next) => {
     console.error(err);
     res.status(500).send('Something went wrong!');

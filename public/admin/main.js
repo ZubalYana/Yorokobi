@@ -263,6 +263,7 @@ $('#orders').click(()=>{
   $('#products').css('color', '#fff')
   $('#review').css('color', '#fff')
   $('#help').css('color', '#fff')
+  
 
 })
 $('#complaints').click(()=>{
@@ -744,3 +745,9 @@ document.addEventListener('DOMContentLoaded', () => {
       
 });
   
+
+//get orders
+function getOrders(){
+    axios.get('http://localhost:3000/orders')
+
+}
