@@ -318,72 +318,66 @@ function loadCartFromCookie() {
 }
 function openOrdersPage(){
     $('.content').empty();
-    $('#orders').css('font-weight', '600')
-    $('#menu').css('font-weight', '400')
-    $('#homePage').css('font-weight', '400')
-    $('#contacts').css('font-weight', '400')
+    $('#orders').css('font-weight', '600');
+    $('#menu').css('font-weight', '400');
+    $('#homePage').css('font-weight', '400');
+    $('#contacts').css('font-weight', '400');
     $('.content').append(
         `
         <div class="orders screen">
-    <div class="leftPart">
-        <h3>You selected:</h3>
-        <div class="ordersContainer"></div>
-    </div>
-    <div class="rightPart">
-        <h3>Comfirm order:</h3>
-                            <div class="paymentContainer">
-                        <h3 id="chosenDishesCount"></h3>
-                        <h3 id="totalAmount">${totalAmount}</h3>
-                        <h2>Buy just in 1 click! Pay with:</h2>
-                        <div class="paymentMethods">
-                            <div class="paymentMethod_con"><img class="paymentMethod" src="./imgs/google-pay.png" alt="">
-</div>
-<div class="paymentMethod_con"><img class="paymentMethod" src="./imgs/apple-pay.png" alt="">
-</div>
-                            
-                        </div>
-                        <h2>Or enter your data:</h2>
-                        <div class="inputsContainer">
-                            <input type="text" id="userName" placeholder="Name" class="payment_input">
-                            <input type="text" id="userPhone" placeholder="Phone" class="payment_input">
-                        </div>
-                        <input type="text" placeholder="Card Number" class="payment_input">
-                        <div class="inputsContainer">
-                            <input type="text" id="expiryDate" placeholder="Expiry Date" class="payment_input">
-                            <input type="text" id="securityCode" placeholder="Security Code" class="payment_input">
-                        </div>
-                        <input type="text" placeholder="Message" id="userMessage" class="payment_input">
-                        <div id="buyBtn">Buy now</div>
+            <div class="leftPart">
+                <h3>You selected:</h3>
+                <div class="ordersContainer"></div>
+            </div>
+            <div class="rightPart">
+                <h3>Confirm order:</h3>
+                <div class="paymentContainer">
+                    <h3 id="chosenDishesCount"></h3>
+                    <h3 id="totalAmount">Total price: $${totalAmount}</h3>
+                    <h2>Buy just in 1 click! Pay with:</h2>
+                    <div class="paymentMethods">
+                        <div class="paymentMethod_con"><img class="paymentMethod" src="./imgs/google-pay.png" alt=""></div>
+                        <div class="paymentMethod_con"><img class="paymentMethod" src="./imgs/apple-pay.png" alt=""></div>
                     </div>
-    </div>
-</div>
+                    <h2>Or enter your data:</h2>
+                    <div class="inputsContainer">
+                        <input type="text" id="userName" placeholder="Name" class="payment_input">
+                        <input type="text" id="userPhone" placeholder="Phone" class="payment_input">
+                    </div>
+                    <input type="text" placeholder="Card Number" class="payment_input">
+                    <div class="inputsContainer">
+                        <input type="text" id="expiryDate" placeholder="Expiry Date" class="payment_input">
+                        <input type="text" id="securityCode" placeholder="Security Code" class="payment_input">
+                    </div>
+                    <input type="text" placeholder="Message" id="userMessage" class="payment_input">
+                    <div id="buyBtn">Buy now</div>
+                </div>
+            </div>
+        </div>
         `
-    )
-    $('.header').css('background-color', '#13161B')
-    $('.header_nav_el').css('color', '#F73859')
-    $('.header').css('padding', '40px 40px 0 40px')
-    $('.orders').css('padding', '0 40px')
-    $('.header_logo').attr('src', './menuImgs/red logo.png')
-    $('.ordersCount').css('background-color', '#F73859')
-    $('.ordersCount').css('color', '#13161B')
-    $('select').css('background-color', '#13161B')
-    $('select').css('color', '#F73859')
-    $('.header_theme').css('background-color', '#F73859')
-    $('.header_themeCircle').css('background-color', '#13161B')
-    $('.header_themeCircle').css('border', '#F73859 3px solid')
-    $('.header_burgerRow').css('background-color', '#F73859')
-    $('.ordersContainer').css('padding', '0px')
-    $('.order_cancelBtn').click(()=>{
-        $('.orderPopupsContainer').css('display', 'flex')
-    })
-    $('.cancelPopup_noBtn').click(()=>{
-        $('.orderPopupsContainer').css('display', 'none')
-    })
+    );
+    
+    $('.header').css('background-color', '#13161B');
+    $('.header_nav_el').css('color', '#F73859');
+    $('.header').css('padding', '40px 40px 0 40px');
+    $('.orders').css('padding', '0 40px');
+    $('.header_logo').attr('src', './menuImgs/red logo.png');
+    $('.ordersCount').css('background-color', '#F73859');
+    $('.ordersCount').css('color', '#13161B');
+    $('select').css('background-color', '#13161B');
+    $('select').css('color', '#F73859');
+    $('.header_theme').css('background-color', '#F73859');
+    $('.header_themeCircle').css('background-color', '#13161B');
+    $('.header_themeCircle').css('border', '#F73859 3px solid');
+    $('.header_burgerRow').css('background-color', '#F73859');
+    $('.ordersContainer').css('padding', '0px');
+
     totalAmount = 0;
 
     for(let order of cartList){
         $('.ordersContainer').append(
-            `            <div class="order">
+            `
+            <div class="order">
                 <div class="order_name">${order.name}</div>
                 <div class="order_separetiveLine"></div>
                 <div class="orderBtns">
@@ -392,43 +386,46 @@ function openOrdersPage(){
                 </div>
                 <div class="order_separetiveLine"></div>
                 <div class="order_price">$${order.price}</div>
-            </div>`
-        )
+            </div>
+            `
+        );
         totalAmount += order.price;
-
     }
+
+    $('#totalAmount').text(`Total price: $${totalAmount}`);
 
     //ordering
-$('#buyBtn').click(() => {
-    let data = {
-        list: cartList,
-        name: $('#userName').val(),
-        phone: $('#userPhone').val(),
-        message: $('#userMessage').val(),
-    };
-    console.log(data);
-    axios.post('/new-order', data)
-        .then(res => {
-            console.log(`Order data was sended`);
+    $('#buyBtn').click(() => {
+        let data = {
+            list: cartList,
+            name: $('#userName').val(),
+            phone: $('#userPhone').val(),
+            message: $('#userMessage').val(),
+        };
+        console.log(data);
+        axios.post('/new-order', data)
+            .then(res => {
+                console.log(`Order data was sent`);
                 cartList = [];
-                $('.payment_input').val('')
-        })
-})
-$('.order').on('click', '.order_cancelBtn', function(e) {
-    e.stopPropagation();
-    let ID = e.target.id;
-    if (ID.substring(0, 14) === 'deleteFromCart') {
-        let orderID = ID.substring(14);
-        let index = cartList.findIndex(order => order._id === orderID);
-        if (index !== -1) {
-            cartList.splice(index, 1);
-            openOrdersPage()
-        }
-    }
-    saveCartToCookie();
-    $('.ordersCount').html(cartList.length);
+                $('.payment_input').val('');
+                openOrdersPage(); // Refresh the orders page after placing the order
+            });
+    });
 
-});
+    $('.order').on('click', '.order_cancelBtn', function(e) {
+        e.stopPropagation();
+        let ID = e.target.id;
+        if (ID.substring(0, 14) === 'deleteFromCart') {
+            let orderID = ID.substring(14);
+            let index = cartList.findIndex(order => order._id === orderID);
+            if (index !== -1) {
+                cartList.splice(index, 1);
+                openOrdersPage();
+            }
+        }
+        saveCartToCookie();
+        $('.ordersCount').html(cartList.length);
+    });
 }
 function openContactsPage(){
     $('.content').empty();
