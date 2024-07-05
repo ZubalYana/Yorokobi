@@ -333,7 +333,7 @@ function openOrdersPage(){
         <h3>Comfirm order:</h3>
                             <div class="paymentContainer">
                         <h3 id="chosenDishesCount"></h3>
-                        <h3 id="totalAmount"></h3>
+                        <h3 id="totalAmount">${totalAmount}</h3>
                         <h2>Buy just in 1 click! Pay with:</h2>
                         <div class="paymentMethods">
                             <div class="paymentMethod_con"><img class="paymentMethod" src="./imgs/google-pay.png" alt="">
@@ -379,6 +379,8 @@ function openOrdersPage(){
     $('.cancelPopup_noBtn').click(()=>{
         $('.orderPopupsContainer').css('display', 'none')
     })
+    totalAmount = 0;
+
     for(let order of cartList){
         $('.ordersContainer').append(
             `            <div class="order">
@@ -392,6 +394,8 @@ function openOrdersPage(){
                 <div class="order_price">$${order.price}</div>
             </div>`
         )
+        totalAmount += order.price;
+
     }
 
     //ordering
