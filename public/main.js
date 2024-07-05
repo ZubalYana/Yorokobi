@@ -161,7 +161,7 @@ function openMenuPage() {
                     <div class="dishesContainer_typeChoise_item" id="soba">Soba</div>
                     <div class="dishesContainer_typeChoise_item" id="ramen">Ramen</div>
                     <div class="dishesContainer_typeChoise_item" id="snack">Snacks</div>
-                    <div class="dishesContainer_typeChoise_item" id="drinks">Drinks</div>
+                    <div class="dishesContainer_typeChoise_item" id="drink">Drinks</div>
                 </div>
                 <div class="dishesContainer_dishes"></div>
             </div>
@@ -243,12 +243,13 @@ function openMenuPage() {
             $('#snack').click(() => handleTypeClick('snack'));
             $('#soba').click(() => handleTypeClick('soba'));
             $('#ramen').click(() => handleTypeClick('ramen'));
-            $('#drinks').click(() => handleTypeClick('drink'));
+            $('#drink').click(() => handleTypeClick('drink'));
         })
         .catch(error => {
             console.error("Error fetching dishes:", error);
         });
 }
+
 
 // Ordering function
 function ordering(dishes) {
