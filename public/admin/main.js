@@ -264,7 +264,14 @@ $('#orders').click(()=>{
   $('#review').css('color', '#fff')
   $('#help').css('color', '#fff')
   
-
+//get orders
+function getOrders(){
+    axios.get('http://localhost:3000/orders')
+    .then(res=>{
+        console.log(res)
+    })
+}
+getOrders()
 })
 $('#complaints').click(()=>{
   $('.FilingCon').empty();
@@ -746,11 +753,3 @@ document.addEventListener('DOMContentLoaded', () => {
 });
   
 
-//get orders
-function getOrders(){
-    axios.get('http://localhost:3000/orders')
-    .then(res=>{
-        console.log(res)
-    })
-}
-getOrders()
