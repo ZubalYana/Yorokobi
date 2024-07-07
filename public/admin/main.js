@@ -750,7 +750,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function getOrders(){
     axios.get('http://localhost:3000/orders')
     .then(res=>{
-        console.log(res.data)
+        console.log(res)
     })
 }
 getOrders()
