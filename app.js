@@ -127,11 +127,11 @@ app.post('/new-order', async (req, res) => {
 app.get('/orders', async (req, res) => {
     try {
         const orders = await Orders.find();
-        res.json(orders);
+        res.status(200).json(orders);
     } catch (err) {
-        res.status(500).json({ message: err });
+        res.status(500).json({ message: err.message });
     }
-})
+});
 app.use((err, req, res, next) => {
     console.error(err);
     res.status(500).send('Something went wrong!');
